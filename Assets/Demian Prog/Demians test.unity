@@ -818,8 +818,8 @@ Rigidbody:
   serializedVersion: 2
   m_Mass: 1
   m_Drag: 0
-  m_AngularDrag: 0.1
-  m_UseGravity: 1
+  m_AngularDrag: 0
+  m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
@@ -856,9 +856,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rb: {fileID: 935274939}
   orientation: {fileID: 65343095}
+  riseGravity: 500
+  fallGravity: 2500
   moveSpeed: 15
   groundDrag: 4
-  airDrag: 3
+  airDrag: 2
   isGrounded: 0
   playerHeaight: 4
   whatIsGround:
@@ -866,7 +868,7 @@ MonoBehaviour:
     m_Bits: 128
   jumpForce: 10
   jumpCooldown: 1
-  airmultiplier: 0.6
+  airmultiplier: 0.3
 --- !u!1 &983851449
 GameObject:
   m_ObjectHideFlags: 0
