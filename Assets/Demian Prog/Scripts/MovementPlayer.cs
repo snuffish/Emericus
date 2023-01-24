@@ -70,7 +70,7 @@ public class MovementPlayer : MonoBehaviour
         }
 
         else if (Input.GetButtonUp("Jump") && rb.velocity.y > 0)
-            rb.velocity = new Vector3(rb.velocity.x, rb.velocity.y / 2, rb.velocity.z);
+            rb.AddForce(-transform.up * riseGravity / 3);d
 
         GetInput();
         LimitSpeed();
