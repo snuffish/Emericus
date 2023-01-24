@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Numerics;
+using Unity.VisualScripting;
 using Unity.VisualScripting.FullSerializer.Internal;
 using UnityEngine;
 using UnityEngine.UI;
@@ -26,6 +27,7 @@ public class MovementPlayer : MonoBehaviour
     [SerializeField] private bool isGrounded;
     [SerializeField] private float playerHeaight;
     [SerializeField] private LayerMask whatIsGround;
+    
 
     [Header("Jump")] 
     [SerializeField] private float jumpForce;
@@ -44,7 +46,7 @@ public class MovementPlayer : MonoBehaviour
     // Update is called once per frame
     void Update() {
 
-        isGrounded = Physics.Raycast(transform.position, Vector3.down, playerHeaight * 0.5f + 0.2f, whatIsGround);
+        isGrounded = Physics.Raycast(transform.position, Vector3.down, playerHeaight * 0.5f + 0.1f, whatIsGround);
 
         if (isGrounded)
             rb.drag = groundDrag;
@@ -61,12 +63,15 @@ public class MovementPlayer : MonoBehaviour
         } 
             
 
-        if (Input.GetButton("Jump") && canJump && isGrounded) {
+        if (Input.GetButtonDown("Jump") && canJump && isGrounded) {
             canJump = false;
             Jump();
             Invoke(nameof(ResetJump), jumpCooldown);
         }
-        
+
+        else if (Input.GetButtonUp("Jump") && rb.velocity.y > 0)
+            rb.AddForce(-transform.up * riseGravity / 3);
+
         GetInput();
         LimitSpeed();
         MovePlayer();
