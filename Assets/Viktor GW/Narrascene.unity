@@ -123,7 +123,7 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1001 &89545862
+--- !u!1001 &2101518
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -133,17 +133,12 @@ PrefabInstance:
     - target: {fileID: 2867685623536249619, guid: e99ecfe2bc4f80a449d67a7508e80c9b,
         type: 3}
       propertyPath: m_Name
-      value: DiaTrigBoxV
-      objectReference: {fileID: 0}
-    - target: {fileID: 2867685623536249619, guid: e99ecfe2bc4f80a449d67a7508e80c9b,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
+      value: TestIntro
       objectReference: {fileID: 0}
     - target: {fileID: 2867685623536249622, guid: e99ecfe2bc4f80a449d67a7508e80c9b,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2867685623536249622, guid: e99ecfe2bc4f80a449d67a7508e80c9b,
         type: 3}
@@ -158,7 +153,7 @@ PrefabInstance:
     - target: {fileID: 2867685623536249622, guid: e99ecfe2bc4f80a449d67a7508e80c9b,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 2867685623536249622, guid: e99ecfe2bc4f80a449d67a7508e80c9b,
         type: 3}
@@ -203,46 +198,72 @@ PrefabInstance:
     - target: {fileID: 4166153229557599458, guid: e99ecfe2bc4f80a449d67a7508e80c9b,
         type: 3}
       propertyPath: dialogue.sentences.Array.size
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4166153229557599458, guid: e99ecfe2bc4f80a449d67a7508e80c9b,
         type: 3}
       propertyPath: dialogue.sentences.Array.data[0].name
-      value: Mange
+      value: Unknown
       objectReference: {fileID: 0}
     - target: {fileID: 4166153229557599458, guid: e99ecfe2bc4f80a449d67a7508e80c9b,
         type: 3}
       propertyPath: dialogue.sentences.Array.data[0].text
-      value: "Tjenare, det h\xE4r \xE4r Mange. Jag har vaknat igen."
+      value: "Ah, so you\u2019ve awoken at last. Tell me, what do you remember? Hm,
+        not really anything at all, it seems. Let\u2019s just call you The Protagonist,
+        for now. You may call me The Narrator, or just some voice inside your head,
+        if you prefer that. "
       objectReference: {fileID: 0}
     - target: {fileID: 4166153229557599458, guid: e99ecfe2bc4f80a449d67a7508e80c9b,
         type: 3}
       propertyPath: dialogue.sentences.Array.data[1].name
-      value: Mange
+      value: The Narrator
       objectReference: {fileID: 0}
     - target: {fileID: 4166153229557599458, guid: e99ecfe2bc4f80a449d67a7508e80c9b,
         type: 3}
       propertyPath: dialogue.sentences.Array.data[1].text
-      value: "Tjenare, det h\xE4r \xE4r Mange. Jag har vaknat igen."
+      value: "You find yourself in an unfamiliar environment. Is it some sort of
+        castle? A dungeon? Despite your complete lack of knowledge, you decide that
+        it\u2019s time to move onward."
+      objectReference: {fileID: 0}
+    - target: {fileID: 4166153229557599458, guid: e99ecfe2bc4f80a449d67a7508e80c9b,
+        type: 3}
+      propertyPath: dialogue.sentences.Array.data[2].name
+      value: The Narrator
+      objectReference: {fileID: 0}
+    - target: {fileID: 4166153229557599458, guid: e99ecfe2bc4f80a449d67a7508e80c9b,
+        type: 3}
+      propertyPath: dialogue.sentences.Array.data[2].text
+      value: "You find yourself in an unfamiliar environment. Is it some sort of
+        castle? A dungeon? Despite your complete lack of knowledge, you decide that
+        it\u2019s time to move onward."
+      objectReference: {fileID: 0}
+    - target: {fileID: 4166153229557599458, guid: e99ecfe2bc4f80a449d67a7508e80c9b,
+        type: 3}
+      propertyPath: dialogue.sentences.Array.data[3].name
+      value: Voice
       objectReference: {fileID: 0}
     - target: {fileID: 4166153229557599458, guid: e99ecfe2bc4f80a449d67a7508e80c9b,
         type: 3}
       propertyPath: dialogue.sentences.Array.data[0].voiceLine
       value: 
-      objectReference: {fileID: 8300000, guid: b753a6db33abd874191e884306785429, type: 3}
+      objectReference: {fileID: 8300000, guid: 7446866349c3d624c9eb7bc34d108e9e, type: 3}
     - target: {fileID: 4166153229557599458, guid: e99ecfe2bc4f80a449d67a7508e80c9b,
         type: 3}
       propertyPath: dialogue.sentences.Array.data[1].voiceLine
       value: 
-      objectReference: {fileID: 8300000, guid: b753a6db33abd874191e884306785429, type: 3}
+      objectReference: {fileID: 8300000, guid: 0ae6c84aa4322d84aa80080ff800eba7, type: 3}
+    - target: {fileID: 4166153229557599458, guid: e99ecfe2bc4f80a449d67a7508e80c9b,
+        type: 3}
+      propertyPath: dialogue.sentences.Array.data[2].voiceLine
+      value: 
+      objectReference: {fileID: 8300000, guid: 0ae6c84aa4322d84aa80080ff800eba7, type: 3}
+    - target: {fileID: 4166153229557599458, guid: e99ecfe2bc4f80a449d67a7508e80c9b,
+        type: 3}
+      propertyPath: dialogue.sentences.Array.data[3].voiceLine
+      value: 
+      objectReference: {fileID: 8300000, guid: 21b0fc52b18aed14288d930b718eabc9, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e99ecfe2bc4f80a449d67a7508e80c9b, type: 3}
---- !u!4 &89545863 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 2867685623536249622, guid: e99ecfe2bc4f80a449d67a7508e80c9b,
-    type: 3}
-  m_PrefabInstance: {fileID: 89545862}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &103784169
 GameObject:
   m_ObjectHideFlags: 0
@@ -370,8 +391,8 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 306716462}
-  - {fileID: 89545863}
   - {fileID: 971070409}
+  - {fileID: 340071274}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -678,6 +699,68 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 306716461}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &340071273 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2867685623536249619, guid: e99ecfe2bc4f80a449d67a7508e80c9b,
+    type: 3}
+  m_PrefabInstance: {fileID: 2101518}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &340071274 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2867685623536249622, guid: e99ecfe2bc4f80a449d67a7508e80c9b,
+    type: 3}
+  m_PrefabInstance: {fileID: 2101518}
+  m_PrefabAsset: {fileID: 0}
+--- !u!33 &340071275
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 340071273}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!23 &340071276
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 340071273}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 257
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 73c176f402d2c2f4d929aa5da7585d17, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!1 &360892250
 GameObject:
   m_ObjectHideFlags: 0
@@ -1083,17 +1166,17 @@ PrefabInstance:
     - target: {fileID: 2867685623536249619, guid: e99ecfe2bc4f80a449d67a7508e80c9b,
         type: 3}
       propertyPath: m_Name
-      value: DiaTrigBoxV2
+      value: Mange
       objectReference: {fileID: 0}
     - target: {fileID: 2867685623536249622, guid: e99ecfe2bc4f80a449d67a7508e80c9b,
         type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2867685623536249622, guid: e99ecfe2bc4f80a449d67a7508e80c9b,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -4
       objectReference: {fileID: 0}
     - target: {fileID: 2867685623536249622, guid: e99ecfe2bc4f80a449d67a7508e80c9b,
         type: 3}
@@ -1103,7 +1186,7 @@ PrefabInstance:
     - target: {fileID: 2867685623536249622, guid: e99ecfe2bc4f80a449d67a7508e80c9b,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 5
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 2867685623536249622, guid: e99ecfe2bc4f80a449d67a7508e80c9b,
         type: 3}
