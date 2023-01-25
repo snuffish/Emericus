@@ -68,9 +68,9 @@ public class MovementPlayer : MonoBehaviour
             Jump();
             Invoke(nameof(ResetJump), jumpCooldown);
         }
-
-        else if (Input.GetButtonUp("Jump") && rb.velocity.y > 0)
-            rb.AddForce(-transform.up * riseGravity / 3);
+        
+        /*else if (Input.GetButtonUp("Jump") && rb.velocity.y > 0)
+            rb.AddForce(-transform.up * riseGravity / 3);*/
 
         GetInput();
         LimitSpeed();
