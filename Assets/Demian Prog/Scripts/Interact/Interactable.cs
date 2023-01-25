@@ -7,7 +7,7 @@ public abstract class Interactable : MonoBehaviour
 
     public string promptMessage;
 
-    protected virtual void Interact() {
+    public virtual void Interact() {
         //  Basklass för barnen att ärva från
     }
 }
