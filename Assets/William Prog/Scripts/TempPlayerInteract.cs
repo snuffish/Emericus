@@ -64,7 +64,7 @@ public class TempPlayerInteract : MonoBehaviour
             currentSpeed = Mathf.SmoothStep(minSpeed, maxSpeed, currentDist / maxDistance);
             currentSpeed *= 10;
             currentSpeed *= Time.fixedDeltaTime;
-            pickupParent.position = cam.transform.position + cam.transform.forward;
+            pickupParent.position = cam.transform.position + cam.transform.forward * holdItemDistance;
 
             Vector3 direction = pickupParent.position - pickupRB.position;
             pickupRB.velocity = direction.normalized * currentSpeed;
