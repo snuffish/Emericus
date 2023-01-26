@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class Lever : Interactable
 {
+
+    [SerializeField] private Interactable connectedTo;
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -16,7 +19,7 @@ public class Lever : Interactable
         
     }
 
-    protected override void Interact() {
-        Debug.Log("Interacted with " + gameObject.name);
+    public override void Interact() {
+        connectedTo.Interact();
     }
 }
