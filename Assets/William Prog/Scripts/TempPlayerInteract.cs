@@ -21,6 +21,7 @@ public class TempPlayerInteract : MonoBehaviour
     [SerializeField] float minSpeed = 0;
     [SerializeField] float maxSpeed = 300f;
     [SerializeField] float maxDistance = 10f;
+    [SerializeField] float holdItemDistance;
     float currentSpeed = 0f;
     float currentDist = 0f;
 
@@ -57,12 +58,13 @@ public class TempPlayerInteract : MonoBehaviour
     }
     void FixedUpdate()
     {
-        if (currentlyPickedUpObject != null)
-        {
+        if (currentlyPickedUpObject != null) {
+            
             currentDist = Vector3.Distance(pickupParent.position, pickupRB.position);
             currentSpeed = Mathf.SmoothStep(minSpeed, maxSpeed, currentDist / maxDistance);
             currentSpeed *= 10;
             currentSpeed *= Time.fixedDeltaTime;
+            pickupParent.position = cam.transform.position + cam.transform.forward * holdItemDistance;
 
             Vector3 direction = pickupParent.position - pickupRB.position;
             pickupRB.velocity = direction.normalized * currentSpeed;
