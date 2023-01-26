@@ -5,6 +5,10 @@ using UnityEngine;
 public class Door : Interactable
 {
     public override void Interact() {
-        gameObject.active = false;
+        if(isActiveAndEnabled)
+            gameObject.active = false;
+        else {
+            gameObject.active = true;
+        }
     }
 }
