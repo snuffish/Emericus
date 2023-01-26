@@ -24,6 +24,8 @@ public class Door : Interactable
             isOpen = true;
             animator.SetTrigger("OpenDoor");
         }
+        
+        animator.SetBool("IsOpen", isOpen);
 
     }
 }
