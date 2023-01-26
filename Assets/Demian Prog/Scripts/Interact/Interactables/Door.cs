@@ -15,17 +15,7 @@ public class Door : Interactable
     }
     public override void Interact() {
 
-        if (isOpen) {
-            isOpen = false;
-            animator.SetTrigger("CloseDoor");
-        }
-
-        else {
-            isOpen = true;
-            animator.SetTrigger("OpenDoor");
-        }
-        
-        animator.SetBool("IsOpen", isOpen);
+        animator.SetTrigger("Interact");
 
     }
 }
