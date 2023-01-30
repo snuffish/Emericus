@@ -19,7 +19,7 @@ public class MovementPlayer : MonoBehaviour
     [SerializeField] private float moveSpeed;
     private Vector2 deltaMovement;
     [SerializeField] private float groundDrag;
-    [SerializeField] private float airDrag;
+    [SerializeField] private float airDragMulyiplier;
 
     [Header("Ground Check")] 
     [SerializeField] private bool isGrounded;
@@ -50,7 +50,7 @@ public class MovementPlayer : MonoBehaviour
         if (isGrounded)
             rb.drag = groundDrag;
         else {
-            rb.drag = airDrag;
+            rb.drag = groundDrag * airDragMulyiplier;
             
             if(rb.velocity.y < 0) 
                 rb.AddForce(-transform.up * fallForce * Time.deltaTime);
