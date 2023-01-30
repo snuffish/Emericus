@@ -8,7 +8,7 @@ public class PhysicsObject : Interactable
     public float breakForce = 35f;
     [SerializeField] float throwForce = 10;
     [SerializeField] float damageModifier = 1;
-    [SerializeField] public TempPlayerInteract tempPlayerInteract;
+    [SerializeField] public PlayerInteract playerInteract;
     [HideInInspector] public bool pickedUp = false;
     Rigidbody rBody;
 
@@ -22,7 +22,7 @@ public class PhysicsObject : Interactable
         else
         {
             pickedUp = false;
-            tempPlayerInteract.BreakConnection();
+            playerInteract.BreakConnection();
         }
     }
     void Update()
