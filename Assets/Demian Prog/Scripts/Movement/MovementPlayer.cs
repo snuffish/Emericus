@@ -14,8 +14,6 @@ public class MovementPlayer : MonoBehaviour
     [SerializeField] private Rigidbody rb;
     [SerializeField] private Transform orientation;
     private Vector3 direction;
-    [SerializeField] private float riseGravity;
-    [SerializeField] private float fallMultiplier;
 
     [Header("movement")]
     [SerializeField] private float moveSpeed;
@@ -31,6 +29,7 @@ public class MovementPlayer : MonoBehaviour
 
     [Header("Jump")] 
     [SerializeField] private float jumpForce;
+    [SerializeField] private float fallForce;
     [SerializeField] private float jumpCooldown;
     [SerializeField] private float airmultiplier;
     private bool canJump;
@@ -53,10 +52,8 @@ public class MovementPlayer : MonoBehaviour
         else {
             rb.drag = airDrag;
             
-            /*if(rb.velocity.y > 0)
-                rb.AddForce(-transform.up * riseGravity * Time.deltaTime);*/
             if(rb.velocity.y < 0) 
-                rb.AddForce(-transform.up * fallMultiplier * Time.deltaTime);
+                rb.AddForce(-transform.up * fallForce * Time.deltaTime);
             
         } 
             
