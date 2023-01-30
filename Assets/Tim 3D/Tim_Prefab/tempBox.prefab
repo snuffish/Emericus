@@ -11,7 +11,8 @@ GameObject:
   - component: {fileID: 2647946802927620125}
   - component: {fileID: 1373806807426719672}
   - component: {fileID: 3815755369968184178}
-  m_Layer: 0
+  - component: {fileID: -7334262594796507437}
+  m_Layer: 8
   m_Name: tempBox
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -83,3 +84,17 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &-7334262594796507437
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3455586078672652967}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -7759331768739107841, guid: 02924de08d4e83d49aeb2560061152b4, type: 3}
