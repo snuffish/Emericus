@@ -425,16 +425,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cam: {fileID: 2796130268531045147}
-  reachDistance: 6
+  reachDistance: 10
   layerMask:
     serializedVersion: 2
     m_Bits: 256
+  rotationSpeed: 100
+  lookObject: {fileID: 0}
+  selectColor: {r: 1, g: 0.9437372, b: 0.5330188, a: 0.28235295}
   pickupParent: {fileID: 4439541501739204245}
   currentlyPickedUpObject: {fileID: 0}
-  lookObject: {fileID: 0}
-  rotationSpeed: 100
   minSpeed: 0
-  maxSpeed: 300
+  maxSpeed: 600
   maxDistance: 10
   holdItemDistance: 5.9
 --- !u!1 &2796130269412132019
