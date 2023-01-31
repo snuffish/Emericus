@@ -11,6 +11,8 @@ GameObject:
   - component: {fileID: 956023293310767955}
   - component: {fileID: 4245664696340225270}
   - component: {fileID: 2093987743357364284}
+  - component: {fileID: 5337396798797637634}
+  - component: {fileID: 3808311038526757399}
   m_Layer: 0
   m_Name: tabletemp
   m_TagString: Untagged
@@ -83,3 +85,29 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &5337396798797637634
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 436755370903980521}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.016217358, y: 0.001, z: 0.0100000035}
+  m_Center: {x: 0, y: -0.0002, z: 0}
+--- !u!65 &3808311038526757399
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 436755370903980521}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.016217358, y: 0.0059868675, z: 0.0100000035}
+  m_Center: {x: 0, y: -0.0027934266, z: 0}
