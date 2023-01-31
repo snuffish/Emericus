@@ -19,8 +19,18 @@ public class Door : Interactable
     }
     public override void Interact() {
 
-        animator.SetTrigger("Interact");
-        audioSource.Play();
+    }
 
+    void Update() {
+        if (isOpen) {
+            animator.SetBool("IsOpen", true);
+        }
+        else {
+            animator.SetBool("IsOpen", false);
+        }
+    }
+
+    public void SetDoorOpen(bool openornot) {
+        isOpen = openornot;
     }
 }
