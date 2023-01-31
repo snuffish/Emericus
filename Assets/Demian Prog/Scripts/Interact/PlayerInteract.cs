@@ -10,10 +10,10 @@ public class PlayerInteract : MonoBehaviour
     [SerializeField] LayerMask layerMask;
 
     [SerializeField] Transform pickupParent = null;
-    [HideInInspector] public GameObject currentlyPickedUpObject;
-    [HideInInspector] Rigidbody pickupRB;
-    [HideInInspector] PhysicsObject physicsObject;
-    [HideInInspector] public GameObject lookObject;
+    public GameObject currentlyPickedUpObject;
+    Rigidbody pickupRB;
+    PhysicsObject physicsObject;
+    public GameObject lookObject;
 
     Quaternion lookRot;
     public float rotationSpeed = 100f;
