@@ -5,20 +5,29 @@ using UnityEngine.LowLevel;
 
 public class PlayerInteract : MonoBehaviour
 {
+    
+    [Header("Camera")]
     [SerializeField] Camera cam;
     [SerializeField] float reachDistance;
     [SerializeField] LayerMask layerMask;
 
+    
+    [Header("Rotation")]
+    Quaternion lookRot;
+    public float rotationSpeed = 100f;
+    
+    [Header("Selection")]
+    public GameObject lookObject;
+    [SerializeField] private Color selectColor;
+    
+    [Header("Pick up")]
     [SerializeField] Transform pickupParent = null;
     public GameObject currentlyPickedUpObject;
     Rigidbody pickupRB;
     PhysicsObject physicsObject;
-    public GameObject lookObject;
-
-    Quaternion lookRot;
-    public float rotationSpeed = 100f;
 
 
+    [Header("Hold Item")]
     [SerializeField] float minSpeed = 0;
     [SerializeField] float maxSpeed = 300f;
     [SerializeField] float maxDistance = 10f;
@@ -36,26 +45,46 @@ public class PlayerInteract : MonoBehaviour
     void Update()
     {
         Ray ray = new Ray(cam.transform.position, cam.transform.forward);
-        Debug.DrawRay(ray.origin, ray.direction * reachDistance);
+        Debug.DrawRay(ray.origin, ray.direction * reachDistance, Color.red);
 
-        if (Input.GetButtonDown("Interact"))
+        if (lookObject != null) {
+            Renderer selectionRenderer = lookObject.GetComponent<Renderer>();
+            selectionRenderer.material.color = Color.white;
+            lookObject = null;
+        }
+
+        
+        
+        RaycastHit hitInfo;
+        if (Physics.Raycast(ray, out hitInfo, reachDistance, layerMask))
         {
-
-            RaycastHit hitInfo;
-            if (Physics.Raycast(ray, out hitInfo, reachDistance, layerMask))
-            {
-                lookObject = hitInfo.collider.transform.root.gameObject;
-                if (hitInfo.collider.GetComponent<PhysicsObject>() != null || currentlyPickedUpObject != null)
-                {
+            lookObject = hitInfo.collider.gameObject;
+            if (Input.GetButtonDown("Interact")) {
+                if (hitInfo.collider.GetComponent<PhysicsObject>() != null || currentlyPickedUpObject != null) {
                     if (currentlyPickedUpObject == null && lookObject != null) PickUpObject();
-
                 }
                 else BreakConnection();
                 if (hitInfo.collider.GetComponent<Interactable>() != null) hitInfo.collider.GetComponent<Interactable>().Interact();
                 /*Debug.Log(hitInfo.collider.GetComponent<Interactable>().promptMessage);*/
             }
-            else lookObject = null;
+            
+            Renderer selectionRenderer = lookObject.GetComponent<Renderer>();
+            if (selectionRenderer != null) {
+                selectionRenderer.material.color = selectColor;
+            }
         }
+        else {
+            lookObject = null;
+            
+            if (Input.GetButtonDown("Interact") && currentlyPickedUpObject != null) {
+                BreakConnection();
+            }
+        }
+        
+        
+        
+        
+        
     }
     void FixedUpdate()
     {
