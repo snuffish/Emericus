@@ -405,9 +405,9 @@ MonoBehaviour:
   airDragMulyiplier: 0.35
   isGrounded: 1
   playerHeaight: 4
-  whatIsGround:
+  jumpableLayers:
     serializedVersion: 2
-    m_Bits: 2432
+    m_Bits: 3456
   jumpForce: 21
   fallForce: 3250
   jumpCooldown: 1.25
@@ -426,9 +426,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cam: {fileID: 2796130268531045147}
   reachDistance: 12
-  layerMask:
+  interactLayers:
     serializedVersion: 2
-    m_Bits: 256
+    m_Bits: 2304
   rotationSpeed: 100
   lookObject: {fileID: 0}
   selectColor: {r: 1, g: 0.9437372, b: 0.5330188, a: 0.28235295}
