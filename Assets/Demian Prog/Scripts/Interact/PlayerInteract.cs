@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.LowLevel;
+using UnityEngine.UI;
 
 public class PlayerInteract : MonoBehaviour
 {
@@ -18,6 +19,7 @@ public class PlayerInteract : MonoBehaviour
     [Header("Selection")]
     public GameObject lookObject;
     [SerializeField] Color selectColor;
+    [SerializeField] private Image selectedCrosshair;
 
     [Header("Pick up")]
     [SerializeField] Transform pickupParent = null;
@@ -51,6 +53,7 @@ public class PlayerInteract : MonoBehaviour
         {
             Renderer selectionRenderer = lookObject.GetComponent<Renderer>();
             selectionRenderer.material.color = Color.white;
+            selectedCrosshair.enabled = false;
             lookObject = null;
         }
 
@@ -73,6 +76,7 @@ public class PlayerInteract : MonoBehaviour
             if (selectionRenderer != null)
             {
                 selectionRenderer.material.color = selectColor;
+                selectedCrosshair.enabled = true;
             }
         }
         else
