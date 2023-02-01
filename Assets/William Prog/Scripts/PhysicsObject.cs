@@ -5,7 +5,7 @@ using UnityEngine;
 public class PhysicsObject : Interactable
 {
     float waitOnPickup = 0.2f;
-    public float breakForce = 35f;
+    [SerializeField, Tooltip("Amount of Force before an object is dropped")] float breakForce = 35f;
     [SerializeField] float throwForce = 10;
     [SerializeField] float damageModifier = 1;
     [SerializeField] public PlayerInteract playerInteract;

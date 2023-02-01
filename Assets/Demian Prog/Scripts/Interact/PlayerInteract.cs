@@ -2,14 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.LowLevel;
+using UnityEngine.UI;
 
 public class PlayerInteract : MonoBehaviour
 {
 
     [Header("Camera")]
-    [SerializeField] Camera cam;
-    [SerializeField] float reachDistance;
-    [SerializeField] LayerMask layerMask;
+    [SerializeField, Tooltip("Insert Player Cam")] Camera cam;
+    [SerializeField, Tooltip("Distance you can reach objects")] float reachDistance;
+    [SerializeField, Tooltip("Which Layer Interactable Objects lay in")] LayerMask layerMask;
 
     [Header("Rotation")]
     Quaternion lookRot;
@@ -17,21 +18,22 @@ public class PlayerInteract : MonoBehaviour
 
     [Header("Selection")]
     public GameObject lookObject;
-    [SerializeField] Color selectColor;
+    [SerializeField, Tooltip("Color of Object when selected")] Color selectColor;
+    [SerializeField, Tooltip("Insert Select Crosshair Sprite")] Image selectedCrosshair;
 
     [Header("Pick up")]
-    [SerializeField] Transform pickupParent = null;
+    [SerializeField, Tooltip("Transform that pickup objects try to be close to")] Transform pickupParent = null;
     public GameObject currentlyPickedUpObject;
     Rigidbody pickupRB;
     PhysicsObject physicsObject;
 
 
     [Header("Hold Item")]
-    [SerializeField] float minSpeed = 0;
-    [SerializeField] float maxSpeed = 300f;
-    [SerializeField] float maxDistance = 10f;
-    [SerializeField] float holdItemDistance;
-    [SerializeField] float maxHoldItemDistance;
+    [SerializeField, Tooltip("Min Step Speed when moving picked up Object")] float minSpeed = 0;
+    [SerializeField,Tooltip("Max Step Speed")] float maxSpeed = 300f;
+    [SerializeField,Tooltip("Max Distance object is allowed to move in one step")] float maxDistance = 10f;
+    [SerializeField,Tooltip("Distance Item is held from the player")] float holdItemDistance;
+    [SerializeField,Tooltip("Distance Allowed before being dropped")] float maxHoldItemDistance;
     float currentSpeed = 0f;
     float currentDist = 0f;
 
@@ -51,6 +53,7 @@ public class PlayerInteract : MonoBehaviour
         {
             Renderer selectionRenderer = lookObject.GetComponent<Renderer>();
             selectionRenderer.material.color = Color.white;
+            selectedCrosshair.enabled = false;
             lookObject = null;
         }
 
@@ -73,6 +76,7 @@ public class PlayerInteract : MonoBehaviour
             if (selectionRenderer != null)
             {
                 selectionRenderer.material.color = selectColor;
+                selectedCrosshair.enabled = true;
             }
         }
         else
