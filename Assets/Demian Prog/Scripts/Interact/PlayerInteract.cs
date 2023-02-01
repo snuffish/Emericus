@@ -10,7 +10,7 @@ public class PlayerInteract : MonoBehaviour
     [Header("Camera")]
     [SerializeField, Tooltip("Insert Player Cam")] Camera cam;
     [SerializeField, Tooltip("Distance you can reach objects")] float reachDistance;
-    [SerializeField, Tooltip("Which Layer Interactable Objects lay in")] LayerMask layerMask;
+    [SerializeField, Tooltip("Which Layer Interactable Objects lay in")] LayerMask interactLayers;
 
     [Header("Rotation")]
     Quaternion lookRot;
@@ -59,7 +59,7 @@ public class PlayerInteract : MonoBehaviour
 
 
         RaycastHit hitInfo;
-        if (Physics.Raycast(ray, out hitInfo, reachDistance, layerMask))
+        if (Physics.Raycast(ray, out hitInfo, reachDistance, interactLayers))
         {
             lookObject = hitInfo.collider.gameObject;
             if (Input.GetButtonDown("Interact"))
