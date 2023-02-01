@@ -430,6 +430,8 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 2304
   rotationSpeed: 100
+  startAngularDrag: 0.05
+  pickUpAngularDrag: 5
   lookObject: {fileID: 0}
   selectColor: {r: 1, g: 0.9437372, b: 0.5330188, a: 0.28235295}
   selectedCrosshair: {fileID: 0}
@@ -440,6 +442,7 @@ MonoBehaviour:
   maxDistance: 10
   holdItemDistance: 11
   maxHoldItemDistance: 13
+  rotationSens: {x: 10, y: 10}
 --- !u!1 &2796130269412132019
 GameObject:
   m_ObjectHideFlags: 0

@@ -36,6 +36,8 @@ public class PlayerInteract : MonoBehaviour
     [SerializeField,Tooltip("Max Distance object is allowed to move in one step")] float maxDistance = 10f;
     [SerializeField,Tooltip("Distance Item is held from the player")] float holdItemDistance;
     [SerializeField,Tooltip("Distance Allowed before being dropped")] float maxHoldItemDistance;
+    [SerializeField, Tooltip("Rotation Speed")] Vector2 rotationSens;
+    Vector2 rotation;
     float currentSpeed = 0f;
     float currentDist = 0f;
 
@@ -110,6 +112,22 @@ public class PlayerInteract : MonoBehaviour
             //Vector3 torqueDirection = (Quaternion.Slerp(pickupRB.rotation, lookRot, rotationSpeed * Time.deltaTime) * Vector3.forward).normalized;
             //Vector3 torque = torqueDirection * pickupRB.mass * rotationSpeed * Time.deltaTime;
             //pickupRB.AddTorque(torque, ForceMode.Force);
+            
+            if (Input.GetButton("RightClick")) {
+                
+                //  Get the mouse input
+                Vector2 mouseInput;
+                mouseInput.x = Input.GetAxisRaw("Mouse X") * rotationSens.x;
+                mouseInput.y = Input.GetAxisRaw("Mouse Y") * rotationSens.y;
+                
+                rotation.y -= mouseInput.x;
+                rotation.x -= mouseInput.y;
+                
+            
+            
+                //  Rotate the camera and player
+                pickupRB.rotation = Quaternion.Euler(rotation.x, rotation.y, 0);
+            }
         }
     }
 
@@ -127,6 +145,7 @@ public class PlayerInteract : MonoBehaviour
         pickupRB.angularDrag = pickUpAngularDrag;
         physicsObject.playerInteract = this;
         StartCoroutine(physicsObject.PickUp());
+        rotation = pickupRB.rotation.eulerAngles;
     }
     public void BreakConnection()
     {
