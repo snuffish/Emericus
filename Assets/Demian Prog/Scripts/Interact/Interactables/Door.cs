@@ -18,7 +18,7 @@ public class Door : Interactable
         audioSource.clip = audioClip;
     }
     public override void Interact() {
-
+        isOpen = !isOpen;
     }
 
     void Update() {

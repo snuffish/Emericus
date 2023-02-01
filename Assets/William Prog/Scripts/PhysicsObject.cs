@@ -5,7 +5,7 @@ using UnityEngine;
 public class PhysicsObject : Interactable
 {
     float waitOnPickup = 0.2f;
-    public float breakForce = 35f;
+    [SerializeField, Tooltip("Amount of Force before an object is dropped")] float breakForce = 35f;
     [SerializeField] float throwForce = 10;
     [SerializeField] float damageModifier = 1;
     [SerializeField] public PlayerInteract playerInteract;
@@ -15,6 +15,7 @@ public class PhysicsObject : Interactable
     void Start()
     {
         rBody = GetComponent<Rigidbody>();
+        playerInteract = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerInteract>();
     }
     public override void Interact()
     {
@@ -25,8 +26,15 @@ public class PhysicsObject : Interactable
             playerInteract.BreakConnection();
         }
     }
-    void Update()
+    void OnCollisionEnter(Collision collision)
     {
+        if (pickedUp)
+        {
+            if (collision.relativeVelocity.magnitude > breakForce)
+            {
+                playerInteract.BreakConnection();
+            }
+        }
     }
 
     public IEnumerator PickUp()
