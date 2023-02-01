@@ -15,6 +15,8 @@ public class PlayerInteract : MonoBehaviour
     [Header("Rotation")]
     Quaternion lookRot;
     public float rotationSpeed = 100f;
+    [SerializeField] float startAngularDrag = 0.05f;
+    [SerializeField] float pickUpAngularDrag = 5f;
 
     [Header("Selection")]
     public GameObject lookObject;
@@ -34,6 +36,8 @@ public class PlayerInteract : MonoBehaviour
     [SerializeField,Tooltip("Max Distance object is allowed to move in one step")] float maxDistance = 10f;
     [SerializeField,Tooltip("Distance Item is held from the player")] float holdItemDistance;
     [SerializeField,Tooltip("Distance Allowed before being dropped")] float maxHoldItemDistance;
+    [SerializeField, Tooltip("Rotation Speed")] Vector2 rotationSens;
+    Vector2 rotation;
     float currentSpeed = 0f;
     float currentDist = 0f;
 
@@ -94,16 +98,36 @@ public class PlayerInteract : MonoBehaviour
         {
             currentDist = Vector3.Distance(pickupParent.position, pickupRB.position);
             currentSpeed = Mathf.SmoothStep(minSpeed, maxSpeed, currentDist / maxDistance);
-            currentSpeed *= 10;
+            currentSpeed *= 5;
             currentSpeed *= Time.fixedDeltaTime;
             pickupParent.position = cam.transform.position + cam.transform.forward * holdItemDistance;
 
             Vector3 direction = pickupParent.position - pickupRB.position;
             pickupRB.velocity = direction.normalized * currentSpeed;
+            //pickupRB.AddForce(direction.normalized * currentSpeed, ForceMode.Force);
             //Rotation
-            lookRot = Quaternion.LookRotation(cam.transform.position - pickupRB.position);
-            lookRot = Quaternion.Slerp(cam.transform.rotation, lookRot, rotationSpeed * Time.fixedDeltaTime);
-            pickupRB.MoveRotation(lookRot);
+            //lookRot = Quaternion.Slerp(cam.transform.rotation, lookRot, rotationSpeed * Time.fixedDeltaTime);
+            //lookRot = Quaternion.LookRotation(cam.transform.position - pickupRB.position);
+            //pickupRB.MoveRotation(lookRot);
+            //Vector3 torqueDirection = (Quaternion.Slerp(pickupRB.rotation, lookRot, rotationSpeed * Time.deltaTime) * Vector3.forward).normalized;
+            //Vector3 torque = torqueDirection * pickupRB.mass * rotationSpeed * Time.deltaTime;
+            //pickupRB.AddTorque(torque, ForceMode.Force);
+            
+            if (Input.GetButton("RightClick")) {
+                
+                //  Get the mouse input
+                Vector2 mouseInput;
+                mouseInput.x = Input.GetAxisRaw("Mouse X") * rotationSens.x;
+                mouseInput.y = Input.GetAxisRaw("Mouse Y") * rotationSens.y;
+                
+                rotation.y -= mouseInput.x;
+                rotation.x -= mouseInput.y;
+                
+            
+            
+                //  Rotate the camera and player
+                pickupRB.rotation = Quaternion.Euler(rotation.x, rotation.y, 0);
+            }
         }
     }
 
@@ -117,15 +141,19 @@ public class PlayerInteract : MonoBehaviour
         physicsObject = lookObject.GetComponentInChildren<PhysicsObject>();
         currentlyPickedUpObject = lookObject;
         pickupRB = currentlyPickedUpObject.GetComponent<Rigidbody>();
-        pickupRB.constraints = RigidbodyConstraints.FreezeRotation;
+        // pickupRB.constraints = RigidbodyConstraints.FreezeRotation;
+        pickupRB.angularDrag = pickUpAngularDrag;
         physicsObject.playerInteract = this;
         StartCoroutine(physicsObject.PickUp());
+        rotation = pickupRB.rotation.eulerAngles;
     }
     public void BreakConnection()
     {
         if (pickupRB != null)
         {
             pickupRB.constraints = RigidbodyConstraints.None;
+            pickupRB.angularDrag = startAngularDrag;
+
             currentlyPickedUpObject = null;
             physicsObject.pickedUp = false;
             currentDist = 0;
