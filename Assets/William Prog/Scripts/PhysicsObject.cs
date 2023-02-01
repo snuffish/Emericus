@@ -15,6 +15,7 @@ public class PhysicsObject : Interactable
     void Start()
     {
         rBody = GetComponent<Rigidbody>();
+        playerInteract = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerInteract>();
     }
     public override void Interact()
     {
@@ -25,8 +26,15 @@ public class PhysicsObject : Interactable
             playerInteract.BreakConnection();
         }
     }
-    void Update()
+    void OnCollisionEnter(Collision collision)
     {
+        if (pickedUp)
+        {
+            if (collision.relativeVelocity.magnitude > breakForce)
+            {
+                playerInteract.BreakConnection();
+            }
+        }
     }
 
     public IEnumerator PickUp()
