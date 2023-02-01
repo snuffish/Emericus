@@ -24,7 +24,7 @@ public class MovementPlayer : MonoBehaviour
     [Header("Ground Check")] 
     [SerializeField] private bool isGrounded;
     [SerializeField] private float playerHeaight;
-    [SerializeField] private LayerMask whatIsGround;
+    [SerializeField] private LayerMask jumpableLayers;
     
 
     [Header("Jump")] 
@@ -45,7 +45,7 @@ public class MovementPlayer : MonoBehaviour
     // Update is called once per frame
     void Update() {
 
-        isGrounded = Physics.Raycast(transform.position, Vector3.down, playerHeaight * 0.5f + 0.1f, whatIsGround);
+        isGrounded = Physics.Raycast(transform.position, Vector3.down, playerHeaight * 0.5f + 0.1f, jumpableLayers);
 
         if (isGrounded)
             rb.drag = groundDrag;
