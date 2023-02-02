@@ -17,7 +17,7 @@ public class CameraPlayer : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
+        currentSensitivty = Vector2.one;
         //  Lock the cursor and make it invisible
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
@@ -32,8 +32,8 @@ public class CameraPlayer : MonoBehaviour
         {
             //  Get the mouse input
             Vector2 mouseInput;
-            mouseInput.x = Input.GetAxisRaw("Mouse X") * Time.deltaTime * currentSensitivty.x;
-            mouseInput.y = Input.GetAxisRaw("Mouse Y") * Time.deltaTime * currentSensitivty.y;
+            mouseInput.x = Input.GetAxisRaw("Mouse X") * Time.deltaTime *(mouseSens.x* currentSensitivty.x);
+            mouseInput.y = Input.GetAxisRaw("Mouse Y") * Time.deltaTime * (mouseSens.y*currentSensitivty.y);
 
             rotation.y += mouseInput.x;
 
