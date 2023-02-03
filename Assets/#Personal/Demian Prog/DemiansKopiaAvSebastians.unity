@@ -9982,7 +9982,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e78a3a2ec35de214eac55e69c3aaf186, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  promptMessage: 
   connectedTo: {fileID: 1438604373}
   pressureLayers:
     serializedVersion: 2
@@ -10852,6 +10851,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1853859878248739100, guid: 5584cd475977f744883db8a062ecfaa1,
+        type: 3}
+      propertyPath: selectedCrosshair
+      value: 
+      objectReference: {fileID: 249165229}
     - target: {fileID: 2478910837443334847, guid: 5584cd475977f744883db8a062ecfaa1,
         type: 3}
       propertyPath: m_StaticEditorFlags
@@ -10879,8 +10883,43 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2796130269172134937, guid: 5584cd475977f744883db8a062ecfaa1,
         type: 3}
+      propertyPath: defaultColor.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2796130269172134937, guid: 5584cd475977f744883db8a062ecfaa1,
+        type: 3}
+      propertyPath: defaultColor.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2796130269172134937, guid: 5584cd475977f744883db8a062ecfaa1,
+        type: 3}
+      propertyPath: defaultColor.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2796130269172134937, guid: 5584cd475977f744883db8a062ecfaa1,
+        type: 3}
       propertyPath: layerMask.m_Bits
       value: 2304
+      objectReference: {fileID: 0}
+    - target: {fileID: 2796130269172134937, guid: 5584cd475977f744883db8a062ecfaa1,
+        type: 3}
+      propertyPath: selectionColor.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2796130269172134937, guid: 5584cd475977f744883db8a062ecfaa1,
+        type: 3}
+      propertyPath: selectionColor.b
+      value: 0.9386792
+      objectReference: {fileID: 0}
+    - target: {fileID: 2796130269172134937, guid: 5584cd475977f744883db8a062ecfaa1,
+        type: 3}
+      propertyPath: selectionColor.g
+      value: 0.94128865
+      objectReference: {fileID: 0}
+    - target: {fileID: 2796130269172134937, guid: 5584cd475977f744883db8a062ecfaa1,
+        type: 3}
+      propertyPath: selectionColor.r
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2796130269172134937, guid: 5584cd475977f744883db8a062ecfaa1,
         type: 3}

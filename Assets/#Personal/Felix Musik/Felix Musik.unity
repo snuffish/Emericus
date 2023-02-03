@@ -471,7 +471,7 @@ MonoBehaviour:
   airDragMulyiplier: 0
   isGrounded: 0
   playerHeaight: 0
-  whatIsGround:
+  jumpableLayers:
     serializedVersion: 2
     m_Bits: 0
   jumpForce: 0
@@ -1343,7 +1343,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 0}
   audioManager: {fileID: 0}
-  audioSettings: []
+  audioSettings:
+  - enter: 0
+    sEmitter: {fileID: 0}
+    paramName: 
+    paramValue: 0
+    ignoreSeek: 0
 --- !u!1 &2144180226
 GameObject:
   m_ObjectHideFlags: 0

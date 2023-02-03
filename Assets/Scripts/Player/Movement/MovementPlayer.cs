@@ -52,7 +52,7 @@ public class MovementPlayer : MonoBehaviour
         else {
             rb.drag = groundDrag * airDragMulyiplier;
             
-            if(rb.velocity.y < 0) 
+            if(rb.velocity.y < 0)
                 rb.AddForce(-transform.up * fallForce * Time.deltaTime);
             
         } 
