@@ -58,9 +58,9 @@ public class PlayerInteract : MonoBehaviour
             pickupParent.position = playerLook.Cam.transform.position + playerLook.Cam.transform.forward * holdItemDistance;
 
             Vector3 direction = pickupParent.position - pickupRB.position;
-            pickupRB.velocity = direction.normalized * currentSpeed;
+            //pickupRB.velocity = direction.normalized * currentSpeed;
 
-            //pickupRB.AddForce(direction.normalized * currentSpeed, ForceMode.Force);
+            pickupRB.AddForce(direction.normalized * currentSpeed, ForceMode.Force);
             //Rotation
             //lookRot = Quaternion.Slerp(cam.transform.rotation, lookRot, rotationSpeed * Time.fixedDeltaTime);
             //lookRot = Quaternion.LookRotation(cam.transform.position - pickupRB.position);
