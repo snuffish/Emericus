@@ -7,7 +7,6 @@ public class CameraPlayer : MonoBehaviour
 
     [SerializeField] Vector2 mouseSens;
     [SerializeField] Transform orientation;
-    [SerializeField] GameObject optionsPanel;
     Vector2 rotation;
 
 
@@ -32,7 +31,6 @@ public class CameraPlayer : MonoBehaviour
             mouseInput.y = Input.GetAxisRaw("Mouse Y") * Time.deltaTime * (mouseSens.y);
 
             rotation.y += mouseInput.x;
-
             rotation.x -= mouseInput.y;
             rotation.x = Mathf.Clamp(rotation.x, -90f, 90f);
 
