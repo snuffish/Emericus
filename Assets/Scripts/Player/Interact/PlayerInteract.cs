@@ -33,13 +33,17 @@ public class PlayerInteract : MonoBehaviour
     [Header("Hold Item")]
     [SerializeField, Tooltip("Min Step Speed when moving picked up Object")] float minSpeed = 0;
     [SerializeField,Tooltip("Max Step Speed")] float maxSpeed = 300f;
+    [SerializeField,Tooltip("ScrollSpeed")] float scrollSpeed = 5f;
     [SerializeField,Tooltip("Max Distance object is allowed to move in one step")] float maxDistance = 10f;
-    [SerializeField,Tooltip("Distance Item is held from the player")] float holdItemDistance;
-    [SerializeField,Tooltip("Distance Allowed before being dropped")] float maxHoldItemDistance;
+    [SerializeField,Tooltip("Distance Item is held from the player")] float holdItemDistance = 4;
+    [SerializeField,Tooltip("Distance when item should be dropped")] float dropHeldItemDistance = 8;
+    [SerializeField,Tooltip("Min Allowed Scroll distance")] float minScrollDistance = 2;
+    [SerializeField,Tooltip("Max Allowed Hold Distance")] float maxScrollDistance = 6;
     [SerializeField, Tooltip("Rotation Speed")] Vector2 rotationSens;
     Vector2 rotation;
     float currentSpeed = 0f;
     float currentDist = 0f;
+    float currentScroll = 0f;
 
     // Start is called before the first frame update
     void Start()
@@ -122,19 +126,19 @@ public class PlayerInteract : MonoBehaviour
                 
                 rotation.y -= mouseInput.x;
                 rotation.x -= mouseInput.y;
-                
-            
             
                 //  Rotate the camera and player
                 pickupRB.rotation = Quaternion.Euler(rotation.x, rotation.y, 0);
             }
+            currentScroll = Input.GetAxis("Mouse ScrollWheel");
+            holdItemDistance = Mathf.Clamp(holdItemDistance + currentScroll * scrollSpeed, minScrollDistance, maxScrollDistance);
         }
     }
 
     void CheckForConnection()
     {
         if (currentlyPickedUpObject == null) BreakConnection();
-        else if (Vector3.Distance(transform.position, currentlyPickedUpObject.transform.position) > maxHoldItemDistance) BreakConnection();
+        else if (Vector3.Distance(transform.position, currentlyPickedUpObject.transform.position) > dropHeldItemDistance) BreakConnection();
     }
     public void PickUpObject()
     {
@@ -143,6 +147,7 @@ public class PlayerInteract : MonoBehaviour
         pickupRB = currentlyPickedUpObject.GetComponent<Rigidbody>();
         // pickupRB.constraints = RigidbodyConstraints.FreezeRotation;
         pickupRB.angularDrag = pickUpAngularDrag;
+        holdItemDistance = Vector3.Distance(cam.transform.position, pickupRB.transform.position);
         physicsObject.playerInteract = this;
         StartCoroutine(physicsObject.PickUp());
         rotation = pickupRB.rotation.eulerAngles;
