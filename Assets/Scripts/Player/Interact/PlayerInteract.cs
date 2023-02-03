@@ -98,6 +98,7 @@ public class PlayerInteract : MonoBehaviour
         physicsObject = playerLook.LookObject.GetComponentInChildren<PhysicsObject>();
         currentlyPickedUpObject = playerLook.LookObject;
         pickupRB = currentlyPickedUpObject.GetComponent<Rigidbody>();
+        pickupRB.useGravity = false;
         /*pickupRB.constraints = RigidbodyConstraints.FreezeRotation;*/
         pickupRB.angularDrag = pickUpAngularDrag;
         holdItemDistance = Vector3.Distance(playerLook.Cam.transform.position, pickupRB.transform.position);
@@ -109,6 +110,7 @@ public class PlayerInteract : MonoBehaviour
     {
         if (pickupRB != null)
         {
+            pickupRB.useGravity = true;
             pickupRB.constraints = RigidbodyConstraints.None;
             pickupRB.angularDrag = startAngularDrag;
 
