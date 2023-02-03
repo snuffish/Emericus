@@ -2,9 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Lever : Connector
+public class Connector : Interactable
 {
-    public override void Interact() {
+    [SerializeField] protected List<Interactable> connectedToList;
+
+    public override void Interact()
+    {
         foreach (Interactable interactable in connectedToList)
         {
             interactable.Interact();
