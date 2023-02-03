@@ -47,6 +47,7 @@ public class PlayerLook : MonoBehaviour
                 {
                     if (playerInteract.currentlyPickedUpObject == null && LookObject != null) playerInteract.PickUpObject();
                 }
+                else playerInteract.BreakConnection();
                 
                 if (hitInfo.collider.GetComponent<Interactable>() != null) hitInfo.collider.GetComponent<Interactable>().Interact();
             }
