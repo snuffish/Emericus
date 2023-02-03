@@ -301,6 +301,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mouseSens: {x: 300, y: 300}
   orientation: {fileID: 2796130269131383242}
+  optionsPanel: {fileID: 0}
 --- !u!1 &2796130269131383243
 GameObject:
   m_ObjectHideFlags: 0
@@ -345,6 +346,7 @@ GameObject:
   - component: {fileID: 2796130269172134939}
   - component: {fileID: 2796130269172134936}
   - component: {fileID: 2796130269172134937}
+  - component: {fileID: 1853859878248739100}
   m_Layer: 9
   m_Name: Player
   m_TagString: Untagged
@@ -424,25 +426,40 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 98442e0f0cba884479822e6171c0eda4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cam: {fileID: 2796130268531045147}
-  reachDistance: 12
-  interactLayers:
-    serializedVersion: 2
-    m_Bits: 2304
-  rotationSpeed: 100
   startAngularDrag: 0.05
   pickUpAngularDrag: 5
-  lookObject: {fileID: 0}
-  selectColor: {r: 1, g: 0.9437372, b: 0.5330188, a: 0.28235295}
-  selectedCrosshair: {fileID: 0}
   pickupParent: {fileID: 4439541501739204245}
   currentlyPickedUpObject: {fileID: 0}
   minSpeed: 0
   maxSpeed: 600
-  maxDistance: 10
+  scrollSpeed: 5
+  maxDistance: 15
   holdItemDistance: 11
-  maxHoldItemDistance: 13
-  rotationSens: {x: 10, y: 10}
+  dropHeldItemDistance: 12
+  minScrollDistance: 2
+  maxScrollDistance: 6
+  rotationSens: {x: 3, y: 3}
+--- !u!114 &1853859878248739100
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2796130269172134919}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 631ca0b8016e0934ab554192bc68c280, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Cam: {fileID: 2796130268531045147}
+  reachDistance: 8.5
+  interactLayers:
+    serializedVersion: 2
+    m_Bits: 2304
+  LookObject: {fileID: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 0}
+  selectionColor: {r: 0.9923782, g: 0.9198113, b: 1, a: 0}
+  selectedCrosshair: {fileID: 0}
 --- !u!1 &2796130269412132019
 GameObject:
   m_ObjectHideFlags: 0
