@@ -42,11 +42,13 @@ public class PlayerLook : MonoBehaviour
             LookObject = hitInfo.collider.gameObject;
             if (Input.GetButtonDown("Interact"))
             {
+                if (playerInteract.currentlyPickedUpObject != null) playerInteract.BreakConnection();
                 if (hitInfo.collider.GetComponent<PhysicsObject>() != null || playerInteract.currentlyPickedUpObject != null)
                 {
                     if (playerInteract.currentlyPickedUpObject == null && LookObject != null) playerInteract.PickUpObject();
                 }
                 else playerInteract.BreakConnection();
+                
                 if (hitInfo.collider.GetComponent<Interactable>() != null) hitInfo.collider.GetComponent<Interactable>().Interact();
             }
             Renderer selectionRenderer = LookObject.GetComponent<Renderer>();
