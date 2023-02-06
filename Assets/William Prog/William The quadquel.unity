@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
+  m_IndirectSpecularColor: {r: 262.38354, g: 325.1084, b: 430.30957, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -9660,6 +9660,11 @@ PrefabInstance:
       propertyPath: playerInteract
       value: 
       objectReference: {fileID: 541758633}
+    - target: {fileID: 115371241404400002, guid: 33191a0f83af7de478dd563c2f907503,
+        type: 3}
+      propertyPath: objectSoundManager
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 787535189724968090, guid: 33191a0f83af7de478dd563c2f907503,
         type: 3}
       propertyPath: m_Enabled
@@ -12752,6 +12757,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2796130269172134936, guid: 5584cd475977f744883db8a062ecfaa1,
         type: 3}
+      propertyPath: stepInterval
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2796130269172134936, guid: 5584cd475977f744883db8a062ecfaa1,
+        type: 3}
       propertyPath: airmultiplier
       value: 0.35
       objectReference: {fileID: 0}
@@ -12759,6 +12769,11 @@ PrefabInstance:
         type: 3}
       propertyPath: airDragMulyiplier
       value: 0.35
+      objectReference: {fileID: 0}
+    - target: {fileID: 2796130269172134936, guid: 5584cd475977f744883db8a062ecfaa1,
+        type: 3}
+      propertyPath: minVelocityForSteps
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2796130269172134937, guid: 5584cd475977f744883db8a062ecfaa1,
         type: 3}
@@ -14494,6 +14509,7 @@ MonoBehaviour:
   breakForce: 35
   playerInteract: {fileID: 541758633}
   stackNormalThreshold: 0.5
+  objectSoundController: {fileID: 0}
   pickedUp: 0
 --- !u!65 &8069313292206701392
 BoxCollider:

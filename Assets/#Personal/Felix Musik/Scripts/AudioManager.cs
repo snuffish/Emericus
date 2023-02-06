@@ -56,10 +56,14 @@ public class AudioManager : MonoBehaviour
    {
       RuntimeManager.PlayOneShot(puzzleStinger);
    }
+    public void PlayFootstep()
+   {
+      RuntimeManager.PlayOneShot(playerFootsteps);
+   }
    
    //Player Funktioner Events.
    [Header("Player")]
-   [SerializeField] private EventReference PlayerFootsteps;
+   [SerializeField] private EventReference playerFootsteps;
    /*
    [EventRef]
    public string playerFootsteps;

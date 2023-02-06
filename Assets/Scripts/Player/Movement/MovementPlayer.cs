@@ -88,7 +88,7 @@ public class MovementPlayer : MonoBehaviour
             if (currentTime >= stepInterval)
             {
                 currentTime = 0;
-                //Insert Sound Event Here
+                //AudioManager.Instance.PlayFootstep();
             }
             else currentTime += Time.deltaTime;
         }
