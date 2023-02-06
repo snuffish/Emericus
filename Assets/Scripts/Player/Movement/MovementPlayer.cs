@@ -7,6 +7,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using Vector2 = UnityEngine.Vector2;
 using Vector3 = UnityEngine.Vector3;
+using FMOD.Studio;
 
 public class MovementPlayer : MonoBehaviour
 {
@@ -15,102 +16,138 @@ public class MovementPlayer : MonoBehaviour
     [SerializeField] private Transform orientation;
     private Vector3 direction;
 
-    [Header("movement")]
+    [Header("Sound Parameters")]
+    [SerializeField, Tooltip("Time between fotsteps")] float stepInterval;
+    [SerializeField, Tooltip("Time between fotsteps")] float minVelocityForSteps;
+    bool isWalking;
+    float currentTime;
+
+    [Header("Movement")]
     [SerializeField] private float moveSpeed;
     private Vector2 deltaMovement;
     [SerializeField] private float groundDrag;
     [SerializeField] private float airDragMulyiplier;
 
-    [Header("Ground Check")] 
+    [Header("Ground Check")]
     [SerializeField] private bool isGrounded;
-    [SerializeField] private float playerHeaight;
+    [SerializeField] private float playerHeight;
     [SerializeField] private LayerMask jumpableLayers;
-    
 
-    [Header("Jump")] 
+
+    [Header("Jump")]
     [SerializeField] private float jumpForce;
     [SerializeField] private float fallForce;
     [SerializeField] private float jumpCooldown;
     [SerializeField] private float airmultiplier;
     private bool canJump;
-    
-    
+
+
     // Start is called before the first frame update
-    void Start() {
+    void Start()
+    {
         rb = GetComponent<Rigidbody>();
         rb.freezeRotation = true;
         ResetJump();
+        currentTime = 0;
     }
 
     // Update is called once per frame
-    void Update() {
+    void Update()
+    {
 
-        isGrounded = Physics.Raycast(transform.position, Vector3.down, playerHeaight * 0.5f + 0.1f, jumpableLayers);
+        isGrounded = Physics.Raycast(transform.position, Vector3.down, playerHeight * 0.5f + 0.1f, jumpableLayers);
 
         if (isGrounded)
             rb.drag = groundDrag;
-        else {
+        else
+        {
             rb.drag = groundDrag * airDragMulyiplier;
-            
-            if(rb.velocity.y < 0)
-                rb.AddForce(-transform.up * fallForce * Time.deltaTime);
-            
-        } 
-            
 
-        if (Input.GetButtonDown("Jump") && canJump && isGrounded) {
+            if (rb.velocity.y < 0)
+                rb.AddForce(-transform.up * fallForce * Time.deltaTime);
+
+        }
+
+
+        if (Input.GetButtonDown("Jump") && canJump && isGrounded)
+        {
             canJump = false;
             Jump();
             Invoke(nameof(ResetJump), jumpCooldown);
         }
-        
+
         /*else if (Input.GetButtonUp("Jump") && rb.velocity.y > 0)
             rb.AddForce(-transform.up * riseGravity / 3);*/
 
         GetInput();
         LimitSpeed();
         MovePlayer();
+
+        if (isWalking)
+        {
+            if (currentTime >= stepInterval)
+            {
+                currentTime = 0;
+                //Insert Sound Event Here
+            }
+            else currentTime += Time.deltaTime;
+        }
     }
 
-    void GetInput() {
+    void GetInput()
+    {
         deltaMovement.x = Input.GetAxis("Horizontal");
         deltaMovement.y = Input.GetAxis("Vertical");
     }
 
-    void MovePlayer() {
+    void MovePlayer()
+    {
         //  Calculate direction
         direction = orientation.forward * deltaMovement.y + orientation.right * deltaMovement.x;
 
         //  on ground
-        if(isGrounded)
+        if (isGrounded)
             rb.AddForce(direction.normalized * Time.deltaTime * moveSpeed * 300f, ForceMode.Force);
-        
+
         //  in air
-        else if(!isGrounded)
+        else if (!isGrounded)
             rb.AddForce(direction.normalized * Time.deltaTime * moveSpeed * 300f * airmultiplier, ForceMode.Force);
+        if (rb.velocity.magnitude > minVelocityForSteps)
+        {
+            isWalking = true;
+        }
+        else
+        {
+            currentTime = 0;
+            isWalking = false;
+        }
     }
 
-    void LimitSpeed() {
+    void LimitSpeed()
+    {
 
         Vector3 flatVel = new Vector3(rb.velocity.x, 0f, rb.velocity.z);
-        
+
         //  Limit velocity
-        if (flatVel.magnitude > moveSpeed) {
+        if (flatVel.magnitude > moveSpeed)
+        {
             Vector3 limitVel = flatVel.normalized * moveSpeed;
             rb.velocity = new Vector3(limitVel.x, rb.velocity.y, limitVel.z);
         }
     }
 
-    void Jump() {
+    void Jump()
+    {
         //  Reset Y-velocity
         rb.velocity = new Vector3(rb.velocity.x, 0f, rb.velocity.z);
-        
+
         rb.AddForce(transform.up * jumpForce, ForceMode.Impulse);
     }
 
-    void ResetJump() {
+    void ResetJump()
+    {
         canJump = true;
     }
-    
+
 
 }
