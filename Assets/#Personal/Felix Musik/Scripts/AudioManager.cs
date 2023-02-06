@@ -45,9 +45,20 @@ public class AudioManager : MonoBehaviour
    {
       public StudioEventEmitter bgmMusic;
    }
+
+   [Header("Puzzle")] 
+   [SerializeField] private EventReference puzzleStinger;
+
+   [SerializeField] private string puzzleParamName;
+   [SerializeField] private float puzzleParamValue;
+
+   public void PlayPuzzle()
+   {
+      RuntimeManager.PlayOneShot(puzzleStinger);
+   }
    
    
-   //Styr stinger för när man dör
+  /* //Styr stinger för när man dör
    [Header("GameOver")] 
    [SerializeField] private EventReference gameOverStinger;
    
@@ -55,7 +66,7 @@ public class AudioManager : MonoBehaviour
    {
       RuntimeManager.PlayOneShot(gameOverStinger);
    }
-   //Koppla till "Game Over"
+   //Koppla till "Game Over" */
 
   /*
    //Styr Combatmusiken
