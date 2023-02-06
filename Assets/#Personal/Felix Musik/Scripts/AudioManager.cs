@@ -46,6 +46,15 @@ public class AudioManager : MonoBehaviour
       public StudioEventEmitter bgmMusic;
    }
    
+   //Player Funktioner Events.
+   [Header("Player")]
+   [SerializeField] private EventReference PlayerFootsteps;
+   /*
+   [EventRef]
+   public string playerFootsteps;
+   EventInstance footstepInstance;
+   */
+   
    
    //Styr stinger för när man dör
    [Header("GameOver")] 
