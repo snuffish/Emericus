@@ -32,7 +32,7 @@ public class PlayerMovementController : MonoBehaviour
     [SerializeField] private LayerMask jumpableLayers;
     
 
-    [Header("Jump")] 
+    [Header("Jump")]
     [SerializeField] private float jumpForce;
     [SerializeField] private float fallForce;
     [SerializeField] private float jumpCooldown;
