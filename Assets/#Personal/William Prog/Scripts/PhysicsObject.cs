@@ -8,6 +8,7 @@ public class PhysicsObject : Interactable
     [SerializeField, Tooltip("Amount of Force before an object is dropped")] float breakForce = 35f;
     [SerializeField] public PlayerInteract playerInteract;
     [SerializeField] float stackNormalThreshold = 0.5f;
+    [SerializeField] PhysicsSounds objectSoundController;
     //[SerializeField] float throwForce = 10;
     //[SerializeField] float damageModifier = 1;
     [HideInInspector] public bool pickedUp = false;
@@ -21,10 +22,14 @@ public class PhysicsObject : Interactable
         playerInteract = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerInteract>();
         rBody = GetComponent<Rigidbody>();
         baseWeight = rBody.mass;
+        //objectSoundController = GetComponent<PhysicsSounds>();
     }
     public override void Interact()
     {
-        if (!pickedUp) StartCoroutine(PickUp());
+        if (!pickedUp)
+        {
+            StartCoroutine(PickUp());
+        }
         else
         {
             pickedUp = false;
@@ -37,6 +42,7 @@ public class PhysicsObject : Interactable
     }
     void OnCollisionEnter(Collision collision)
     {
+        //objectSoundController.Collision();
         if (collision.rigidbody != null)
         {
             if (collision.contacts[0].normal.y < -stackNormalThreshold)
@@ -50,6 +56,7 @@ public class PhysicsObject : Interactable
             {
                 if (collision.relativeVelocity.magnitude > breakForce)
                 {
+                    //objectSoundController.DropEvent();
                     playerInteract.BreakConnection();
                 }
             }
@@ -59,6 +66,7 @@ public class PhysicsObject : Interactable
 
     void OnCollisionStay(Collision collision)
     {
+        //active Collision
         if (collision.rigidbody != null)
         {
             float collisionObjectMass = collision.gameObject.GetComponent<Rigidbody>().mass;
@@ -80,7 +88,7 @@ public class PhysicsObject : Interactable
                     }
                 }
             }
-            
+
         }
     }
 
@@ -98,6 +106,7 @@ public class PhysicsObject : Interactable
 
     public IEnumerator PickUp()
     {
+        //objectSoundController.PickUpEvent();
         yield return new WaitForSecondsRealtime(waitOnPickup);
         pickedUp = true;
 

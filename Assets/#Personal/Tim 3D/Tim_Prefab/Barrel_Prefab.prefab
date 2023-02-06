@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 1421422079143134682}
   - component: {fileID: 787535189724968090}
   - component: {fileID: 115371241404400002}
+  - component: {fileID: 3585715039092608786}
   m_Layer: 8
   m_Name: BARRELNEW:pCylinder1
   m_TagString: Untagged
@@ -127,12 +128,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28a3298f306238f4e86d936cabb674d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  promptMessage: 
   breakForce: 35
-  throwForce: 10
-  damageModifier: 1
   playerInteract: {fileID: 0}
+  stackNormalThreshold: 0.5
+  objectSoundController: {fileID: 3585715039092608786}
   pickedUp: 0
+--- !u!114 &3585715039092608786
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3774855886167207879}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd3d7002a95e9384d8586b147f9b11c4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &5836144000011026449
 GameObject:
   m_ObjectHideFlags: 0

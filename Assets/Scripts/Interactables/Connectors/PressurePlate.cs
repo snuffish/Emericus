@@ -16,9 +16,11 @@ public class PressurePlate : Connector
     {
         if (currentMass >= weightThreshold && !isActive)
         {
+            //It activates here, insert sounds
             isActive = true;
             foreach (Interactable interactable in connectedToList)
             {
+                //Activates every attached object
                 interactable.Interact();
             }
         }
