@@ -10,9 +10,19 @@ public class PlayerWalkState : PlayerMovementBaseState
     }
     
     public override void UpdateState(PlayerMovementController player) {
+        
         player.GetInput();
         player.LimitSpeed();
         player.MovePlayer();
+        
+        if(Input.GetButtonDown("Sprint"))
+            player.ChangeState(player.runState);
+        
+        if(Input.GetButtonDown("Crouch"))
+            player.ChangeState(player.crouchState);
+        
+        if(player.deltaMovement.magnitude < 0.01)
+            player.ChangeState(player.idleState);
     }
     
     

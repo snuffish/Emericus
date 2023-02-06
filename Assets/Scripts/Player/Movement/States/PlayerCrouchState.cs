@@ -11,5 +11,10 @@ public class PlayerCrouchState : PlayerMovementBaseState
     
     public override void UpdateState(PlayerMovementController player) {
         player.GetInput();
+        player.LimitSpeed();
+        player.MovePlayer();
+        
+        if(Input.GetButtonUp("Crouch"))
+            player.ChangeState(player.idleState);
     }
 }

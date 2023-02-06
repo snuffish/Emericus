@@ -13,5 +13,13 @@ public class PlayerIdleState : PlayerMovementBaseState
         
         if(player.deltaMovement.magnitude > 0)
             player.ChangeState(player.walkState);
+        
+        if(Input.GetButtonDown("Sprint"))
+            player.ChangeState(player.runState);
+        
+        if(Input.GetButtonDown("Crouch"))
+            player.ChangeState(player.crouchState);
+        
+        
     }
 }

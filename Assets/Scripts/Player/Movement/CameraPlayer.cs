@@ -21,19 +21,16 @@ public class CameraPlayer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
-
         if (!Input.GetButton("RightClick"))
         {
             //  Get the mouse input
             Vector2 mouseInput;
-            mouseInput.x = Input.GetAxisRaw("Mouse X") * Time.deltaTime * (mouseSens.x);
-            mouseInput.y = Input.GetAxisRaw("Mouse Y") * Time.deltaTime * (mouseSens.y);
+            mouseInput.x = Input.GetAxisRaw("Mouse X") * Time.deltaTime * mouseSens.x;
+            mouseInput.y = Input.GetAxisRaw("Mouse Y") * Time.deltaTime * mouseSens.y;
 
             rotation.y += mouseInput.x;
-            rotation.x -= mouseInput.y;
+            rotation.x += mouseInput.y;
             rotation.x = Mathf.Clamp(rotation.x, -90f, 90f);
-
 
             //  Rotate the camera and player
             transform.rotation = Quaternion.Euler(rotation.x, rotation.y, 0);

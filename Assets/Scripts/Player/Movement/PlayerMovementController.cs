@@ -28,7 +28,7 @@ public class PlayerMovementController : MonoBehaviour
 
     [Header("Ground Check")] 
     [SerializeField] private bool isGrounded;
-    [SerializeField] private float playerHeight;
+    [SerializeField] private float groundCheckRayLength;
     [SerializeField] private LayerMask jumpableLayers;
     
 
@@ -44,6 +44,7 @@ public class PlayerMovementController : MonoBehaviour
 
     public PlayerWalkState walkState = new PlayerWalkState();
     public PlayerRunState runState = new PlayerRunState();
+    public PlayerCrouchState crouchState = new PlayerCrouchState();
     public PlayerIdleState idleState = new PlayerIdleState();
     
     [Header("Sound Parameters")]
@@ -71,7 +72,10 @@ public class PlayerMovementController : MonoBehaviour
         
         
         //  Airborne Check
-        isGrounded = Physics.Raycast(transform.position, Vector3.down, playerHeight * 0.5f + 0.1f, jumpableLayers);
+        Ray groundRay = new Ray(transform.position, Vector3.down);
+        Debug.DrawRay(groundRay.origin, groundRay.direction * groundCheckRayLength, Color.cyan);
+
+        isGrounded = Physics.Raycast(groundRay, groundCheckRayLength, jumpableLayers);
         
         //  Change Drag if airborne or not
         if (isGrounded)
