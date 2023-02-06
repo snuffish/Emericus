@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 262.38354, g: 325.1084, b: 430.30957, a: 1}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -9660,6 +9660,11 @@ PrefabInstance:
       propertyPath: playerInteract
       value: 
       objectReference: {fileID: 541758633}
+    - target: {fileID: 787535189724968090, guid: 33191a0f83af7de478dd563c2f907503,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3423117730341195535, guid: 33191a0f83af7de478dd563c2f907503,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -10433,6 +10438,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3060789603357189065, guid: 69ebea36fb2f3d642bfe3cf6107ef0d2,
+        type: 3}
+      propertyPath: m_Drag
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 3060789603357189065, guid: 69ebea36fb2f3d642bfe3cf6107ef0d2,
         type: 3}
@@ -12348,6 +12358,26 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f0ca1060e80dfaf459d77e1e5cf42694, type: 3}
+--- !u!1 &1847772179 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3774855886167207879, guid: 33191a0f83af7de478dd563c2f907503,
+    type: 3}
+  m_PrefabInstance: {fileID: 1197071424}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &1847772186
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1847772179}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -7934041622872864334, guid: 8ef4a4d6c29fb874c994da3743036579, type: 3}
 --- !u!1001 &1860775890
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12620,6 +12650,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1853859878248739100, guid: 5584cd475977f744883db8a062ecfaa1,
+        type: 3}
+      propertyPath: selectedCrosshair
+      value: 
+      objectReference: {fileID: 458900940}
     - target: {fileID: 2478910837443334847, guid: 5584cd475977f744883db8a062ecfaa1,
         type: 3}
       propertyPath: m_Layer
@@ -12724,6 +12759,11 @@ PrefabInstance:
         type: 3}
       propertyPath: airDragMulyiplier
       value: 0.35
+      objectReference: {fileID: 0}
+    - target: {fileID: 2796130269172134937, guid: 5584cd475977f744883db8a062ecfaa1,
+        type: 3}
+      propertyPath: maxDistance
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 2796130269172134937, guid: 5584cd475977f744883db8a062ecfaa1,
         type: 3}
