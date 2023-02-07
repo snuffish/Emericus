@@ -106,6 +106,12 @@ public class PhysicsObject : Interactable
         }
     }
 
+
+    public void PlayDropSound()
+    {
+        // objectSoundController.DropEvent();
+
+    }
     public IEnumerator PickUp()
     {
         objectSoundController.PickUpEvent();
