@@ -56,30 +56,17 @@ public class MusicManager : MonoBehaviour
    {
       RuntimeManager.PlayOneShot(puzzleStinger);
    }
-    public void PlayFootstep()
-   {
-      RuntimeManager.PlayOneShot(playerFootsteps);
-   }
-   
-   //Player Funktioner Events.
-   [Header("Player")]
-   [SerializeField] private EventReference playerFootsteps;
-   /*
-   [EventRef]
-   public string playerFootsteps;
-   EventInstance footstepInstance;
-   */
-   
-   
-  /* //Styr stinger för när man dör
-   [Header("GameOver")] 
-   [SerializeField] private EventReference gameOverStinger;
-   
-   public void PlayGameOver()
-   {
-      RuntimeManager.PlayOneShot(gameOverStinger);
-   }
-   //Koppla till "Game Over" */
+
+
+   /* //Styr stinger för när man dör
+    [Header("GameOver")] 
+    [SerializeField] private EventReference gameOverStinger;
+    
+    public void PlayGameOver()
+    {
+       RuntimeManager.PlayOneShot(gameOverStinger);
+    }
+    //Koppla till "Game Over" */
 
   /*
    //Styr Combatmusiken
@@ -98,12 +85,7 @@ public class MusicManager : MonoBehaviour
          RuntimeManager.StudioSystem.setParameterByName("Combat", 1);
       }
    }*/
-   
-   /*[Header("Sound")]
-      
-      [Header("Ambience")]
-      */
-   
+  
  
    //Play, Stop, Parameter
    public void Play(StudioEventEmitter emitter)
