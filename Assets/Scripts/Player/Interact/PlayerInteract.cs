@@ -45,6 +45,7 @@ public class PlayerInteract : MonoBehaviour
     float currentDist = 0f;
     float currentScroll = 0f;
 
+    bool hasPlayedDropSound = false;
 
     void Start()
     {
@@ -130,6 +131,7 @@ public class PlayerInteract : MonoBehaviour
     }
     public void PickUpObject()
     {
+        hasPlayedDropSound = false;
         physicsObject = playerLook.LookObject.GetComponentInChildren<PhysicsObject>();
         currentlyPickedUpObject = playerLook.LookObject;
         pickupRB = currentlyPickedUpObject.GetComponent<Rigidbody>();
@@ -147,6 +149,11 @@ public class PlayerInteract : MonoBehaviour
     {
         if (pickupRB != null)
         {
+            if (!hasPlayedDropSound)
+            {
+                pickupRB.gameObject.GetComponent<PhysicsObject>().objectSoundController.DropEvent();
+                hasPlayedDropSound = true;
+            }
             pickupRB.useGravity = true;
             pickupRB.constraints = RigidbodyConstraints.None;
             pickupRB.angularDrag = startAngularDrag;

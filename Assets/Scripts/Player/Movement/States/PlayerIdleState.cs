@@ -22,4 +22,8 @@ public class PlayerIdleState : PlayerMovementBaseState
         
         
     }
+    
+    public override void ExitState(PlayerMovementController player) {
+        
+    }
 }

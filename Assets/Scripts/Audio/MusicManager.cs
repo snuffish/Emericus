@@ -49,12 +49,19 @@ public class MusicManager : MonoBehaviour
    [Header("Puzzle")] 
    [SerializeField] private EventReference puzzleStinger;
 
+   [SerializeField] private EventReference puzzleComplete;
+
    [SerializeField] private string puzzleParamName;
    [SerializeField] private float puzzleParamValue;
 
-   public void PlayPuzzle()
+   public void PlayPuzzleProgress()
    {
       RuntimeManager.PlayOneShot(puzzleStinger);
+   }
+
+   public void PlayPuzzleComplete()
+   {
+      RuntimeManager.PlayOneShot(puzzleComplete);
    }
 
 
