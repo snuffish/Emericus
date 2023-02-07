@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 1421422079143134682}
   - component: {fileID: 787535189724968090}
   - component: {fileID: 115371241404400002}
-  - component: {fileID: 3585715039092608786}
+  - component: {fileID: 8803205276549702944}
   m_Layer: 8
   m_Name: BARRELNEW:pCylinder1
   m_TagString: Untagged
@@ -131,9 +131,9 @@ MonoBehaviour:
   breakForce: 35
   playerInteract: {fileID: 0}
   stackNormalThreshold: 0.5
-  objectSoundController: {fileID: 3585715039092608786}
+  objectSoundController: {fileID: 8803205276549702944}
   pickedUp: 0
---- !u!114 &3585715039092608786
+--- !u!114 &8803205276549702944
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -142,9 +142,30 @@ MonoBehaviour:
   m_GameObject: {fileID: 3774855886167207879}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cd3d7002a95e9384d8586b147f9b11c4, type: 3}
+  m_Script: {fileID: 11500000, guid: e00f5ae617338be4384dddd3ac1d37e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dropSound:
+    Guid:
+      Data1: 466992910
+      Data2: 1137767673
+      Data3: -284329854
+      Data4: 1236386453
+    Path: event:/Interactive/WoodBarrelDrop
+  pickUpSound:
+    Guid:
+      Data1: -764367262
+      Data2: 1193815489
+      Data3: -2108697728
+      Data4: 2113065669
+    Path: event:/Interactive/WoodBarrelPickUp
+  collisionSound:
+    Guid:
+      Data1: 466992910
+      Data2: 1137767673
+      Data3: -284329854
+      Data4: 1236386453
+    Path: event:/Interactive/WoodBarrelDrop
 --- !u!1 &5836144000011026449
 GameObject:
   m_ObjectHideFlags: 0

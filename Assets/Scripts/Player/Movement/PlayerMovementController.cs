@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Numerics;
+using Unity.Collections;
 using Unity.VisualScripting;
 using Unity.VisualScripting.FullSerializer.Internal;
 using UnityEngine;
@@ -13,6 +14,7 @@ public class PlayerMovementController : MonoBehaviour
     [Header("General")]
     [SerializeField] private Rigidbody rb;
     [SerializeField] private Transform orientation;
+    [SerializeField] PlayerAudio playerAudio;
     //public Animator animator;
     private Vector3 direction;
 
@@ -69,9 +71,10 @@ public class PlayerMovementController : MonoBehaviour
     void Update() {
 
         currentState.UpdateState(this);
-        
-        
-        //  Airborne Check
+        if (rb.velocity.magnitude < minVelocityForSteps) isWalking = false;
+        else isWalking = true;
+
+            //  Airborne Check
         Ray groundRay = new Ray(transform.position, Vector3.down);
         Debug.DrawRay(groundRay.origin, groundRay.direction * groundCheckRayLength, Color.cyan);
 
@@ -120,6 +123,19 @@ public class PlayerMovementController : MonoBehaviour
     }
 
     public void MovePlayer() {
+        if (isWalking)
+        {
+            if (currentTime >= stepInterval)
+            {
+                currentTime = 0;
+                playerAudio.PlayFootstep(gameObject);
+            }
+            else
+            {
+                currentTime += Time.deltaTime;
+            }
+        }
+        
         //  Calculate direction
         direction = orientation.forward * deltaMovement.y + orientation.right * deltaMovement.x;
 
@@ -134,6 +150,7 @@ public class PlayerMovementController : MonoBehaviour
 
     void Jump() {
         //  Reset Y-velocity
+        playerAudio.PlayJump(gameObject);
         rb.velocity = new Vector3(rb.velocity.x, 0f, rb.velocity.z);
         
         //  Adds a force upward
