@@ -16,6 +16,7 @@ public class CameraPlayer : MonoBehaviour
         //  Lock the cursor and make it invisible
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
+        transform.rotation = Quaternion.Euler(0, 90, 0);
     }
 
     // Update is called once per frame

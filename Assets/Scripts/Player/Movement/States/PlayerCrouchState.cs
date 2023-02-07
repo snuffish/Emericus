@@ -8,7 +8,12 @@ public class PlayerCrouchState : PlayerMovementBaseState
         //player.animator.SetTrigger("isCrouching");
         player.currentMoveSpeed = player.crouchSpeed;
         player.transform.localScale = new Vector3(player.transform.localScale.x, player.transform.localScale.y * 0.5f, player.transform.localScale.z);
-        player.transform.position -= Vector3.up * 0.85f;
+        
+        if(player.isGrounded)
+            player.transform.position -= Vector3.up * 0.85f;
+        else
+            player.transform.position += Vector3.up * 0.5f;
+        
     }
     
     public override void UpdateState(PlayerMovementController player) {
@@ -21,7 +26,11 @@ public class PlayerCrouchState : PlayerMovementBaseState
     }
     
     public override void ExitState(PlayerMovementController player) {
-        player.transform.position += Vector3.up * 0.5f;
+        if(player.isGrounded)
+            player.transform.position += Vector3.up * 0.5f;
+        else
+            player.transform.position -= Vector3.up * 0.5f;
+        
         player.transform.localScale = new Vector3(player.transform.localScale.x, player.transform.localScale.y * 2f, player.transform.localScale.z);
     }
 }

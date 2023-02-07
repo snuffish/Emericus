@@ -26,10 +26,10 @@ public class PlayerMovementController : MonoBehaviour
     [SerializeField] private float groundDrag;
     [SerializeField] private float airDragMulyiplier;
 
-    [Header("Ground Check")] 
-    [SerializeField] private bool isGrounded;
+    [Header("Ground Check")]
     [SerializeField] private float groundCheckRayLength;
     [SerializeField] private LayerMask jumpableLayers;
+    [SerializeField] public bool isGrounded { get; private set; }
     
 
     [Header("Jump")]
