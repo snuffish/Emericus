@@ -7,7 +7,7 @@ public class SendPuzzleStage : MonoBehaviour
   [SerializeField] private float puzzleStage;
   public void SendStage()
   {
-    GameObject.Find("AudioManager").GetComponent<AudioManager>().PlayPuzzle();
+    GameObject.Find("MusicManager").GetComponent<MusicManager>().PlayPuzzle();
     puzzleStage++;
   }
 }
