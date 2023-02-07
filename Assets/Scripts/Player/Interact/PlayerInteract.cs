@@ -149,11 +149,11 @@ public class PlayerInteract : MonoBehaviour
     {
         if (pickupRB != null)
         {
-            if (!hasPlayedDropSound)
-            {
-                pickupRB.gameObject.GetComponent<PhysicsObject>().objectSoundController.DropEvent();
-                hasPlayedDropSound = true;
-            }
+            //if (!hasPlayedDropSound)
+            //{
+            //    pickupRB.gameObject.GetComponent<PhysicsObject>().objectSoundController.DropEvent();
+            //    hasPlayedDropSound = true;
+            //}
             pickupRB.useGravity = true;
             pickupRB.constraints = RigidbodyConstraints.None;
             pickupRB.angularDrag = startAngularDrag;
