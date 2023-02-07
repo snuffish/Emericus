@@ -25,5 +25,9 @@ public class PlayerWalkState : PlayerMovementBaseState
             player.ChangeState(player.idleState);
     }
     
+    public override void ExitState(PlayerMovementController player) {
+        
+    }
+    
     
 }
