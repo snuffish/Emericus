@@ -11,16 +11,23 @@ public class PlayerInteract : MonoBehaviour
 
     private PlayerLook playerLook;
 
-    [Header("Rotation")]
+    [Header("Drag")]
     [SerializeField] float startAngularDrag = 0.05f;
     [SerializeField] float pickUpAngularDrag = 5f;
+    [SerializeField] float startDrag = 1f;
+    [SerializeField] float pickUpDrag = 8f;
 
     [Header("Pick up")]
     [SerializeField, Tooltip("Transform that pickup objects try to be close to")] Transform pickupParent = null;
     public GameObject currentlyPickedUpObject;
     Rigidbody pickupRB;
     PhysicsObject physicsObject;
-
+    
+    [Header("Settings")]
+    [SerializeField, Tooltip("Check if you want smooth Interperlation")] bool useSmoothInterperlation = true;
+    [SerializeField] bool useGravity = false;
+    [SerializeField, Tooltip("A More aggresive kinda Force")] bool useImpulseForce = false;
+    [SerializeField,Tooltip("dampning using distanceThreshold")] bool useDampning = true;
 
     [Header("Hold Item")]
     [SerializeField, Tooltip("Min Step Speed when moving picked up Object")] float minSpeed = 0;
@@ -31,6 +38,7 @@ public class PlayerInteract : MonoBehaviour
     [SerializeField, Tooltip("Distance when item should be dropped")] float dropHeldItemDistance = 8;
     [SerializeField, Tooltip("Min Allowed Scroll distance")] float minScrollDistance = 2;
     [SerializeField, Tooltip("Max Allowed Hold Distance")] float maxScrollDistance = 6;
+    [SerializeField, Tooltip("Distance threshold for when the object should stop moving")] float distanceThreshold = 0.2f;
     [SerializeField, Tooltip("Rotation Speed")] Vector2 rotationSens;
     Vector2 rotation;
     float currentSpeed = 0f;
@@ -52,15 +60,42 @@ public class PlayerInteract : MonoBehaviour
         if (currentlyPickedUpObject != null)
         {
             currentDist = Vector3.Distance(pickupParent.position, pickupRB.position);
-            currentSpeed = Mathf.SmoothStep(minSpeed, maxSpeed, currentDist / maxDistance);
-            currentSpeed *= 5;
-            currentSpeed *= Time.fixedDeltaTime;
             pickupParent.position = playerLook.Cam.transform.position + playerLook.Cam.transform.forward * holdItemDistance;
-
             Vector3 direction = pickupParent.position - pickupRB.position;
-            //pickupRB.velocity = direction.normalized * currentSpeed;
 
-            pickupRB.AddForce(direction.normalized * currentSpeed, ForceMode.Force);
+            if (!useSmoothInterperlation) currentSpeed = Mathf.Lerp(minSpeed, maxSpeed, currentDist);
+            else currentSpeed = Mathf.SmoothStep(minSpeed, maxSpeed, currentDist);
+            currentSpeed *= 10;
+            currentSpeed *= Time.fixedDeltaTime;
+            if(useDampning)
+            {
+                float dampingFactor = Mathf.Lerp(0, 1, currentDist / distanceThreshold);
+                currentSpeed *= dampingFactor;
+            }
+
+            //pickupRB.velocity = direction.normalized * currentSpeed;
+            if(useImpulseForce) pickupRB.AddForce(direction.normalized * currentSpeed, ForceMode.Impulse);
+            else pickupRB.AddForce(direction.normalized * currentSpeed, ForceMode.Force);
+
+            //else
+            //{
+            //    if (currentDist > 0.1f)
+            //    {
+            //        currentSpeed = Mathf.SmoothStep(minSpeed, maxSpeed, currentDist);
+            //        currentSpeed *= 10;
+            //        currentSpeed *= Time.fixedDeltaTime;
+
+            //        pickupRB.velocity = direction.normalized * currentSpeed;
+            //        //if (pickupRB.velocity.magnitude > 0.2f)
+            //        //{
+            //        //    pickupRB.AddForce(-direction.normalized * (pickupRB.velocity.magnitude*0.8f), ForceMode.Force);
+            //        //}
+            //    }
+            //    else
+            //    {
+            //        Vector3.Lerp(pickupRB.transform.position, pickupParent.position, 0.1f);
+            //    }
+            //}
             //Rotation
             //lookRot = Quaternion.Slerp(cam.transform.rotation, lookRot, rotationSpeed * Time.fixedDeltaTime);
             //lookRot = Quaternion.LookRotation(cam.transform.position - pickupRB.position);
@@ -98,9 +133,11 @@ public class PlayerInteract : MonoBehaviour
         physicsObject = playerLook.LookObject.GetComponentInChildren<PhysicsObject>();
         currentlyPickedUpObject = playerLook.LookObject;
         pickupRB = currentlyPickedUpObject.GetComponent<Rigidbody>();
-        pickupRB.useGravity = false;
+        if(useGravity) pickupRB.useGravity = true;
+        else pickupRB.useGravity = false;
         /*pickupRB.constraints = RigidbodyConstraints.FreezeRotation;*/
         pickupRB.angularDrag = pickUpAngularDrag;
+        pickupRB.drag = pickUpDrag;
         holdItemDistance = Vector3.Distance(playerLook.Cam.transform.position, pickupRB.transform.position);
         physicsObject.playerInteract = this;
         StartCoroutine(physicsObject.PickUp());
@@ -113,6 +150,7 @@ public class PlayerInteract : MonoBehaviour
             pickupRB.useGravity = true;
             pickupRB.constraints = RigidbodyConstraints.None;
             pickupRB.angularDrag = startAngularDrag;
+            pickupRB.drag = startDrag;
 
             currentlyPickedUpObject = null;
             physicsObject.pickedUp = false;
