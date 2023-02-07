@@ -61,7 +61,7 @@ public class PlayerMovementController : MonoBehaviour
 
         currentState = idleState;
         currentState.EnterState(this);
-        
+        if (playerAudio == null) GetComponent<PlayerAudio>();
         rb = GetComponent<Rigidbody>();
         rb.freezeRotation = true;
         ResetJump();
@@ -128,7 +128,7 @@ public class PlayerMovementController : MonoBehaviour
             if (currentTime >= stepInterval)
             {
                 currentTime = 0;
-                playerAudio.PlayFootstep(gameObject);
+               // playerAudio.PlayFootstep(gameObject);
             }
             else
             {
@@ -150,7 +150,7 @@ public class PlayerMovementController : MonoBehaviour
 
     void Jump() {
         //  Reset Y-velocity
-        playerAudio.PlayJump(gameObject);
+       // playerAudio.PlayJump(gameObject);
         rb.velocity = new Vector3(rb.velocity.x, 0f, rb.velocity.z);
         
         //  Adds a force upward

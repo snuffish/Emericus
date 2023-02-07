@@ -13436,6 +13436,7 @@ GameObject:
   - component: {fileID: 8069313292206701392}
   - component: {fileID: 8069313292206701390}
   - component: {fileID: 8069313292206701389}
+  - component: {fileID: 8069313292206701393}
   m_Layer: 8
   m_Name: Rat
   m_TagString: Untagged
@@ -14118,7 +14119,7 @@ MonoBehaviour:
   breakForce: 35
   playerInteract: {fileID: 0}
   stackNormalThreshold: 0.5
-  objectSoundController: {fileID: 0}
+  objectSoundController: {fileID: 8069313292206701393}
   pickedUp: 0
 --- !u!65 &8069313292206701392
 BoxCollider:
@@ -14133,6 +14134,39 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.015092796, y: 0.027546657, z: 0.052755434}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &8069313292206701393
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1476074713806417302}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e00f5ae617338be4384dddd3ac1d37e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dropSound:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  pickUpSound:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  collisionSound:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!1 &8159564376406810291
 GameObject:
   m_ObjectHideFlags: 0

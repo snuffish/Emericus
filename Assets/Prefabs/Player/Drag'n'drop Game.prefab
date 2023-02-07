@@ -235,6 +235,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2849460130475833437, guid: 0a3af81a52b110240a95898aa488d8ad,
         type: 3}
+      propertyPath: playerAudio
+      value: 
+      objectReference: {fileID: 7977610564586963445}
+    - target: {fileID: 2849460130475833437, guid: 0a3af81a52b110240a95898aa488d8ad,
+        type: 3}
       propertyPath: playerHeight
       value: 2
       objectReference: {fileID: 0}
@@ -261,3 +266,56 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 3012971083488966638}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1034536918316240812 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2849460130475833410, guid: 0a3af81a52b110240a95898aa488d8ad,
+    type: 3}
+  m_PrefabInstance: {fileID: 3012971083488966638}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &7977610564586963445
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1034536918316240812}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a7ae8dae5ef60842ab4c87ebf9cb99c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerFootsteps:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  playerHurt:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  playerJump:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  playerLand:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  playerRespawn:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
