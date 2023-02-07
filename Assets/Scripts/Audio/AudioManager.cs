@@ -7,6 +7,7 @@ using FMODUnity;
 public class AudioManager : MonoBehaviour
 {
    public static AudioManager Instance;
+  // public PlayerAudio playerAudio;
 
    //Bankladdare
    private void Awake()
@@ -46,20 +47,13 @@ public class AudioManager : MonoBehaviour
       public StudioEventEmitter bgmMusic;
    }
 
-   [Header("Puzzle")] 
-   [SerializeField] private EventReference puzzleStinger;
-
-   [SerializeField] private string puzzleParamName;
-   [SerializeField] private float puzzleParamValue;
-
-   public void PlayPuzzle()
-   {
-      RuntimeManager.PlayOneShot(puzzleStinger);
-   }
+  
     public void PlayFootstep()
    {
       RuntimeManager.PlayOneShot(playerFootsteps);
    }
+
+   
    
    //Player Funktioner Events.
    [Header("Player")]
@@ -69,42 +63,7 @@ public class AudioManager : MonoBehaviour
    public string playerFootsteps;
    EventInstance footstepInstance;
    */
-   
-   
-  /* //Styr stinger för när man dör
-   [Header("GameOver")] 
-   [SerializeField] private EventReference gameOverStinger;
-   
-   public void PlayGameOver()
-   {
-      RuntimeManager.PlayOneShot(gameOverStinger);
-   }
-   //Koppla till "Game Over" */
 
-  /*
-   //Styr Combatmusiken
-   private bool inCombat = false;
-   [Header("Combat")] 
-   public float combatWaitTime = 3f;
-
-   [SerializeField] private string combatParamName;
-   [SerializeField] private float combatParamValue = 0f;
-
-   public void Combat()
-   {
-      if (!inCombat)
-      {
-         Debug.Log("Fight MothaFocka!");
-         RuntimeManager.StudioSystem.setParameterByName("Combat", 1);
-      }
-   }*/
-   
-   /*[Header("Sound")]
-      
-      [Header("Ambience")]
-      */
-   
- 
    //Play, Stop, Parameter
    public void Play(StudioEventEmitter emitter)
    {
@@ -119,6 +78,10 @@ public class AudioManager : MonoBehaviour
       }
    }
 
+   public void PlayOneShot(EventReference eventRef ,GameObject soundObject)
+   {
+      RuntimeManager.PlayOneShotAttached(eventRef.Path,soundObject);
+   }
    public void Stop(StudioEventEmitter emitter)
    {
       emitter.Stop();

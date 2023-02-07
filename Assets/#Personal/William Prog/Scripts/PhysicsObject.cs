@@ -8,7 +8,7 @@ public class PhysicsObject : Interactable
     [SerializeField, Tooltip("Amount of Force before an object is dropped")] float breakForce = 35f;
     [SerializeField] public PlayerInteract playerInteract;
     [SerializeField] float stackNormalThreshold = 0.5f;
-    [SerializeField] PhysicsSounds objectSoundController;
+    public PhysicsSounds objectSoundController;
     //[SerializeField] float throwForce = 10;
     //[SerializeField] float damageModifier = 1;
     [HideInInspector] public bool pickedUp = false;
@@ -33,6 +33,7 @@ public class PhysicsObject : Interactable
         else
         {
             pickedUp = false;
+            //objectSoundController.DropEvent();
             playerInteract.BreakConnection();
         }
     }
@@ -42,7 +43,7 @@ public class PhysicsObject : Interactable
     }
     void OnCollisionEnter(Collision collision)
     {
-        //objectSoundController.Collision();
+        objectSoundController.CollisionEvent();
         if (collision.rigidbody != null)
         {
             if (collision.contacts[0].normal.y < -stackNormalThreshold)
@@ -56,7 +57,7 @@ public class PhysicsObject : Interactable
             {
                 if (collision.relativeVelocity.magnitude > breakForce)
                 {
-                    //objectSoundController.DropEvent();
+                   // objectSoundController.DropEvent();
                     playerInteract.BreakConnection();
                 }
             }
@@ -106,7 +107,7 @@ public class PhysicsObject : Interactable
 
     public IEnumerator PickUp()
     {
-        //objectSoundController.PickUpEvent();
+        objectSoundController.PickUpEvent();
         yield return new WaitForSecondsRealtime(waitOnPickup);
         pickedUp = true;
 

@@ -20,7 +20,11 @@ public class PlayerRunState : PlayerMovementBaseState
         if(Input.GetButtonDown("Crouch"))
             player.ChangeState(player.crouchState);
         
-        if(player.deltaMovement.magnitude < 0.01)
+        if(player.deltaMovement.magnitude < 0.1)
             player.ChangeState(player.idleState);
+    }
+    
+    public override void ExitState(PlayerMovementController player) {
+        
     }
 }
