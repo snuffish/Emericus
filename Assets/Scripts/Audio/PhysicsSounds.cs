@@ -15,12 +15,12 @@ public class PhysicsSounds : MonoBehaviour
     }
     public virtual void DropEvent()
     {
-        if (!pickUpSound.IsNull) AudioManager.Instance.PlayOneShot(dropSound, gameObject);
+        if (!dropSound.IsNull) AudioManager.Instance.PlayOneShot(dropSound, gameObject);
     }
 
     public virtual void CollisionEvent()
     {
-        if (!pickUpSound.IsNull) AudioManager.Instance.PlayOneShot(collisionSound, gameObject);
+        if (!collisionSound.IsNull) AudioManager.Instance.PlayOneShot(collisionSound, gameObject);
     }
 
 }
