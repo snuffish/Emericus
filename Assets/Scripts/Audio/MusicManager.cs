@@ -54,7 +54,7 @@ public class MusicManager : MonoBehaviour
    [SerializeField] private string puzzleParamName;
    [SerializeField] private float puzzleParamValue;
 
-   public void PlayPuzzle()
+   public void PlayPuzzleProgress()
    {
       RuntimeManager.PlayOneShot(puzzleStinger);
    }
