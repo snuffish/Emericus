@@ -23,4 +23,8 @@ public class PlayerRunState : PlayerMovementBaseState
         if(player.deltaMovement.magnitude < 0.01)
             player.ChangeState(player.idleState);
     }
+    
+    public override void ExitState(PlayerMovementController player) {
+        
+    }
 }

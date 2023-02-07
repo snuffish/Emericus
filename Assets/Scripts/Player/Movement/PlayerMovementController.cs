@@ -147,8 +147,9 @@ public class PlayerMovementController : MonoBehaviour
 
     public void ChangeState(PlayerMovementBaseState state) {
         //  Changes the state and runs the enterstate for the new state.
+        currentState.ExitState(this);
         currentState = state;
-        state.EnterState(this);
+        currentState.EnterState(this);
     }
     
 
