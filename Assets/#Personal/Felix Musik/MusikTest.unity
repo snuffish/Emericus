@@ -12570,9 +12570,34 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8591402441183388410, guid: 90d61b54dc91d7d4bbbf078651f4ce0f,
         type: 3}
+      propertyPath: puzzleComplete.Path
+      value: event:/Music/Stingers/Puzzle Completed
+      objectReference: {fileID: 0}
+    - target: {fileID: 8591402441183388410, guid: 90d61b54dc91d7d4bbbf078651f4ce0f,
+        type: 3}
       propertyPath: eventEmitters.bgmMusic
       value: 
       objectReference: {fileID: 187326901170399098}
+    - target: {fileID: 8591402441183388410, guid: 90d61b54dc91d7d4bbbf078651f4ce0f,
+        type: 3}
+      propertyPath: puzzleComplete.Guid.Data1
+      value: 1013382834
+      objectReference: {fileID: 0}
+    - target: {fileID: 8591402441183388410, guid: 90d61b54dc91d7d4bbbf078651f4ce0f,
+        type: 3}
+      propertyPath: puzzleComplete.Guid.Data2
+      value: 1193332509
+      objectReference: {fileID: 0}
+    - target: {fileID: 8591402441183388410, guid: 90d61b54dc91d7d4bbbf078651f4ce0f,
+        type: 3}
+      propertyPath: puzzleComplete.Guid.Data3
+      value: -861544298
+      objectReference: {fileID: 0}
+    - target: {fileID: 8591402441183388410, guid: 90d61b54dc91d7d4bbbf078651f4ce0f,
+        type: 3}
+      propertyPath: puzzleComplete.Guid.Data4
+      value: 1403557805
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 90d61b54dc91d7d4bbbf078651f4ce0f, type: 3}
 --- !u!114 &187326901170399098 stripped
