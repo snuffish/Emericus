@@ -28,6 +28,7 @@ public class AudioZone : MonoBehaviour
     [SerializeField] private GameObject player;
 
     public AudioManager audioManager;
+    public MusicManager musicManager;
 
     [NonReorderable] public ZoneSettings[] audioSettings;
 

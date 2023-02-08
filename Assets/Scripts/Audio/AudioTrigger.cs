@@ -27,6 +27,7 @@ public class AudioTrigger : MonoBehaviour
     [SerializeField] private GameObject gObject;
 
     public AudioManager audioManager;
+    public MusicManager musicManager;
 
     [NonReorderable] public TriggerSettings[] audioSettings;
 
