@@ -23,6 +23,16 @@ public class PlayerWalkState : PlayerMovementBaseState
         
         if(player.deltaMovement.magnitude < 0.01)
             player.ChangeState(player.idleState);
+        
+        
+        if (player.currentTime >= player.stepInterval) {
+            player.currentTime = 0;
+            player.playerAudio.PlayFootstep(player.gameObject);
+            
+        }
+        else {
+            player.currentTime += Time.deltaTime;
+        }
     }
     
     public override void ExitState(PlayerMovementController player) {

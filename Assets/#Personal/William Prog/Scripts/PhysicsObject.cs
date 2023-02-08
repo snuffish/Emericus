@@ -19,7 +19,8 @@ public class PhysicsObject : Interactable
 
     void Start()
     {
-        if (objectSoundController == null) GetComponent<PhysicsSounds>();
+        if (objectSoundController == null) 
+            objectSoundController = GetComponent<PhysicsSounds>();
         playerInteract = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerInteract>();
         rBody = GetComponent<Rigidbody>();
         baseWeight = rBody.mass;
@@ -44,7 +45,9 @@ public class PhysicsObject : Interactable
     }
     void OnCollisionEnter(Collision collision)
     {
-        objectSoundController.CollisionEvent();
+        if(objectSoundController != null)
+            objectSoundController.CollisionEvent();
+        
         if (collision.rigidbody != null)
         {
             if (collision.contacts[0].normal.y < -stackNormalThreshold)
