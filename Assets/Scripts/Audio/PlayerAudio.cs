@@ -15,6 +15,7 @@ public class PlayerAudio : MonoBehaviour
     public void PlayFootstep(GameObject soundLocation)
     {
         AudioManager.Instance.PlayOneShot(playerFootsteps, soundLocation);
+        Debug.Log("Footssete");
     }
 
     public void PlayHurt(GameObject soundLocation)

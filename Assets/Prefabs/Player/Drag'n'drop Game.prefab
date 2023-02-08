@@ -117,6 +117,31 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6294379960175240894, guid: 6f8d0c1cb68906c4fabb88370f8da774,
+        type: 3}
+      propertyPath: playerFootsteps.Path
+      value: event:/Player/PlayerFootsteps
+      objectReference: {fileID: 0}
+    - target: {fileID: 6294379960175240894, guid: 6f8d0c1cb68906c4fabb88370f8da774,
+        type: 3}
+      propertyPath: playerFootsteps.Guid.Data1
+      value: -348117017
+      objectReference: {fileID: 0}
+    - target: {fileID: 6294379960175240894, guid: 6f8d0c1cb68906c4fabb88370f8da774,
+        type: 3}
+      propertyPath: playerFootsteps.Guid.Data2
+      value: 1267039707
+      objectReference: {fileID: 0}
+    - target: {fileID: 6294379960175240894, guid: 6f8d0c1cb68906c4fabb88370f8da774,
+        type: 3}
+      propertyPath: playerFootsteps.Guid.Data3
+      value: 507946163
+      objectReference: {fileID: 0}
+    - target: {fileID: 6294379960175240894, guid: 6f8d0c1cb68906c4fabb88370f8da774,
+        type: 3}
+      propertyPath: playerFootsteps.Guid.Data4
+      value: 998130951
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6f8d0c1cb68906c4fabb88370f8da774, type: 3}
 --- !u!114 &2924719014256710417 stripped
@@ -286,36 +311,36 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerFootsteps:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: -348117017
+      Data2: 1267039707
+      Data3: 507946163
+      Data4: 998130951
+    Path: event:/Player/PlayerFootsteps
   playerHurt:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: 1451254625
+      Data2: 1208298837
+      Data3: -427555192
+      Data4: -1199434036
+    Path: event:/Player/PlayerHurt
   playerJump:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: 2043158145
+      Data2: 1288009177
+      Data3: 469891248
+      Data4: -535589677
+    Path: event:/Player/PlayerJump
   playerLand:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: 1951714307
+      Data2: 1148392088
+      Data3: -1956089926
+      Data4: -540354086
+    Path: event:/Player/PlayerLand
   playerRespawn:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: 311894076
+      Data2: 1105350333
+      Data3: -728563819
+      Data4: -552443781
+    Path: event:/Player/PlayerRespawn
