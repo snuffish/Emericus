@@ -532,6 +532,7 @@ MonoBehaviour:
   OnChangeState:
     m_PersistentCalls:
       m_Calls: []
+  isActive: 1
   isOpen: 0
   animator: {fileID: 46196688}
   audioClip: {fileID: 8300000, guid: 3547d28bc23af9a4288921ba5c59c778, type: 3}
@@ -678,12 +679,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e32c722d376fc8c4eb7e07ce80d82a4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  allTargetsAreRequiredForActivation: 1
-  activateAllTargets: 1
-  deactivateAllTargets: 0
+  allTargetsAreRequiredForActivation: 0
+  activateAllTargets: 0
+  deactivateAllTargets: 1
   invertAllTargets: 0
   inputActivators:
   - {fileID: 1925750631}
+  - {fileID: 1703035937}
   targetActivators:
   - {fileID: 46196687}
 --- !u!1001 &58357620
@@ -1213,6 +1215,7 @@ MonoBehaviour:
   OnChangeState:
     m_PersistentCalls:
       m_Calls: []
+  isActive: 0
   weightThreshold: 1
   stackNormalThreshold: 0.5
 --- !u!4 &131182409 stripped
@@ -11419,6 +11422,7 @@ MonoBehaviour:
   OnChangeState:
     m_PersistentCalls:
       m_Calls: []
+  isActive: 0
   isOpen: 0
   animator: {fileID: 948714855}
   audioClip: {fileID: 8300000, guid: 3547d28bc23af9a4288921ba5c59c778, type: 3}
@@ -18657,6 +18661,7 @@ MonoBehaviour:
   OnChangeState:
     m_PersistentCalls:
       m_Calls: []
+  isActive: 0
   isOpen: 0
   animator: {fileID: 1371114825}
   audioClip: {fileID: 0}
@@ -19835,6 +19840,95 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1168460980}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1515066943
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4730378312869376351, guid: 6a49d720733432b428b329df9f3ec079,
+        type: 3}
+      propertyPath: m_Name
+      value: pressure_plate_Prefab (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4730378312869376351, guid: 6a49d720733432b428b329df9f3ec079,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 5399392296929733605, guid: 6a49d720733432b428b329df9f3ec079,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 5399392296929733605, guid: 6a49d720733432b428b329df9f3ec079,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 57.09204
+      objectReference: {fileID: 0}
+    - target: {fileID: 5399392296929733605, guid: 6a49d720733432b428b329df9f3ec079,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 57.09204
+      objectReference: {fileID: 0}
+    - target: {fileID: 5399392296929733605, guid: 6a49d720733432b428b329df9f3ec079,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 57.09204
+      objectReference: {fileID: 0}
+    - target: {fileID: 5399392296929733605, guid: 6a49d720733432b428b329df9f3ec079,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 61.85
+      objectReference: {fileID: 0}
+    - target: {fileID: 5399392296929733605, guid: 6a49d720733432b428b329df9f3ec079,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -4.687774
+      objectReference: {fileID: 0}
+    - target: {fileID: 5399392296929733605, guid: 6a49d720733432b428b329df9f3ec079,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 7.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5399392296929733605, guid: 6a49d720733432b428b329df9f3ec079,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5399392296929733605, guid: 6a49d720733432b428b329df9f3ec079,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5399392296929733605, guid: 6a49d720733432b428b329df9f3ec079,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5399392296929733605, guid: 6a49d720733432b428b329df9f3ec079,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5399392296929733605, guid: 6a49d720733432b428b329df9f3ec079,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5399392296929733605, guid: 6a49d720733432b428b329df9f3ec079,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5399392296929733605, guid: 6a49d720733432b428b329df9f3ec079,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6a49d720733432b428b329df9f3ec079, type: 3}
 --- !u!1001 &1520703015
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -21703,6 +21797,45 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 3861478300804232965, guid: 116d52934e0190f498bc3a93e790ca8e, type: 3}
+--- !u!1 &1703035936 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4730378312869376351, guid: 6a49d720733432b428b329df9f3ec079,
+    type: 3}
+  m_PrefabInstance: {fileID: 1515066943}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1703035937
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1703035936}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e78a3a2ec35de214eac55e69c3aaf186, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isLocked: 0
+  OnChangeState:
+    m_PersistentCalls:
+      m_Calls: []
+  isActive: 0
+  weightThreshold: 1
+  stackNormalThreshold: 0.5
+--- !u!64 &1703035938
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1703035936}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 6329158148709259305, guid: ac38dacc555c682489b405cb245044f6, type: 3}
 --- !u!1001 &1708554506
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -23534,6 +23667,7 @@ MonoBehaviour:
   OnChangeState:
     m_PersistentCalls:
       m_Calls: []
+  isActive: 0
   weightThreshold: 2
   stackNormalThreshold: 0.5
 --- !u!64 &1925750635

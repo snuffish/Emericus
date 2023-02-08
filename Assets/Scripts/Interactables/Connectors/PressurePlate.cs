@@ -15,6 +15,7 @@ public class PressurePlate : Activators
         
     }
 
+
     void Update()
     {
         if (currentMass >= weightThreshold && !isActive)
