@@ -2,12 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Lever : Connector
+public class Lever : Activators
 {
-    public override void Interact() {
-        foreach (Interactable interactable in connectedToList)
+    public override void Interact() 
+    {
+        if (!isLocked)
         {
-            interactable.Interact();
+            InvertState();
         }
     }
 }

@@ -5,7 +5,7 @@ using UnityEngine;
 
 public abstract class Interactable : MonoBehaviour
 {
-    
+    [SerializeField] protected bool isLocked = false;
     
 
     public virtual void Interact() {
