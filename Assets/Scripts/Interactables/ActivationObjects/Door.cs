@@ -3,34 +3,39 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [RequireComponent(typeof(AudioSource))]
-public class Door : Interactable
+public class Door : Activators
 {
-
     [SerializeField] private bool isOpen;
     [SerializeField] private Animator animator;
     [SerializeField] private AudioClip audioClip;
     [SerializeField] private AudioSource audioSource;
 
 
-    void Start() {
+    void Start()
+    {
         isOpen = false;
         audioSource = GetComponent<AudioSource>();
         audioSource.clip = audioClip;
     }
-    public override void Interact() {
-        isOpen = !isOpen;
+
+    public override void Interact()
+    {
+        if (!isLocked)
+        {
+            InvertState();
+        }
     }
 
-    void Update() {
-        if (isOpen) {
+    void Update()
+    {
+        if (isActive)
+        {
             animator.SetBool("IsOpen", true);
         }
-        else {
+        else
+        {
             animator.SetBool("IsOpen", false);
         }
     }
-
-    public void SetDoorOpen(bool openornot) {
-        isOpen = openornot;
-    }
+    
 }
