@@ -14,7 +14,7 @@ public class PlayerMovementController : MonoBehaviour
     [Header("General")]
     [SerializeField] private Rigidbody rb;
     [SerializeField] private Transform orientation;
-    [SerializeField] PlayerAudio playerAudio;
+    [SerializeField] public PlayerAudio playerAudio;
     //public Animator animator;
     private Vector3 direction;
 
@@ -50,10 +50,10 @@ public class PlayerMovementController : MonoBehaviour
     public PlayerIdleState idleState = new PlayerIdleState();
     
     [Header("Sound Parameters")]
-    [SerializeField, Tooltip("Time between fotsteps")] float stepInterval;
-    [SerializeField, Tooltip("Minimum velocity before considered moving")] float minVelocityForSteps;
-    bool isWalking;
-    float currentTime;
+    [SerializeField, Tooltip("Time between fotsteps")] public float stepInterval;
+    [SerializeField, Tooltip("Minimum velocity before considered moving")] public float minVelocityForSteps;
+    public bool isWalking;
+    public float currentTime;
     
     
     // Start is called before the first frame update
@@ -61,7 +61,8 @@ public class PlayerMovementController : MonoBehaviour
 
         currentState = idleState;
         currentState.EnterState(this);
-        if (playerAudio == null) GetComponent<PlayerAudio>();
+        if (playerAudio == null) 
+            playerAudio = GetComponent<PlayerAudio>();
         rb = GetComponent<Rigidbody>();
         rb.freezeRotation = true;
         ResetJump();
@@ -71,10 +72,8 @@ public class PlayerMovementController : MonoBehaviour
     void Update() {
 
         currentState.UpdateState(this);
-        if (rb.velocity.magnitude < minVelocityForSteps) isWalking = false;
-        else isWalking = true;
 
-            //  Airborne Check
+        //  Airborne Check
         Ray groundRay = new Ray(transform.position, Vector3.down);
         Debug.DrawRay(groundRay.origin, groundRay.direction * groundCheckRayLength, Color.cyan);
 
@@ -123,18 +122,7 @@ public class PlayerMovementController : MonoBehaviour
     }
 
     public void MovePlayer() {
-        if (isWalking)
-        {
-            if (currentTime >= stepInterval)
-            {
-                currentTime = 0;
-               // playerAudio.PlayFootstep(gameObject);
-            }
-            else
-            {
-                currentTime += Time.deltaTime;
-            }
-        }
+        
         
         //  Calculate direction
         direction = orientation.forward * deltaMovement.y + orientation.right * deltaMovement.x;
