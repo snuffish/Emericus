@@ -1218,6 +1218,20 @@ MonoBehaviour:
   isActive: 0
   weightThreshold: 1
   stackNormalThreshold: 0.5
+  pressurePlateActivateSound:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  pressurePlateDeactivateSound:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!4 &131182409 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6608459226968693419, guid: 33191a0f83af7de478dd563c2f907503,
@@ -1700,6 +1714,56 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4239124834230977932, guid: 6a49d720733432b428b329df9f3ec079,
+        type: 3}
+      propertyPath: pressurePlateActivateSound.Path
+      value: event:/Interactive/PressurePlate/PressurePlate (test)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4239124834230977932, guid: 6a49d720733432b428b329df9f3ec079,
+        type: 3}
+      propertyPath: pressurePlateDeactivateSound.Path
+      value: "event:/Interactive/PressurePlate/PressurePad Tillf\xE4llig"
+      objectReference: {fileID: 0}
+    - target: {fileID: 4239124834230977932, guid: 6a49d720733432b428b329df9f3ec079,
+        type: 3}
+      propertyPath: pressurePlateActivateSound.Guid.Data1
+      value: 969319826
+      objectReference: {fileID: 0}
+    - target: {fileID: 4239124834230977932, guid: 6a49d720733432b428b329df9f3ec079,
+        type: 3}
+      propertyPath: pressurePlateActivateSound.Guid.Data2
+      value: 1101960024
+      objectReference: {fileID: 0}
+    - target: {fileID: 4239124834230977932, guid: 6a49d720733432b428b329df9f3ec079,
+        type: 3}
+      propertyPath: pressurePlateActivateSound.Guid.Data3
+      value: 33230977
+      objectReference: {fileID: 0}
+    - target: {fileID: 4239124834230977932, guid: 6a49d720733432b428b329df9f3ec079,
+        type: 3}
+      propertyPath: pressurePlateActivateSound.Guid.Data4
+      value: -486509113
+      objectReference: {fileID: 0}
+    - target: {fileID: 4239124834230977932, guid: 6a49d720733432b428b329df9f3ec079,
+        type: 3}
+      propertyPath: pressurePlateDeactivateSound.Guid.Data1
+      value: -2126073542
+      objectReference: {fileID: 0}
+    - target: {fileID: 4239124834230977932, guid: 6a49d720733432b428b329df9f3ec079,
+        type: 3}
+      propertyPath: pressurePlateDeactivateSound.Guid.Data2
+      value: 1076271601
+      objectReference: {fileID: 0}
+    - target: {fileID: 4239124834230977932, guid: 6a49d720733432b428b329df9f3ec079,
+        type: 3}
+      propertyPath: pressurePlateDeactivateSound.Guid.Data3
+      value: 737088152
+      objectReference: {fileID: 0}
+    - target: {fileID: 4239124834230977932, guid: 6a49d720733432b428b329df9f3ec079,
+        type: 3}
+      propertyPath: pressurePlateDeactivateSound.Guid.Data4
+      value: -1467891998
+      objectReference: {fileID: 0}
     - target: {fileID: 4730378312869376351, guid: 6a49d720733432b428b329df9f3ec079,
         type: 3}
       propertyPath: m_Name
@@ -19593,6 +19657,16 @@ PrefabInstance:
       propertyPath: distanceThreshold
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 1034536918316240819, guid: 04d11ca39289f794e9a734c7102f9f2a,
+        type: 3}
+      propertyPath: stepInterval
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1034536918316240819, guid: 04d11ca39289f794e9a734c7102f9f2a,
+        type: 3}
+      propertyPath: minVelocityForSteps
+      value: 0.81
+      objectReference: {fileID: 0}
     - target: {fileID: 1034536919964190893, guid: 04d11ca39289f794e9a734c7102f9f2a,
         type: 3}
       propertyPath: mouseSens.x
@@ -19608,6 +19682,106 @@ PrefabInstance:
       propertyPath: selectedCrosshair
       value: 
       objectReference: {fileID: 468251343}
+    - target: {fileID: 6745458310184663204, guid: 04d11ca39289f794e9a734c7102f9f2a,
+        type: 3}
+      propertyPath: playerFootsteps.Path
+      value: event:/Player/PlayerFootstepsStone (test)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6745458310184663204, guid: 04d11ca39289f794e9a734c7102f9f2a,
+        type: 3}
+      propertyPath: playerFootsteps.Guid.Data1
+      value: -1934249589
+      objectReference: {fileID: 0}
+    - target: {fileID: 6745458310184663204, guid: 04d11ca39289f794e9a734c7102f9f2a,
+        type: 3}
+      propertyPath: playerFootsteps.Guid.Data2
+      value: 1155297362
+      objectReference: {fileID: 0}
+    - target: {fileID: 6745458310184663204, guid: 04d11ca39289f794e9a734c7102f9f2a,
+        type: 3}
+      propertyPath: playerFootsteps.Guid.Data3
+      value: -2140077669
+      objectReference: {fileID: 0}
+    - target: {fileID: 6745458310184663204, guid: 04d11ca39289f794e9a734c7102f9f2a,
+        type: 3}
+      propertyPath: playerFootsteps.Guid.Data4
+      value: -823552723
+      objectReference: {fileID: 0}
+    - target: {fileID: 6745458310184663204, guid: 04d11ca39289f794e9a734c7102f9f2a,
+        type: 3}
+      propertyPath: pressurePlateActivateSound.Path
+      value: "event:/Interactive/PressurePlate/PressurePad Tillf\xE4llig"
+      objectReference: {fileID: 0}
+    - target: {fileID: 6745458310184663204, guid: 04d11ca39289f794e9a734c7102f9f2a,
+        type: 3}
+      propertyPath: pressurePlateDeactivateSound.Path
+      value: event:/Interactive/PressurePlate/PressurePlate (test)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6745458310184663204, guid: 04d11ca39289f794e9a734c7102f9f2a,
+        type: 3}
+      propertyPath: pressurePlateActivateSound.Guid.Data1
+      value: -2126073542
+      objectReference: {fileID: 0}
+    - target: {fileID: 6745458310184663204, guid: 04d11ca39289f794e9a734c7102f9f2a,
+        type: 3}
+      propertyPath: pressurePlateActivateSound.Guid.Data2
+      value: 1076271601
+      objectReference: {fileID: 0}
+    - target: {fileID: 6745458310184663204, guid: 04d11ca39289f794e9a734c7102f9f2a,
+        type: 3}
+      propertyPath: pressurePlateActivateSound.Guid.Data3
+      value: 737088152
+      objectReference: {fileID: 0}
+    - target: {fileID: 6745458310184663204, guid: 04d11ca39289f794e9a734c7102f9f2a,
+        type: 3}
+      propertyPath: pressurePlateActivateSound.Guid.Data4
+      value: -1467891998
+      objectReference: {fileID: 0}
+    - target: {fileID: 6745458310184663204, guid: 04d11ca39289f794e9a734c7102f9f2a,
+        type: 3}
+      propertyPath: pressurePlateDeactivateSound.Guid.Data1
+      value: 969319826
+      objectReference: {fileID: 0}
+    - target: {fileID: 6745458310184663204, guid: 04d11ca39289f794e9a734c7102f9f2a,
+        type: 3}
+      propertyPath: pressurePlateDeactivateSound.Guid.Data2
+      value: 1101960024
+      objectReference: {fileID: 0}
+    - target: {fileID: 6745458310184663204, guid: 04d11ca39289f794e9a734c7102f9f2a,
+        type: 3}
+      propertyPath: pressurePlateDeactivateSound.Guid.Data3
+      value: 33230977
+      objectReference: {fileID: 0}
+    - target: {fileID: 6745458310184663204, guid: 04d11ca39289f794e9a734c7102f9f2a,
+        type: 3}
+      propertyPath: pressurePlateDeactivateSound.Guid.Data4
+      value: -486509113
+      objectReference: {fileID: 0}
+    - target: {fileID: 7977610564586963445, guid: 04d11ca39289f794e9a734c7102f9f2a,
+        type: 3}
+      propertyPath: playerFootsteps.Path
+      value: event:/Player/PlayerFootstepsStone (test)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7977610564586963445, guid: 04d11ca39289f794e9a734c7102f9f2a,
+        type: 3}
+      propertyPath: playerFootsteps.Guid.Data1
+      value: -1934249589
+      objectReference: {fileID: 0}
+    - target: {fileID: 7977610564586963445, guid: 04d11ca39289f794e9a734c7102f9f2a,
+        type: 3}
+      propertyPath: playerFootsteps.Guid.Data2
+      value: 1155297362
+      objectReference: {fileID: 0}
+    - target: {fileID: 7977610564586963445, guid: 04d11ca39289f794e9a734c7102f9f2a,
+        type: 3}
+      propertyPath: playerFootsteps.Guid.Data3
+      value: -2140077669
+      objectReference: {fileID: 0}
+    - target: {fileID: 7977610564586963445, guid: 04d11ca39289f794e9a734c7102f9f2a,
+        type: 3}
+      propertyPath: playerFootsteps.Guid.Data4
+      value: -823552723
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 04d11ca39289f794e9a734c7102f9f2a, type: 3}
 --- !u!1001 &1497596791
@@ -21822,6 +21996,20 @@ MonoBehaviour:
   isActive: 0
   weightThreshold: 1
   stackNormalThreshold: 0.5
+  pressurePlateActivateSound:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  pressurePlateDeactivateSound:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!64 &1703035938
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -23645,45 +23833,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7f9d84742d3ee5d468060ced45a3e93e, type: 3}
---- !u!1 &1925750630 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4730378312869376351, guid: 6a49d720733432b428b329df9f3ec079,
+--- !u!114 &1925750631 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4239124834230977932, guid: 6a49d720733432b428b329df9f3ec079,
     type: 3}
   m_PrefabInstance: {fileID: 175533241}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1925750631
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1925750630}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e78a3a2ec35de214eac55e69c3aaf186, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isLocked: 0
-  OnChangeState:
-    m_PersistentCalls:
-      m_Calls: []
-  isActive: 0
-  weightThreshold: 2
-  stackNormalThreshold: 0.5
---- !u!64 &1925750635
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1925750630}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 6329158148709259305, guid: ac38dacc555c682489b405cb245044f6, type: 3}
 --- !u!4 &1926336819 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1736420488659257620, guid: c7028ed55677cc64b9929e53045906fa,
