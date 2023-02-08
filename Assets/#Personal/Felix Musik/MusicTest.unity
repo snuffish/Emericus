@@ -528,6 +528,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cdbff440df30e9e4693558b91fa222ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isLocked: 0
+  OnChangeState:
+    m_PersistentCalls:
+      m_Calls: []
+  isActive: 0
   isOpen: 0
   animator: {fileID: 46196688}
   audioClip: {fileID: 8300000, guid: 3547d28bc23af9a4288921ba5c59c778, type: 3}
@@ -699,7 +704,7 @@ PrefabInstance:
     - target: {fileID: 659038812657918090, guid: 9e209d725f861764e811c8ddb947c009,
         type: 3}
       propertyPath: audioSettings.Array.size
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 659038812657918090, guid: 9e209d725f861764e811c8ddb947c009,
         type: 3}
@@ -1306,8 +1311,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e78a3a2ec35de214eac55e69c3aaf186, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  connectedToList:
-  - {fileID: 0}
+  isLocked: 0
+  OnChangeState:
+    m_PersistentCalls:
+      m_Calls: []
+  isActive: 0
   weightThreshold: 1
   stackNormalThreshold: 0.5
 --- !u!4 &131182409 stripped
@@ -8644,6 +8652,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cdbff440df30e9e4693558b91fa222ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isLocked: 0
+  OnChangeState:
+    m_PersistentCalls:
+      m_Calls: []
+  isActive: 0
   isOpen: 0
   animator: {fileID: 683398212}
   audioClip: {fileID: 8300000, guid: 3547d28bc23af9a4288921ba5c59c778, type: 3}
@@ -12576,6 +12589,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cdbff440df30e9e4693558b91fa222ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isLocked: 0
+  OnChangeState:
+    m_PersistentCalls:
+      m_Calls: []
+  isActive: 0
   isOpen: 0
   animator: {fileID: 948714855}
   audioClip: {fileID: 8300000, guid: 3547d28bc23af9a4288921ba5c59c778, type: 3}
@@ -13347,6 +13365,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28a3298f306238f4e86d936cabb674d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isLocked: 0
   breakForce: 35
   playerInteract: {fileID: 0}
   stackNormalThreshold: 0.5
@@ -18698,6 +18717,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28a3298f306238f4e86d936cabb674d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isLocked: 0
   breakForce: 35
   playerInteract: {fileID: 0}
   stackNormalThreshold: 0.5
@@ -20354,6 +20374,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cdbff440df30e9e4693558b91fa222ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isLocked: 0
+  OnChangeState:
+    m_PersistentCalls:
+      m_Calls: []
+  isActive: 0
   isOpen: 0
   animator: {fileID: 1371114825}
   audioClip: {fileID: 0}
@@ -22280,6 +22305,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cdbff440df30e9e4693558b91fa222ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isLocked: 0
+  OnChangeState:
+    m_PersistentCalls:
+      m_Calls: []
+  isActive: 0
   isOpen: 0
   animator: {fileID: 1598861984}
   audioClip: {fileID: 8300000, guid: 3547d28bc23af9a4288921ba5c59c778, type: 3}
@@ -25727,9 +25757,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e78a3a2ec35de214eac55e69c3aaf186, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  connectedToList:
-  - {fileID: 948714852}
-  - {fileID: 46196687}
+  isLocked: 0
+  OnChangeState:
+    m_PersistentCalls:
+      m_Calls: []
+  isActive: 0
   weightThreshold: 2
   stackNormalThreshold: 0.5
 --- !u!64 &1925750635
@@ -28157,6 +28189,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28a3298f306238f4e86d936cabb674d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isLocked: 0
   breakForce: 35
   playerInteract: {fileID: 0}
   stackNormalThreshold: 0.5
@@ -29110,6 +29143,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28a3298f306238f4e86d936cabb674d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isLocked: 0
   breakForce: 35
   playerInteract: {fileID: 0}
   stackNormalThreshold: 0.5
@@ -29218,6 +29252,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28a3298f306238f4e86d936cabb674d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isLocked: 0
   breakForce: 35
   playerInteract: {fileID: 0}
   stackNormalThreshold: 0.5
