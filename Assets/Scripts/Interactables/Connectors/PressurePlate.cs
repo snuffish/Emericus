@@ -1,18 +1,21 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using FMODUnity;
 public class PressurePlate : Activators
 {
     [SerializeField, Tooltip("Minimum Weight before activated")] float weightThreshold;
     [SerializeField, Tooltip("Max allowed angle(kinda)to be considered stacked")] float stackNormalThreshold = 0.5f;
+
+    [SerializeField] EventReference pressurePlateActivateSound;
+    [SerializeField] EventReference pressurePlateDeactivateSound;
     //[SerializeField] LayerMask pressureLayers;
     Dictionary<GameObject, float> pressuringObjects = new Dictionary<GameObject, float>();
     float currentMass;
 
     public override void Interact()
     {
-        
+
     }
 
 
@@ -21,10 +24,12 @@ public class PressurePlate : Activators
         if (currentMass >= weightThreshold && !isActive)
         {
             //It activates here, insert sounds
+            AudioManager.Instance.PlayOneShot(pressurePlateActivateSound, gameObject);
             Activate();
         }
         else if (currentMass < weightThreshold && isActive)
         {
+            AudioManager.Instance.PlayOneShot(pressurePlateDeactivateSound, gameObject);
             Deactivate();
         }
     }
