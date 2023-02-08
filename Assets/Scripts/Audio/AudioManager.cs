@@ -59,8 +59,7 @@ public class AudioManager : MonoBehaviour
     //Player Funktioner Events.
     [Header("Player")]
     [SerializeField] private EventReference playerFootsteps;
-    public EventReference pressurePlateActivateSound;
-    public EventReference pressurePlateDeactivateSound;
+
     /*
     [EventRef]
     public string playerFootsteps;
@@ -83,7 +82,7 @@ public class AudioManager : MonoBehaviour
 
     public void PlayOneShot(EventReference eventRef, GameObject soundObject)
     {
-        RuntimeManager.PlayOneShotAttached(eventRef.Path, soundObject);
+        RuntimeManager.PlayOneShotAttached(eventRef.Guid, soundObject);
     }
     public void Stop(StudioEventEmitter emitter)
     {
