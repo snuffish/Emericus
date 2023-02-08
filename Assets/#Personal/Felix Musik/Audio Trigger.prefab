@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 5837973802204612200}
   - component: {fileID: 7714198816936244693}
-  - component: {fileID: 6331355851032462655}
   m_Layer: 0
   m_Name: Audio Trigger
   m_TagString: Untagged
@@ -45,20 +44,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1f76902dedb95104bbbd1cc40eb5fb63, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gObject: {fileID: 0}
-  audioManager: {fileID: 0}
-  musicManager: {fileID: 0}
-  audioSettings: []
---- !u!65 &6331355851032462655
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8030072693880248487}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
