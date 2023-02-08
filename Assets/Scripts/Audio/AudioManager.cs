@@ -37,14 +37,15 @@ public class AudioManager : MonoBehaviour
 
    
    //Emitters för bakgrundsmusik
-   [Header("BGM")] 
+   [Header("Voicelines")] 
    public Emitters eventEmitters;
    
    [System.Serializable]
    
    public struct Emitters
    {
-      public StudioEventEmitter bgmMusic;
+      public StudioEventEmitter intro;
+      public StudioEventEmitter painting;
    }
 
   
