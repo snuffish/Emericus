@@ -25,17 +25,23 @@ public class Door : Activators
             InvertState();
         }
     }
-
-    void Update()
+    public override void ChangeState(bool toState)
     {
-        if (isActive)
-        {
-            animator.SetBool("IsOpen", true);
-        }
-        else
-        {
-            animator.SetBool("IsOpen", false);
-        }
+        base.ChangeState(toState);
+        if(isActive) animator.SetBool("IsOpen", true);
+        else animator.SetBool("IsOpen", false);
+
     }
+    //void Update()
+    //{
+    //    if (isActive)
+    //    {
+    //        animator.SetBool("IsOpen", true);
+    //    }
+    //    else
+    //    {
+    //        animator.SetBool("IsOpen", false);
+    //    }
+    //}
     
 }
