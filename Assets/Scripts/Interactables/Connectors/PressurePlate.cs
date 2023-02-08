@@ -11,6 +11,10 @@ public class PressurePlate : Connector
     float currentMass;
     bool isActive = false;
 
+    public override void Interact()
+    {
+        
+    }
 
     void Update()
     {

@@ -11,18 +11,16 @@ public class PhysicsSounds : MonoBehaviour
     [SerializeField] protected EventReference collisionSound;
     public virtual void PickUpEvent()
     {
-        AudioManager.Instance.PlayOneShot(pickUpSound,gameObject);
+        if (!pickUpSound.IsNull) AudioManager.Instance.PlayOneShot(pickUpSound, gameObject);
     }
     public virtual void DropEvent()
     {
-        AudioManager.Instance.PlayOneShot(dropSound,gameObject);
-
+        if (!dropSound.IsNull) AudioManager.Instance.PlayOneShot(dropSound, gameObject);
     }
 
     public virtual void CollisionEvent()
     {
-        AudioManager.Instance.PlayOneShot(collisionSound,gameObject);
-
+        if (!collisionSound.IsNull) AudioManager.Instance.PlayOneShot(collisionSound, gameObject);
     }
 
 }

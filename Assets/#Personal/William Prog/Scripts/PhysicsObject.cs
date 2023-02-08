@@ -19,6 +19,7 @@ public class PhysicsObject : Interactable
 
     void Start()
     {
+        if (objectSoundController == null) GetComponent<PhysicsSounds>();
         playerInteract = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerInteract>();
         rBody = GetComponent<Rigidbody>();
         baseWeight = rBody.mass;
@@ -105,6 +106,12 @@ public class PhysicsObject : Interactable
         }
     }
 
+
+    public void PlayDropSound()
+    {
+        // objectSoundController.DropEvent();
+
+    }
     public IEnumerator PickUp()
     {
         objectSoundController.PickUpEvent();

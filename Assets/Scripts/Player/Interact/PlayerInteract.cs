@@ -151,7 +151,7 @@ public class PlayerInteract : MonoBehaviour
         {
             if (!hasPlayedDropSound)
             {
-                pickupRB.gameObject.GetComponent<PhysicsObject>().objectSoundController.DropEvent();
+                pickupRB.gameObject.GetComponent<PhysicsObject>().PlayDropSound();
                 hasPlayedDropSound = true;
             }
             pickupRB.useGravity = true;

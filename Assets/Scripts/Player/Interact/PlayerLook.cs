@@ -7,22 +7,23 @@ using UnityEngine.UI;
 public class PlayerLook : MonoBehaviour
 {
     private PlayerInteract playerInteract;
-    
+
     [Header("Camera")]
     [SerializeField, Tooltip("Insert Player Cam")] public Camera Cam;
     [SerializeField, Tooltip("Distance you can reach objects")] float reachDistance;
     [SerializeField, Tooltip("Which Layer Interactable Objects lay in")] LayerMask interactLayers;
-    
+
     [Header("Selection")]
     public GameObject LookObject;
     [SerializeField, Tooltip("Color of Object when selected")] Color defaultColor;
     [SerializeField, Tooltip("Color of Object when selected")] Color selectionColor;
     [SerializeField, Tooltip("Insert Select Crosshair Sprite")] Image selectedCrosshair;
 
-    void Start() {
+    void Start()
+    {
         playerInteract = GetComponent<PlayerInteract>();
     }
-    
+
     // Update is called once per frame
     void Update()
     {
@@ -35,7 +36,7 @@ public class PlayerLook : MonoBehaviour
             selectedCrosshair.enabled = false;
             LookObject = null;
         }
-        
+
         RaycastHit hitInfo;
         if (Physics.Raycast(ray, out hitInfo, reachDistance, interactLayers))
         {
@@ -43,12 +44,14 @@ public class PlayerLook : MonoBehaviour
             if (Input.GetButtonDown("Interact"))
             {
                 if (playerInteract.currentlyPickedUpObject != null) playerInteract.BreakConnection();
-                if (hitInfo.collider.GetComponent<PhysicsObject>() != null || playerInteract.currentlyPickedUpObject != null)
+                else
                 {
-                    if (playerInteract.currentlyPickedUpObject == null && LookObject != null) playerInteract.PickUpObject();
+                    if (hitInfo.collider.GetComponent<PhysicsObject>() != null)
+                    {
+                        if (playerInteract.currentlyPickedUpObject == null && LookObject != null) playerInteract.PickUpObject();
+                    }
+                    else playerInteract.BreakConnection();
                 }
-                else playerInteract.BreakConnection();
-                
                 if (hitInfo.collider.GetComponent<Interactable>() != null) hitInfo.collider.GetComponent<Interactable>().Interact();
             }
             Renderer selectionRenderer = LookObject.GetComponent<Renderer>();
