@@ -1,40 +1,36 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
-public class PressurePlate : Connector
+using FMODUnity;
+public class PressurePlate : Activators
 {
     [SerializeField, Tooltip("Minimum Weight before activated")] float weightThreshold;
     [SerializeField, Tooltip("Max allowed angle(kinda)to be considered stacked")] float stackNormalThreshold = 0.5f;
+
+    [SerializeField] EventReference pressurePlateActivateSound;
+    [SerializeField] EventReference pressurePlateDeactivateSound;
     //[SerializeField] LayerMask pressureLayers;
     Dictionary<GameObject, float> pressuringObjects = new Dictionary<GameObject, float>();
     float currentMass;
-    bool isActive = false;
 
     public override void Interact()
     {
-        
+
     }
+
 
     void Update()
     {
         if (currentMass >= weightThreshold && !isActive)
         {
             //It activates here, insert sounds
-            isActive = true;
-            foreach (Interactable interactable in connectedToList)
-            {
-                //Activates every attached object
-                interactable.Interact();
-            }
+            AudioManager.Instance.PlayOneShot(pressurePlateActivateSound, gameObject);
+            Activate();
         }
         else if (currentMass < weightThreshold && isActive)
         {
-            isActive = false;
-            foreach (Interactable interactable in connectedToList)
-            {
-                interactable.Interact();
-            }
+            AudioManager.Instance.PlayOneShot(pressurePlateDeactivateSound, gameObject);
+            Deactivate();
         }
     }
     void OnCollisionEnter(Collision collision)

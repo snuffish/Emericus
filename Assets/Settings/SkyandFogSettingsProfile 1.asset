@@ -15,7 +15,7 @@ MonoBehaviour:
   active: 1
   quality:
     m_OverrideState: 1
-    m_Value: 2
+    m_Value: 0
   threshold:
     m_OverrideState: 1
     m_Value: 0
@@ -39,13 +39,13 @@ MonoBehaviour:
     m_Value: 1
   m_Resolution:
     m_OverrideState: 1
-    m_Value: 2
+    m_Value: 4
   m_HighQualityPrefiltering:
     m_OverrideState: 1
-    m_Value: 1
+    m_Value: 0
   m_HighQualityFiltering:
     m_OverrideState: 1
-    m_Value: 1
+    m_Value: 0
 --- !u!114 &-5970627691022475572
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -58,10 +58,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ddcec8a8eb2d684d833ac8f5d26aebd, type: 3}
   m_Name: HDShadowSettings
   m_EditorClassIdentifier: 
-  active: 0
+  active: 1
   maxShadowDistance:
     m_OverrideState: 1
-    m_Value: 28.1
+    m_Value: 103.4
   directionalTransmissionMultiplier:
     m_OverrideState: 1
     m_Value: 1
@@ -141,22 +141,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2d08ce26990eb1a4a9177b860541e702, type: 3}
   m_Name: Exposure
   m_EditorClassIdentifier: 
-  active: 0
+  active: 1
   mode:
     m_OverrideState: 1
-    m_Value: 4
+    m_Value: 0
   meteringMode:
     m_OverrideState: 0
-    m_Value: 2
+    m_Value: 0
   luminanceSource:
     m_OverrideState: 0
     m_Value: 1
   fixedExposure:
-    m_OverrideState: 0
-    m_Value: 0
+    m_OverrideState: 1
+    m_Value: 4.5
   compensation:
-    m_OverrideState: 0
-    m_Value: 0
+    m_OverrideState: 1
+    m_Value: 3.6
   limitMin:
     m_OverrideState: 1
     m_Value: 2.4851754
@@ -164,7 +164,7 @@ MonoBehaviour:
     m_OverrideState: 1
     m_Value: 7.795148
   curveMap:
-    m_OverrideState: 0
+    m_OverrideState: 1
     m_Value:
       serializedVersion: 2
       m_Curve:
@@ -172,16 +172,16 @@ MonoBehaviour:
         time: -10
         value: -10
         inSlope: 0
-        outSlope: 1
+        outSlope: 0
         tangentMode: 0
         weightedMode: 0
         inWeight: 0
         outWeight: 0
       - serializedVersion: 3
-        time: 20
-        value: 20
+        time: 15.25
+        value: -5.3301888
         inSlope: 1
-        outSlope: 0
+        outSlope: 1
         tangentMode: 0
         weightedMode: 0
         inWeight: 0
@@ -321,8 +321,8 @@ MonoBehaviour:
     m_OverrideState: 0
     m_Value: 0
   skyAmbientMode:
-    m_OverrideState: 1
-    m_Value: 0
+    m_OverrideState: 0
+    m_Value: 1
   windOrientation:
     m_OverrideState: 0
     m_Value: 0
@@ -356,7 +356,7 @@ MonoBehaviour:
     m_Value: 0
   color:
     m_OverrideState: 1
-    m_Value: {r: 0.044194173, g: 0.028076299, b: 0.019930705, a: 1}
+    m_Value: {r: 0, g: 0, b: 0, a: 1}
   tint:
     m_OverrideState: 0
     m_Value: {r: 1, g: 1, b: 1, a: 1}
@@ -374,25 +374,25 @@ MonoBehaviour:
     m_Value: 1000
   baseHeight:
     m_OverrideState: 1
-    m_Value: -69.55
+    m_Value: -66.5
   maximumHeight:
     m_OverrideState: 1
-    m_Value: 279.47
+    m_Value: 97.4
   meanFreePath:
     m_OverrideState: 1
-    m_Value: 7.8
+    m_Value: 7.1
   enableVolumetricFog:
     m_OverrideState: 1
     m_Value: 1
   albedo:
     m_OverrideState: 1
-    m_Value: {r: 0.05660379, g: 0.05660379, b: 0.05660379, a: 0.6039216}
+    m_Value: {r: 0.084905684, g: 0.084905684, b: 0.084905684, a: 1}
   globalLightProbeDimmer:
     m_OverrideState: 1
     m_Value: 1
   depthExtent:
     m_OverrideState: 1
-    m_Value: 32.5
+    m_Value: 30.5
   denoisingMode:
     m_OverrideState: 1
     m_Value: 3
@@ -464,8 +464,8 @@ MonoBehaviour:
     m_OverrideState: 0
     m_Value: 0
   type:
-    m_OverrideState: 0
-    m_Value: 1
+    m_OverrideState: 1
+    m_Value: 0
   sphericalMode:
     m_OverrideState: 0
     m_Value: 1
@@ -510,7 +510,7 @@ MonoBehaviour:
     m_Value: 8
   groundTint:
     m_OverrideState: 1
-    m_Value: {r: 0.4056604, g: 0.3345878, b: 0.28128338, a: 1}
+    m_Value: {r: 0.8867924, g: 0.8867924, b: 0.8867924, a: 1}
   groundColorTexture:
     m_OverrideState: 0
     m_Value: {fileID: 0}
@@ -575,13 +575,13 @@ MonoBehaviour:
     m_Value: 0
   intensity:
     m_OverrideState: 1
-    m_Value: 2.96
+    m_Value: 4
   directLightingStrength:
     m_OverrideState: 1
-    m_Value: 0.572
+    m_Value: 0.836
   radius:
     m_OverrideState: 1
-    m_Value: 3.73
+    m_Value: 5
   spatialBilateralAggressiveness:
     m_OverrideState: 0
     m_Value: 0

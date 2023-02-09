@@ -72,7 +72,20 @@ public class PlayerMovementController : MonoBehaviour
     void Update() {
 
         currentState.UpdateState(this);
-
+        if (rb.velocity.magnitude >= minVelocityForSteps)
+        {
+            isWalking = true;
+        }
+        else isWalking = false;
+        if (isWalking)
+        {
+            if (currentTime >= stepInterval)
+            {
+                playerAudio.PlayFootstep(gameObject);
+                currentTime = 0;
+            }
+            else currentTime += Time.deltaTime;
+        }
         //  Airborne Check
         Ray groundRay = new Ray(transform.position, Vector3.down);
         Debug.DrawRay(groundRay.origin, groundRay.direction * groundCheckRayLength, Color.cyan);
@@ -122,7 +135,7 @@ public class PlayerMovementController : MonoBehaviour
     }
 
     public void MovePlayer() {
-        
+
         
         //  Calculate direction
         direction = orientation.forward * deltaMovement.y + orientation.right * deltaMovement.x;
@@ -134,6 +147,7 @@ public class PlayerMovementController : MonoBehaviour
         //  In air
         else if(!isGrounded)
             rb.AddForce(direction.normalized * Time.deltaTime * currentMoveSpeed * 300f * airmultiplier, ForceMode.Force);
+        
     }
 
     void Jump() {
