@@ -670,6 +670,36 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 583104533}
     m_Modifications:
+    - target: {fileID: 6266672802219159357, guid: bbb92c5b040b8da4c97a622bbca75f01,
+        type: 3}
+      propertyPath: weightThreshold
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6266672802219159357, guid: bbb92c5b040b8da4c97a622bbca75f01,
+        type: 3}
+      propertyPath: pressurePlateDeactivateSound.Path
+      value: "event:/Interactive/PressurePlate/PressurePad Tillf\xE4llig"
+      objectReference: {fileID: 0}
+    - target: {fileID: 6266672802219159357, guid: bbb92c5b040b8da4c97a622bbca75f01,
+        type: 3}
+      propertyPath: pressurePlateDeactivateSound.Guid.Data1
+      value: -2126073542
+      objectReference: {fileID: 0}
+    - target: {fileID: 6266672802219159357, guid: bbb92c5b040b8da4c97a622bbca75f01,
+        type: 3}
+      propertyPath: pressurePlateDeactivateSound.Guid.Data2
+      value: 1076271601
+      objectReference: {fileID: 0}
+    - target: {fileID: 6266672802219159357, guid: bbb92c5b040b8da4c97a622bbca75f01,
+        type: 3}
+      propertyPath: pressurePlateDeactivateSound.Guid.Data3
+      value: 737088152
+      objectReference: {fileID: 0}
+    - target: {fileID: 6266672802219159357, guid: bbb92c5b040b8da4c97a622bbca75f01,
+        type: 3}
+      propertyPath: pressurePlateDeactivateSound.Guid.Data4
+      value: -1467891998
+      objectReference: {fileID: 0}
     - target: {fileID: 7098523712155768522, guid: bbb92c5b040b8da4c97a622bbca75f01,
         type: 3}
       propertyPath: m_RootOrder
@@ -1121,65 +1151,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 67296962}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &82200184 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7622576670495149168, guid: bbb92c5b040b8da4c97a622bbca75f01,
-    type: 3}
-  m_PrefabInstance: {fileID: 1220499007}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &82200187 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7098523712155768522, guid: bbb92c5b040b8da4c97a622bbca75f01,
     type: 3}
   m_PrefabInstance: {fileID: 1220499007}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &82200188
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 82200184}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e78a3a2ec35de214eac55e69c3aaf186, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isLocked: 0
-  OnChangeState:
-    m_PersistentCalls:
-      m_Calls: []
-  isActive: 0
-  weightThreshold: 1
-  stackNormalThreshold: 0.5
-  pressurePlateActivateSound:
-    Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
-  pressurePlateDeactivateSound:
-    Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
---- !u!64 &82200189
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 82200184}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -8590607836418664005, guid: 816500e7be337124e98718d1d88b4867, type: 3}
 --- !u!1 &83536341 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -344004081357383697, guid: f0ca1060e80dfaf459d77e1e5cf42694,
@@ -2466,6 +2443,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 583104533}
     m_Modifications:
+    - target: {fileID: 4239124834230977932, guid: 6a49d720733432b428b329df9f3ec079,
+        type: 3}
+      propertyPath: weightThreshold
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4730378312869376351, guid: 6a49d720733432b428b329df9f3ec079,
         type: 3}
       propertyPath: m_Name
@@ -3788,7 +3770,7 @@ PrefabInstance:
     - target: {fileID: 1736420488659257620, guid: c7028ed55677cc64b9929e53045906fa,
         type: 3}
       propertyPath: m_RootOrder
-      value: 17
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 1736420488659257620, guid: c7028ed55677cc64b9929e53045906fa,
         type: 3}
@@ -3853,12 +3835,27 @@ PrefabInstance:
     - target: {fileID: 3130416578677240593, guid: c7028ed55677cc64b9929e53045906fa,
         type: 3}
       propertyPath: m_Intensity
-      value: 1000
+      value: 300
       objectReference: {fileID: 0}
     - target: {fileID: 3130416578677240593, guid: c7028ed55677cc64b9929e53045906fa,
         type: 3}
       propertyPath: m_LightUnit
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3130416578677240593, guid: c7028ed55677cc64b9929e53045906fa,
+        type: 3}
+      propertyPath: m_ShapeRadius
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3130416578677240593, guid: c7028ed55677cc64b9929e53045906fa,
+        type: 3}
+      propertyPath: useVolumetric
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3130416578677240593, guid: c7028ed55677cc64b9929e53045906fa,
+        type: 3}
+      propertyPath: m_LuxAtDistance
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3130416578677240593, guid: c7028ed55677cc64b9929e53045906fa,
         type: 3}
@@ -3869,6 +3866,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_PointlightHDType
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3130416578677240593, guid: c7028ed55677cc64b9929e53045906fa,
+        type: 3}
+      propertyPath: m_VolumetricDimmer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3130416578677240593, guid: c7028ed55677cc64b9929e53045906fa,
+        type: 3}
+      propertyPath: m_VolumetricFadeDistance
+      value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 3130416578677240593, guid: c7028ed55677cc64b9929e53045906fa,
+        type: 3}
+      propertyPath: m_VolumetricShadowDimmer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3163746662435963548, guid: c7028ed55677cc64b9929e53045906fa,
         type: 3}
@@ -3903,17 +3915,42 @@ PrefabInstance:
     - target: {fileID: 8135530199006451733, guid: c7028ed55677cc64b9929e53045906fa,
         type: 3}
       propertyPath: m_Range
-      value: 30
+      value: 35
+      objectReference: {fileID: 0}
+    - target: {fileID: 8135530199006451733, guid: c7028ed55677cc64b9929e53045906fa,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 0.05900679
+      objectReference: {fileID: 0}
+    - target: {fileID: 8135530199006451733, guid: c7028ed55677cc64b9929e53045906fa,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 0.5619972
+      objectReference: {fileID: 0}
+    - target: {fileID: 8135530199006451733, guid: c7028ed55677cc64b9929e53045906fa,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 0.9622642
       objectReference: {fileID: 0}
     - target: {fileID: 8135530199006451733, guid: c7028ed55677cc64b9929e53045906fa,
         type: 3}
       propertyPath: m_Intensity
-      value: 1000
+      value: 300
+      objectReference: {fileID: 0}
+    - target: {fileID: 8135530199006451733, guid: c7028ed55677cc64b9929e53045906fa,
+        type: 3}
+      propertyPath: m_ShadowRadius
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8135530199006451733, guid: c7028ed55677cc64b9929e53045906fa,
         type: 3}
       propertyPath: m_Shadows.m_Type
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8135530199006451733, guid: c7028ed55677cc64b9929e53045906fa,
+        type: 3}
+      propertyPath: m_BounceIntensity
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8135530199006451733, guid: c7028ed55677cc64b9929e53045906fa,
         type: 3}
@@ -4572,12 +4609,27 @@ PrefabInstance:
     - target: {fileID: 3130416578677240593, guid: c7028ed55677cc64b9929e53045906fa,
         type: 3}
       propertyPath: m_Intensity
-      value: 1000
+      value: 300
       objectReference: {fileID: 0}
     - target: {fileID: 3130416578677240593, guid: c7028ed55677cc64b9929e53045906fa,
         type: 3}
       propertyPath: m_LightUnit
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3130416578677240593, guid: c7028ed55677cc64b9929e53045906fa,
+        type: 3}
+      propertyPath: m_ShapeRadius
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3130416578677240593, guid: c7028ed55677cc64b9929e53045906fa,
+        type: 3}
+      propertyPath: useVolumetric
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3130416578677240593, guid: c7028ed55677cc64b9929e53045906fa,
+        type: 3}
+      propertyPath: m_LuxAtDistance
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3130416578677240593, guid: c7028ed55677cc64b9929e53045906fa,
         type: 3}
@@ -4588,6 +4640,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_PointlightHDType
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3130416578677240593, guid: c7028ed55677cc64b9929e53045906fa,
+        type: 3}
+      propertyPath: m_VolumetricDimmer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3130416578677240593, guid: c7028ed55677cc64b9929e53045906fa,
+        type: 3}
+      propertyPath: m_VolumetricFadeDistance
+      value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 3130416578677240593, guid: c7028ed55677cc64b9929e53045906fa,
+        type: 3}
+      propertyPath: m_VolumetricShadowDimmer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3163746662435963548, guid: c7028ed55677cc64b9929e53045906fa,
         type: 3}
@@ -4622,17 +4689,42 @@ PrefabInstance:
     - target: {fileID: 8135530199006451733, guid: c7028ed55677cc64b9929e53045906fa,
         type: 3}
       propertyPath: m_Range
-      value: 30
+      value: 35
+      objectReference: {fileID: 0}
+    - target: {fileID: 8135530199006451733, guid: c7028ed55677cc64b9929e53045906fa,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 0.05900679
+      objectReference: {fileID: 0}
+    - target: {fileID: 8135530199006451733, guid: c7028ed55677cc64b9929e53045906fa,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 0.5619972
+      objectReference: {fileID: 0}
+    - target: {fileID: 8135530199006451733, guid: c7028ed55677cc64b9929e53045906fa,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 0.9622642
       objectReference: {fileID: 0}
     - target: {fileID: 8135530199006451733, guid: c7028ed55677cc64b9929e53045906fa,
         type: 3}
       propertyPath: m_Intensity
-      value: 1000
+      value: 300
+      objectReference: {fileID: 0}
+    - target: {fileID: 8135530199006451733, guid: c7028ed55677cc64b9929e53045906fa,
+        type: 3}
+      propertyPath: m_ShadowRadius
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8135530199006451733, guid: c7028ed55677cc64b9929e53045906fa,
         type: 3}
       propertyPath: m_Shadows.m_Type
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8135530199006451733, guid: c7028ed55677cc64b9929e53045906fa,
+        type: 3}
+      propertyPath: m_BounceIntensity
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8135530199006451733, guid: c7028ed55677cc64b9929e53045906fa,
         type: 3}
@@ -4789,6 +4881,36 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 583104533}
     m_Modifications:
+    - target: {fileID: 6266672802219159357, guid: bbb92c5b040b8da4c97a622bbca75f01,
+        type: 3}
+      propertyPath: weightThreshold
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6266672802219159357, guid: bbb92c5b040b8da4c97a622bbca75f01,
+        type: 3}
+      propertyPath: pressurePlateActivateSound.Path
+      value: "event:/Interactive/PressurePlate/PressurePad Tillf\xE4llig"
+      objectReference: {fileID: 0}
+    - target: {fileID: 6266672802219159357, guid: bbb92c5b040b8da4c97a622bbca75f01,
+        type: 3}
+      propertyPath: pressurePlateActivateSound.Guid.Data1
+      value: -2126073542
+      objectReference: {fileID: 0}
+    - target: {fileID: 6266672802219159357, guid: bbb92c5b040b8da4c97a622bbca75f01,
+        type: 3}
+      propertyPath: pressurePlateActivateSound.Guid.Data2
+      value: 1076271601
+      objectReference: {fileID: 0}
+    - target: {fileID: 6266672802219159357, guid: bbb92c5b040b8da4c97a622bbca75f01,
+        type: 3}
+      propertyPath: pressurePlateActivateSound.Guid.Data3
+      value: 737088152
+      objectReference: {fileID: 0}
+    - target: {fileID: 6266672802219159357, guid: bbb92c5b040b8da4c97a622bbca75f01,
+        type: 3}
+      propertyPath: pressurePlateActivateSound.Guid.Data4
+      value: -1467891998
+      objectReference: {fileID: 0}
     - target: {fileID: 7098523712155768522, guid: bbb92c5b040b8da4c97a622bbca75f01,
         type: 3}
       propertyPath: m_RootOrder
@@ -6122,6 +6244,36 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 583104533}
     m_Modifications:
+    - target: {fileID: 6266672802219159357, guid: bbb92c5b040b8da4c97a622bbca75f01,
+        type: 3}
+      propertyPath: weightThreshold
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6266672802219159357, guid: bbb92c5b040b8da4c97a622bbca75f01,
+        type: 3}
+      propertyPath: pressurePlateDeactivateSound.Path
+      value: "event:/Interactive/PressurePlate/PressurePad Tillf\xE4llig"
+      objectReference: {fileID: 0}
+    - target: {fileID: 6266672802219159357, guid: bbb92c5b040b8da4c97a622bbca75f01,
+        type: 3}
+      propertyPath: pressurePlateDeactivateSound.Guid.Data1
+      value: -2126073542
+      objectReference: {fileID: 0}
+    - target: {fileID: 6266672802219159357, guid: bbb92c5b040b8da4c97a622bbca75f01,
+        type: 3}
+      propertyPath: pressurePlateDeactivateSound.Guid.Data2
+      value: 1076271601
+      objectReference: {fileID: 0}
+    - target: {fileID: 6266672802219159357, guid: bbb92c5b040b8da4c97a622bbca75f01,
+        type: 3}
+      propertyPath: pressurePlateDeactivateSound.Guid.Data3
+      value: 737088152
+      objectReference: {fileID: 0}
+    - target: {fileID: 6266672802219159357, guid: bbb92c5b040b8da4c97a622bbca75f01,
+        type: 3}
+      propertyPath: pressurePlateDeactivateSound.Guid.Data4
+      value: -1467891998
+      objectReference: {fileID: 0}
     - target: {fileID: 7098523712155768522, guid: bbb92c5b040b8da4c97a622bbca75f01,
         type: 3}
       propertyPath: m_RootOrder
@@ -7016,6 +7168,36 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 583104533}
     m_Modifications:
+    - target: {fileID: 6266672802219159357, guid: bbb92c5b040b8da4c97a622bbca75f01,
+        type: 3}
+      propertyPath: weightThreshold
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6266672802219159357, guid: bbb92c5b040b8da4c97a622bbca75f01,
+        type: 3}
+      propertyPath: pressurePlateActivateSound.Path
+      value: "event:/Interactive/PressurePlate/PressurePad Tillf\xE4llig"
+      objectReference: {fileID: 0}
+    - target: {fileID: 6266672802219159357, guid: bbb92c5b040b8da4c97a622bbca75f01,
+        type: 3}
+      propertyPath: pressurePlateActivateSound.Guid.Data1
+      value: -2126073542
+      objectReference: {fileID: 0}
+    - target: {fileID: 6266672802219159357, guid: bbb92c5b040b8da4c97a622bbca75f01,
+        type: 3}
+      propertyPath: pressurePlateActivateSound.Guid.Data2
+      value: 1076271601
+      objectReference: {fileID: 0}
+    - target: {fileID: 6266672802219159357, guid: bbb92c5b040b8da4c97a622bbca75f01,
+        type: 3}
+      propertyPath: pressurePlateActivateSound.Guid.Data3
+      value: 737088152
+      objectReference: {fileID: 0}
+    - target: {fileID: 6266672802219159357, guid: bbb92c5b040b8da4c97a622bbca75f01,
+        type: 3}
+      propertyPath: pressurePlateActivateSound.Guid.Data4
+      value: -1467891998
+      objectReference: {fileID: 0}
     - target: {fileID: 7098523712155768522, guid: bbb92c5b040b8da4c97a622bbca75f01,
         type: 3}
       propertyPath: m_RootOrder
@@ -7547,6 +7729,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 583104533}
     m_Modifications:
+    - target: {fileID: 4239124834230977932, guid: 6a49d720733432b428b329df9f3ec079,
+        type: 3}
+      propertyPath: weightThreshold
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4730378312869376351, guid: 6a49d720733432b428b329df9f3ec079,
         type: 3}
       propertyPath: m_Name
@@ -8263,65 +8450,24 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 69ebea36fb2f3d642bfe3cf6107ef0d2, type: 3}
---- !u!1 &534009484 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7622576670495149168, guid: bbb92c5b040b8da4c97a622bbca75f01,
-    type: 3}
-  m_PrefabInstance: {fileID: 315045434}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &534009487 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7098523712155768522, guid: bbb92c5b040b8da4c97a622bbca75f01,
     type: 3}
   m_PrefabInstance: {fileID: 315045434}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &534009488
+--- !u!114 &534009488 stripped
 MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 6266672802219159357, guid: bbb92c5b040b8da4c97a622bbca75f01,
+    type: 3}
+  m_PrefabInstance: {fileID: 315045434}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 534009484}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e78a3a2ec35de214eac55e69c3aaf186, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isLocked: 0
-  OnChangeState:
-    m_PersistentCalls:
-      m_Calls: []
-  isActive: 0
-  weightThreshold: 1
-  stackNormalThreshold: 0.5
-  pressurePlateActivateSound:
-    Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
-  pressurePlateDeactivateSound:
-    Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
---- !u!64 &534009489
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 534009484}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -8590607836418664005, guid: 816500e7be337124e98718d1d88b4867, type: 3}
 --- !u!1001 &534047377
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8714,12 +8860,27 @@ PrefabInstance:
     - target: {fileID: 3130416578677240593, guid: c7028ed55677cc64b9929e53045906fa,
         type: 3}
       propertyPath: m_Intensity
-      value: 1000
+      value: 300
       objectReference: {fileID: 0}
     - target: {fileID: 3130416578677240593, guid: c7028ed55677cc64b9929e53045906fa,
         type: 3}
       propertyPath: m_LightUnit
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3130416578677240593, guid: c7028ed55677cc64b9929e53045906fa,
+        type: 3}
+      propertyPath: m_ShapeRadius
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3130416578677240593, guid: c7028ed55677cc64b9929e53045906fa,
+        type: 3}
+      propertyPath: useVolumetric
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3130416578677240593, guid: c7028ed55677cc64b9929e53045906fa,
+        type: 3}
+      propertyPath: m_LuxAtDistance
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3130416578677240593, guid: c7028ed55677cc64b9929e53045906fa,
         type: 3}
@@ -8730,6 +8891,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_PointlightHDType
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3130416578677240593, guid: c7028ed55677cc64b9929e53045906fa,
+        type: 3}
+      propertyPath: m_VolumetricDimmer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3130416578677240593, guid: c7028ed55677cc64b9929e53045906fa,
+        type: 3}
+      propertyPath: m_VolumetricFadeDistance
+      value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 3130416578677240593, guid: c7028ed55677cc64b9929e53045906fa,
+        type: 3}
+      propertyPath: m_VolumetricShadowDimmer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3163746662435963548, guid: c7028ed55677cc64b9929e53045906fa,
         type: 3}
@@ -8764,17 +8940,42 @@ PrefabInstance:
     - target: {fileID: 8135530199006451733, guid: c7028ed55677cc64b9929e53045906fa,
         type: 3}
       propertyPath: m_Range
-      value: 30
+      value: 35
+      objectReference: {fileID: 0}
+    - target: {fileID: 8135530199006451733, guid: c7028ed55677cc64b9929e53045906fa,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 0.05900679
+      objectReference: {fileID: 0}
+    - target: {fileID: 8135530199006451733, guid: c7028ed55677cc64b9929e53045906fa,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 0.5619972
+      objectReference: {fileID: 0}
+    - target: {fileID: 8135530199006451733, guid: c7028ed55677cc64b9929e53045906fa,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 0.9622642
       objectReference: {fileID: 0}
     - target: {fileID: 8135530199006451733, guid: c7028ed55677cc64b9929e53045906fa,
         type: 3}
       propertyPath: m_Intensity
-      value: 1000
+      value: 300
+      objectReference: {fileID: 0}
+    - target: {fileID: 8135530199006451733, guid: c7028ed55677cc64b9929e53045906fa,
+        type: 3}
+      propertyPath: m_ShadowRadius
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8135530199006451733, guid: c7028ed55677cc64b9929e53045906fa,
         type: 3}
       propertyPath: m_Shadows.m_Type
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8135530199006451733, guid: c7028ed55677cc64b9929e53045906fa,
+        type: 3}
+      propertyPath: m_BounceIntensity
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8135530199006451733, guid: c7028ed55677cc64b9929e53045906fa,
         type: 3}
@@ -9994,65 +10195,12 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 5302568919011541938, guid: ac9b7772e3ca1d84693fd440bb91ff6c, type: 3}
---- !u!1 &613871474 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7622576670495149168, guid: bbb92c5b040b8da4c97a622bbca75f01,
-    type: 3}
-  m_PrefabInstance: {fileID: 910795349}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &613871477 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7098523712155768522, guid: bbb92c5b040b8da4c97a622bbca75f01,
     type: 3}
   m_PrefabInstance: {fileID: 910795349}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &613871478
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 613871474}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e78a3a2ec35de214eac55e69c3aaf186, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isLocked: 0
-  OnChangeState:
-    m_PersistentCalls:
-      m_Calls: []
-  isActive: 0
-  weightThreshold: 1
-  stackNormalThreshold: 0.5
-  pressurePlateActivateSound:
-    Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
-  pressurePlateDeactivateSound:
-    Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
---- !u!64 &613871479
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 613871474}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -8590607836418664005, guid: 816500e7be337124e98718d1d88b4867, type: 3}
 --- !u!1001 &616072990
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10543,12 +10691,27 @@ PrefabInstance:
     - target: {fileID: 3130416578677240593, guid: c7028ed55677cc64b9929e53045906fa,
         type: 3}
       propertyPath: m_Intensity
-      value: 1000
+      value: 300
       objectReference: {fileID: 0}
     - target: {fileID: 3130416578677240593, guid: c7028ed55677cc64b9929e53045906fa,
         type: 3}
       propertyPath: m_LightUnit
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3130416578677240593, guid: c7028ed55677cc64b9929e53045906fa,
+        type: 3}
+      propertyPath: m_ShapeRadius
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3130416578677240593, guid: c7028ed55677cc64b9929e53045906fa,
+        type: 3}
+      propertyPath: useVolumetric
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3130416578677240593, guid: c7028ed55677cc64b9929e53045906fa,
+        type: 3}
+      propertyPath: m_LuxAtDistance
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3130416578677240593, guid: c7028ed55677cc64b9929e53045906fa,
         type: 3}
@@ -10559,6 +10722,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_PointlightHDType
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3130416578677240593, guid: c7028ed55677cc64b9929e53045906fa,
+        type: 3}
+      propertyPath: m_VolumetricDimmer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3130416578677240593, guid: c7028ed55677cc64b9929e53045906fa,
+        type: 3}
+      propertyPath: m_VolumetricFadeDistance
+      value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 3130416578677240593, guid: c7028ed55677cc64b9929e53045906fa,
+        type: 3}
+      propertyPath: m_VolumetricShadowDimmer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3163746662435963548, guid: c7028ed55677cc64b9929e53045906fa,
         type: 3}
@@ -10593,17 +10771,42 @@ PrefabInstance:
     - target: {fileID: 8135530199006451733, guid: c7028ed55677cc64b9929e53045906fa,
         type: 3}
       propertyPath: m_Range
-      value: 30
+      value: 35
+      objectReference: {fileID: 0}
+    - target: {fileID: 8135530199006451733, guid: c7028ed55677cc64b9929e53045906fa,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 0.05900679
+      objectReference: {fileID: 0}
+    - target: {fileID: 8135530199006451733, guid: c7028ed55677cc64b9929e53045906fa,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 0.5619972
+      objectReference: {fileID: 0}
+    - target: {fileID: 8135530199006451733, guid: c7028ed55677cc64b9929e53045906fa,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 0.9622642
       objectReference: {fileID: 0}
     - target: {fileID: 8135530199006451733, guid: c7028ed55677cc64b9929e53045906fa,
         type: 3}
       propertyPath: m_Intensity
-      value: 1000
+      value: 300
+      objectReference: {fileID: 0}
+    - target: {fileID: 8135530199006451733, guid: c7028ed55677cc64b9929e53045906fa,
+        type: 3}
+      propertyPath: m_ShadowRadius
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8135530199006451733, guid: c7028ed55677cc64b9929e53045906fa,
         type: 3}
       propertyPath: m_Shadows.m_Type
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8135530199006451733, guid: c7028ed55677cc64b9929e53045906fa,
+        type: 3}
+      propertyPath: m_BounceIntensity
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8135530199006451733, guid: c7028ed55677cc64b9929e53045906fa,
         type: 3}
@@ -10797,7 +11000,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: ac9b7772e3ca1d84693fd440bb91ff6c,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 469.96298
+      value: 469.96295
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ac9b7772e3ca1d84693fd440bb91ff6c,
         type: 3}
@@ -11406,6 +11609,36 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 583104533}
     m_Modifications:
+    - target: {fileID: 6266672802219159357, guid: bbb92c5b040b8da4c97a622bbca75f01,
+        type: 3}
+      propertyPath: weightThreshold
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6266672802219159357, guid: bbb92c5b040b8da4c97a622bbca75f01,
+        type: 3}
+      propertyPath: pressurePlateDeactivateSound.Path
+      value: "event:/Interactive/PressurePlate/PressurePad Tillf\xE4llig"
+      objectReference: {fileID: 0}
+    - target: {fileID: 6266672802219159357, guid: bbb92c5b040b8da4c97a622bbca75f01,
+        type: 3}
+      propertyPath: pressurePlateDeactivateSound.Guid.Data1
+      value: -2126073542
+      objectReference: {fileID: 0}
+    - target: {fileID: 6266672802219159357, guid: bbb92c5b040b8da4c97a622bbca75f01,
+        type: 3}
+      propertyPath: pressurePlateDeactivateSound.Guid.Data2
+      value: 1076271601
+      objectReference: {fileID: 0}
+    - target: {fileID: 6266672802219159357, guid: bbb92c5b040b8da4c97a622bbca75f01,
+        type: 3}
+      propertyPath: pressurePlateDeactivateSound.Guid.Data3
+      value: 737088152
+      objectReference: {fileID: 0}
+    - target: {fileID: 6266672802219159357, guid: bbb92c5b040b8da4c97a622bbca75f01,
+        type: 3}
+      propertyPath: pressurePlateDeactivateSound.Guid.Data4
+      value: -1467891998
+      objectReference: {fileID: 0}
     - target: {fileID: 7098523712155768522, guid: bbb92c5b040b8da4c97a622bbca75f01,
         type: 3}
       propertyPath: m_RootOrder
@@ -11837,65 +12070,12 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 5302568919011541938, guid: ac9b7772e3ca1d84693fd440bb91ff6c, type: 3}
---- !u!1 &694860629 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7622576670495149168, guid: bbb92c5b040b8da4c97a622bbca75f01,
-    type: 3}
-  m_PrefabInstance: {fileID: 410479354}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &694860632 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7098523712155768522, guid: bbb92c5b040b8da4c97a622bbca75f01,
     type: 3}
   m_PrefabInstance: {fileID: 410479354}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &694860633
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 694860629}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e78a3a2ec35de214eac55e69c3aaf186, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isLocked: 0
-  OnChangeState:
-    m_PersistentCalls:
-      m_Calls: []
-  isActive: 0
-  weightThreshold: 1
-  stackNormalThreshold: 0.5
-  pressurePlateActivateSound:
-    Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
-  pressurePlateDeactivateSound:
-    Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
---- !u!64 &694860634
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 694860629}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -8590607836418664005, guid: 816500e7be337124e98718d1d88b4867, type: 3}
 --- !u!1 &701662746
 GameObject:
   m_ObjectHideFlags: 0
@@ -11971,65 +12151,12 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 3861478300804232965, guid: 116d52934e0190f498bc3a93e790ca8e, type: 3}
---- !u!1 &717895699 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7622576670495149168, guid: bbb92c5b040b8da4c97a622bbca75f01,
-    type: 3}
-  m_PrefabInstance: {fileID: 1719987496}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &717895702 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7098523712155768522, guid: bbb92c5b040b8da4c97a622bbca75f01,
     type: 3}
   m_PrefabInstance: {fileID: 1719987496}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &717895703
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 717895699}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e78a3a2ec35de214eac55e69c3aaf186, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isLocked: 0
-  OnChangeState:
-    m_PersistentCalls:
-      m_Calls: []
-  isActive: 0
-  weightThreshold: 1
-  stackNormalThreshold: 0.5
-  pressurePlateActivateSound:
-    Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
-  pressurePlateDeactivateSound:
-    Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
---- !u!64 &717895704
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 717895699}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -8590607836418664005, guid: 816500e7be337124e98718d1d88b4867, type: 3}
 --- !u!1001 &727789007
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12131,6 +12258,36 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 583104533}
     m_Modifications:
+    - target: {fileID: 6266672802219159357, guid: bbb92c5b040b8da4c97a622bbca75f01,
+        type: 3}
+      propertyPath: weightThreshold
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6266672802219159357, guid: bbb92c5b040b8da4c97a622bbca75f01,
+        type: 3}
+      propertyPath: pressurePlateActivateSound.Path
+      value: "event:/Interactive/PressurePlate/PressurePad Tillf\xE4llig"
+      objectReference: {fileID: 0}
+    - target: {fileID: 6266672802219159357, guid: bbb92c5b040b8da4c97a622bbca75f01,
+        type: 3}
+      propertyPath: pressurePlateActivateSound.Guid.Data1
+      value: -2126073542
+      objectReference: {fileID: 0}
+    - target: {fileID: 6266672802219159357, guid: bbb92c5b040b8da4c97a622bbca75f01,
+        type: 3}
+      propertyPath: pressurePlateActivateSound.Guid.Data2
+      value: 1076271601
+      objectReference: {fileID: 0}
+    - target: {fileID: 6266672802219159357, guid: bbb92c5b040b8da4c97a622bbca75f01,
+        type: 3}
+      propertyPath: pressurePlateActivateSound.Guid.Data3
+      value: 737088152
+      objectReference: {fileID: 0}
+    - target: {fileID: 6266672802219159357, guid: bbb92c5b040b8da4c97a622bbca75f01,
+        type: 3}
+      propertyPath: pressurePlateActivateSound.Guid.Data4
+      value: -1467891998
+      objectReference: {fileID: 0}
     - target: {fileID: 7098523712155768522, guid: bbb92c5b040b8da4c97a622bbca75f01,
         type: 3}
       propertyPath: m_RootOrder
@@ -12308,12 +12465,27 @@ PrefabInstance:
     - target: {fileID: 3130416578677240593, guid: c7028ed55677cc64b9929e53045906fa,
         type: 3}
       propertyPath: m_Intensity
-      value: 1000
+      value: 300
       objectReference: {fileID: 0}
     - target: {fileID: 3130416578677240593, guid: c7028ed55677cc64b9929e53045906fa,
         type: 3}
       propertyPath: m_LightUnit
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3130416578677240593, guid: c7028ed55677cc64b9929e53045906fa,
+        type: 3}
+      propertyPath: m_ShapeRadius
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3130416578677240593, guid: c7028ed55677cc64b9929e53045906fa,
+        type: 3}
+      propertyPath: useVolumetric
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3130416578677240593, guid: c7028ed55677cc64b9929e53045906fa,
+        type: 3}
+      propertyPath: m_LuxAtDistance
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3130416578677240593, guid: c7028ed55677cc64b9929e53045906fa,
         type: 3}
@@ -12324,6 +12496,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_PointlightHDType
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3130416578677240593, guid: c7028ed55677cc64b9929e53045906fa,
+        type: 3}
+      propertyPath: m_VolumetricDimmer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3130416578677240593, guid: c7028ed55677cc64b9929e53045906fa,
+        type: 3}
+      propertyPath: m_VolumetricFadeDistance
+      value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 3130416578677240593, guid: c7028ed55677cc64b9929e53045906fa,
+        type: 3}
+      propertyPath: m_VolumetricShadowDimmer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3163746662435963548, guid: c7028ed55677cc64b9929e53045906fa,
         type: 3}
@@ -12358,17 +12545,42 @@ PrefabInstance:
     - target: {fileID: 8135530199006451733, guid: c7028ed55677cc64b9929e53045906fa,
         type: 3}
       propertyPath: m_Range
-      value: 30
+      value: 35
+      objectReference: {fileID: 0}
+    - target: {fileID: 8135530199006451733, guid: c7028ed55677cc64b9929e53045906fa,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 0.05900679
+      objectReference: {fileID: 0}
+    - target: {fileID: 8135530199006451733, guid: c7028ed55677cc64b9929e53045906fa,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 0.5619972
+      objectReference: {fileID: 0}
+    - target: {fileID: 8135530199006451733, guid: c7028ed55677cc64b9929e53045906fa,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 0.9622642
       objectReference: {fileID: 0}
     - target: {fileID: 8135530199006451733, guid: c7028ed55677cc64b9929e53045906fa,
         type: 3}
       propertyPath: m_Intensity
-      value: 1000
+      value: 300
+      objectReference: {fileID: 0}
+    - target: {fileID: 8135530199006451733, guid: c7028ed55677cc64b9929e53045906fa,
+        type: 3}
+      propertyPath: m_ShadowRadius
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8135530199006451733, guid: c7028ed55677cc64b9929e53045906fa,
         type: 3}
       propertyPath: m_Shadows.m_Type
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8135530199006451733, guid: c7028ed55677cc64b9929e53045906fa,
+        type: 3}
+      propertyPath: m_BounceIntensity
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8135530199006451733, guid: c7028ed55677cc64b9929e53045906fa,
         type: 3}
@@ -12508,6 +12720,36 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 583104533}
     m_Modifications:
+    - target: {fileID: 6266672802219159357, guid: bbb92c5b040b8da4c97a622bbca75f01,
+        type: 3}
+      propertyPath: weightThreshold
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6266672802219159357, guid: bbb92c5b040b8da4c97a622bbca75f01,
+        type: 3}
+      propertyPath: pressurePlateActivateSound.Path
+      value: "event:/Interactive/PressurePlate/PressurePad Tillf\xE4llig"
+      objectReference: {fileID: 0}
+    - target: {fileID: 6266672802219159357, guid: bbb92c5b040b8da4c97a622bbca75f01,
+        type: 3}
+      propertyPath: pressurePlateActivateSound.Guid.Data1
+      value: -2126073542
+      objectReference: {fileID: 0}
+    - target: {fileID: 6266672802219159357, guid: bbb92c5b040b8da4c97a622bbca75f01,
+        type: 3}
+      propertyPath: pressurePlateActivateSound.Guid.Data2
+      value: 1076271601
+      objectReference: {fileID: 0}
+    - target: {fileID: 6266672802219159357, guid: bbb92c5b040b8da4c97a622bbca75f01,
+        type: 3}
+      propertyPath: pressurePlateActivateSound.Guid.Data3
+      value: 737088152
+      objectReference: {fileID: 0}
+    - target: {fileID: 6266672802219159357, guid: bbb92c5b040b8da4c97a622bbca75f01,
+        type: 3}
+      propertyPath: pressurePlateActivateSound.Guid.Data4
+      value: -1467891998
+      objectReference: {fileID: 0}
     - target: {fileID: 7098523712155768522, guid: bbb92c5b040b8da4c97a622bbca75f01,
         type: 3}
       propertyPath: m_RootOrder
@@ -13181,65 +13423,24 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 745715729}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &746795987 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7622576670495149168, guid: bbb92c5b040b8da4c97a622bbca75f01,
-    type: 3}
-  m_PrefabInstance: {fileID: 736560339}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &746795990 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7098523712155768522, guid: bbb92c5b040b8da4c97a622bbca75f01,
     type: 3}
   m_PrefabInstance: {fileID: 736560339}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &746795991
+--- !u!114 &746795991 stripped
 MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 6266672802219159357, guid: bbb92c5b040b8da4c97a622bbca75f01,
+    type: 3}
+  m_PrefabInstance: {fileID: 736560339}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 746795987}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e78a3a2ec35de214eac55e69c3aaf186, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isLocked: 0
-  OnChangeState:
-    m_PersistentCalls:
-      m_Calls: []
-  isActive: 0
-  weightThreshold: 1
-  stackNormalThreshold: 0.5
-  pressurePlateActivateSound:
-    Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
-  pressurePlateDeactivateSound:
-    Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
---- !u!64 &746795992
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 746795987}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -8590607836418664005, guid: 816500e7be337124e98718d1d88b4867, type: 3}
 --- !u!1001 &754095222
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13395,7 +13596,7 @@ PrefabInstance:
     - target: {fileID: 1736420488659257620, guid: c7028ed55677cc64b9929e53045906fa,
         type: 3}
       propertyPath: m_RootOrder
-      value: 14
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 1736420488659257620, guid: c7028ed55677cc64b9929e53045906fa,
         type: 3}
@@ -13460,12 +13661,27 @@ PrefabInstance:
     - target: {fileID: 3130416578677240593, guid: c7028ed55677cc64b9929e53045906fa,
         type: 3}
       propertyPath: m_Intensity
-      value: 1000
+      value: 300
       objectReference: {fileID: 0}
     - target: {fileID: 3130416578677240593, guid: c7028ed55677cc64b9929e53045906fa,
         type: 3}
       propertyPath: m_LightUnit
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3130416578677240593, guid: c7028ed55677cc64b9929e53045906fa,
+        type: 3}
+      propertyPath: m_ShapeRadius
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3130416578677240593, guid: c7028ed55677cc64b9929e53045906fa,
+        type: 3}
+      propertyPath: useVolumetric
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3130416578677240593, guid: c7028ed55677cc64b9929e53045906fa,
+        type: 3}
+      propertyPath: m_LuxAtDistance
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3130416578677240593, guid: c7028ed55677cc64b9929e53045906fa,
         type: 3}
@@ -13476,6 +13692,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_PointlightHDType
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3130416578677240593, guid: c7028ed55677cc64b9929e53045906fa,
+        type: 3}
+      propertyPath: m_VolumetricDimmer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3130416578677240593, guid: c7028ed55677cc64b9929e53045906fa,
+        type: 3}
+      propertyPath: m_VolumetricFadeDistance
+      value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 3130416578677240593, guid: c7028ed55677cc64b9929e53045906fa,
+        type: 3}
+      propertyPath: m_VolumetricShadowDimmer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3163746662435963548, guid: c7028ed55677cc64b9929e53045906fa,
         type: 3}
@@ -13510,17 +13741,42 @@ PrefabInstance:
     - target: {fileID: 8135530199006451733, guid: c7028ed55677cc64b9929e53045906fa,
         type: 3}
       propertyPath: m_Range
-      value: 30
+      value: 35
+      objectReference: {fileID: 0}
+    - target: {fileID: 8135530199006451733, guid: c7028ed55677cc64b9929e53045906fa,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 0.05900679
+      objectReference: {fileID: 0}
+    - target: {fileID: 8135530199006451733, guid: c7028ed55677cc64b9929e53045906fa,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 0.5619972
+      objectReference: {fileID: 0}
+    - target: {fileID: 8135530199006451733, guid: c7028ed55677cc64b9929e53045906fa,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 0.9622642
       objectReference: {fileID: 0}
     - target: {fileID: 8135530199006451733, guid: c7028ed55677cc64b9929e53045906fa,
         type: 3}
       propertyPath: m_Intensity
-      value: 1000
+      value: 300
+      objectReference: {fileID: 0}
+    - target: {fileID: 8135530199006451733, guid: c7028ed55677cc64b9929e53045906fa,
+        type: 3}
+      propertyPath: m_ShadowRadius
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8135530199006451733, guid: c7028ed55677cc64b9929e53045906fa,
         type: 3}
       propertyPath: m_Shadows.m_Type
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8135530199006451733, guid: c7028ed55677cc64b9929e53045906fa,
+        type: 3}
+      propertyPath: m_BounceIntensity
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8135530199006451733, guid: c7028ed55677cc64b9929e53045906fa,
         type: 3}
@@ -13660,12 +13916,27 @@ PrefabInstance:
     - target: {fileID: 3130416578677240593, guid: c7028ed55677cc64b9929e53045906fa,
         type: 3}
       propertyPath: m_Intensity
-      value: 1000
+      value: 300
       objectReference: {fileID: 0}
     - target: {fileID: 3130416578677240593, guid: c7028ed55677cc64b9929e53045906fa,
         type: 3}
       propertyPath: m_LightUnit
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3130416578677240593, guid: c7028ed55677cc64b9929e53045906fa,
+        type: 3}
+      propertyPath: m_ShapeRadius
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3130416578677240593, guid: c7028ed55677cc64b9929e53045906fa,
+        type: 3}
+      propertyPath: useVolumetric
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3130416578677240593, guid: c7028ed55677cc64b9929e53045906fa,
+        type: 3}
+      propertyPath: m_LuxAtDistance
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3130416578677240593, guid: c7028ed55677cc64b9929e53045906fa,
         type: 3}
@@ -13676,6 +13947,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_PointlightHDType
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3130416578677240593, guid: c7028ed55677cc64b9929e53045906fa,
+        type: 3}
+      propertyPath: m_VolumetricDimmer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3130416578677240593, guid: c7028ed55677cc64b9929e53045906fa,
+        type: 3}
+      propertyPath: m_VolumetricFadeDistance
+      value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 3130416578677240593, guid: c7028ed55677cc64b9929e53045906fa,
+        type: 3}
+      propertyPath: m_VolumetricShadowDimmer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3163746662435963548, guid: c7028ed55677cc64b9929e53045906fa,
         type: 3}
@@ -13710,17 +13996,42 @@ PrefabInstance:
     - target: {fileID: 8135530199006451733, guid: c7028ed55677cc64b9929e53045906fa,
         type: 3}
       propertyPath: m_Range
-      value: 30
+      value: 35
+      objectReference: {fileID: 0}
+    - target: {fileID: 8135530199006451733, guid: c7028ed55677cc64b9929e53045906fa,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 0.05900679
+      objectReference: {fileID: 0}
+    - target: {fileID: 8135530199006451733, guid: c7028ed55677cc64b9929e53045906fa,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 0.5619972
+      objectReference: {fileID: 0}
+    - target: {fileID: 8135530199006451733, guid: c7028ed55677cc64b9929e53045906fa,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 0.9622642
       objectReference: {fileID: 0}
     - target: {fileID: 8135530199006451733, guid: c7028ed55677cc64b9929e53045906fa,
         type: 3}
       propertyPath: m_Intensity
-      value: 1000
+      value: 300
+      objectReference: {fileID: 0}
+    - target: {fileID: 8135530199006451733, guid: c7028ed55677cc64b9929e53045906fa,
+        type: 3}
+      propertyPath: m_ShadowRadius
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8135530199006451733, guid: c7028ed55677cc64b9929e53045906fa,
         type: 3}
       propertyPath: m_Shadows.m_Type
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8135530199006451733, guid: c7028ed55677cc64b9929e53045906fa,
+        type: 3}
+      propertyPath: m_BounceIntensity
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8135530199006451733, guid: c7028ed55677cc64b9929e53045906fa,
         type: 3}
@@ -15309,6 +15620,36 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 583104533}
     m_Modifications:
+    - target: {fileID: 6266672802219159357, guid: bbb92c5b040b8da4c97a622bbca75f01,
+        type: 3}
+      propertyPath: weightThreshold
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6266672802219159357, guid: bbb92c5b040b8da4c97a622bbca75f01,
+        type: 3}
+      propertyPath: pressurePlateDeactivateSound.Path
+      value: "event:/Interactive/PressurePlate/PressurePad Tillf\xE4llig"
+      objectReference: {fileID: 0}
+    - target: {fileID: 6266672802219159357, guid: bbb92c5b040b8da4c97a622bbca75f01,
+        type: 3}
+      propertyPath: pressurePlateDeactivateSound.Guid.Data1
+      value: -2126073542
+      objectReference: {fileID: 0}
+    - target: {fileID: 6266672802219159357, guid: bbb92c5b040b8da4c97a622bbca75f01,
+        type: 3}
+      propertyPath: pressurePlateDeactivateSound.Guid.Data2
+      value: 1076271601
+      objectReference: {fileID: 0}
+    - target: {fileID: 6266672802219159357, guid: bbb92c5b040b8da4c97a622bbca75f01,
+        type: 3}
+      propertyPath: pressurePlateDeactivateSound.Guid.Data3
+      value: 737088152
+      objectReference: {fileID: 0}
+    - target: {fileID: 6266672802219159357, guid: bbb92c5b040b8da4c97a622bbca75f01,
+        type: 3}
+      propertyPath: pressurePlateDeactivateSound.Guid.Data4
+      value: -1467891998
+      objectReference: {fileID: 0}
     - target: {fileID: 7098523712155768522, guid: bbb92c5b040b8da4c97a622bbca75f01,
         type: 3}
       propertyPath: m_RootOrder
@@ -15623,65 +15964,24 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &848441892 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7622576670495149168, guid: bbb92c5b040b8da4c97a622bbca75f01,
-    type: 3}
-  m_PrefabInstance: {fileID: 731843130}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &848441895 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7098523712155768522, guid: bbb92c5b040b8da4c97a622bbca75f01,
     type: 3}
   m_PrefabInstance: {fileID: 731843130}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &848441896
+--- !u!114 &848441896 stripped
 MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 6266672802219159357, guid: bbb92c5b040b8da4c97a622bbca75f01,
+    type: 3}
+  m_PrefabInstance: {fileID: 731843130}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 848441892}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e78a3a2ec35de214eac55e69c3aaf186, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isLocked: 0
-  OnChangeState:
-    m_PersistentCalls:
-      m_Calls: []
-  isActive: 0
-  weightThreshold: 1
-  stackNormalThreshold: 0.5
-  pressurePlateActivateSound:
-    Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
-  pressurePlateDeactivateSound:
-    Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
---- !u!64 &848441897
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 848441892}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -8590607836418664005, guid: 816500e7be337124e98718d1d88b4867, type: 3}
 --- !u!1001 &850738052
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16250,6 +16550,36 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 583104533}
     m_Modifications:
+    - target: {fileID: 6266672802219159357, guid: bbb92c5b040b8da4c97a622bbca75f01,
+        type: 3}
+      propertyPath: weightThreshold
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6266672802219159357, guid: bbb92c5b040b8da4c97a622bbca75f01,
+        type: 3}
+      propertyPath: pressurePlateDeactivateSound.Path
+      value: "event:/Interactive/PressurePlate/PressurePad Tillf\xE4llig"
+      objectReference: {fileID: 0}
+    - target: {fileID: 6266672802219159357, guid: bbb92c5b040b8da4c97a622bbca75f01,
+        type: 3}
+      propertyPath: pressurePlateDeactivateSound.Guid.Data1
+      value: -2126073542
+      objectReference: {fileID: 0}
+    - target: {fileID: 6266672802219159357, guid: bbb92c5b040b8da4c97a622bbca75f01,
+        type: 3}
+      propertyPath: pressurePlateDeactivateSound.Guid.Data2
+      value: 1076271601
+      objectReference: {fileID: 0}
+    - target: {fileID: 6266672802219159357, guid: bbb92c5b040b8da4c97a622bbca75f01,
+        type: 3}
+      propertyPath: pressurePlateDeactivateSound.Guid.Data3
+      value: 737088152
+      objectReference: {fileID: 0}
+    - target: {fileID: 6266672802219159357, guid: bbb92c5b040b8da4c97a622bbca75f01,
+        type: 3}
+      propertyPath: pressurePlateDeactivateSound.Guid.Data4
+      value: -1467891998
+      objectReference: {fileID: 0}
     - target: {fileID: 7098523712155768522, guid: bbb92c5b040b8da4c97a622bbca75f01,
         type: 3}
       propertyPath: m_RootOrder
@@ -16427,12 +16757,27 @@ PrefabInstance:
     - target: {fileID: 3130416578677240593, guid: c7028ed55677cc64b9929e53045906fa,
         type: 3}
       propertyPath: m_Intensity
-      value: 1000
+      value: 300
       objectReference: {fileID: 0}
     - target: {fileID: 3130416578677240593, guid: c7028ed55677cc64b9929e53045906fa,
         type: 3}
       propertyPath: m_LightUnit
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3130416578677240593, guid: c7028ed55677cc64b9929e53045906fa,
+        type: 3}
+      propertyPath: m_ShapeRadius
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3130416578677240593, guid: c7028ed55677cc64b9929e53045906fa,
+        type: 3}
+      propertyPath: useVolumetric
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3130416578677240593, guid: c7028ed55677cc64b9929e53045906fa,
+        type: 3}
+      propertyPath: m_LuxAtDistance
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3130416578677240593, guid: c7028ed55677cc64b9929e53045906fa,
         type: 3}
@@ -16443,6 +16788,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_PointlightHDType
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3130416578677240593, guid: c7028ed55677cc64b9929e53045906fa,
+        type: 3}
+      propertyPath: m_VolumetricDimmer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3130416578677240593, guid: c7028ed55677cc64b9929e53045906fa,
+        type: 3}
+      propertyPath: m_VolumetricFadeDistance
+      value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 3130416578677240593, guid: c7028ed55677cc64b9929e53045906fa,
+        type: 3}
+      propertyPath: m_VolumetricShadowDimmer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3163746662435963548, guid: c7028ed55677cc64b9929e53045906fa,
         type: 3}
@@ -16477,17 +16837,42 @@ PrefabInstance:
     - target: {fileID: 8135530199006451733, guid: c7028ed55677cc64b9929e53045906fa,
         type: 3}
       propertyPath: m_Range
-      value: 30
+      value: 35
+      objectReference: {fileID: 0}
+    - target: {fileID: 8135530199006451733, guid: c7028ed55677cc64b9929e53045906fa,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 0.05900679
+      objectReference: {fileID: 0}
+    - target: {fileID: 8135530199006451733, guid: c7028ed55677cc64b9929e53045906fa,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 0.5619972
+      objectReference: {fileID: 0}
+    - target: {fileID: 8135530199006451733, guid: c7028ed55677cc64b9929e53045906fa,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 0.9622642
       objectReference: {fileID: 0}
     - target: {fileID: 8135530199006451733, guid: c7028ed55677cc64b9929e53045906fa,
         type: 3}
       propertyPath: m_Intensity
-      value: 1000
+      value: 300
+      objectReference: {fileID: 0}
+    - target: {fileID: 8135530199006451733, guid: c7028ed55677cc64b9929e53045906fa,
+        type: 3}
+      propertyPath: m_ShadowRadius
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8135530199006451733, guid: c7028ed55677cc64b9929e53045906fa,
         type: 3}
       propertyPath: m_Shadows.m_Type
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8135530199006451733, guid: c7028ed55677cc64b9929e53045906fa,
+        type: 3}
+      propertyPath: m_BounceIntensity
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8135530199006451733, guid: c7028ed55677cc64b9929e53045906fa,
         type: 3}
@@ -16735,6 +17120,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: ac9b7772e3ca1d84693fd440bb91ff6c,
         type: 3}
+      propertyPath: m_ReceiveGI
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: ac9b7772e3ca1d84693fd440bb91ff6c,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: ac9b7772e3ca1d84693fd440bb91ff6c,
+        type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 9b416fd12525e754c8d4689870d3f452, type: 2}
@@ -16928,6 +17323,36 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 583104533}
     m_Modifications:
+    - target: {fileID: 6266672802219159357, guid: bbb92c5b040b8da4c97a622bbca75f01,
+        type: 3}
+      propertyPath: weightThreshold
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6266672802219159357, guid: bbb92c5b040b8da4c97a622bbca75f01,
+        type: 3}
+      propertyPath: pressurePlateActivateSound.Path
+      value: "event:/Interactive/PressurePlate/PressurePad Tillf\xE4llig"
+      objectReference: {fileID: 0}
+    - target: {fileID: 6266672802219159357, guid: bbb92c5b040b8da4c97a622bbca75f01,
+        type: 3}
+      propertyPath: pressurePlateActivateSound.Guid.Data1
+      value: -2126073542
+      objectReference: {fileID: 0}
+    - target: {fileID: 6266672802219159357, guid: bbb92c5b040b8da4c97a622bbca75f01,
+        type: 3}
+      propertyPath: pressurePlateActivateSound.Guid.Data2
+      value: 1076271601
+      objectReference: {fileID: 0}
+    - target: {fileID: 6266672802219159357, guid: bbb92c5b040b8da4c97a622bbca75f01,
+        type: 3}
+      propertyPath: pressurePlateActivateSound.Guid.Data3
+      value: 737088152
+      objectReference: {fileID: 0}
+    - target: {fileID: 6266672802219159357, guid: bbb92c5b040b8da4c97a622bbca75f01,
+        type: 3}
+      propertyPath: pressurePlateActivateSound.Guid.Data4
+      value: -1467891998
+      objectReference: {fileID: 0}
     - target: {fileID: 7098523712155768522, guid: bbb92c5b040b8da4c97a622bbca75f01,
         type: 3}
       propertyPath: m_RootOrder
@@ -17136,6 +17561,36 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 583104533}
     m_Modifications:
+    - target: {fileID: 6266672802219159357, guid: bbb92c5b040b8da4c97a622bbca75f01,
+        type: 3}
+      propertyPath: weightThreshold
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6266672802219159357, guid: bbb92c5b040b8da4c97a622bbca75f01,
+        type: 3}
+      propertyPath: pressurePlateActivateSound.Path
+      value: "event:/Interactive/PressurePlate/PressurePad Tillf\xE4llig"
+      objectReference: {fileID: 0}
+    - target: {fileID: 6266672802219159357, guid: bbb92c5b040b8da4c97a622bbca75f01,
+        type: 3}
+      propertyPath: pressurePlateActivateSound.Guid.Data1
+      value: -2126073542
+      objectReference: {fileID: 0}
+    - target: {fileID: 6266672802219159357, guid: bbb92c5b040b8da4c97a622bbca75f01,
+        type: 3}
+      propertyPath: pressurePlateActivateSound.Guid.Data2
+      value: 1076271601
+      objectReference: {fileID: 0}
+    - target: {fileID: 6266672802219159357, guid: bbb92c5b040b8da4c97a622bbca75f01,
+        type: 3}
+      propertyPath: pressurePlateActivateSound.Guid.Data3
+      value: 737088152
+      objectReference: {fileID: 0}
+    - target: {fileID: 6266672802219159357, guid: bbb92c5b040b8da4c97a622bbca75f01,
+        type: 3}
+      propertyPath: pressurePlateActivateSound.Guid.Data4
+      value: -1467891998
+      objectReference: {fileID: 0}
     - target: {fileID: 7098523712155768522, guid: bbb92c5b040b8da4c97a622bbca75f01,
         type: 3}
       propertyPath: m_RootOrder
@@ -17521,65 +17976,12 @@ MonoBehaviour:
   - {fileID: 1243840383}
   targetActivators:
   - {fileID: 948714852}
---- !u!1 &950205844 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7622576670495149168, guid: bbb92c5b040b8da4c97a622bbca75f01,
-    type: 3}
-  m_PrefabInstance: {fileID: 1420309302}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &950205847 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7098523712155768522, guid: bbb92c5b040b8da4c97a622bbca75f01,
     type: 3}
   m_PrefabInstance: {fileID: 1420309302}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &950205848
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 950205844}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e78a3a2ec35de214eac55e69c3aaf186, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isLocked: 0
-  OnChangeState:
-    m_PersistentCalls:
-      m_Calls: []
-  isActive: 0
-  weightThreshold: 1
-  stackNormalThreshold: 0.5
-  pressurePlateActivateSound:
-    Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
-  pressurePlateDeactivateSound:
-    Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
---- !u!64 &950205849
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 950205844}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -8590607836418664005, guid: 816500e7be337124e98718d1d88b4867, type: 3}
 --- !u!1001 &950310938
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -18031,6 +18433,36 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 583104533}
     m_Modifications:
+    - target: {fileID: 6266672802219159357, guid: bbb92c5b040b8da4c97a622bbca75f01,
+        type: 3}
+      propertyPath: weightThreshold
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6266672802219159357, guid: bbb92c5b040b8da4c97a622bbca75f01,
+        type: 3}
+      propertyPath: pressurePlateActivateSound.Path
+      value: "event:/Interactive/PressurePlate/PressurePad Tillf\xE4llig"
+      objectReference: {fileID: 0}
+    - target: {fileID: 6266672802219159357, guid: bbb92c5b040b8da4c97a622bbca75f01,
+        type: 3}
+      propertyPath: pressurePlateActivateSound.Guid.Data1
+      value: -2126073542
+      objectReference: {fileID: 0}
+    - target: {fileID: 6266672802219159357, guid: bbb92c5b040b8da4c97a622bbca75f01,
+        type: 3}
+      propertyPath: pressurePlateActivateSound.Guid.Data2
+      value: 1076271601
+      objectReference: {fileID: 0}
+    - target: {fileID: 6266672802219159357, guid: bbb92c5b040b8da4c97a622bbca75f01,
+        type: 3}
+      propertyPath: pressurePlateActivateSound.Guid.Data3
+      value: 737088152
+      objectReference: {fileID: 0}
+    - target: {fileID: 6266672802219159357, guid: bbb92c5b040b8da4c97a622bbca75f01,
+        type: 3}
+      propertyPath: pressurePlateActivateSound.Guid.Data4
+      value: -1467891998
+      objectReference: {fileID: 0}
     - target: {fileID: 7098523712155768522, guid: bbb92c5b040b8da4c97a622bbca75f01,
         type: 3}
       propertyPath: m_RootOrder
@@ -18311,12 +18743,27 @@ PrefabInstance:
     - target: {fileID: 426980782508727304, guid: ad4720da48207494c8905f0a65870e42,
         type: 3}
       propertyPath: m_Range
-      value: 30
+      value: 35
       objectReference: {fileID: 0}
     - target: {fileID: 426980782508727304, guid: ad4720da48207494c8905f0a65870e42,
         type: 3}
       propertyPath: m_Intensity
-      value: 1000
+      value: 300
+      objectReference: {fileID: 0}
+    - target: {fileID: 426980782508727304, guid: ad4720da48207494c8905f0a65870e42,
+        type: 3}
+      propertyPath: m_ShadowRadius
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 426980782508727304, guid: ad4720da48207494c8905f0a65870e42,
+        type: 3}
+      propertyPath: m_Shadows.m_Type
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 426980782508727304, guid: ad4720da48207494c8905f0a65870e42,
+        type: 3}
+      propertyPath: m_BounceIntensity
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 426980782508727304, guid: ad4720da48207494c8905f0a65870e42,
         type: 3}
@@ -18332,6 +18779,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Layer
       value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1189068292012443422, guid: ad4720da48207494c8905f0a65870e42,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2515917205661127512, guid: ad4720da48207494c8905f0a65870e42,
         type: 3}
@@ -18388,15 +18840,30 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 8
       objectReference: {fileID: 0}
+    - target: {fileID: 6286143098213524867, guid: ad4720da48207494c8905f0a65870e42,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6807960581671958284, guid: ad4720da48207494c8905f0a65870e42,
         type: 3}
       propertyPath: m_Intensity
-      value: 1000
+      value: 300
       objectReference: {fileID: 0}
     - target: {fileID: 6807960581671958284, guid: ad4720da48207494c8905f0a65870e42,
         type: 3}
       propertyPath: m_LightUnit
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6807960581671958284, guid: ad4720da48207494c8905f0a65870e42,
+        type: 3}
+      propertyPath: m_ShapeRadius
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6807960581671958284, guid: ad4720da48207494c8905f0a65870e42,
+        type: 3}
+      propertyPath: m_ShadowNearPlane
+      value: 0.01
       objectReference: {fileID: 0}
     - target: {fileID: 6807960581671958284, guid: ad4720da48207494c8905f0a65870e42,
         type: 3}
@@ -20730,6 +21197,36 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 583104533}
     m_Modifications:
+    - target: {fileID: 6266672802219159357, guid: bbb92c5b040b8da4c97a622bbca75f01,
+        type: 3}
+      propertyPath: weightThreshold
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6266672802219159357, guid: bbb92c5b040b8da4c97a622bbca75f01,
+        type: 3}
+      propertyPath: pressurePlateDeactivateSound.Path
+      value: "event:/Interactive/PressurePlate/PressurePad Tillf\xE4llig"
+      objectReference: {fileID: 0}
+    - target: {fileID: 6266672802219159357, guid: bbb92c5b040b8da4c97a622bbca75f01,
+        type: 3}
+      propertyPath: pressurePlateDeactivateSound.Guid.Data1
+      value: -2126073542
+      objectReference: {fileID: 0}
+    - target: {fileID: 6266672802219159357, guid: bbb92c5b040b8da4c97a622bbca75f01,
+        type: 3}
+      propertyPath: pressurePlateDeactivateSound.Guid.Data2
+      value: 1076271601
+      objectReference: {fileID: 0}
+    - target: {fileID: 6266672802219159357, guid: bbb92c5b040b8da4c97a622bbca75f01,
+        type: 3}
+      propertyPath: pressurePlateDeactivateSound.Guid.Data3
+      value: 737088152
+      objectReference: {fileID: 0}
+    - target: {fileID: 6266672802219159357, guid: bbb92c5b040b8da4c97a622bbca75f01,
+        type: 3}
+      propertyPath: pressurePlateDeactivateSound.Guid.Data4
+      value: -1467891998
+      objectReference: {fileID: 0}
     - target: {fileID: 7098523712155768522, guid: bbb92c5b040b8da4c97a622bbca75f01,
         type: 3}
       propertyPath: m_RootOrder
@@ -20907,12 +21404,27 @@ PrefabInstance:
     - target: {fileID: 3130416578677240593, guid: c7028ed55677cc64b9929e53045906fa,
         type: 3}
       propertyPath: m_Intensity
-      value: 1000
+      value: 300
       objectReference: {fileID: 0}
     - target: {fileID: 3130416578677240593, guid: c7028ed55677cc64b9929e53045906fa,
         type: 3}
       propertyPath: m_LightUnit
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3130416578677240593, guid: c7028ed55677cc64b9929e53045906fa,
+        type: 3}
+      propertyPath: m_ShapeRadius
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3130416578677240593, guid: c7028ed55677cc64b9929e53045906fa,
+        type: 3}
+      propertyPath: useVolumetric
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3130416578677240593, guid: c7028ed55677cc64b9929e53045906fa,
+        type: 3}
+      propertyPath: m_LuxAtDistance
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3130416578677240593, guid: c7028ed55677cc64b9929e53045906fa,
         type: 3}
@@ -20923,6 +21435,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_PointlightHDType
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3130416578677240593, guid: c7028ed55677cc64b9929e53045906fa,
+        type: 3}
+      propertyPath: m_VolumetricDimmer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3130416578677240593, guid: c7028ed55677cc64b9929e53045906fa,
+        type: 3}
+      propertyPath: m_VolumetricFadeDistance
+      value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 3130416578677240593, guid: c7028ed55677cc64b9929e53045906fa,
+        type: 3}
+      propertyPath: m_VolumetricShadowDimmer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3163746662435963548, guid: c7028ed55677cc64b9929e53045906fa,
         type: 3}
@@ -20957,17 +21484,42 @@ PrefabInstance:
     - target: {fileID: 8135530199006451733, guid: c7028ed55677cc64b9929e53045906fa,
         type: 3}
       propertyPath: m_Range
-      value: 30
+      value: 35
+      objectReference: {fileID: 0}
+    - target: {fileID: 8135530199006451733, guid: c7028ed55677cc64b9929e53045906fa,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 0.05900679
+      objectReference: {fileID: 0}
+    - target: {fileID: 8135530199006451733, guid: c7028ed55677cc64b9929e53045906fa,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 0.5619972
+      objectReference: {fileID: 0}
+    - target: {fileID: 8135530199006451733, guid: c7028ed55677cc64b9929e53045906fa,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 0.9622642
       objectReference: {fileID: 0}
     - target: {fileID: 8135530199006451733, guid: c7028ed55677cc64b9929e53045906fa,
         type: 3}
       propertyPath: m_Intensity
-      value: 1000
+      value: 300
+      objectReference: {fileID: 0}
+    - target: {fileID: 8135530199006451733, guid: c7028ed55677cc64b9929e53045906fa,
+        type: 3}
+      propertyPath: m_ShadowRadius
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8135530199006451733, guid: c7028ed55677cc64b9929e53045906fa,
         type: 3}
       propertyPath: m_Shadows.m_Type
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8135530199006451733, guid: c7028ed55677cc64b9929e53045906fa,
+        type: 3}
+      propertyPath: m_BounceIntensity
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8135530199006451733, guid: c7028ed55677cc64b9929e53045906fa,
         type: 3}
@@ -21443,76 +21995,29 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f0ca1060e80dfaf459d77e1e5cf42694, type: 3}
---- !u!1 &1109973672 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7622576670495149168, guid: bbb92c5b040b8da4c97a622bbca75f01,
-    type: 3}
-  m_PrefabInstance: {fileID: 943458448}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1109973675 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7098523712155768522, guid: bbb92c5b040b8da4c97a622bbca75f01,
     type: 3}
   m_PrefabInstance: {fileID: 943458448}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1109973676
+--- !u!114 &1109973676 stripped
 MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 6266672802219159357, guid: bbb92c5b040b8da4c97a622bbca75f01,
+    type: 3}
+  m_PrefabInstance: {fileID: 943458448}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1109973672}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e78a3a2ec35de214eac55e69c3aaf186, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isLocked: 0
-  OnChangeState:
-    m_PersistentCalls:
-      m_Calls: []
-  isActive: 0
-  weightThreshold: 1
-  stackNormalThreshold: 0.5
-  pressurePlateActivateSound:
-    Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
-  pressurePlateDeactivateSound:
-    Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
---- !u!64 &1109973677
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1109973672}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -8590607836418664005, guid: 816500e7be337124e98718d1d88b4867, type: 3}
 --- !u!4 &1114638570 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6608459226968693419, guid: 33191a0f83af7de478dd563c2f907503,
     type: 3}
   m_PrefabInstance: {fileID: 736179643}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1117814292 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7622576670495149168, guid: bbb92c5b040b8da4c97a622bbca75f01,
-    type: 3}
-  m_PrefabInstance: {fileID: 1511702459}
   m_PrefabAsset: {fileID: 0}
 --- !u!4 &1117814295 stripped
 Transform:
@@ -21520,53 +22025,18 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1511702459}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1117814296
+--- !u!114 &1117814296 stripped
 MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 6266672802219159357, guid: bbb92c5b040b8da4c97a622bbca75f01,
+    type: 3}
+  m_PrefabInstance: {fileID: 1511702459}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1117814292}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e78a3a2ec35de214eac55e69c3aaf186, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isLocked: 0
-  OnChangeState:
-    m_PersistentCalls:
-      m_Calls: []
-  isActive: 0
-  weightThreshold: 1
-  stackNormalThreshold: 0.5
-  pressurePlateActivateSound:
-    Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
-  pressurePlateDeactivateSound:
-    Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
---- !u!64 &1117814297
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1117814292}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -8590607836418664005, guid: 816500e7be337124e98718d1d88b4867, type: 3}
 --- !u!4 &1118450292 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2647946802927620125, guid: 69ebea36fb2f3d642bfe3cf6107ef0d2,
@@ -22342,12 +22812,27 @@ PrefabInstance:
     - target: {fileID: 3130416578677240593, guid: c7028ed55677cc64b9929e53045906fa,
         type: 3}
       propertyPath: m_Intensity
-      value: 1000
+      value: 300
       objectReference: {fileID: 0}
     - target: {fileID: 3130416578677240593, guid: c7028ed55677cc64b9929e53045906fa,
         type: 3}
       propertyPath: m_LightUnit
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3130416578677240593, guid: c7028ed55677cc64b9929e53045906fa,
+        type: 3}
+      propertyPath: m_ShapeRadius
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3130416578677240593, guid: c7028ed55677cc64b9929e53045906fa,
+        type: 3}
+      propertyPath: useVolumetric
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3130416578677240593, guid: c7028ed55677cc64b9929e53045906fa,
+        type: 3}
+      propertyPath: m_LuxAtDistance
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3130416578677240593, guid: c7028ed55677cc64b9929e53045906fa,
         type: 3}
@@ -22358,6 +22843,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_PointlightHDType
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3130416578677240593, guid: c7028ed55677cc64b9929e53045906fa,
+        type: 3}
+      propertyPath: m_VolumetricDimmer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3130416578677240593, guid: c7028ed55677cc64b9929e53045906fa,
+        type: 3}
+      propertyPath: m_VolumetricFadeDistance
+      value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 3130416578677240593, guid: c7028ed55677cc64b9929e53045906fa,
+        type: 3}
+      propertyPath: m_VolumetricShadowDimmer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3163746662435963548, guid: c7028ed55677cc64b9929e53045906fa,
         type: 3}
@@ -22392,17 +22892,42 @@ PrefabInstance:
     - target: {fileID: 8135530199006451733, guid: c7028ed55677cc64b9929e53045906fa,
         type: 3}
       propertyPath: m_Range
-      value: 30
+      value: 35
+      objectReference: {fileID: 0}
+    - target: {fileID: 8135530199006451733, guid: c7028ed55677cc64b9929e53045906fa,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 0.05900679
+      objectReference: {fileID: 0}
+    - target: {fileID: 8135530199006451733, guid: c7028ed55677cc64b9929e53045906fa,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 0.5619972
+      objectReference: {fileID: 0}
+    - target: {fileID: 8135530199006451733, guid: c7028ed55677cc64b9929e53045906fa,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 0.9622642
       objectReference: {fileID: 0}
     - target: {fileID: 8135530199006451733, guid: c7028ed55677cc64b9929e53045906fa,
         type: 3}
       propertyPath: m_Intensity
-      value: 1000
+      value: 300
+      objectReference: {fileID: 0}
+    - target: {fileID: 8135530199006451733, guid: c7028ed55677cc64b9929e53045906fa,
+        type: 3}
+      propertyPath: m_ShadowRadius
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8135530199006451733, guid: c7028ed55677cc64b9929e53045906fa,
         type: 3}
       propertyPath: m_Shadows.m_Type
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8135530199006451733, guid: c7028ed55677cc64b9929e53045906fa,
+        type: 3}
+      propertyPath: m_BounceIntensity
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8135530199006451733, guid: c7028ed55677cc64b9929e53045906fa,
         type: 3}
@@ -22899,65 +23424,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1554984932}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1188630898 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7622576670495149168, guid: bbb92c5b040b8da4c97a622bbca75f01,
-    type: 3}
-  m_PrefabInstance: {fileID: 45765856}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1188630901 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7098523712155768522, guid: bbb92c5b040b8da4c97a622bbca75f01,
     type: 3}
   m_PrefabInstance: {fileID: 45765856}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1188630902
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1188630898}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e78a3a2ec35de214eac55e69c3aaf186, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isLocked: 0
-  OnChangeState:
-    m_PersistentCalls:
-      m_Calls: []
-  isActive: 0
-  weightThreshold: 1
-  stackNormalThreshold: 0.5
-  pressurePlateActivateSound:
-    Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
-  pressurePlateDeactivateSound:
-    Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
---- !u!64 &1188630903
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1188630898}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -8590607836418664005, guid: 816500e7be337124e98718d1d88b4867, type: 3}
 --- !u!1 &1190296310
 GameObject:
   m_ObjectHideFlags: 0
@@ -23884,6 +24356,36 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 583104533}
     m_Modifications:
+    - target: {fileID: 6266672802219159357, guid: bbb92c5b040b8da4c97a622bbca75f01,
+        type: 3}
+      propertyPath: weightThreshold
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6266672802219159357, guid: bbb92c5b040b8da4c97a622bbca75f01,
+        type: 3}
+      propertyPath: pressurePlateDeactivateSound.Path
+      value: "event:/Interactive/PressurePlate/PressurePad Tillf\xE4llig"
+      objectReference: {fileID: 0}
+    - target: {fileID: 6266672802219159357, guid: bbb92c5b040b8da4c97a622bbca75f01,
+        type: 3}
+      propertyPath: pressurePlateDeactivateSound.Guid.Data1
+      value: -2126073542
+      objectReference: {fileID: 0}
+    - target: {fileID: 6266672802219159357, guid: bbb92c5b040b8da4c97a622bbca75f01,
+        type: 3}
+      propertyPath: pressurePlateDeactivateSound.Guid.Data2
+      value: 1076271601
+      objectReference: {fileID: 0}
+    - target: {fileID: 6266672802219159357, guid: bbb92c5b040b8da4c97a622bbca75f01,
+        type: 3}
+      propertyPath: pressurePlateDeactivateSound.Guid.Data3
+      value: 737088152
+      objectReference: {fileID: 0}
+    - target: {fileID: 6266672802219159357, guid: bbb92c5b040b8da4c97a622bbca75f01,
+        type: 3}
+      propertyPath: pressurePlateDeactivateSound.Guid.Data4
+      value: -1467891998
+      objectReference: {fileID: 0}
     - target: {fileID: 7098523712155768522, guid: bbb92c5b040b8da4c97a622bbca75f01,
         type: 3}
       propertyPath: m_RootOrder
@@ -23979,6 +24481,36 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 583104533}
     m_Modifications:
+    - target: {fileID: 6266672802219159357, guid: bbb92c5b040b8da4c97a622bbca75f01,
+        type: 3}
+      propertyPath: weightThreshold
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6266672802219159357, guid: bbb92c5b040b8da4c97a622bbca75f01,
+        type: 3}
+      propertyPath: pressurePlateActivateSound.Path
+      value: "event:/Interactive/PressurePlate/PressurePad Tillf\xE4llig"
+      objectReference: {fileID: 0}
+    - target: {fileID: 6266672802219159357, guid: bbb92c5b040b8da4c97a622bbca75f01,
+        type: 3}
+      propertyPath: pressurePlateActivateSound.Guid.Data1
+      value: -2126073542
+      objectReference: {fileID: 0}
+    - target: {fileID: 6266672802219159357, guid: bbb92c5b040b8da4c97a622bbca75f01,
+        type: 3}
+      propertyPath: pressurePlateActivateSound.Guid.Data2
+      value: 1076271601
+      objectReference: {fileID: 0}
+    - target: {fileID: 6266672802219159357, guid: bbb92c5b040b8da4c97a622bbca75f01,
+        type: 3}
+      propertyPath: pressurePlateActivateSound.Guid.Data3
+      value: 737088152
+      objectReference: {fileID: 0}
+    - target: {fileID: 6266672802219159357, guid: bbb92c5b040b8da4c97a622bbca75f01,
+        type: 3}
+      propertyPath: pressurePlateActivateSound.Guid.Data4
+      value: -1467891998
+      objectReference: {fileID: 0}
     - target: {fileID: 7098523712155768522, guid: bbb92c5b040b8da4c97a622bbca75f01,
         type: 3}
       propertyPath: m_RootOrder
@@ -24168,6 +24700,36 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 583104533}
     m_Modifications:
+    - target: {fileID: 6266672802219159357, guid: bbb92c5b040b8da4c97a622bbca75f01,
+        type: 3}
+      propertyPath: weightThreshold
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6266672802219159357, guid: bbb92c5b040b8da4c97a622bbca75f01,
+        type: 3}
+      propertyPath: pressurePlateDeactivateSound.Path
+      value: "event:/Interactive/PressurePlate/PressurePad Tillf\xE4llig"
+      objectReference: {fileID: 0}
+    - target: {fileID: 6266672802219159357, guid: bbb92c5b040b8da4c97a622bbca75f01,
+        type: 3}
+      propertyPath: pressurePlateDeactivateSound.Guid.Data1
+      value: -2126073542
+      objectReference: {fileID: 0}
+    - target: {fileID: 6266672802219159357, guid: bbb92c5b040b8da4c97a622bbca75f01,
+        type: 3}
+      propertyPath: pressurePlateDeactivateSound.Guid.Data2
+      value: 1076271601
+      objectReference: {fileID: 0}
+    - target: {fileID: 6266672802219159357, guid: bbb92c5b040b8da4c97a622bbca75f01,
+        type: 3}
+      propertyPath: pressurePlateDeactivateSound.Guid.Data3
+      value: 737088152
+      objectReference: {fileID: 0}
+    - target: {fileID: 6266672802219159357, guid: bbb92c5b040b8da4c97a622bbca75f01,
+        type: 3}
+      propertyPath: pressurePlateDeactivateSound.Guid.Data4
+      value: -1467891998
+      objectReference: {fileID: 0}
     - target: {fileID: 7098523712155768522, guid: bbb92c5b040b8da4c97a622bbca75f01,
         type: 3}
       propertyPath: m_RootOrder
@@ -25453,17 +26015,27 @@ PrefabInstance:
     - target: {fileID: 426980782508727304, guid: ad4720da48207494c8905f0a65870e42,
         type: 3}
       propertyPath: m_Range
-      value: 30
+      value: 35
       objectReference: {fileID: 0}
     - target: {fileID: 426980782508727304, guid: ad4720da48207494c8905f0a65870e42,
         type: 3}
       propertyPath: m_Intensity
-      value: 1000
+      value: 300
+      objectReference: {fileID: 0}
+    - target: {fileID: 426980782508727304, guid: ad4720da48207494c8905f0a65870e42,
+        type: 3}
+      propertyPath: m_ShadowRadius
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 426980782508727304, guid: ad4720da48207494c8905f0a65870e42,
         type: 3}
       propertyPath: m_Shadows.m_Type
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 426980782508727304, guid: ad4720da48207494c8905f0a65870e42,
+        type: 3}
+      propertyPath: m_BounceIntensity
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 426980782508727304, guid: ad4720da48207494c8905f0a65870e42,
         type: 3}
@@ -25479,6 +26051,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Layer
       value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1189068292012443422, guid: ad4720da48207494c8905f0a65870e42,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2515917205661127512, guid: ad4720da48207494c8905f0a65870e42,
         type: 3}
@@ -25535,10 +26112,15 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 8
       objectReference: {fileID: 0}
+    - target: {fileID: 6286143098213524867, guid: ad4720da48207494c8905f0a65870e42,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6807960581671958284, guid: ad4720da48207494c8905f0a65870e42,
         type: 3}
       propertyPath: m_Intensity
-      value: 1000
+      value: 300
       objectReference: {fileID: 0}
     - target: {fileID: 6807960581671958284, guid: ad4720da48207494c8905f0a65870e42,
         type: 3}
@@ -25547,12 +26129,42 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6807960581671958284, guid: ad4720da48207494c8905f0a65870e42,
         type: 3}
+      propertyPath: m_ShapeRadius
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6807960581671958284, guid: ad4720da48207494c8905f0a65870e42,
+        type: 3}
+      propertyPath: useVolumetric
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6807960581671958284, guid: ad4720da48207494c8905f0a65870e42,
+        type: 3}
       propertyPath: m_ShadowNearPlane
-      value: 3.27
+      value: 0.01
       objectReference: {fileID: 0}
     - target: {fileID: 6807960581671958284, guid: ad4720da48207494c8905f0a65870e42,
         type: 3}
       propertyPath: m_PointlightHDType
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6807960581671958284, guid: ad4720da48207494c8905f0a65870e42,
+        type: 3}
+      propertyPath: m_VolumetricDimmer
+      value: 1.88
+      objectReference: {fileID: 0}
+    - target: {fileID: 6807960581671958284, guid: ad4720da48207494c8905f0a65870e42,
+        type: 3}
+      propertyPath: m_VolumetricFadeDistance
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6807960581671958284, guid: ad4720da48207494c8905f0a65870e42,
+        type: 3}
+      propertyPath: m_VolumetricShadowDimmer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6807960581671958284, guid: ad4720da48207494c8905f0a65870e42,
+        type: 3}
+      propertyPath: m_UseContactShadow.m_Override
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7374948740964636595, guid: ad4720da48207494c8905f0a65870e42,
@@ -25578,52 +26190,52 @@ PrefabInstance:
     - target: {fileID: 7859560228647931145, guid: ad4720da48207494c8905f0a65870e42,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -5.26
+      value: -10.48
       objectReference: {fileID: 0}
     - target: {fileID: 7859560228647931145, guid: ad4720da48207494c8905f0a65870e42,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 9.540352
+      value: 11.17
       objectReference: {fileID: 0}
     - target: {fileID: 7859560228647931145, guid: ad4720da48207494c8905f0a65870e42,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 4.53
+      value: -15.08
       objectReference: {fileID: 0}
     - target: {fileID: 7859560228647931145, guid: ad4720da48207494c8905f0a65870e42,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.5812322
+      value: -0.008652554
       objectReference: {fileID: 0}
     - target: {fileID: 7859560228647931145, guid: ad4720da48207494c8905f0a65870e42,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.4246441
+      value: -0.033894785
       objectReference: {fileID: 0}
     - target: {fileID: 7859560228647931145, guid: ad4720da48207494c8905f0a65870e42,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.51256114
+      value: -0.99933964
       objectReference: {fileID: 0}
     - target: {fileID: 7859560228647931145, guid: ad4720da48207494c8905f0a65870e42,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.46811068
+      value: 0.009831453
       objectReference: {fileID: 0}
     - target: {fileID: 7859560228647931145, guid: ad4720da48207494c8905f0a65870e42,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: -0.789
+      value: 1.16
       objectReference: {fileID: 0}
     - target: {fileID: 7859560228647931145, guid: ad4720da48207494c8905f0a65870e42,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 83.458
+      value: -180.953
       objectReference: {fileID: 0}
     - target: {fileID: 7859560228647931145, guid: ad4720da48207494c8905f0a65870e42,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: -78.398
+      value: 3.875
       objectReference: {fileID: 0}
     - target: {fileID: 9112145412364071010, guid: ad4720da48207494c8905f0a65870e42,
         type: 3}
@@ -26147,65 +26759,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 69ebea36fb2f3d642bfe3cf6107ef0d2, type: 3}
---- !u!1 &1334663066 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7622576670495149168, guid: bbb92c5b040b8da4c97a622bbca75f01,
-    type: 3}
-  m_PrefabInstance: {fileID: 1085947782}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1334663069 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7098523712155768522, guid: bbb92c5b040b8da4c97a622bbca75f01,
     type: 3}
   m_PrefabInstance: {fileID: 1085947782}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1334663070
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1334663066}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e78a3a2ec35de214eac55e69c3aaf186, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isLocked: 0
-  OnChangeState:
-    m_PersistentCalls:
-      m_Calls: []
-  isActive: 0
-  weightThreshold: 1
-  stackNormalThreshold: 0.5
-  pressurePlateActivateSound:
-    Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
-  pressurePlateDeactivateSound:
-    Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
---- !u!64 &1334663071
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1334663066}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -8590607836418664005, guid: 816500e7be337124e98718d1d88b4867, type: 3}
 --- !u!1001 &1338710274
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -26300,65 +26859,12 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 24df23e61452a084e8bfc93a391d2326, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bbb92c5b040b8da4c97a622bbca75f01, type: 3}
---- !u!1 &1347996122 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7622576670495149168, guid: bbb92c5b040b8da4c97a622bbca75f01,
-    type: 3}
-  m_PrefabInstance: {fileID: 1234004168}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1347996125 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7098523712155768522, guid: bbb92c5b040b8da4c97a622bbca75f01,
     type: 3}
   m_PrefabInstance: {fileID: 1234004168}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1347996126
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1347996122}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e78a3a2ec35de214eac55e69c3aaf186, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isLocked: 0
-  OnChangeState:
-    m_PersistentCalls:
-      m_Calls: []
-  isActive: 0
-  weightThreshold: 1
-  stackNormalThreshold: 0.5
-  pressurePlateActivateSound:
-    Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
-  pressurePlateDeactivateSound:
-    Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
---- !u!64 &1347996127
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1347996122}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -8590607836418664005, guid: 816500e7be337124e98718d1d88b4867, type: 3}
 --- !u!4 &1348074833 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6608459226968693419, guid: 33191a0f83af7de478dd563c2f907503,
@@ -27653,6 +28159,36 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 583104533}
     m_Modifications:
+    - target: {fileID: 6266672802219159357, guid: bbb92c5b040b8da4c97a622bbca75f01,
+        type: 3}
+      propertyPath: weightThreshold
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6266672802219159357, guid: bbb92c5b040b8da4c97a622bbca75f01,
+        type: 3}
+      propertyPath: pressurePlateActivateSound.Path
+      value: "event:/Interactive/PressurePlate/PressurePad Tillf\xE4llig"
+      objectReference: {fileID: 0}
+    - target: {fileID: 6266672802219159357, guid: bbb92c5b040b8da4c97a622bbca75f01,
+        type: 3}
+      propertyPath: pressurePlateActivateSound.Guid.Data1
+      value: -2126073542
+      objectReference: {fileID: 0}
+    - target: {fileID: 6266672802219159357, guid: bbb92c5b040b8da4c97a622bbca75f01,
+        type: 3}
+      propertyPath: pressurePlateActivateSound.Guid.Data2
+      value: 1076271601
+      objectReference: {fileID: 0}
+    - target: {fileID: 6266672802219159357, guid: bbb92c5b040b8da4c97a622bbca75f01,
+        type: 3}
+      propertyPath: pressurePlateActivateSound.Guid.Data3
+      value: 737088152
+      objectReference: {fileID: 0}
+    - target: {fileID: 6266672802219159357, guid: bbb92c5b040b8da4c97a622bbca75f01,
+        type: 3}
+      propertyPath: pressurePlateActivateSound.Guid.Data4
+      value: -1467891998
+      objectReference: {fileID: 0}
     - target: {fileID: 7098523712155768522, guid: bbb92c5b040b8da4c97a622bbca75f01,
         type: 3}
       propertyPath: m_RootOrder
@@ -27735,65 +28271,24 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bbb92c5b040b8da4c97a622bbca75f01, type: 3}
---- !u!1 &1410004282 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7622576670495149168, guid: bbb92c5b040b8da4c97a622bbca75f01,
-    type: 3}
-  m_PrefabInstance: {fileID: 934885012}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1410004285 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7098523712155768522, guid: bbb92c5b040b8da4c97a622bbca75f01,
     type: 3}
   m_PrefabInstance: {fileID: 934885012}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1410004286
+--- !u!114 &1410004286 stripped
 MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 6266672802219159357, guid: bbb92c5b040b8da4c97a622bbca75f01,
+    type: 3}
+  m_PrefabInstance: {fileID: 934885012}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1410004282}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e78a3a2ec35de214eac55e69c3aaf186, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isLocked: 0
-  OnChangeState:
-    m_PersistentCalls:
-      m_Calls: []
-  isActive: 0
-  weightThreshold: 1
-  stackNormalThreshold: 0.5
-  pressurePlateActivateSound:
-    Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
-  pressurePlateDeactivateSound:
-    Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
---- !u!64 &1410004287
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1410004282}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -8590607836418664005, guid: 816500e7be337124e98718d1d88b4867, type: 3}
 --- !u!1001 &1411749622
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -27973,65 +28468,24 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f0ca1060e80dfaf459d77e1e5cf42694, type: 3}
---- !u!1 &1411960110 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7622576670495149168, guid: bbb92c5b040b8da4c97a622bbca75f01,
-    type: 3}
-  m_PrefabInstance: {fileID: 441838711}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1411960113 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7098523712155768522, guid: bbb92c5b040b8da4c97a622bbca75f01,
     type: 3}
   m_PrefabInstance: {fileID: 441838711}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1411960114
+--- !u!114 &1411960114 stripped
 MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 6266672802219159357, guid: bbb92c5b040b8da4c97a622bbca75f01,
+    type: 3}
+  m_PrefabInstance: {fileID: 441838711}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1411960110}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e78a3a2ec35de214eac55e69c3aaf186, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isLocked: 0
-  OnChangeState:
-    m_PersistentCalls:
-      m_Calls: []
-  isActive: 0
-  weightThreshold: 1
-  stackNormalThreshold: 0.5
-  pressurePlateActivateSound:
-    Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
-  pressurePlateDeactivateSound:
-    Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
---- !u!64 &1411960115
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1411960110}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -8590607836418664005, guid: 816500e7be337124e98718d1d88b4867, type: 3}
 --- !u!1001 &1415840303
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -28173,6 +28627,36 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 583104533}
     m_Modifications:
+    - target: {fileID: 6266672802219159357, guid: bbb92c5b040b8da4c97a622bbca75f01,
+        type: 3}
+      propertyPath: weightThreshold
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6266672802219159357, guid: bbb92c5b040b8da4c97a622bbca75f01,
+        type: 3}
+      propertyPath: pressurePlateDeactivateSound.Path
+      value: "event:/Interactive/PressurePlate/PressurePad Tillf\xE4llig"
+      objectReference: {fileID: 0}
+    - target: {fileID: 6266672802219159357, guid: bbb92c5b040b8da4c97a622bbca75f01,
+        type: 3}
+      propertyPath: pressurePlateDeactivateSound.Guid.Data1
+      value: -2126073542
+      objectReference: {fileID: 0}
+    - target: {fileID: 6266672802219159357, guid: bbb92c5b040b8da4c97a622bbca75f01,
+        type: 3}
+      propertyPath: pressurePlateDeactivateSound.Guid.Data2
+      value: 1076271601
+      objectReference: {fileID: 0}
+    - target: {fileID: 6266672802219159357, guid: bbb92c5b040b8da4c97a622bbca75f01,
+        type: 3}
+      propertyPath: pressurePlateDeactivateSound.Guid.Data3
+      value: 737088152
+      objectReference: {fileID: 0}
+    - target: {fileID: 6266672802219159357, guid: bbb92c5b040b8da4c97a622bbca75f01,
+        type: 3}
+      propertyPath: pressurePlateDeactivateSound.Guid.Data4
+      value: -1467891998
+      objectReference: {fileID: 0}
     - target: {fileID: 7098523712155768522, guid: bbb92c5b040b8da4c97a622bbca75f01,
         type: 3}
       propertyPath: m_RootOrder
@@ -28456,7 +28940,7 @@ PrefabInstance:
     - target: {fileID: 2647946802927620125, guid: 69ebea36fb2f3d642bfe3cf6107ef0d2,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -28.74
+      value: -28.95
       objectReference: {fileID: 0}
     - target: {fileID: 2647946802927620125, guid: 69ebea36fb2f3d642bfe3cf6107ef0d2,
         type: 3}
@@ -28466,7 +28950,7 @@ PrefabInstance:
     - target: {fileID: 2647946802927620125, guid: 69ebea36fb2f3d642bfe3cf6107ef0d2,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 13.53
+      value: 13.63
       objectReference: {fileID: 0}
     - target: {fileID: 2647946802927620125, guid: 69ebea36fb2f3d642bfe3cf6107ef0d2,
         type: 3}
@@ -28967,12 +29451,27 @@ PrefabInstance:
     - target: {fileID: 3130416578677240593, guid: c7028ed55677cc64b9929e53045906fa,
         type: 3}
       propertyPath: m_Intensity
-      value: 1000
+      value: 300
       objectReference: {fileID: 0}
     - target: {fileID: 3130416578677240593, guid: c7028ed55677cc64b9929e53045906fa,
         type: 3}
       propertyPath: m_LightUnit
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3130416578677240593, guid: c7028ed55677cc64b9929e53045906fa,
+        type: 3}
+      propertyPath: m_ShapeRadius
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3130416578677240593, guid: c7028ed55677cc64b9929e53045906fa,
+        type: 3}
+      propertyPath: useVolumetric
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3130416578677240593, guid: c7028ed55677cc64b9929e53045906fa,
+        type: 3}
+      propertyPath: m_LuxAtDistance
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3130416578677240593, guid: c7028ed55677cc64b9929e53045906fa,
         type: 3}
@@ -28983,6 +29482,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_PointlightHDType
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3130416578677240593, guid: c7028ed55677cc64b9929e53045906fa,
+        type: 3}
+      propertyPath: m_VolumetricDimmer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3130416578677240593, guid: c7028ed55677cc64b9929e53045906fa,
+        type: 3}
+      propertyPath: m_VolumetricFadeDistance
+      value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 3130416578677240593, guid: c7028ed55677cc64b9929e53045906fa,
+        type: 3}
+      propertyPath: m_VolumetricShadowDimmer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3163746662435963548, guid: c7028ed55677cc64b9929e53045906fa,
         type: 3}
@@ -29017,17 +29531,42 @@ PrefabInstance:
     - target: {fileID: 8135530199006451733, guid: c7028ed55677cc64b9929e53045906fa,
         type: 3}
       propertyPath: m_Range
-      value: 30
+      value: 35
+      objectReference: {fileID: 0}
+    - target: {fileID: 8135530199006451733, guid: c7028ed55677cc64b9929e53045906fa,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 0.05900679
+      objectReference: {fileID: 0}
+    - target: {fileID: 8135530199006451733, guid: c7028ed55677cc64b9929e53045906fa,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 0.5619972
+      objectReference: {fileID: 0}
+    - target: {fileID: 8135530199006451733, guid: c7028ed55677cc64b9929e53045906fa,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 0.9622642
       objectReference: {fileID: 0}
     - target: {fileID: 8135530199006451733, guid: c7028ed55677cc64b9929e53045906fa,
         type: 3}
       propertyPath: m_Intensity
-      value: 1000
+      value: 300
+      objectReference: {fileID: 0}
+    - target: {fileID: 8135530199006451733, guid: c7028ed55677cc64b9929e53045906fa,
+        type: 3}
+      propertyPath: m_ShadowRadius
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8135530199006451733, guid: c7028ed55677cc64b9929e53045906fa,
         type: 3}
       propertyPath: m_Shadows.m_Type
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8135530199006451733, guid: c7028ed55677cc64b9929e53045906fa,
+        type: 3}
+      propertyPath: m_BounceIntensity
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8135530199006451733, guid: c7028ed55677cc64b9929e53045906fa,
         type: 3}
@@ -29425,12 +29964,27 @@ PrefabInstance:
     - target: {fileID: 3130416578677240593, guid: c7028ed55677cc64b9929e53045906fa,
         type: 3}
       propertyPath: m_Intensity
-      value: 1000
+      value: 300
       objectReference: {fileID: 0}
     - target: {fileID: 3130416578677240593, guid: c7028ed55677cc64b9929e53045906fa,
         type: 3}
       propertyPath: m_LightUnit
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3130416578677240593, guid: c7028ed55677cc64b9929e53045906fa,
+        type: 3}
+      propertyPath: m_ShapeRadius
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3130416578677240593, guid: c7028ed55677cc64b9929e53045906fa,
+        type: 3}
+      propertyPath: useVolumetric
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3130416578677240593, guid: c7028ed55677cc64b9929e53045906fa,
+        type: 3}
+      propertyPath: m_LuxAtDistance
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3130416578677240593, guid: c7028ed55677cc64b9929e53045906fa,
         type: 3}
@@ -29441,6 +29995,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_PointlightHDType
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3130416578677240593, guid: c7028ed55677cc64b9929e53045906fa,
+        type: 3}
+      propertyPath: m_VolumetricDimmer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3130416578677240593, guid: c7028ed55677cc64b9929e53045906fa,
+        type: 3}
+      propertyPath: m_VolumetricFadeDistance
+      value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 3130416578677240593, guid: c7028ed55677cc64b9929e53045906fa,
+        type: 3}
+      propertyPath: m_VolumetricShadowDimmer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3163746662435963548, guid: c7028ed55677cc64b9929e53045906fa,
         type: 3}
@@ -29510,17 +30079,42 @@ PrefabInstance:
     - target: {fileID: 8135530199006451733, guid: c7028ed55677cc64b9929e53045906fa,
         type: 3}
       propertyPath: m_Range
-      value: 30
+      value: 35
+      objectReference: {fileID: 0}
+    - target: {fileID: 8135530199006451733, guid: c7028ed55677cc64b9929e53045906fa,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 0.05900679
+      objectReference: {fileID: 0}
+    - target: {fileID: 8135530199006451733, guid: c7028ed55677cc64b9929e53045906fa,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 0.5619972
+      objectReference: {fileID: 0}
+    - target: {fileID: 8135530199006451733, guid: c7028ed55677cc64b9929e53045906fa,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 0.9622642
       objectReference: {fileID: 0}
     - target: {fileID: 8135530199006451733, guid: c7028ed55677cc64b9929e53045906fa,
         type: 3}
       propertyPath: m_Intensity
-      value: 1000
+      value: 300
+      objectReference: {fileID: 0}
+    - target: {fileID: 8135530199006451733, guid: c7028ed55677cc64b9929e53045906fa,
+        type: 3}
+      propertyPath: m_ShadowRadius
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8135530199006451733, guid: c7028ed55677cc64b9929e53045906fa,
         type: 3}
       propertyPath: m_Shadows.m_Type
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8135530199006451733, guid: c7028ed55677cc64b9929e53045906fa,
+        type: 3}
+      propertyPath: m_BounceIntensity
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8135530199006451733, guid: c7028ed55677cc64b9929e53045906fa,
         type: 3}
@@ -29895,6 +30489,36 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 583104533}
     m_Modifications:
+    - target: {fileID: 6266672802219159357, guid: bbb92c5b040b8da4c97a622bbca75f01,
+        type: 3}
+      propertyPath: weightThreshold
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6266672802219159357, guid: bbb92c5b040b8da4c97a622bbca75f01,
+        type: 3}
+      propertyPath: pressurePlateActivateSound.Path
+      value: "event:/Interactive/PressurePlate/PressurePad Tillf\xE4llig"
+      objectReference: {fileID: 0}
+    - target: {fileID: 6266672802219159357, guid: bbb92c5b040b8da4c97a622bbca75f01,
+        type: 3}
+      propertyPath: pressurePlateActivateSound.Guid.Data1
+      value: -2126073542
+      objectReference: {fileID: 0}
+    - target: {fileID: 6266672802219159357, guid: bbb92c5b040b8da4c97a622bbca75f01,
+        type: 3}
+      propertyPath: pressurePlateActivateSound.Guid.Data2
+      value: 1076271601
+      objectReference: {fileID: 0}
+    - target: {fileID: 6266672802219159357, guid: bbb92c5b040b8da4c97a622bbca75f01,
+        type: 3}
+      propertyPath: pressurePlateActivateSound.Guid.Data3
+      value: 737088152
+      objectReference: {fileID: 0}
+    - target: {fileID: 6266672802219159357, guid: bbb92c5b040b8da4c97a622bbca75f01,
+        type: 3}
+      propertyPath: pressurePlateActivateSound.Guid.Data4
+      value: -1467891998
+      objectReference: {fileID: 0}
     - target: {fileID: 7098523712155768522, guid: bbb92c5b040b8da4c97a622bbca75f01,
         type: 3}
       propertyPath: m_RootOrder
@@ -31417,12 +32041,27 @@ PrefabInstance:
     - target: {fileID: 3130416578677240593, guid: c7028ed55677cc64b9929e53045906fa,
         type: 3}
       propertyPath: m_Intensity
-      value: 1000
+      value: 300
       objectReference: {fileID: 0}
     - target: {fileID: 3130416578677240593, guid: c7028ed55677cc64b9929e53045906fa,
         type: 3}
       propertyPath: m_LightUnit
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3130416578677240593, guid: c7028ed55677cc64b9929e53045906fa,
+        type: 3}
+      propertyPath: m_ShapeRadius
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3130416578677240593, guid: c7028ed55677cc64b9929e53045906fa,
+        type: 3}
+      propertyPath: useVolumetric
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3130416578677240593, guid: c7028ed55677cc64b9929e53045906fa,
+        type: 3}
+      propertyPath: m_LuxAtDistance
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3130416578677240593, guid: c7028ed55677cc64b9929e53045906fa,
         type: 3}
@@ -31433,6 +32072,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_PointlightHDType
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3130416578677240593, guid: c7028ed55677cc64b9929e53045906fa,
+        type: 3}
+      propertyPath: m_VolumetricDimmer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3130416578677240593, guid: c7028ed55677cc64b9929e53045906fa,
+        type: 3}
+      propertyPath: m_VolumetricFadeDistance
+      value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 3130416578677240593, guid: c7028ed55677cc64b9929e53045906fa,
+        type: 3}
+      propertyPath: m_VolumetricShadowDimmer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3163746662435963548, guid: c7028ed55677cc64b9929e53045906fa,
         type: 3}
@@ -31467,17 +32121,42 @@ PrefabInstance:
     - target: {fileID: 8135530199006451733, guid: c7028ed55677cc64b9929e53045906fa,
         type: 3}
       propertyPath: m_Range
-      value: 30
+      value: 35
+      objectReference: {fileID: 0}
+    - target: {fileID: 8135530199006451733, guid: c7028ed55677cc64b9929e53045906fa,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 0.05900679
+      objectReference: {fileID: 0}
+    - target: {fileID: 8135530199006451733, guid: c7028ed55677cc64b9929e53045906fa,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 0.5619972
+      objectReference: {fileID: 0}
+    - target: {fileID: 8135530199006451733, guid: c7028ed55677cc64b9929e53045906fa,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 0.9622642
       objectReference: {fileID: 0}
     - target: {fileID: 8135530199006451733, guid: c7028ed55677cc64b9929e53045906fa,
         type: 3}
       propertyPath: m_Intensity
-      value: 1000
+      value: 300
+      objectReference: {fileID: 0}
+    - target: {fileID: 8135530199006451733, guid: c7028ed55677cc64b9929e53045906fa,
+        type: 3}
+      propertyPath: m_ShadowRadius
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8135530199006451733, guid: c7028ed55677cc64b9929e53045906fa,
         type: 3}
       propertyPath: m_Shadows.m_Type
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8135530199006451733, guid: c7028ed55677cc64b9929e53045906fa,
+        type: 3}
+      propertyPath: m_BounceIntensity
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8135530199006451733, guid: c7028ed55677cc64b9929e53045906fa,
         type: 3}
@@ -31834,12 +32513,27 @@ PrefabInstance:
     - target: {fileID: 3130416578677240593, guid: c7028ed55677cc64b9929e53045906fa,
         type: 3}
       propertyPath: m_Intensity
-      value: 1000
+      value: 300
       objectReference: {fileID: 0}
     - target: {fileID: 3130416578677240593, guid: c7028ed55677cc64b9929e53045906fa,
         type: 3}
       propertyPath: m_LightUnit
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3130416578677240593, guid: c7028ed55677cc64b9929e53045906fa,
+        type: 3}
+      propertyPath: m_ShapeRadius
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3130416578677240593, guid: c7028ed55677cc64b9929e53045906fa,
+        type: 3}
+      propertyPath: useVolumetric
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3130416578677240593, guid: c7028ed55677cc64b9929e53045906fa,
+        type: 3}
+      propertyPath: m_LuxAtDistance
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3130416578677240593, guid: c7028ed55677cc64b9929e53045906fa,
         type: 3}
@@ -31850,6 +32544,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_PointlightHDType
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3130416578677240593, guid: c7028ed55677cc64b9929e53045906fa,
+        type: 3}
+      propertyPath: m_VolumetricDimmer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3130416578677240593, guid: c7028ed55677cc64b9929e53045906fa,
+        type: 3}
+      propertyPath: m_VolumetricFadeDistance
+      value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 3130416578677240593, guid: c7028ed55677cc64b9929e53045906fa,
+        type: 3}
+      propertyPath: m_VolumetricShadowDimmer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3163746662435963548, guid: c7028ed55677cc64b9929e53045906fa,
         type: 3}
@@ -31884,17 +32593,42 @@ PrefabInstance:
     - target: {fileID: 8135530199006451733, guid: c7028ed55677cc64b9929e53045906fa,
         type: 3}
       propertyPath: m_Range
-      value: 30
+      value: 35
+      objectReference: {fileID: 0}
+    - target: {fileID: 8135530199006451733, guid: c7028ed55677cc64b9929e53045906fa,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 0.05900679
+      objectReference: {fileID: 0}
+    - target: {fileID: 8135530199006451733, guid: c7028ed55677cc64b9929e53045906fa,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 0.5619972
+      objectReference: {fileID: 0}
+    - target: {fileID: 8135530199006451733, guid: c7028ed55677cc64b9929e53045906fa,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 0.9622642
       objectReference: {fileID: 0}
     - target: {fileID: 8135530199006451733, guid: c7028ed55677cc64b9929e53045906fa,
         type: 3}
       propertyPath: m_Intensity
-      value: 1000
+      value: 300
+      objectReference: {fileID: 0}
+    - target: {fileID: 8135530199006451733, guid: c7028ed55677cc64b9929e53045906fa,
+        type: 3}
+      propertyPath: m_ShadowRadius
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8135530199006451733, guid: c7028ed55677cc64b9929e53045906fa,
         type: 3}
       propertyPath: m_Shadows.m_Type
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8135530199006451733, guid: c7028ed55677cc64b9929e53045906fa,
+        type: 3}
+      propertyPath: m_BounceIntensity
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8135530199006451733, guid: c7028ed55677cc64b9929e53045906fa,
         type: 3}
@@ -32137,65 +32871,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 727789007}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1662576176 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7622576670495149168, guid: bbb92c5b040b8da4c97a622bbca75f01,
-    type: 3}
-  m_PrefabInstance: {fileID: 826588706}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1662576179 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7098523712155768522, guid: bbb92c5b040b8da4c97a622bbca75f01,
     type: 3}
   m_PrefabInstance: {fileID: 826588706}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1662576180
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1662576176}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e78a3a2ec35de214eac55e69c3aaf186, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isLocked: 0
-  OnChangeState:
-    m_PersistentCalls:
-      m_Calls: []
-  isActive: 0
-  weightThreshold: 1
-  stackNormalThreshold: 0.5
-  pressurePlateActivateSound:
-    Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
-  pressurePlateDeactivateSound:
-    Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
---- !u!64 &1662576181
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1662576176}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -8590607836418664005, guid: 816500e7be337124e98718d1d88b4867, type: 3}
 --- !u!1001 &1667420148
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -32640,65 +33321,24 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 33191a0f83af7de478dd563c2f907503, type: 3}
---- !u!1 &1688592555 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7622576670495149168, guid: bbb92c5b040b8da4c97a622bbca75f01,
-    type: 3}
-  m_PrefabInstance: {fileID: 1407941826}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1688592558 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7098523712155768522, guid: bbb92c5b040b8da4c97a622bbca75f01,
     type: 3}
   m_PrefabInstance: {fileID: 1407941826}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1688592559
+--- !u!114 &1688592559 stripped
 MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 6266672802219159357, guid: bbb92c5b040b8da4c97a622bbca75f01,
+    type: 3}
+  m_PrefabInstance: {fileID: 1407941826}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1688592555}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e78a3a2ec35de214eac55e69c3aaf186, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isLocked: 0
-  OnChangeState:
-    m_PersistentCalls:
-      m_Calls: []
-  isActive: 0
-  weightThreshold: 1
-  stackNormalThreshold: 0.5
-  pressurePlateActivateSound:
-    Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
-  pressurePlateDeactivateSound:
-    Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
---- !u!64 &1688592560
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1688592555}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -8590607836418664005, guid: 816500e7be337124e98718d1d88b4867, type: 3}
 --- !u!1001 &1695328677
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -33074,65 +33714,24 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 3861478300804232965, guid: 116d52934e0190f498bc3a93e790ca8e, type: 3}
---- !u!1 &1703374088 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7622576670495149168, guid: bbb92c5b040b8da4c97a622bbca75f01,
-    type: 3}
-  m_PrefabInstance: {fileID: 966862269}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1703374091 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7098523712155768522, guid: bbb92c5b040b8da4c97a622bbca75f01,
     type: 3}
   m_PrefabInstance: {fileID: 966862269}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1703374092
+--- !u!114 &1703374092 stripped
 MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 6266672802219159357, guid: bbb92c5b040b8da4c97a622bbca75f01,
+    type: 3}
+  m_PrefabInstance: {fileID: 966862269}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1703374088}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e78a3a2ec35de214eac55e69c3aaf186, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isLocked: 0
-  OnChangeState:
-    m_PersistentCalls:
-      m_Calls: []
-  isActive: 0
-  weightThreshold: 1
-  stackNormalThreshold: 0.5
-  pressurePlateActivateSound:
-    Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
-  pressurePlateDeactivateSound:
-    Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
---- !u!64 &1703374093
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1703374088}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -8590607836418664005, guid: 816500e7be337124e98718d1d88b4867, type: 3}
 --- !u!1001 &1708554506
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -33651,6 +34250,36 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 583104533}
     m_Modifications:
+    - target: {fileID: 6266672802219159357, guid: bbb92c5b040b8da4c97a622bbca75f01,
+        type: 3}
+      propertyPath: weightThreshold
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6266672802219159357, guid: bbb92c5b040b8da4c97a622bbca75f01,
+        type: 3}
+      propertyPath: pressurePlateDeactivateSound.Path
+      value: "event:/Interactive/PressurePlate/PressurePad Tillf\xE4llig"
+      objectReference: {fileID: 0}
+    - target: {fileID: 6266672802219159357, guid: bbb92c5b040b8da4c97a622bbca75f01,
+        type: 3}
+      propertyPath: pressurePlateDeactivateSound.Guid.Data1
+      value: -2126073542
+      objectReference: {fileID: 0}
+    - target: {fileID: 6266672802219159357, guid: bbb92c5b040b8da4c97a622bbca75f01,
+        type: 3}
+      propertyPath: pressurePlateDeactivateSound.Guid.Data2
+      value: 1076271601
+      objectReference: {fileID: 0}
+    - target: {fileID: 6266672802219159357, guid: bbb92c5b040b8da4c97a622bbca75f01,
+        type: 3}
+      propertyPath: pressurePlateDeactivateSound.Guid.Data3
+      value: 737088152
+      objectReference: {fileID: 0}
+    - target: {fileID: 6266672802219159357, guid: bbb92c5b040b8da4c97a622bbca75f01,
+        type: 3}
+      propertyPath: pressurePlateDeactivateSound.Guid.Data4
+      value: -1467891998
+      objectReference: {fileID: 0}
     - target: {fileID: 7098523712155768522, guid: bbb92c5b040b8da4c97a622bbca75f01,
         type: 3}
       propertyPath: m_RootOrder
@@ -34864,7 +35493,7 @@ PrefabInstance:
     - target: {fileID: 2647946802927620125, guid: 69ebea36fb2f3d642bfe3cf6107ef0d2,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -7.9400024
+      value: -8.3
       objectReference: {fileID: 0}
     - target: {fileID: 2647946802927620125, guid: 69ebea36fb2f3d642bfe3cf6107ef0d2,
         type: 3}
@@ -35749,12 +36378,27 @@ PrefabInstance:
     - target: {fileID: 3130416578677240593, guid: c7028ed55677cc64b9929e53045906fa,
         type: 3}
       propertyPath: m_Intensity
-      value: 1000
+      value: 300
       objectReference: {fileID: 0}
     - target: {fileID: 3130416578677240593, guid: c7028ed55677cc64b9929e53045906fa,
         type: 3}
       propertyPath: m_LightUnit
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3130416578677240593, guid: c7028ed55677cc64b9929e53045906fa,
+        type: 3}
+      propertyPath: m_ShapeRadius
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3130416578677240593, guid: c7028ed55677cc64b9929e53045906fa,
+        type: 3}
+      propertyPath: useVolumetric
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3130416578677240593, guid: c7028ed55677cc64b9929e53045906fa,
+        type: 3}
+      propertyPath: m_LuxAtDistance
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3130416578677240593, guid: c7028ed55677cc64b9929e53045906fa,
         type: 3}
@@ -35765,6 +36409,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_PointlightHDType
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3130416578677240593, guid: c7028ed55677cc64b9929e53045906fa,
+        type: 3}
+      propertyPath: m_VolumetricDimmer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3130416578677240593, guid: c7028ed55677cc64b9929e53045906fa,
+        type: 3}
+      propertyPath: m_VolumetricFadeDistance
+      value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 3130416578677240593, guid: c7028ed55677cc64b9929e53045906fa,
+        type: 3}
+      propertyPath: m_VolumetricShadowDimmer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3163746662435963548, guid: c7028ed55677cc64b9929e53045906fa,
         type: 3}
@@ -35799,17 +36458,42 @@ PrefabInstance:
     - target: {fileID: 8135530199006451733, guid: c7028ed55677cc64b9929e53045906fa,
         type: 3}
       propertyPath: m_Range
-      value: 30
+      value: 35
+      objectReference: {fileID: 0}
+    - target: {fileID: 8135530199006451733, guid: c7028ed55677cc64b9929e53045906fa,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 0.05900679
+      objectReference: {fileID: 0}
+    - target: {fileID: 8135530199006451733, guid: c7028ed55677cc64b9929e53045906fa,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 0.5619972
+      objectReference: {fileID: 0}
+    - target: {fileID: 8135530199006451733, guid: c7028ed55677cc64b9929e53045906fa,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 0.9622642
       objectReference: {fileID: 0}
     - target: {fileID: 8135530199006451733, guid: c7028ed55677cc64b9929e53045906fa,
         type: 3}
       propertyPath: m_Intensity
-      value: 1000
+      value: 300
+      objectReference: {fileID: 0}
+    - target: {fileID: 8135530199006451733, guid: c7028ed55677cc64b9929e53045906fa,
+        type: 3}
+      propertyPath: m_ShadowRadius
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8135530199006451733, guid: c7028ed55677cc64b9929e53045906fa,
         type: 3}
       propertyPath: m_Shadows.m_Type
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8135530199006451733, guid: c7028ed55677cc64b9929e53045906fa,
+        type: 3}
+      propertyPath: m_BounceIntensity
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8135530199006451733, guid: c7028ed55677cc64b9929e53045906fa,
         type: 3}
@@ -37464,65 +38148,24 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1712405695}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &2005452445 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7622576670495149168, guid: bbb92c5b040b8da4c97a622bbca75f01,
-    type: 3}
-  m_PrefabInstance: {fileID: 1229515741}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &2005452448 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7098523712155768522, guid: bbb92c5b040b8da4c97a622bbca75f01,
     type: 3}
   m_PrefabInstance: {fileID: 1229515741}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &2005452449
+--- !u!114 &2005452449 stripped
 MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 6266672802219159357, guid: bbb92c5b040b8da4c97a622bbca75f01,
+    type: 3}
+  m_PrefabInstance: {fileID: 1229515741}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2005452445}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e78a3a2ec35de214eac55e69c3aaf186, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isLocked: 0
-  OnChangeState:
-    m_PersistentCalls:
-      m_Calls: []
-  isActive: 0
-  weightThreshold: 1
-  stackNormalThreshold: 0.5
-  pressurePlateActivateSound:
-    Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
-  pressurePlateDeactivateSound:
-    Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
---- !u!64 &2005452450
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2005452445}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -8590607836418664005, guid: 816500e7be337124e98718d1d88b4867, type: 3}
 --- !u!4 &2006508883 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2647946802927620125, guid: 69ebea36fb2f3d642bfe3cf6107ef0d2,
@@ -37796,65 +38439,12 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 5302568919011541938, guid: ac9b7772e3ca1d84693fd440bb91ff6c, type: 3}
---- !u!1 &2010872925 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7622576670495149168, guid: bbb92c5b040b8da4c97a622bbca75f01,
-    type: 3}
-  m_PrefabInstance: {fileID: 684402820}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &2010872928 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7098523712155768522, guid: bbb92c5b040b8da4c97a622bbca75f01,
     type: 3}
   m_PrefabInstance: {fileID: 684402820}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &2010872929
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2010872925}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e78a3a2ec35de214eac55e69c3aaf186, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isLocked: 0
-  OnChangeState:
-    m_PersistentCalls:
-      m_Calls: []
-  isActive: 0
-  weightThreshold: 1
-  stackNormalThreshold: 0.5
-  pressurePlateActivateSound:
-    Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
-  pressurePlateDeactivateSound:
-    Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
---- !u!64 &2010872930
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2010872925}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -8590607836418664005, guid: 816500e7be337124e98718d1d88b4867, type: 3}
 --- !u!1 &2013566523 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 992900925656355870, guid: 7f9d84742d3ee5d468060ced45a3e93e,
@@ -39368,12 +39958,27 @@ PrefabInstance:
     - target: {fileID: 426980782508727304, guid: ad4720da48207494c8905f0a65870e42,
         type: 3}
       propertyPath: m_Range
-      value: 30
+      value: 35
       objectReference: {fileID: 0}
     - target: {fileID: 426980782508727304, guid: ad4720da48207494c8905f0a65870e42,
         type: 3}
       propertyPath: m_Intensity
-      value: 1000
+      value: 300
+      objectReference: {fileID: 0}
+    - target: {fileID: 426980782508727304, guid: ad4720da48207494c8905f0a65870e42,
+        type: 3}
+      propertyPath: m_ShadowRadius
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 426980782508727304, guid: ad4720da48207494c8905f0a65870e42,
+        type: 3}
+      propertyPath: m_Shadows.m_Type
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 426980782508727304, guid: ad4720da48207494c8905f0a65870e42,
+        type: 3}
+      propertyPath: m_BounceIntensity
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 426980782508727304, guid: ad4720da48207494c8905f0a65870e42,
         type: 3}
@@ -39389,6 +39994,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Layer
       value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1189068292012443422, guid: ad4720da48207494c8905f0a65870e42,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2515917205661127512, guid: ad4720da48207494c8905f0a65870e42,
         type: 3}
@@ -39445,15 +40055,30 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 8
       objectReference: {fileID: 0}
+    - target: {fileID: 6286143098213524867, guid: ad4720da48207494c8905f0a65870e42,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6807960581671958284, guid: ad4720da48207494c8905f0a65870e42,
         type: 3}
       propertyPath: m_Intensity
-      value: 1000
+      value: 300
       objectReference: {fileID: 0}
     - target: {fileID: 6807960581671958284, guid: ad4720da48207494c8905f0a65870e42,
         type: 3}
       propertyPath: m_LightUnit
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6807960581671958284, guid: ad4720da48207494c8905f0a65870e42,
+        type: 3}
+      propertyPath: m_ShapeRadius
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6807960581671958284, guid: ad4720da48207494c8905f0a65870e42,
+        type: 3}
+      propertyPath: m_ShadowNearPlane
+      value: 0.01
       objectReference: {fileID: 0}
     - target: {fileID: 6807960581671958284, guid: ad4720da48207494c8905f0a65870e42,
         type: 3}
@@ -39483,7 +40108,7 @@ PrefabInstance:
     - target: {fileID: 7859560228647931145, guid: ad4720da48207494c8905f0a65870e42,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -23.810978
+      value: -24.14
       objectReference: {fileID: 0}
     - target: {fileID: 7859560228647931145, guid: ad4720da48207494c8905f0a65870e42,
         type: 3}
@@ -39493,7 +40118,7 @@ PrefabInstance:
     - target: {fileID: 7859560228647931145, guid: ad4720da48207494c8905f0a65870e42,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -21.95649
+      value: -22.1
       objectReference: {fileID: 0}
     - target: {fileID: 7859560228647931145, guid: ad4720da48207494c8905f0a65870e42,
         type: 3}
@@ -40067,12 +40692,27 @@ PrefabInstance:
     - target: {fileID: 426980782508727304, guid: ad4720da48207494c8905f0a65870e42,
         type: 3}
       propertyPath: m_Range
-      value: 30
+      value: 35
       objectReference: {fileID: 0}
     - target: {fileID: 426980782508727304, guid: ad4720da48207494c8905f0a65870e42,
         type: 3}
       propertyPath: m_Intensity
-      value: 1000
+      value: 300
+      objectReference: {fileID: 0}
+    - target: {fileID: 426980782508727304, guid: ad4720da48207494c8905f0a65870e42,
+        type: 3}
+      propertyPath: m_ShadowRadius
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 426980782508727304, guid: ad4720da48207494c8905f0a65870e42,
+        type: 3}
+      propertyPath: m_Shadows.m_Type
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 426980782508727304, guid: ad4720da48207494c8905f0a65870e42,
+        type: 3}
+      propertyPath: m_BounceIntensity
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 426980782508727304, guid: ad4720da48207494c8905f0a65870e42,
         type: 3}
@@ -40088,6 +40728,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Layer
       value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1189068292012443422, guid: ad4720da48207494c8905f0a65870e42,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2515917205661127512, guid: ad4720da48207494c8905f0a65870e42,
         type: 3}
@@ -40144,15 +40789,30 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 8
       objectReference: {fileID: 0}
+    - target: {fileID: 6286143098213524867, guid: ad4720da48207494c8905f0a65870e42,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6807960581671958284, guid: ad4720da48207494c8905f0a65870e42,
         type: 3}
       propertyPath: m_Intensity
-      value: 1000
+      value: 300
       objectReference: {fileID: 0}
     - target: {fileID: 6807960581671958284, guid: ad4720da48207494c8905f0a65870e42,
         type: 3}
       propertyPath: m_LightUnit
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6807960581671958284, guid: ad4720da48207494c8905f0a65870e42,
+        type: 3}
+      propertyPath: m_ShapeRadius
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6807960581671958284, guid: ad4720da48207494c8905f0a65870e42,
+        type: 3}
+      propertyPath: m_ShadowNearPlane
+      value: 0.01
       objectReference: {fileID: 0}
     - target: {fileID: 6807960581671958284, guid: ad4720da48207494c8905f0a65870e42,
         type: 3}
