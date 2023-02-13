@@ -12,9 +12,9 @@ GameObject:
   - component: {fileID: 1373806807426719672}
   - component: {fileID: 3815755369968184178}
   - component: {fileID: 3060789603357189065}
-  - component: {fileID: 4014173889991117573}
   - component: {fileID: 5748396982040242044}
   - component: {fileID: 785015157702589720}
+  - component: {fileID: 529641867470281738}
   m_Layer: 8
   m_Name: tempBox
   m_TagString: Untagged
@@ -103,23 +103,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &4014173889991117573
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3455586078672652967}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 28a3298f306238f4e86d936cabb674d5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  breakForce: 32
-  playerInteract: {fileID: 0}
-  stackNormalThreshold: 0.5
-  objectSoundController: {fileID: 785015157702589720}
-  pickedUp: 0
 --- !u!65 &5748396982040242044
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -166,3 +149,21 @@ MonoBehaviour:
       Data3: 1158233985
       Data4: -1149402907
     Path: event:/Interactive/WoodCrateDrop
+--- !u!114 &529641867470281738
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3455586078672652967}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dee1a28932ecbb548814f52aedcc2c54, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isLocked: 0
+  breakForce: 35
+  playerInteract: {fileID: 0}
+  stackNormalThreshold: 0.5
+  objectSoundController: {fileID: 785015157702589720}
+  pickedUp: 0

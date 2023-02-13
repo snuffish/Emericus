@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent(typeof(PhysicsSounds))]
 public class PhysicsObject : Interactable
 {
     float waitOnPickup = 0.2f;
