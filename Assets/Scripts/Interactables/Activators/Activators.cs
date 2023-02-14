@@ -22,10 +22,6 @@ public class Activators : Interactable
         ChangeState(isActive);
     }
 
-    private void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.P)) OnChangeState.Invoke(this, isActive);
-    }
 
     public override void Interact()
     {
