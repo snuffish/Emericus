@@ -9,6 +9,7 @@ public class PhysicsObject : Interactable
     [SerializeField, Tooltip("Amount of Force before an object is dropped")] float breakForce = 35f;
     [SerializeField] public PlayerInteract playerInteract;
     [SerializeField] float stackNormalThreshold = 0.5f;
+    public bool keepRestraints = false;
     public PhysicsSounds objectSoundController;
     //[SerializeField] float throwForce = 10;
     //[SerializeField] float damageModifier = 1;
