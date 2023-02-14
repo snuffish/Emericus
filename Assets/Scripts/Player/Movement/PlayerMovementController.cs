@@ -81,7 +81,11 @@ public class PlayerMovementController : MonoBehaviour
         {
             if (currentTime >= stepInterval)
             {
-                playerAudio.PlayFootstep(gameObject);
+                //Only play Footsteps while grounded (Leon) Clueless
+                if (isGrounded)
+                {
+                    playerAudio.PlayFootstep(gameObject);
+                }
                 currentTime = 0;
             }
             else currentTime += Time.deltaTime;
@@ -147,13 +151,14 @@ public class PlayerMovementController : MonoBehaviour
         //  In air
         else if(!isGrounded)
             rb.AddForce(direction.normalized * Time.deltaTime * currentMoveSpeed * 300f * airmultiplier, ForceMode.Force);
-        
     }
 
     void Jump() {
         //  Reset Y-velocity
-       // playerAudio.PlayJump(gameObject);
+        playerAudio.PlayJump(gameObject);
         rb.velocity = new Vector3(rb.velocity.x, 0f, rb.velocity.z);
+        
+        
         
         //  Adds a force upward
         rb.AddForce(transform.up * jumpForce, ForceMode.Impulse);
