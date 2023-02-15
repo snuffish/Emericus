@@ -4,6 +4,7 @@ using System.Numerics;
 using Unity.Collections;
 using Unity.VisualScripting;
 using Unity.VisualScripting.FullSerializer.Internal;
+using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 using UnityEngine.UI;
 using Vector2 = UnityEngine.Vector2;
@@ -32,6 +33,7 @@ public class PlayerMovementController : MonoBehaviour
     [SerializeField] private float groundCheckRayLength;
     [SerializeField] private LayerMask jumpableLayers;
     [SerializeField] public bool isGrounded { get; private set; }
+    private Ray groundRay;
     
 
     [Header("Jump")]
@@ -50,8 +52,12 @@ public class PlayerMovementController : MonoBehaviour
     [HideInInspector] public PlayerIdleState idleState = new PlayerIdleState();
     
     [Header("Sound Parameters")]
-    [SerializeField, Tooltip("Time between fotsteps")] public float stepInterval;
+    [HideInInspector] public float currentStepInterval;
+    [SerializeField, Tooltip("Time between fotsteps")] public float stepIntervalWalk;
+    [SerializeField, Tooltip("Time between fotsteps")] public float stepIntervalRun;
+    [SerializeField, Tooltip("Time between fotsteps")] public float stepIntervalCrouch;
     [HideInInspector] public float currentTime;
+    
     
     
     // Start is called before the first frame update
@@ -70,12 +76,20 @@ public class PlayerMovementController : MonoBehaviour
     void Update() {
 
         currentState.UpdateState(this);
+
         
         
         //  Airborne Check
-        Ray groundRay = new Ray(transform.position, Vector3.down);
+        groundRay = new Ray(transform.position, Vector3.down);
+        
+        if (!isGrounded) {
+            if (Physics.Raycast(groundRay, groundCheckRayLength, LayerMask.GetMask("Ground"))) {
+                playerAudio.PlayLand(gameObject);
+            }
+        }
+        
         Debug.DrawRay(groundRay.origin, groundRay.direction * groundCheckRayLength, Color.cyan);
-
+        
         isGrounded = Physics.Raycast(groundRay, groundCheckRayLength, jumpableLayers);
         
         //  Change Drag if airborne or not
@@ -135,11 +149,11 @@ public class PlayerMovementController : MonoBehaviour
     }
 
     void Jump() {
-        //  Reset Y-velocity
+        //  Play Jump Audio
         playerAudio.PlayJump(gameObject);
+        
+        //  Reset Y-velocity
         rb.velocity = new Vector3(rb.velocity.x, 0f, rb.velocity.z);
-        
-        
         
         //  Adds a force upward
         rb.AddForce(transform.up * jumpForce, ForceMode.Impulse);
@@ -156,6 +170,11 @@ public class PlayerMovementController : MonoBehaviour
         currentState = state;
         currentState.EnterState(this);
     }
+
+        
+            
+        
+    
     
 
 }

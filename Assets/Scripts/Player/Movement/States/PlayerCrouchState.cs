@@ -14,6 +14,8 @@ public class PlayerCrouchState : PlayerMovementBaseState
         else
             player.transform.position += Vector3.up * 0.5f;
         
+        player.currentStepInterval = player.stepIntervalCrouch;
+        
     }
     
     public override void UpdateState(PlayerMovementController player) {
@@ -24,7 +26,8 @@ public class PlayerCrouchState : PlayerMovementBaseState
         if(Input.GetButtonUp("Crouch"))
             player.ChangeState(player.idleState);
         
-        if (player.currentTime >= player.stepInterval) { 
+        //  Footsteps
+        if (player.currentTime >= player.currentStepInterval) { 
             player.currentTime = 0;
             player.playerAudio.PlayFootstep(player.gameObject);
         }                       
