@@ -30,7 +30,7 @@ public class MusicManager : MonoBehaviour
 
    private void BankLoader()
    {
-      Debug.Log("Has the bank loaded? " + RuntimeManager.HasBankLoaded(masterBank));
+      //Debug.Log("Has the bank loaded? " + RuntimeManager.HasBankLoaded(masterBank));
       RuntimeManager.LoadBank(masterBank, loadSampleData);
    }
 

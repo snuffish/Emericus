@@ -22,12 +22,12 @@ public class PlayerInteract : MonoBehaviour
     public GameObject currentlyPickedUpObject;
     Rigidbody pickupRB;
     PhysicsObject physicsObject;
-    
+
     [Header("Settings")]
     [SerializeField, Tooltip("Check if you want smooth Interperlation")] bool useSmoothInterperlation = true;
     [SerializeField] bool useGravity = false;
     [SerializeField, Tooltip("A More aggresive kinda Force")] bool useImpulseForce = false;
-    [SerializeField,Tooltip("dampning using distanceThreshold")] bool useDampning = true;
+    [SerializeField, Tooltip("dampning using distanceThreshold")] bool useDampning = true;
 
     [Header("Hold Item")]
     [SerializeField, Tooltip("Min Step Speed when moving picked up Object")] float minSpeed = 0;
@@ -68,14 +68,14 @@ public class PlayerInteract : MonoBehaviour
             else currentSpeed = Mathf.SmoothStep(minSpeed, maxSpeed, currentDist);
             currentSpeed *= 10;
             currentSpeed *= Time.fixedDeltaTime;
-            if(useDampning)
+            if (useDampning)
             {
                 float dampingFactor = Mathf.Lerp(0, 1, currentDist / distanceThreshold);
                 currentSpeed *= dampingFactor;
             }
 
             //pickupRB.velocity = direction.normalized * currentSpeed;
-            if(useImpulseForce) pickupRB.AddForce(direction.normalized * currentSpeed, ForceMode.Impulse);
+            if (useImpulseForce) pickupRB.AddForce(direction.normalized * currentSpeed, ForceMode.Impulse);
             else pickupRB.AddForce(direction.normalized * currentSpeed, ForceMode.Force);
 
             //else
@@ -135,7 +135,7 @@ public class PlayerInteract : MonoBehaviour
         physicsObject = playerLook.LookObject.GetComponentInChildren<PhysicsObject>();
         currentlyPickedUpObject = playerLook.LookObject;
         pickupRB = currentlyPickedUpObject.GetComponent<Rigidbody>();
-        if(useGravity) pickupRB.useGravity = true;
+        if (useGravity) pickupRB.useGravity = true;
         else pickupRB.useGravity = false;
         /*pickupRB.constraints = RigidbodyConstraints.FreezeRotation;*/
         pickupRB.angularDrag = pickUpAngularDrag;
@@ -155,7 +155,10 @@ public class PlayerInteract : MonoBehaviour
                 hasPlayedDropSound = true;
             }
             pickupRB.useGravity = true;
-            pickupRB.constraints = RigidbodyConstraints.None;
+            if (!pickupRB.GetComponent<PhysicsObject>().keepRestraints)
+            {
+                pickupRB.constraints = RigidbodyConstraints.None;
+            }
             pickupRB.angularDrag = startAngularDrag;
             pickupRB.drag = startDrag;
 

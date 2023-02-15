@@ -11,6 +11,8 @@ GameObject:
   - component: {fileID: 7098523712155768522}
   - component: {fileID: 6137524628244158831}
   - component: {fileID: 8270906243538005413}
+  - component: {fileID: 6084081174040769556}
+  - component: {fileID: 6266672802219159357}
   m_Layer: 0
   m_Name: pressure_plate_flat_prefab
   m_TagString: Untagged
@@ -83,3 +85,50 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &6084081174040769556
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7622576670495149168}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -8590607836418664005, guid: 816500e7be337124e98718d1d88b4867, type: 3}
+--- !u!114 &6266672802219159357
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7622576670495149168}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e78a3a2ec35de214eac55e69c3aaf186, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isLocked: 0
+  OnChangeState:
+    m_PersistentCalls:
+      m_Calls: []
+  isActive: 0
+  weightThreshold: 0
+  stackNormalThreshold: 0.5
+  pressurePlateActivateSound:
+    Guid:
+      Data1: 969319826
+      Data2: 1101960024
+      Data3: 33230977
+      Data4: -486509113
+    Path: event:/Interactive/PressurePlate/PressurePlate (test)
+  pressurePlateDeactivateSound:
+    Guid:
+      Data1: -2126073542
+      Data2: 1076271601
+      Data3: 737088152
+      Data4: -1467891998
+    Path: "event:/Interactive/PressurePlate/PressurePad Tillf\xE4llig"

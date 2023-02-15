@@ -1,21 +1,22 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using FMODUnity;
 
-[RequireComponent(typeof(AudioSource))]
+
 public class Door : Activators
 {
     [SerializeField] private bool isOpen;
     [SerializeField] private Animator animator;
-    [SerializeField] private AudioClip audioClip;
-    [SerializeField] private AudioSource audioSource;
+    [SerializeField] private EventReference DOOR_Open;
+    [SerializeField] private EventReference DOOR_Close;
+    [SerializeField] private EventReference DOOR_Open_Puzzle;
 
 
     void Start()
     {
         isOpen = false;
-        audioSource = GetComponent<AudioSource>();
-        audioSource.clip = audioClip;
+
     }
 
     public override void Interact()
@@ -28,7 +29,12 @@ public class Door : Activators
     public override void ChangeState(bool toState)
     {
         base.ChangeState(toState);
-        if(isActive) animator.SetBool("IsOpen", true);
+        if (isActive) //animator.SetBool("IsOpen", true);
+        { 
+            animator.SetBool("IsOpen", true);
+            AudioManager.Instance.PlayOneShot(DOOR_Open_Puzzle, gameObject);
+        }
+       
         else animator.SetBool("IsOpen", false);
 
     }
