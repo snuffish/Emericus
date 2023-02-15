@@ -23,6 +23,14 @@ public class PlayerCrouchState : PlayerMovementBaseState
         
         if(Input.GetButtonUp("Crouch"))
             player.ChangeState(player.idleState);
+        
+        if (player.currentTime >= player.stepInterval) { 
+            player.currentTime = 0;
+            player.playerAudio.PlayFootstep(player.gameObject);
+        }                       
+        else {
+            player.currentTime += Time.deltaTime;
+        }
     }
     
     public override void ExitState(PlayerMovementController player) {

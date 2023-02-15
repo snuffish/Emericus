@@ -25,11 +25,23 @@ public class PlayerWalkState : PlayerMovementBaseState
             player.ChangeState(player.idleState);
         
         
-        if (player.currentTime >= player.stepInterval) {
+        
+        if (player.currentTime >= player.stepInterval)
+        {
+            //Only play Footsteps while grounded (Leon) Clueless
+            if (player.isGrounded)
+            {
+                player.playerAudio.PlayFootstep(player.gameObject);
+            }
+            player.currentTime = 0;
+        }
+        else player.currentTime += Time.deltaTime;
+        
+        
+        if (player.currentTime >= player.stepInterval) { 
             player.currentTime = 0;
             player.playerAudio.PlayFootstep(player.gameObject);
-            
-        }
+        }                       
         else {
             player.currentTime += Time.deltaTime;
         }

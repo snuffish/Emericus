@@ -19,7 +19,7 @@ public class PlayerMovementController : MonoBehaviour
     private Vector3 direction;
 
     [Header("Movement")]
-    public float currentMoveSpeed;
+    [HideInInspector] public float currentMoveSpeed;
     [SerializeField] public float walkSpeed;
     [SerializeField] public float runSpeed;
     [SerializeField] public float crouchSpeed;
@@ -44,16 +44,14 @@ public class PlayerMovementController : MonoBehaviour
     [Header("States")]
     private PlayerMovementBaseState currentState;
 
-    public PlayerWalkState walkState = new PlayerWalkState();
-    public PlayerRunState runState = new PlayerRunState();
-    public PlayerCrouchState crouchState = new PlayerCrouchState();
-    public PlayerIdleState idleState = new PlayerIdleState();
+    [HideInInspector] public PlayerWalkState walkState = new PlayerWalkState();
+    [HideInInspector] public PlayerRunState runState = new PlayerRunState();
+    [HideInInspector] public PlayerCrouchState crouchState = new PlayerCrouchState();
+    [HideInInspector] public PlayerIdleState idleState = new PlayerIdleState();
     
     [Header("Sound Parameters")]
     [SerializeField, Tooltip("Time between fotsteps")] public float stepInterval;
-    [SerializeField, Tooltip("Minimum velocity before considered moving")] public float minVelocityForSteps;
-    public bool isWalking;
-    public float currentTime;
+    [HideInInspector] public float currentTime;
     
     
     // Start is called before the first frame update
@@ -72,24 +70,8 @@ public class PlayerMovementController : MonoBehaviour
     void Update() {
 
         currentState.UpdateState(this);
-        if (rb.velocity.magnitude >= minVelocityForSteps)
-        {
-            isWalking = true;
-        }
-        else isWalking = false;
-        if (isWalking)
-        {
-            if (currentTime >= stepInterval)
-            {
-                //Only play Footsteps while grounded (Leon) Clueless
-                if (isGrounded)
-                {
-                    playerAudio.PlayFootstep(gameObject);
-                }
-                currentTime = 0;
-            }
-            else currentTime += Time.deltaTime;
-        }
+        
+        
         //  Airborne Check
         Ray groundRay = new Ray(transform.position, Vector3.down);
         Debug.DrawRay(groundRay.origin, groundRay.direction * groundCheckRayLength, Color.cyan);
@@ -140,7 +122,6 @@ public class PlayerMovementController : MonoBehaviour
 
     public void MovePlayer() {
 
-        
         //  Calculate direction
         direction = orientation.forward * deltaMovement.y + orientation.right * deltaMovement.x;
 
