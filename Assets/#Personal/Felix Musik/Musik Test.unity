@@ -19938,7 +19938,7 @@ PrefabInstance:
         type: 3}
       propertyPath: audioSettings.Array.data[0].sEmitter
       value: 
-      objectReference: {fileID: 2056222485}
+      objectReference: {fileID: 1495568639}
     - target: {fileID: 659038812657918090, guid: 9e209d725f861764e811c8ddb947c009,
         type: 3}
       propertyPath: audioSettings.Array.data[0].paramName
@@ -32179,6 +32179,21 @@ PrefabInstance:
       propertyPath: distanceThreshold
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 1034536918316240819, guid: 04d11ca39289f794e9a734c7102f9f2a,
+        type: 3}
+      propertyPath: stepIntervalRun
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1034536918316240819, guid: 04d11ca39289f794e9a734c7102f9f2a,
+        type: 3}
+      propertyPath: stepIntervalWalk
+      value: 0.65
+      objectReference: {fileID: 0}
+    - target: {fileID: 1034536918316240819, guid: 04d11ca39289f794e9a734c7102f9f2a,
+        type: 3}
+      propertyPath: stepIntervalCrouch
+      value: 0.7
+      objectReference: {fileID: 0}
     - target: {fileID: 1034536919964190893, guid: 04d11ca39289f794e9a734c7102f9f2a,
         type: 3}
       propertyPath: mouseSens.x
@@ -32196,6 +32211,18 @@ PrefabInstance:
       objectReference: {fileID: 468251343}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 04d11ca39289f794e9a734c7102f9f2a, type: 3}
+--- !u!114 &1495568639 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7526781849591880843, guid: 90d61b54dc91d7d4bbbf078651f4ce0f,
+    type: 3}
+  m_PrefabInstance: {fileID: 1755947647}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1497596791
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -36897,6 +36924,16 @@ PrefabInstance:
       propertyPath: eventEmitters.bgmMusic
       value: 
       objectReference: {fileID: 2056222485}
+    - target: {fileID: 8591402441183388410, guid: 90d61b54dc91d7d4bbbf078651f4ce0f,
+        type: 3}
+      propertyPath: eventEmitters.bgm1Music
+      value: 
+      objectReference: {fileID: 2056222485}
+    - target: {fileID: 8591402441183388410, guid: 90d61b54dc91d7d4bbbf078651f4ce0f,
+        type: 3}
+      propertyPath: eventEmitters.bgm2Music
+      value: 
+      objectReference: {fileID: 1495568639}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 90d61b54dc91d7d4bbbf078651f4ce0f, type: 3}
 --- !u!1 &1760712595
