@@ -4,6 +4,7 @@ using System.Numerics;
 using Unity.Collections;
 using Unity.VisualScripting;
 using Unity.VisualScripting.FullSerializer.Internal;
+using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 using UnityEngine.UI;
 using Vector2 = UnityEngine.Vector2;
@@ -19,7 +20,7 @@ public class PlayerMovementController : MonoBehaviour
     private Vector3 direction;
 
     [Header("Movement")]
-    public float currentMoveSpeed;
+    [HideInInspector] public float currentMoveSpeed;
     [SerializeField] public float walkSpeed;
     [SerializeField] public float runSpeed;
     [SerializeField] public float crouchSpeed;
@@ -32,6 +33,7 @@ public class PlayerMovementController : MonoBehaviour
     [SerializeField] private float groundCheckRayLength;
     [SerializeField] private LayerMask jumpableLayers;
     [SerializeField] public bool isGrounded { get; private set; }
+    private Ray groundRay;
     
 
     [Header("Jump")]
@@ -44,16 +46,18 @@ public class PlayerMovementController : MonoBehaviour
     [Header("States")]
     private PlayerMovementBaseState currentState;
 
-    public PlayerWalkState walkState = new PlayerWalkState();
-    public PlayerRunState runState = new PlayerRunState();
-    public PlayerCrouchState crouchState = new PlayerCrouchState();
-    public PlayerIdleState idleState = new PlayerIdleState();
+    [HideInInspector] public PlayerWalkState walkState = new PlayerWalkState();
+    [HideInInspector] public PlayerRunState runState = new PlayerRunState();
+    [HideInInspector] public PlayerCrouchState crouchState = new PlayerCrouchState();
+    [HideInInspector] public PlayerIdleState idleState = new PlayerIdleState();
     
     [Header("Sound Parameters")]
-    [SerializeField, Tooltip("Time between fotsteps")] public float stepInterval;
-    [SerializeField, Tooltip("Minimum velocity before considered moving")] public float minVelocityForSteps;
-    public bool isWalking;
-    public float currentTime;
+    [HideInInspector] public float currentStepInterval;
+    [SerializeField, Tooltip("Time between fotsteps")] public float stepIntervalWalk;
+    [SerializeField, Tooltip("Time between fotsteps")] public float stepIntervalRun;
+    [SerializeField, Tooltip("Time between fotsteps")] public float stepIntervalCrouch;
+    [HideInInspector] public float currentTime;
+    
     
     
     // Start is called before the first frame update
@@ -72,28 +76,20 @@ public class PlayerMovementController : MonoBehaviour
     void Update() {
 
         currentState.UpdateState(this);
-        if (rb.velocity.magnitude >= minVelocityForSteps)
-        {
-            isWalking = true;
-        }
-        else isWalking = false;
-        if (isWalking)
-        {
-            if (currentTime >= stepInterval)
-            {
-                //Only play Footsteps while grounded (Leon) Clueless
-                if (isGrounded)
-                {
-                    playerAudio.PlayFootstep(gameObject);
-                }
-                currentTime = 0;
-            }
-            else currentTime += Time.deltaTime;
-        }
-        //  Airborne Check
-        Ray groundRay = new Ray(transform.position, Vector3.down);
-        Debug.DrawRay(groundRay.origin, groundRay.direction * groundCheckRayLength, Color.cyan);
 
+        
+        
+        //  Airborne Check
+        groundRay = new Ray(transform.position, Vector3.down);
+        
+        if (!isGrounded) {
+            if (Physics.Raycast(groundRay, groundCheckRayLength, LayerMask.GetMask("Ground"))) {
+                playerAudio.PlayLand(gameObject);
+            }
+        }
+        
+        Debug.DrawRay(groundRay.origin, groundRay.direction * groundCheckRayLength, Color.cyan);
+        
         isGrounded = Physics.Raycast(groundRay, groundCheckRayLength, jumpableLayers);
         
         //  Change Drag if airborne or not
@@ -140,7 +136,6 @@ public class PlayerMovementController : MonoBehaviour
 
     public void MovePlayer() {
 
-        
         //  Calculate direction
         direction = orientation.forward * deltaMovement.y + orientation.right * deltaMovement.x;
 
@@ -154,11 +149,11 @@ public class PlayerMovementController : MonoBehaviour
     }
 
     void Jump() {
-        //  Reset Y-velocity
+        //  Play Jump Audio
         playerAudio.PlayJump(gameObject);
+        
+        //  Reset Y-velocity
         rb.velocity = new Vector3(rb.velocity.x, 0f, rb.velocity.z);
-        
-        
         
         //  Adds a force upward
         rb.AddForce(transform.up * jumpForce, ForceMode.Impulse);
@@ -175,6 +170,11 @@ public class PlayerMovementController : MonoBehaviour
         currentState = state;
         currentState.EnterState(this);
     }
+
+        
+            
+        
+    
     
 
 }
