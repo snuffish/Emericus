@@ -43,7 +43,8 @@ public class MusicManager : MonoBehaviour
    
    public struct Emitters
    {
-      public StudioEventEmitter bgmMusic;
+      public StudioEventEmitter bgm1Music;
+      public StudioEventEmitter bgm2Music;
    }
 
    [Header("Puzzle")] 
