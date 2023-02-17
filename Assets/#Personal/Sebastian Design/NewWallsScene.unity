@@ -658,7 +658,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e78a3a2ec35de214eac55e69c3aaf186, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isLocked: 0
+  isDisabled: 0
   OnChangeState:
     m_PersistentCalls:
       m_Calls: []
@@ -836,12 +836,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cdbff440df30e9e4693558b91fa222ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isLocked: 0
+  isDisabled: 0
   OnChangeState:
     m_PersistentCalls:
       m_Calls: []
   isActive: 0
-  isOpen: 0
+  motorSpeed: 1
+  motorForce: 15
+  hinge: {fileID: 0}
+  physicsObject: {fileID: 0}
   animator: {fileID: 46196688}
   DOOR_Open:
     Guid:
@@ -864,6 +867,8 @@ MonoBehaviour:
       Data3: 0
       Data4: 0
     Path: 
+  isOpening: 0
+  isClosing: 0
 --- !u!95 &46196688
 Animator:
   serializedVersion: 4
@@ -5720,7 +5725,7 @@ PrefabInstance:
     - target: {fileID: 2288767983816773203, guid: c7028ed55677cc64b9929e53045906fa,
         type: 3}
       propertyPath: LightsModule.enabled
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2465466299580260766, guid: c7028ed55677cc64b9929e53045906fa,
         type: 3}
@@ -5847,6 +5852,11 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
+    - target: {fileID: 6865921141646866513, guid: c7028ed55677cc64b9929e53045906fa,
+        type: 3}
+      propertyPath: EmissionModule.rateOverTime.scalar
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 6865921142362096214, guid: c7028ed55677cc64b9929e53045906fa,
         type: 3}
       propertyPath: m_RootOrder
@@ -5961,6 +5971,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 8983120875181702034, guid: c7028ed55677cc64b9929e53045906fa,
+        type: 3}
+      propertyPath: LightsModule.light
+      value: 
+      objectReference: {fileID: 1640293112}
+    - target: {fileID: 8983120875181702034, guid: c7028ed55677cc64b9929e53045906fa,
+        type: 3}
+      propertyPath: EmissionModule.rateOverTime.scalar
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 9054511227445557142, guid: c7028ed55677cc64b9929e53045906fa,
         type: 3}
@@ -7486,6 +7506,7 @@ MonoBehaviour:
   m_Script: {fileID: 986417472}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_Entries: []
 --- !u!4 &424079002
 Transform:
   m_ObjectHideFlags: 19
@@ -12609,12 +12630,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cdbff440df30e9e4693558b91fa222ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isLocked: 0
+  isDisabled: 0
   OnChangeState:
     m_PersistentCalls:
       m_Calls: []
   isActive: 1
-  isOpen: 0
+  motorSpeed: 1
+  motorForce: 15
+  hinge: {fileID: 0}
+  physicsObject: {fileID: 0}
   animator: {fileID: 683398212}
   DOOR_Open:
     Guid:
@@ -12637,6 +12661,8 @@ MonoBehaviour:
       Data3: 0
       Data4: 0
     Path: 
+  isOpening: 0
+  isClosing: 0
 --- !u!95 &683398212
 Animator:
   serializedVersion: 4
@@ -12779,10 +12805,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e32c722d376fc8c4eb7e07ce80d82a4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  allTargetsAreRequiredForActivation: 0
+  stateHasToBeDifferent: 1
+  requireAllForActivation: 1
   activateAllTargets: 0
+  activateOnAnyChange: 0
   deactivateAllTargets: 1
+  deactivateOnAnyChange: 0
   invertAllTargets: 0
+  invertOnChange: 0
   inputActivators:
   - {fileID: 534009488}
   - {fileID: 1688592559}
@@ -12808,10 +12838,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e32c722d376fc8c4eb7e07ce80d82a4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  allTargetsAreRequiredForActivation: 1
+  stateHasToBeDifferent: 1
+  requireAllForActivation: 1
   activateAllTargets: 1
+  activateOnAnyChange: 0
   deactivateAllTargets: 1
+  deactivateOnAnyChange: 0
   invertAllTargets: 0
+  invertOnChange: 0
   inputActivators:
   - {fileID: 802388579}
   targetActivators:
@@ -16435,12 +16469,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cdbff440df30e9e4693558b91fa222ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isLocked: 0
+  isDisabled: 0
   OnChangeState:
     m_PersistentCalls:
       m_Calls: []
   isActive: 0
-  isOpen: 0
+  motorSpeed: 1
+  motorForce: 15
+  hinge: {fileID: 0}
+  physicsObject: {fileID: 0}
   animator: {fileID: 1041508168}
   DOOR_Open:
     Guid:
@@ -16463,6 +16500,8 @@ MonoBehaviour:
       Data3: 0
       Data4: 0
     Path: 
+  isOpening: 0
+  isClosing: 0
 --- !u!82 &802388581
 AudioSource:
   m_ObjectHideFlags: 0
@@ -19524,12 +19563,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cdbff440df30e9e4693558b91fa222ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isLocked: 0
+  isDisabled: 0
   OnChangeState:
     m_PersistentCalls:
       m_Calls: []
   isActive: 0
-  isOpen: 0
+  motorSpeed: 1
+  motorForce: 15
+  hinge: {fileID: 0}
+  physicsObject: {fileID: 0}
   animator: {fileID: 948714855}
   DOOR_Open:
     Guid:
@@ -19552,6 +19594,8 @@ MonoBehaviour:
       Data3: 0
       Data4: 0
     Path: 
+  isOpening: 0
+  isClosing: 0
 --- !u!82 &948714853
 AudioSource:
   m_ObjectHideFlags: 0
@@ -19694,10 +19738,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e32c722d376fc8c4eb7e07ce80d82a4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  allTargetsAreRequiredForActivation: 1
+  stateHasToBeDifferent: 1
+  requireAllForActivation: 1
   activateAllTargets: 1
+  activateOnAnyChange: 0
   deactivateAllTargets: 0
+  deactivateOnAnyChange: 0
   invertAllTargets: 0
+  invertOnChange: 0
   inputActivators:
   - {fileID: 1925750640}
   - {fileID: 1243840389}
@@ -20093,7 +20141,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e78a3a2ec35de214eac55e69c3aaf186, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isLocked: 0
+  isDisabled: 0
   OnChangeState:
     m_PersistentCalls:
       m_Calls: []
@@ -21678,7 +21726,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e78a3a2ec35de214eac55e69c3aaf186, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isLocked: 0
+  isDisabled: 0
   OnChangeState:
     m_PersistentCalls:
       m_Calls: []
@@ -25305,7 +25353,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e78a3a2ec35de214eac55e69c3aaf186, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isLocked: 0
+  isDisabled: 0
   OnChangeState:
     m_PersistentCalls:
       m_Calls: []
@@ -27390,7 +27438,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e78a3a2ec35de214eac55e69c3aaf186, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isLocked: 0
+  isDisabled: 0
   OnChangeState:
     m_PersistentCalls:
       m_Calls: []
@@ -30940,12 +30988,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cdbff440df30e9e4693558b91fa222ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isLocked: 0
+  isDisabled: 0
   OnChangeState:
     m_PersistentCalls:
       m_Calls: []
   isActive: 0
-  isOpen: 0
+  motorSpeed: 1
+  motorForce: 15
+  hinge: {fileID: 0}
+  physicsObject: {fileID: 0}
   animator: {fileID: 1371114825}
   DOOR_Open:
     Guid:
@@ -30968,6 +31019,8 @@ MonoBehaviour:
       Data3: 0
       Data4: 0
     Path: 
+  isOpening: 0
+  isClosing: 0
 --- !u!82 &1432159343
 AudioSource:
   m_ObjectHideFlags: 0
@@ -31998,7 +32051,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e78a3a2ec35de214eac55e69c3aaf186, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isLocked: 0
+  isDisabled: 0
   OnChangeState:
     m_PersistentCalls:
       m_Calls: []
@@ -34098,7 +34151,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e78a3a2ec35de214eac55e69c3aaf186, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isLocked: 0
+  isDisabled: 0
   OnChangeState:
     m_PersistentCalls:
       m_Calls: []
@@ -34425,12 +34478,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cdbff440df30e9e4693558b91fa222ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isLocked: 0
+  isDisabled: 0
   OnChangeState:
     m_PersistentCalls:
       m_Calls: []
   isActive: 0
-  isOpen: 0
+  motorSpeed: 1
+  motorForce: 15
+  hinge: {fileID: 0}
+  physicsObject: {fileID: 0}
   animator: {fileID: 1598861984}
   DOOR_Open:
     Guid:
@@ -34453,6 +34509,8 @@ MonoBehaviour:
       Data3: 0
       Data4: 0
     Path: 
+  isOpening: 0
+  isClosing: 0
 --- !u!95 &1598861984
 Animator:
   serializedVersion: 4
@@ -37439,12 +37497,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cdbff440df30e9e4693558b91fa222ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isLocked: 0
+  isDisabled: 0
   OnChangeState:
     m_PersistentCalls:
       m_Calls: []
   isActive: 0
-  isOpen: 0
+  motorSpeed: 1
+  motorForce: 15
+  hinge: {fileID: 0}
+  physicsObject: {fileID: 0}
   animator: {fileID: 1062386958}
   DOOR_Open:
     Guid:
@@ -37467,6 +37528,8 @@ MonoBehaviour:
       Data3: 0
       Data4: 0
     Path: 
+  isOpening: 0
+  isClosing: 0
 --- !u!82 &1734743108
 AudioSource:
   m_ObjectHideFlags: 0
@@ -38501,7 +38564,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e78a3a2ec35de214eac55e69c3aaf186, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isLocked: 0
+  isDisabled: 0
   OnChangeState:
     m_PersistentCalls:
       m_Calls: []
@@ -38860,28 +38923,38 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 78980561632027323, guid: a9f48cb0e27982140a2b9502dbd03604,
         type: 3}
+      propertyPath: m_Type
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 78980561632027323, guid: a9f48cb0e27982140a2b9502dbd03604,
+        type: 3}
       propertyPath: m_Range
-      value: 54.8
+      value: 60.3
       objectReference: {fileID: 0}
     - target: {fileID: 78980561632027323, guid: a9f48cb0e27982140a2b9502dbd03604,
         type: 3}
       propertyPath: m_Intensity
-      value: 2094.531
+      value: 238760.69
       objectReference: {fileID: 0}
     - target: {fileID: 78980561632027323, guid: a9f48cb0e27982140a2b9502dbd03604,
         type: 3}
       propertyPath: m_AreaSize.x
-      value: 1
+      value: 0.01
       objectReference: {fileID: 0}
     - target: {fileID: 78980561632027323, guid: a9f48cb0e27982140a2b9502dbd03604,
         type: 3}
       propertyPath: m_AreaSize.y
-      value: 1
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 78980561632027323, guid: a9f48cb0e27982140a2b9502dbd03604,
+        type: 3}
+      propertyPath: m_Lightmapping
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 78980561632027323, guid: a9f48cb0e27982140a2b9502dbd03604,
         type: 3}
       propertyPath: m_ShadowRadius
-      value: 0.81
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 78980561632027323, guid: a9f48cb0e27982140a2b9502dbd03604,
         type: 3}
@@ -38891,7 +38964,7 @@ PrefabInstance:
     - target: {fileID: 78980561632027323, guid: a9f48cb0e27982140a2b9502dbd03604,
         type: 3}
       propertyPath: m_BoundingSphereOverride.w
-      value: 100
+      value: 60.3
       objectReference: {fileID: 0}
     - target: {fileID: 78980561632027323, guid: a9f48cb0e27982140a2b9502dbd03604,
         type: 3}
@@ -38905,8 +38978,13 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 78980561632027323, guid: a9f48cb0e27982140a2b9502dbd03604,
         type: 3}
-      propertyPath: m_UseBoundingSphereOverride
+      propertyPath: m_BoundingSphereOverride.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 78980561632027323, guid: a9f48cb0e27982140a2b9502dbd03604,
+        type: 3}
+      propertyPath: m_UseBoundingSphereOverride
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 294495748879835040, guid: a9f48cb0e27982140a2b9502dbd03604,
         type: 3}
@@ -38976,22 +39054,22 @@ PrefabInstance:
     - target: {fileID: 6111129541906808627, guid: a9f48cb0e27982140a2b9502dbd03604,
         type: 3}
       propertyPath: m_Intensity
-      value: 26320.652
+      value: 30003.553
       objectReference: {fileID: 0}
     - target: {fileID: 6111129541906808627, guid: a9f48cb0e27982140a2b9502dbd03604,
         type: 3}
       propertyPath: m_ShapeWidth
-      value: 1
+      value: 0.01
       objectReference: {fileID: 0}
     - target: {fileID: 6111129541906808627, guid: a9f48cb0e27982140a2b9502dbd03604,
         type: 3}
       propertyPath: m_ShapeHeight
-      value: 1
+      value: 0.2
       objectReference: {fileID: 0}
     - target: {fileID: 6111129541906808627, guid: a9f48cb0e27982140a2b9502dbd03604,
         type: 3}
       propertyPath: m_ShapeRadius
-      value: 0.81
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 6111129541906808627, guid: a9f48cb0e27982140a2b9502dbd03604,
         type: 3}
@@ -39001,12 +39079,12 @@ PrefabInstance:
     - target: {fileID: 6111129541906808627, guid: a9f48cb0e27982140a2b9502dbd03604,
         type: 3}
       propertyPath: m_AreaLightShape
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6111129541906808627, guid: a9f48cb0e27982140a2b9502dbd03604,
         type: 3}
       propertyPath: m_PointlightHDType
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a9f48cb0e27982140a2b9502dbd03604, type: 3}
@@ -40802,7 +40880,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e78a3a2ec35de214eac55e69c3aaf186, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isLocked: 0
+  isDisabled: 0
   OnChangeState:
     m_PersistentCalls:
       m_Calls: []
@@ -42949,7 +43027,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e78a3a2ec35de214eac55e69c3aaf186, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isLocked: 0
+  isDisabled: 0
   OnChangeState:
     m_PersistentCalls:
       m_Calls: []
