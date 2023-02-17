@@ -5,19 +5,27 @@ using UnityEngine;
 public class Recievers : MonoBehaviour
 {
     [Header("Settings")]
+    [SerializeField, Tooltip("Disable If you want activation to keep happening, Example: A door trying to stay open as long as the lever is pulled")]
+    bool stateHasToBeDifferent = true;
+
     [SerializeField, Tooltip("Does Interaction from the receiver to targets require all requirements to be met")]
-    bool allTargetsAreRequiredForActivation = true;
+    bool requireAllForActivation = true;
 
     [SerializeField, Tooltip("Activates All Targets on met requirements")]
     bool activateAllTargets = true;
-    bool activateAllTargetsOnUnmetRequirements = false;
+    [SerializeField, Tooltip("Activate Targets On both true and false conditions")]
+    bool activateOnAnyChange = false;
 
     [SerializeField, Tooltip("Deactivates All Targets On met requirements")]
     bool deactivateAllTargets = false;
-    bool deactivateAllTargetsOnUnmetRequirements = false;
+    [SerializeField, Tooltip("Deactivate Targets On both true and false conditions")]
+    bool deactivateOnAnyChange = false;
 
     [SerializeField, Tooltip("Invert Activation State of All Targets")]
     bool invertAllTargets = false;
+    [SerializeField, Tooltip("Invert Targets On both true and false conditions")]
+    bool invertOnChange = false;
+
 
     [Header("Activators")]
     [SerializeField]
@@ -41,15 +49,27 @@ public class Recievers : MonoBehaviour
 
     public void ActivatorUpdate(Activators changedActivator, bool newState)
     {
-        if (activators[changedActivator] != newState)
+        if (activators[changedActivator] != newState || !stateHasToBeDifferent)
         {
             activators[changedActivator] = newState;
             bool output = false;
-            if (allTargetsAreRequiredForActivation)
+            if (activateOnAnyChange)
+            {
+                foreach (Activators activator in targetActivators) activator.Activate();
+            }
+            else if (deactivateOnAnyChange)
+            {
+                foreach (Activators activator in targetActivators) activator.Deactivate();
+            }
+            else if (invertOnChange)
+            {
+                foreach (Activators activator in targetActivators) activator.InvertState();
+            }
+            if (requireAllForActivation)
             {
                 if (newState == false)
                 {
-                    if (requirementsWereMet)
+                    if (requirementsWereMet || !stateHasToBeDifferent)
                     {
                         requirementsWereMet = false;
                         if (invertAllTargets) foreach (Activators activator in targetActivators) activator.InvertState();
@@ -66,7 +86,7 @@ public class Recievers : MonoBehaviour
                 }
                 if (output)
                 {
-                    if (!requirementsWereMet)
+                    if (!requirementsWereMet || !stateHasToBeDifferent)
                     {
                         requirementsWereMet = true;
                         if (invertAllTargets) foreach (Activators activator in targetActivators) activator.InvertState();

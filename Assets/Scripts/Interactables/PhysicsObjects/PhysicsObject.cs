@@ -9,7 +9,22 @@ public class PhysicsObject : Interactable
     [SerializeField, Tooltip("Amount of Force before an object is dropped")] float breakForce = 35f;
     [SerializeField] public PlayerInteract playerInteract;
     [SerializeField] float stackNormalThreshold = 0.5f;
+    [SerializeField] float lockCooldown = 0.1f;
+    public bool canBeRotated = true;
+    public bool alwaysLockOnRelease;
     public bool keepRestraints = false;
+    RigidbodyConstraints baseConstraints;
+    public bool IsLocked
+    {
+        get { return isLocked; }
+        set
+        {
+            isLocked = value;
+        }
+    }
+    bool isLocked;
+    bool canBeLocked = true;
+
     public PhysicsSounds objectSoundController;
     //[SerializeField] float throwForce = 10;
     //[SerializeField] float damageModifier = 1;
@@ -21,12 +36,14 @@ public class PhysicsObject : Interactable
 
     void Start()
     {
-        if (objectSoundController == null) 
+        if (objectSoundController == null)
             objectSoundController = GetComponent<PhysicsSounds>();
         playerInteract = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerInteract>();
         rBody = GetComponent<Rigidbody>();
         baseWeight = rBody.mass;
-        //objectSoundController = GetComponent<PhysicsSounds>();
+        if (keepRestraints) baseConstraints = rBody.constraints;
+        objectSoundController = GetComponent<PhysicsSounds>();
+        canBeLocked = true;
     }
     public override void Interact()
     {
@@ -47,9 +64,9 @@ public class PhysicsObject : Interactable
     }
     void OnCollisionEnter(Collision collision)
     {
-        if(objectSoundController != null)
+        if (objectSoundController != null)
             objectSoundController.CollisionEvent();
-        
+
         if (collision.rigidbody != null)
         {
             if (collision.contacts[0].normal.y < -stackNormalThreshold)
@@ -63,7 +80,7 @@ public class PhysicsObject : Interactable
             {
                 if (collision.relativeVelocity.magnitude > breakForce)
                 {
-                   // objectSoundController.DropEvent();
+                    // objectSoundController.DropEvent();
                     playerInteract.BreakConnection();
                 }
             }
@@ -112,16 +129,38 @@ public class PhysicsObject : Interactable
     }
 
 
+    public void LockObject()
+    {
+        if (canBeLocked || alwaysLockOnRelease)
+        {
+            rBody.constraints = RigidbodyConstraints.FreezePosition;
+            isLocked = true;
+        }
+    }
+    public void UnlockObject()
+    {
+        isLocked = false;
+        rBody.constraints = baseConstraints;
+        StartCoroutine(LockCooldown());
+
+    }
     public void PlayDropSound()
     {
         // objectSoundController.DropEvent();
 
+    }
+    IEnumerator LockCooldown()
+    {
+        canBeLocked = false;
+        yield return new WaitForSeconds(lockCooldown);
+        canBeLocked = true;
     }
     public IEnumerator PickUp()
     {
         objectSoundController.PickUpEvent();
         yield return new WaitForSecondsRealtime(waitOnPickup);
         pickedUp = true;
+        UnlockObject();
 
     }
 }

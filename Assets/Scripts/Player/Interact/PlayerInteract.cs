@@ -104,23 +104,24 @@ public class PlayerInteract : MonoBehaviour
             //Vector3 torqueDirection = (Quaternion.Slerp(pickupRB.rotation, lookRot, rotationSpeed * Time.deltaTime) * Vector3.forward).normalized;
             //Vector3 torque = torqueDirection * pickupRB.mass * rotationSpeed * Time.deltaTime;
             //pickupRB.AddTorque(torque, ForceMode.Force);
-
-            if (Input.GetButton("RightClick"))
+            if (physicsObject.canBeRotated)
             {
+                if (Input.GetButton("RightClick"))
+                {
+                    //  Get the mouse input
+                    Vector2 mouseInput;
+                    mouseInput.x = Input.GetAxisRaw("Mouse X") * rotationSens.x;
+                    mouseInput.y = Input.GetAxisRaw("Mouse Y") * rotationSens.y;
 
-                //  Get the mouse input
-                Vector2 mouseInput;
-                mouseInput.x = Input.GetAxisRaw("Mouse X") * rotationSens.x;
-                mouseInput.y = Input.GetAxisRaw("Mouse Y") * rotationSens.y;
+                    rotation.y -= mouseInput.x;
+                    rotation.x -= mouseInput.y;
 
-                rotation.y -= mouseInput.x;
-                rotation.x -= mouseInput.y;
-
-                //  Rotate the camera and player
-                pickupRB.rotation = Quaternion.Euler(rotation.x, rotation.y, 0);
+                    //  Rotate the camera and player
+                    pickupRB.rotation = Quaternion.Euler(rotation.x, rotation.y, 0);
+                }
             }
-            currentScroll = Input.GetAxis("Mouse ScrollWheel");
-            holdItemDistance = Mathf.Clamp(holdItemDistance + currentScroll * scrollSpeed, minScrollDistance, maxScrollDistance);
+                currentScroll = Input.GetAxis("Mouse ScrollWheel");
+                holdItemDistance = Mathf.Clamp(holdItemDistance + currentScroll * scrollSpeed, minScrollDistance, maxScrollDistance);
         }
     }
 
@@ -151,14 +152,15 @@ public class PlayerInteract : MonoBehaviour
         {
             if (!hasPlayedDropSound)
             {
-                pickupRB.gameObject.GetComponent<PhysicsObject>().PlayDropSound();
+                physicsObject.PlayDropSound();
                 hasPlayedDropSound = true;
             }
             pickupRB.useGravity = true;
-            if (!pickupRB.GetComponent<PhysicsObject>().keepRestraints)
-            {
-                pickupRB.constraints = RigidbodyConstraints.None;
-            }
+            if (physicsObject.alwaysLockOnRelease) physicsObject.LockObject();
+            //if (!pickupRB.GetComponent<PhysicsObject>().keepRestraints)
+            //{
+            //    pickupRB.constraints = RigidbodyConstraints.None;
+            //}
             pickupRB.angularDrag = startAngularDrag;
             pickupRB.drag = startDrag;
 

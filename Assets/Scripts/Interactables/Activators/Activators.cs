@@ -25,7 +25,7 @@ public class Activators : Interactable
 
     public override void Interact()
     {
-        if (!isLocked)
+        if (!isDisabled)
         {
             InvertState();
         }
