@@ -59,6 +59,7 @@ public class Door : Activators
     }
     IEnumerator OpenDoor()
     {
+        print("Poop");
         physicsObject.UnlockObject();
         isOpening = true;
         isClosing = false;
