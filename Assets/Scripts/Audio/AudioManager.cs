@@ -12,6 +12,14 @@ public class AudioManager : MonoBehaviour
     //Bankladdare
     private void Awake()
     {
+        if (Instance == null)
+            Instance = this;
+        else
+        {
+            Destroy(gameObject);
+            return;
+        }
+        
         BankLoader();
         if (Instance != null && Instance != this)
         {
