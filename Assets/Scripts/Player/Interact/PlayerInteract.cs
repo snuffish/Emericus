@@ -22,12 +22,12 @@ public class PlayerInteract : MonoBehaviour
     public GameObject currentlyPickedUpObject;
     Rigidbody pickupRB;
     PhysicsObject physicsObject;
-    
+
     [Header("Settings")]
     [SerializeField, Tooltip("Check if you want smooth Interperlation")] bool useSmoothInterperlation = true;
     [SerializeField] bool useGravity = false;
     [SerializeField, Tooltip("A More aggresive kinda Force")] bool useImpulseForce = false;
-    [SerializeField,Tooltip("dampning using distanceThreshold")] bool useDampning = true;
+    [SerializeField, Tooltip("dampning using distanceThreshold")] bool useDampning = true;
 
     [Header("Hold Item")]
     [SerializeField, Tooltip("Min Step Speed when moving picked up Object")] float minSpeed = 0;
@@ -68,14 +68,14 @@ public class PlayerInteract : MonoBehaviour
             else currentSpeed = Mathf.SmoothStep(minSpeed, maxSpeed, currentDist);
             currentSpeed *= 10;
             currentSpeed *= Time.fixedDeltaTime;
-            if(useDampning)
+            if (useDampning)
             {
                 float dampingFactor = Mathf.Lerp(0, 1, currentDist / distanceThreshold);
                 currentSpeed *= dampingFactor;
             }
 
             //pickupRB.velocity = direction.normalized * currentSpeed;
-            if(useImpulseForce) pickupRB.AddForce(direction.normalized * currentSpeed, ForceMode.Impulse);
+            if (useImpulseForce) pickupRB.AddForce(direction.normalized * currentSpeed, ForceMode.Impulse);
             else pickupRB.AddForce(direction.normalized * currentSpeed, ForceMode.Force);
 
             //else
@@ -104,23 +104,24 @@ public class PlayerInteract : MonoBehaviour
             //Vector3 torqueDirection = (Quaternion.Slerp(pickupRB.rotation, lookRot, rotationSpeed * Time.deltaTime) * Vector3.forward).normalized;
             //Vector3 torque = torqueDirection * pickupRB.mass * rotationSpeed * Time.deltaTime;
             //pickupRB.AddTorque(torque, ForceMode.Force);
-
-            if (Input.GetButton("RightClick"))
+            if (physicsObject.canBeRotated)
             {
+                if (Input.GetButton("RightClick"))
+                {
+                    //  Get the mouse input
+                    Vector2 mouseInput;
+                    mouseInput.x = Input.GetAxisRaw("Mouse X") * rotationSens.x;
+                    mouseInput.y = Input.GetAxisRaw("Mouse Y") * rotationSens.y;
 
-                //  Get the mouse input
-                Vector2 mouseInput;
-                mouseInput.x = Input.GetAxisRaw("Mouse X") * rotationSens.x;
-                mouseInput.y = Input.GetAxisRaw("Mouse Y") * rotationSens.y;
+                    rotation.y -= mouseInput.x;
+                    rotation.x -= mouseInput.y;
 
-                rotation.y -= mouseInput.x;
-                rotation.x -= mouseInput.y;
-
-                //  Rotate the camera and player
-                pickupRB.rotation = Quaternion.Euler(rotation.x, rotation.y, 0);
+                    //  Rotate the camera and player
+                    pickupRB.rotation = Quaternion.Euler(rotation.x, rotation.y, 0);
+                }
             }
-            currentScroll = Input.GetAxis("Mouse ScrollWheel");
-            holdItemDistance = Mathf.Clamp(holdItemDistance + currentScroll * scrollSpeed, minScrollDistance, maxScrollDistance);
+                currentScroll = Input.GetAxis("Mouse ScrollWheel");
+                holdItemDistance = Mathf.Clamp(holdItemDistance + currentScroll * scrollSpeed, minScrollDistance, maxScrollDistance);
         }
     }
 
@@ -135,7 +136,7 @@ public class PlayerInteract : MonoBehaviour
         physicsObject = playerLook.LookObject.GetComponentInChildren<PhysicsObject>();
         currentlyPickedUpObject = playerLook.LookObject;
         pickupRB = currentlyPickedUpObject.GetComponent<Rigidbody>();
-        if(useGravity) pickupRB.useGravity = true;
+        if (useGravity) pickupRB.useGravity = true;
         else pickupRB.useGravity = false;
         /*pickupRB.constraints = RigidbodyConstraints.FreezeRotation;*/
         pickupRB.angularDrag = pickUpAngularDrag;
@@ -151,11 +152,15 @@ public class PlayerInteract : MonoBehaviour
         {
             if (!hasPlayedDropSound)
             {
-                pickupRB.gameObject.GetComponent<PhysicsObject>().PlayDropSound();
+                physicsObject.PlayDropSound();
                 hasPlayedDropSound = true;
             }
             pickupRB.useGravity = true;
-            pickupRB.constraints = RigidbodyConstraints.None;
+            if (physicsObject.alwaysLockOnRelease) physicsObject.LockObject();
+            //if (!pickupRB.GetComponent<PhysicsObject>().keepRestraints)
+            //{
+            //    pickupRB.constraints = RigidbodyConstraints.None;
+            //}
             pickupRB.angularDrag = startAngularDrag;
             pickupRB.drag = startDrag;
 

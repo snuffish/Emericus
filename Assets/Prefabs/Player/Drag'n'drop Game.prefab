@@ -168,6 +168,11 @@ PrefabInstance:
       propertyPath: selectedCrosshair
       value: 
       objectReference: {fileID: 2924719014256710417}
+    - target: {fileID: 1800510706769198425, guid: 0a3af81a52b110240a95898aa488d8ad,
+        type: 3}
+      propertyPath: interactLayers.m_Bits
+      value: 6400
+      objectReference: {fileID: 0}
     - target: {fileID: 2849460130214938870, guid: 0a3af81a52b110240a95898aa488d8ad,
         type: 3}
       propertyPath: m_Name
@@ -186,17 +191,17 @@ PrefabInstance:
     - target: {fileID: 2849460130214938871, guid: 0a3af81a52b110240a95898aa488d8ad,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 87.06377
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2849460130214938871, guid: 0a3af81a52b110240a95898aa488d8ad,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.97
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2849460130214938871, guid: 0a3af81a52b110240a95898aa488d8ad,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 48.9951
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2849460130214938871, guid: 0a3af81a52b110240a95898aa488d8ad,
         type: 3}
@@ -270,6 +275,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2849460130475833437, guid: 0a3af81a52b110240a95898aa488d8ad,
         type: 3}
+      propertyPath: stepInterval
+      value: 0.98
+      objectReference: {fileID: 0}
+    - target: {fileID: 2849460130475833437, guid: 0a3af81a52b110240a95898aa488d8ad,
+        type: 3}
       propertyPath: groundCheckRayLength
       value: 2.1
       objectReference: {fileID: 0}
@@ -311,11 +321,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerFootsteps:
     Guid:
-      Data1: -348117017
-      Data2: 1267039707
-      Data3: 507946163
-      Data4: 998130951
-    Path: event:/Player/PlayerFootsteps
+      Data1: -1934249589
+      Data2: 1155297362
+      Data3: -2140077669
+      Data4: -823552723
+    Path: event:/Player/PlayerFootstepsStone (test)
   playerHurt:
     Guid:
       Data1: 1451254625

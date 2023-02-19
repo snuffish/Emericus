@@ -11,6 +11,14 @@ public class MusicManager : MonoBehaviour
    //Bankladdare
    private void Awake()
    {
+      if (Instance == null)
+         Instance = this;
+      else
+      {
+         Destroy(gameObject);
+         return;
+      }
+      
       BankLoader();
       if (Instance != null && Instance != this)
       {
@@ -43,7 +51,8 @@ public class MusicManager : MonoBehaviour
    
    public struct Emitters
    {
-      public StudioEventEmitter bgmMusic;
+      public StudioEventEmitter bgm1Music;
+      public StudioEventEmitter bgm2Music;
    }
 
    [Header("Puzzle")] 

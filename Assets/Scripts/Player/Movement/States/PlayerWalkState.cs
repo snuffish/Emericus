@@ -7,6 +7,7 @@ public class PlayerWalkState : PlayerMovementBaseState
     public override void EnterState(PlayerMovementController player) {
         //player.animator.SetTrigger("isWalking");
         player.currentMoveSpeed = player.walkSpeed;
+        player.currentStepInterval = player.stepIntervalWalk;
     }
     
     public override void UpdateState(PlayerMovementController player) {
@@ -25,14 +26,15 @@ public class PlayerWalkState : PlayerMovementBaseState
             player.ChangeState(player.idleState);
         
         
-        if (player.currentTime >= player.stepInterval) {
+        //  Footsteps
+        if (player.currentTime >= player.currentStepInterval) { 
             player.currentTime = 0;
             player.playerAudio.PlayFootstep(player.gameObject);
-            
-        }
+        }                       
         else {
             player.currentTime += Time.deltaTime;
         }
+        
     }
     
     public override void ExitState(PlayerMovementController player) {

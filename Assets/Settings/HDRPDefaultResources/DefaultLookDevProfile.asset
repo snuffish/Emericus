@@ -62,6 +62,12 @@ MonoBehaviour:
     m_Value:
       serializedVersion: 2
       m_Bits: 4294967295
+  occluderMotionRejection:
+    m_OverrideState: 0
+    m_Value: 1
+  receiverMotionRejection:
+    m_OverrideState: 0
+    m_Value: 1
   m_StepCount:
     m_OverrideState: 0
     m_Value: 6
@@ -101,7 +107,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ddcec8a8eb2d684d833ac8f5d26aebd, type: 3}
   m_Name: HDShadowSettings
   m_EditorClassIdentifier: 
-  active: 1
+  active: 0
   maxShadowDistance:
     m_OverrideState: 1
     m_Value: 25
@@ -193,24 +199,24 @@ MonoBehaviour:
   active: 1
   mode:
     m_OverrideState: 1
-    m_Value: 1
+    m_Value: 2
   toeStrength:
-    m_OverrideState: 0
+    m_OverrideState: 1
     m_Value: 0
   toeLength:
-    m_OverrideState: 0
+    m_OverrideState: 1
     m_Value: 0.5
   shoulderStrength:
-    m_OverrideState: 0
+    m_OverrideState: 1
     m_Value: 0
   shoulderLength:
-    m_OverrideState: 0
+    m_OverrideState: 1
     m_Value: 0.5
   shoulderAngle:
-    m_OverrideState: 0
+    m_OverrideState: 1
     m_Value: 0
   gamma:
-    m_OverrideState: 0
+    m_OverrideState: 1
     m_Value: 1
   lutTexture:
     m_OverrideState: 0
