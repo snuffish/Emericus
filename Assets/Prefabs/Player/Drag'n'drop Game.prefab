@@ -163,6 +163,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 240588618528983402, guid: 0a3af81a52b110240a95898aa488d8ad,
+        type: 3}
+      propertyPath: m_Center.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 240588618528983402, guid: 0a3af81a52b110240a95898aa488d8ad,
+        type: 3}
+      propertyPath: m_Center.z
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1800510706769198425, guid: 0a3af81a52b110240a95898aa488d8ad,
         type: 3}
       propertyPath: selectedCrosshair
@@ -277,6 +287,21 @@ PrefabInstance:
         type: 3}
       propertyPath: stepInterval
       value: 0.98
+      objectReference: {fileID: 0}
+    - target: {fileID: 2849460130475833437, guid: 0a3af81a52b110240a95898aa488d8ad,
+        type: 3}
+      propertyPath: stepIntervalRun
+      value: 0.28
+      objectReference: {fileID: 0}
+    - target: {fileID: 2849460130475833437, guid: 0a3af81a52b110240a95898aa488d8ad,
+        type: 3}
+      propertyPath: stepIntervalWalk
+      value: 0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2849460130475833437, guid: 0a3af81a52b110240a95898aa488d8ad,
+        type: 3}
+      propertyPath: stepIntervalCrouch
+      value: 0.61
       objectReference: {fileID: 0}
     - target: {fileID: 2849460130475833437, guid: 0a3af81a52b110240a95898aa488d8ad,
         type: 3}

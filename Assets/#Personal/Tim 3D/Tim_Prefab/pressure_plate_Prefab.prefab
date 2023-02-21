@@ -102,22 +102,22 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   isActive: 0
-  weightThreshold: 2
+  weightThreshold: 1
   stackNormalThreshold: 0.5
   pressurePlateActivateSound:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: -99830723
+      Data2: 1151355774
+      Data3: -1697866061
+      Data4: 1926903988
+    Path: event:/Interactive/PressurePlate/PressurePadActive
   pressurePlateDeactivateSound:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: 1061428564
+      Data2: 1184061825
+      Data3: 1827226280
+      Data4: -1679479527
+    Path: event:/Interactive/PressurePlate/PressurePadDeactive
 --- !u!64 &401072946567717463
 MeshCollider:
   m_ObjectHideFlags: 0

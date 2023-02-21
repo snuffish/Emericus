@@ -692,7 +692,7 @@ Light:
   m_Type: 1
   m_Shape: 0
   m_Color: {r: 1, g: 0.95686275, b: 0.8392157, a: 1}
-  m_Intensity: 3
+  m_Intensity: 5
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -749,14 +749,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1035041784}
-  m_LocalRotation: {x: 0.40821788, y: -0.23456968, z: 0.10938163, w: 0.8754261}
+  m_LocalRotation: {x: 0.89525354, y: -0.20734563, z: 0.16278644, w: 0.35920683}
   m_LocalPosition: {x: -2.507, y: 7.208, z: 4.343}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 5
-  m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+  m_LocalEulerAnglesHint: {x: 45.289, y: -191.687, z: -158.809}
 --- !u!114 &1035041787
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -769,7 +769,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7a68c43fe1f2a47cfa234b5eeaa98012, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Intensity: 3
+  m_Intensity: 5
   m_EnableSpotReflector: 1
   m_LuxAtDistance: 1
   m_InnerSpotPercent: 0
@@ -1541,6 +1541,16 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 1034536918316240818, guid: 04d11ca39289f794e9a734c7102f9f2a,
+        type: 3}
+      propertyPath: startDrag
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1034536918316240818, guid: 04d11ca39289f794e9a734c7102f9f2a,
+        type: 3}
+      propertyPath: throwForce
+      value: 300
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 04d11ca39289f794e9a734c7102f9f2a, type: 3}
 --- !u!33 &60601782927823871
@@ -2169,7 +2179,7 @@ HingeJoint:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2462771533904761314}
-  m_ConnectedBody: {fileID: 9175941893068728116}
+  m_ConnectedBody: {fileID: 0}
   m_ConnectedArticulationBody: {fileID: 0}
   m_Anchor: {x: 0, y: 0.036, z: 0}
   m_Axis: {x: -1, y: 90, z: 0}
@@ -2299,9 +2309,9 @@ MonoBehaviour:
   - 0
   hinge: {fileID: 5431790109021351828}
   lockThreshold: 2
-  lockBreakThreshold: 8.94
+  lockBreakThreshold: 6
   targetIsLocked: 0
-  forceCanBreakLock: 0
+  forceCanBreakLock: 1
   rigidbodyTarget: {fileID: 0}
   targetPhysicsObject: {fileID: 0}
 --- !u!114 &5431790109021351835
