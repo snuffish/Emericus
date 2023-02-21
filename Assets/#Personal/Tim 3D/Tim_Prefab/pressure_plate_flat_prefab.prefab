@@ -111,7 +111,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e78a3a2ec35de214eac55e69c3aaf186, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isLocked: 0
+  isDisabled: 0
   OnChangeState:
     m_PersistentCalls:
       m_Calls: []
@@ -120,15 +120,15 @@ MonoBehaviour:
   stackNormalThreshold: 0.5
   pressurePlateActivateSound:
     Guid:
-      Data1: 969319826
-      Data2: 1101960024
-      Data3: 33230977
-      Data4: -486509113
-    Path: event:/Interactive/PressurePlate/PressurePlate (test)
+      Data1: -99830723
+      Data2: 1151355774
+      Data3: -1697866061
+      Data4: 1926903988
+    Path: event:/Interactive/PressurePlate/PressurePadActive
   pressurePlateDeactivateSound:
     Guid:
-      Data1: -2126073542
-      Data2: 1076271601
-      Data3: 737088152
-      Data4: -1467891998
-    Path: "event:/Interactive/PressurePlate/PressurePad Tillf\xE4llig"
+      Data1: 1061428564
+      Data2: 1184061825
+      Data3: 1827226280
+      Data4: -1679479527
+    Path: event:/Interactive/PressurePlate/PressurePadDeactive
