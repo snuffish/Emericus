@@ -33,6 +33,7 @@ public class PlayerInteract : MonoBehaviour
     [SerializeField, Tooltip("Min Step Speed when moving picked up Object")] float minSpeed = 0;
     [SerializeField, Tooltip("Max Step Speed")] float maxSpeed = 300f;
     [SerializeField, Tooltip("ScrollSpeed")] float scrollSpeed = 5f;
+    [SerializeField, Tooltip("Force that items are thrown with")] float throwForce = 10f;
     [SerializeField, Tooltip("Max Distance object is allowed to move in one step")] float maxDistance = 10f;
     [SerializeField, Tooltip("Distance Item is held from the player")] float holdItemDistance = 4;
     [SerializeField, Tooltip("Distance when item should be dropped")] float dropHeldItemDistance = 8;
@@ -55,6 +56,9 @@ public class PlayerInteract : MonoBehaviour
     void Update()
     {
         CheckForConnection();
+        if (currentlyPickedUpObject != null) 
+            if (Input.GetButtonDown("RightClick")) ThrowObject();
+
     }
     void FixedUpdate()
     {
@@ -106,7 +110,7 @@ public class PlayerInteract : MonoBehaviour
             //pickupRB.AddTorque(torque, ForceMode.Force);
             if (physicsObject.canBeRotated)
             {
-                if (Input.GetButton("RightClick"))
+                if (Input.GetButton("Rotate"))
                 {
                     //  Get the mouse input
                     Vector2 mouseInput;
@@ -120,11 +124,18 @@ public class PlayerInteract : MonoBehaviour
                     pickupRB.rotation = Quaternion.Euler(rotation.x, rotation.y, 0);
                 }
             }
-                currentScroll = Input.GetAxis("Mouse ScrollWheel");
-                holdItemDistance = Mathf.Clamp(holdItemDistance + currentScroll * scrollSpeed, minScrollDistance, maxScrollDistance);
+
+
+            currentScroll = Input.GetAxis("Mouse ScrollWheel");
+            holdItemDistance = Mathf.Clamp(holdItemDistance + currentScroll * scrollSpeed, minScrollDistance, maxScrollDistance);
         }
     }
 
+    void ThrowObject()
+    {
+        pickupRB.AddForce(Camera.main.transform.forward * throwForce);
+        BreakConnection();
+    }
     void CheckForConnection()
     {
         if (currentlyPickedUpObject == null) BreakConnection();
