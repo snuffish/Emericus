@@ -74,7 +74,7 @@ public class MusicManager : MonoBehaviour
    }
 
 
-   /* //Styr stinger för när man dör
+    //Styr stinger för när man dör
     [Header("GameOver")] 
     [SerializeField] private EventReference gameOverStinger;
     
@@ -82,7 +82,7 @@ public class MusicManager : MonoBehaviour
     {
        RuntimeManager.PlayOneShot(gameOverStinger);
     }
-    //Koppla till "Game Over" */
+    //Koppla till "Game Over" 
 
   /*
    //Styr Combatmusiken

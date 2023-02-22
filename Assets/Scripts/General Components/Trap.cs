@@ -5,10 +5,24 @@ using UnityEngine;
 public class Trap : MonoBehaviour
 {
     [SerializeField] private int damagePerTick;
+    private Health hurtObject;
+    private bool shouldItHurt = false;
     
-    void OnCollisionStay(Collision col) {
+    void Update(){
+        if(shouldItHurt)
+            hurtObject.Hurt(damagePerTick);
+    }
+    
+    void OnCollisionEnter(Collision col) {
         if (col.gameObject.GetComponent<Health>() != null) {
-            col.gameObject.GetComponent<Health>().Hurt(damagePerTick);
+            hurtObject = col.gameObject.GetComponent<Health>();
+            shouldItHurt = true;
+        }
+    }
+
+    void OnCollisionExit(Collision col) {
+        if (hurtObject != null) {
+            shouldItHurt = false;
         }
     }
 }

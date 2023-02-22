@@ -22,7 +22,7 @@ public class CameraPlayer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (!Input.GetButton("RightClick"))
+        if (!Input.GetButton("Rotate"))
         {
             //  Get the mouse input
             Vector2 mouseInput;
