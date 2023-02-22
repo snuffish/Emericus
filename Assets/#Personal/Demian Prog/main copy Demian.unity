@@ -1915,12 +1915,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 69925928}
   m_PrefabAsset: {fileID: 0}
---- !u!4 &76453293 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 1034536919964190892, guid: 04d11ca39289f794e9a734c7102f9f2a,
-    type: 3}
-  m_PrefabInstance: {fileID: 1480192680}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &82200187 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7098523712155768522, guid: bbb92c5b040b8da4c97a622bbca75f01,
@@ -2931,61 +2925,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 583104533}
     m_Modifications:
-    - target: {fileID: 4239124834230977932, guid: 6a49d720733432b428b329df9f3ec079,
-        type: 3}
-      propertyPath: weightThreshold
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4239124834230977932, guid: 6a49d720733432b428b329df9f3ec079,
-        type: 3}
-      propertyPath: pressurePlateActivateSound.Path
-      value: "event:/Interactive/PressurePlate/PressurePad Tillf\xE4llig"
-      objectReference: {fileID: 0}
-    - target: {fileID: 4239124834230977932, guid: 6a49d720733432b428b329df9f3ec079,
-        type: 3}
-      propertyPath: pressurePlateDeactivateSound.Path
-      value: event:/Interactive/PressurePlate/PressurePlate (test)
-      objectReference: {fileID: 0}
-    - target: {fileID: 4239124834230977932, guid: 6a49d720733432b428b329df9f3ec079,
-        type: 3}
-      propertyPath: pressurePlateActivateSound.Guid.Data1
-      value: -2126073542
-      objectReference: {fileID: 0}
-    - target: {fileID: 4239124834230977932, guid: 6a49d720733432b428b329df9f3ec079,
-        type: 3}
-      propertyPath: pressurePlateActivateSound.Guid.Data2
-      value: 1076271601
-      objectReference: {fileID: 0}
-    - target: {fileID: 4239124834230977932, guid: 6a49d720733432b428b329df9f3ec079,
-        type: 3}
-      propertyPath: pressurePlateActivateSound.Guid.Data3
-      value: 737088152
-      objectReference: {fileID: 0}
-    - target: {fileID: 4239124834230977932, guid: 6a49d720733432b428b329df9f3ec079,
-        type: 3}
-      propertyPath: pressurePlateActivateSound.Guid.Data4
-      value: -1467891998
-      objectReference: {fileID: 0}
-    - target: {fileID: 4239124834230977932, guid: 6a49d720733432b428b329df9f3ec079,
-        type: 3}
-      propertyPath: pressurePlateDeactivateSound.Guid.Data1
-      value: 969319826
-      objectReference: {fileID: 0}
-    - target: {fileID: 4239124834230977932, guid: 6a49d720733432b428b329df9f3ec079,
-        type: 3}
-      propertyPath: pressurePlateDeactivateSound.Guid.Data2
-      value: 1101960024
-      objectReference: {fileID: 0}
-    - target: {fileID: 4239124834230977932, guid: 6a49d720733432b428b329df9f3ec079,
-        type: 3}
-      propertyPath: pressurePlateDeactivateSound.Guid.Data3
-      value: 33230977
-      objectReference: {fileID: 0}
-    - target: {fileID: 4239124834230977932, guid: 6a49d720733432b428b329df9f3ec079,
-        type: 3}
-      propertyPath: pressurePlateDeactivateSound.Guid.Data4
-      value: -486509113
-      objectReference: {fileID: 0}
     - target: {fileID: 4730378312869376351, guid: 6a49d720733432b428b329df9f3ec079,
         type: 3}
       propertyPath: m_Name
@@ -5076,6 +5015,11 @@ PrefabInstance:
       propertyPath: m_CastShadows
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4003326292260254018, guid: c7028ed55677cc64b9929e53045906fa,
+        type: 3}
+      propertyPath: m_Intensity
+      value: 7957.747
+      objectReference: {fileID: 0}
     - target: {fileID: 4415537414386017910, guid: c7028ed55677cc64b9929e53045906fa,
         type: 3}
       propertyPath: m_CastShadows
@@ -6158,6 +6102,11 @@ PrefabInstance:
       propertyPath: m_CastShadows
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4003326292260254018, guid: c7028ed55677cc64b9929e53045906fa,
+        type: 3}
+      propertyPath: m_Intensity
+      value: 7957.747
+      objectReference: {fileID: 0}
     - target: {fileID: 4415537414386017910, guid: c7028ed55677cc64b9929e53045906fa,
         type: 3}
       propertyPath: m_CastShadows
@@ -6891,6 +6840,11 @@ PrefabInstance:
       propertyPath: LightsModule.light
       value: 
       objectReference: {fileID: 1640293112}
+    - target: {fileID: 4003326292260254018, guid: c7028ed55677cc64b9929e53045906fa,
+        type: 3}
+      propertyPath: m_Intensity
+      value: 7957.747
+      objectReference: {fileID: 0}
     - target: {fileID: 8983120875181702034, guid: c7028ed55677cc64b9929e53045906fa,
         type: 3}
       propertyPath: LightsModule.light
@@ -9156,7 +9110,6 @@ MonoBehaviour:
   m_Script: {fileID: 986417472}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Entries: []
 --- !u!4 &424079002
 Transform:
   m_ObjectHideFlags: 19
@@ -10463,66 +10416,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 583104533}
     m_Modifications:
-    - target: {fileID: 4239124834230977932, guid: 6a49d720733432b428b329df9f3ec079,
-        type: 3}
-      propertyPath: weightThreshold
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4239124834230977932, guid: 6a49d720733432b428b329df9f3ec079,
-        type: 3}
-      propertyPath: pressurePlateActivateSound.Path
-      value: event:/Interactive/PressurePlate/PressurePadActive
-      objectReference: {fileID: 0}
-    - target: {fileID: 4239124834230977932, guid: 6a49d720733432b428b329df9f3ec079,
-        type: 3}
-      propertyPath: pressurePlateDeactivateSound.Path
-      value: event:/Interactive/PressurePlate/PressurePadDeactive
-      objectReference: {fileID: 0}
-    - target: {fileID: 4239124834230977932, guid: 6a49d720733432b428b329df9f3ec079,
-        type: 3}
-      propertyPath: pressurePlateActivateSound.Guid.Data1
-      value: -99830723
-      objectReference: {fileID: 0}
-    - target: {fileID: 4239124834230977932, guid: 6a49d720733432b428b329df9f3ec079,
-        type: 3}
-      propertyPath: pressurePlateActivateSound.Guid.Data2
-      value: 1151355774
-      objectReference: {fileID: 0}
-    - target: {fileID: 4239124834230977932, guid: 6a49d720733432b428b329df9f3ec079,
-        type: 3}
-      propertyPath: pressurePlateActivateSound.Guid.Data3
-      value: -1697866061
-      objectReference: {fileID: 0}
-    - target: {fileID: 4239124834230977932, guid: 6a49d720733432b428b329df9f3ec079,
-        type: 3}
-      propertyPath: pressurePlateActivateSound.Guid.Data4
-      value: 1926903988
-      objectReference: {fileID: 0}
-    - target: {fileID: 4239124834230977932, guid: 6a49d720733432b428b329df9f3ec079,
-        type: 3}
-      propertyPath: pressurePlateDeactivateSound.Guid.Data1
-      value: 1061428564
-      objectReference: {fileID: 0}
-    - target: {fileID: 4239124834230977932, guid: 6a49d720733432b428b329df9f3ec079,
-        type: 3}
-      propertyPath: pressurePlateDeactivateSound.Guid.Data2
-      value: 1184061825
-      objectReference: {fileID: 0}
-    - target: {fileID: 4239124834230977932, guid: 6a49d720733432b428b329df9f3ec079,
-        type: 3}
-      propertyPath: pressurePlateDeactivateSound.Guid.Data3
-      value: 1827226280
-      objectReference: {fileID: 0}
-    - target: {fileID: 4239124834230977932, guid: 6a49d720733432b428b329df9f3ec079,
-        type: 3}
-      propertyPath: pressurePlateDeactivateSound.Guid.Data4
-      value: -1679479527
-      objectReference: {fileID: 0}
-    - target: {fileID: 4239124834230977932, guid: 6a49d720733432b428b329df9f3ec079,
-        type: 3}
-      propertyPath: OnChangeState.m_PersistentCalls.m_Calls.Array.size
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 4239124834230977932, guid: 6a49d720733432b428b329df9f3ec079,
         type: 3}
       propertyPath: OnChangeState.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
@@ -11861,6 +11754,11 @@ PrefabInstance:
       propertyPath: m_CastShadows
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4003326292260254018, guid: c7028ed55677cc64b9929e53045906fa,
+        type: 3}
+      propertyPath: m_Intensity
+      value: 7957.747
+      objectReference: {fileID: 0}
     - target: {fileID: 4415537414386017910, guid: c7028ed55677cc64b9929e53045906fa,
         type: 3}
       propertyPath: m_CastShadows
@@ -13068,6 +12966,472 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 0}
+--- !u!1 &578870593
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 578870596}
+  - component: {fileID: 578870595}
+  - component: {fileID: 578870594}
+  m_Layer: 0
+  m_Name: Reflection Probe
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &578870594
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 578870593}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0ef8dc2c2eabfa4e8cb77be57a837c0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ProbeSettings:
+    frustum:
+      fieldOfViewMode: 1
+      fixedValue: 90
+      automaticScale: 1
+      viewerScale: 1
+    type: 0
+    mode: 0
+    realtimeMode: 1
+    lighting:
+      multiplier: 1
+      weight: 1
+      lightLayer: 1
+      fadeDistance: 10000
+      rangeCompressionFactor: 1
+    influence:
+      m_Shape: 0
+      m_BoxSize: {x: 168.68, y: 45.14, z: 177.81}
+      m_BoxBlendDistancePositive: {x: 1, y: 1, z: 1}
+      m_BoxBlendDistanceNegative: {x: 1, y: 1, z: 1}
+      m_BoxBlendNormalDistancePositive: {x: 0, y: 0, z: 0}
+      m_BoxBlendNormalDistanceNegative: {x: 0, y: 0, z: 0}
+      m_BoxSideFadePositive: {x: 1, y: 1, z: 1}
+      m_BoxSideFadeNegative: {x: 1, y: 1, z: 1}
+      m_SphereRadius: 3
+      m_SphereBlendDistance: 0
+      m_SphereBlendNormalDistance: 0
+      m_EditorAdvancedModeBlendDistancePositive: {x: 1, y: 1, z: 1}
+      m_EditorAdvancedModeBlendDistanceNegative: {x: 1, y: 1, z: 1}
+      m_EditorSimplifiedModeBlendDistance: 1
+      m_EditorAdvancedModeBlendNormalDistancePositive: {x: 0, y: 0, z: 0}
+      m_EditorAdvancedModeBlendNormalDistanceNegative: {x: 0, y: 0, z: 0}
+      m_EditorSimplifiedModeBlendNormalDistance: 0
+      m_EditorAdvancedModeEnabled: 0
+      m_EditorAdvancedModeFaceFadePositive: {x: 1, y: 1, z: 1}
+      m_EditorAdvancedModeFaceFadeNegative: {x: 1, y: 1, z: 1}
+      m_Version: 1
+      m_ObsoleteSphereBaseOffset: {x: 0, y: 0, z: 0}
+      m_ObsoleteOffset: {x: 0, y: 0, z: 0}
+    proxy:
+      m_Shape: 0
+      m_BoxSize: {x: 1, y: 1, z: 1}
+      m_SphereRadius: 1
+      m_CSVersion: 1
+      m_ObsoleteSphereInfiniteProjection: 0
+      m_ObsoleteBoxInfiniteProjection: 0
+    proxySettings:
+      useInfluenceVolumeAsProxyVolume: 0
+      capturePositionProxySpace: {x: 0, y: 0, z: 0}
+      captureRotationProxySpace: {x: 0, y: 0, z: 0, w: 1}
+      mirrorPositionProxySpace: {x: 0, y: 0, z: 0}
+      mirrorRotationProxySpace: {x: 0, y: 0, z: 0, w: 0}
+    resolutionScalable:
+      m_Override: 512
+      m_UseOverride: 0
+      m_Level: 0
+    resolution: 0
+    cameraSettings:
+      customRenderingSettings: 0
+      renderingPathCustomFrameSettings:
+        bitDatas:
+          data1: 72198260625768269
+          data2: 13763000477350330392
+        lodBias: 1
+        lodBiasMode: 0
+        lodBiasQualityLevel: 0
+        maximumLODLevel: 0
+        maximumLODLevelMode: 0
+        maximumLODLevelQualityLevel: 0
+        sssQualityMode: 0
+        sssQualityLevel: 0
+        sssCustomSampleBudget: 20
+        msaaMode: 1
+        materialQuality: 0
+      renderingPathCustomFrameSettingsOverrideMask:
+        mask:
+          data1: 0
+          data2: 0
+      bufferClearing:
+        clearColorMode: 0
+        backgroundColorHDR: {r: 0.023529412, g: 0.07058824, b: 0.1882353, a: 0}
+        clearDepth: 1
+      volumes:
+        layerMask:
+          serializedVersion: 2
+          m_Bits: 1
+        anchorOverride: {fileID: 0}
+      frustum:
+        mode: 0
+        aspect: 1
+        farClipPlaneRaw: 1000
+        nearClipPlaneRaw: 0.3
+        fieldOfView: 90
+        projectionMatrix:
+          e00: 1
+          e01: 0
+          e02: 0
+          e03: 0
+          e10: 0
+          e11: 1
+          e12: 0
+          e13: 0
+          e20: 0
+          e21: 0
+          e22: 1
+          e23: 0
+          e30: 0
+          e31: 0
+          e32: 0
+          e33: 1
+      culling:
+        useOcclusionCulling: 1
+        cullingMask:
+          serializedVersion: 2
+          m_Bits: 4294967295
+        sceneCullingMaskOverride: 0
+      invertFaceCulling: 0
+      flipYMode: 0
+      probeLayerMask:
+        serializedVersion: 2
+        m_Bits: 4294967295
+      defaultFrameSettings: 0
+      m_ObsoleteRenderingPath: 0
+      m_ObsoleteFrameSettings:
+        overrides: 0
+        enableShadow: 0
+        enableContactShadows: 0
+        enableShadowMask: 0
+        enableSSR: 0
+        enableSSAO: 0
+        enableSubsurfaceScattering: 0
+        enableTransmission: 0
+        enableAtmosphericScattering: 0
+        enableVolumetrics: 0
+        enableReprojectionForVolumetrics: 0
+        enableLightLayers: 0
+        enableExposureControl: 1
+        diffuseGlobalDimmer: 0
+        specularGlobalDimmer: 0
+        shaderLitMode: 0
+        enableDepthPrepassWithDeferredRendering: 0
+        enableTransparentPrepass: 0
+        enableMotionVectors: 0
+        enableObjectMotionVectors: 0
+        enableDecals: 0
+        enableRoughRefraction: 0
+        enableTransparentPostpass: 0
+        enableDistortion: 0
+        enablePostprocess: 0
+        enableOpaqueObjects: 0
+        enableTransparentObjects: 0
+        enableRealtimePlanarReflection: 0
+        enableMSAA: 0
+        enableAsyncCompute: 0
+        runLightListAsync: 0
+        runSSRAsync: 0
+        runSSAOAsync: 0
+        runContactShadowsAsync: 0
+        runVolumeVoxelizationAsync: 0
+        lightLoopSettings:
+          overrides: 0
+          enableDeferredTileAndCluster: 0
+          enableComputeLightEvaluation: 0
+          enableComputeLightVariants: 0
+          enableComputeMaterialVariants: 0
+          enableFptlForForwardOpaque: 0
+          enableBigTilePrepass: 0
+          isFptlEnabled: 0
+    roughReflections: 1
+    distanceBasedRoughness: 0
+  m_ProbeSettingsOverride:
+    probe: 0
+    camera:
+      camera: 0
+  m_ProxyVolume: {fileID: 0}
+  m_BakedTexture: {fileID: 0}
+  m_CustomTexture: {fileID: 0}
+  m_BakedRenderData:
+    m_WorldToCameraRHS:
+      e00: 0
+      e01: 0
+      e02: 0
+      e03: 0
+      e10: 0
+      e11: 0
+      e12: 0
+      e13: 0
+      e20: 0
+      e21: 0
+      e22: 0
+      e23: 0
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 0
+    m_ProjectionMatrix:
+      e00: 0
+      e01: 0
+      e02: 0
+      e03: 0
+      e10: 0
+      e11: 0
+      e12: 0
+      e13: 0
+      e20: 0
+      e21: 0
+      e22: 0
+      e23: 0
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 0
+    m_CapturePosition: {x: 0, y: 0, z: 0}
+    m_CaptureRotation: {x: 0, y: 0, z: 0, w: 0}
+    m_FieldOfView: 0
+    m_Aspect: 0
+  m_CustomRenderData:
+    m_WorldToCameraRHS:
+      e00: 0
+      e01: 0
+      e02: 0
+      e03: 0
+      e10: 0
+      e11: 0
+      e12: 0
+      e13: 0
+      e20: 0
+      e21: 0
+      e22: 0
+      e23: 0
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 0
+    m_ProjectionMatrix:
+      e00: 0
+      e01: 0
+      e02: 0
+      e03: 0
+      e10: 0
+      e11: 0
+      e12: 0
+      e13: 0
+      e20: 0
+      e21: 0
+      e22: 0
+      e23: 0
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 0
+    m_CapturePosition: {x: 0, y: 0, z: 0}
+    m_CaptureRotation: {x: 0, y: 0, z: 0, w: 0}
+    m_FieldOfView: 0
+    m_Aspect: 0
+  m_SHForNormalization:
+    sh[ 0]: 0
+    sh[ 1]: 0
+    sh[ 2]: 0
+    sh[ 3]: 0
+    sh[ 4]: 0
+    sh[ 5]: 0
+    sh[ 6]: 0
+    sh[ 7]: 0
+    sh[ 8]: 0
+    sh[ 9]: 0
+    sh[10]: 0
+    sh[11]: 0
+    sh[12]: 0
+    sh[13]: 0
+    sh[14]: 0
+    sh[15]: 0
+    sh[16]: 0
+    sh[17]: 0
+    sh[18]: 0
+    sh[19]: 0
+    sh[20]: 0
+    sh[21]: 0
+    sh[22]: 0
+    sh[23]: 0
+    sh[24]: 0
+    sh[25]: 0
+    sh[26]: 0
+  m_HasValidSHForNormalization: 0
+  m_HDProbeVersion: 3
+  m_ObsoleteInfiniteProjection: 1
+  m_ObsoleteInfluenceVolume:
+    m_Shape: 0
+    m_BoxSize: {x: 10, y: 10, z: 10}
+    m_BoxBlendDistancePositive: {x: 1, y: 1, z: 1}
+    m_BoxBlendDistanceNegative: {x: 1, y: 1, z: 1}
+    m_BoxBlendNormalDistancePositive: {x: 0, y: 0, z: 0}
+    m_BoxBlendNormalDistanceNegative: {x: 0, y: 0, z: 0}
+    m_BoxSideFadePositive: {x: 1, y: 1, z: 1}
+    m_BoxSideFadeNegative: {x: 1, y: 1, z: 1}
+    m_SphereRadius: 3
+    m_SphereBlendDistance: 0
+    m_SphereBlendNormalDistance: 0
+    m_EditorAdvancedModeBlendDistancePositive: {x: 0, y: 0, z: 0}
+    m_EditorAdvancedModeBlendDistanceNegative: {x: 0, y: 0, z: 0}
+    m_EditorSimplifiedModeBlendDistance: 0
+    m_EditorAdvancedModeBlendNormalDistancePositive: {x: 0, y: 0, z: 0}
+    m_EditorAdvancedModeBlendNormalDistanceNegative: {x: 0, y: 0, z: 0}
+    m_EditorSimplifiedModeBlendNormalDistance: 0
+    m_EditorAdvancedModeEnabled: 0
+    m_EditorAdvancedModeFaceFadePositive: {x: 1, y: 1, z: 1}
+    m_EditorAdvancedModeFaceFadeNegative: {x: 1, y: 1, z: 1}
+    m_Version: 1
+    m_ObsoleteSphereBaseOffset: {x: 0, y: 0, z: 0}
+    m_ObsoleteOffset: {x: 0, y: 0, z: 0}
+  m_ObsoleteFrameSettings:
+    overrides: 0
+    enableShadow: 0
+    enableContactShadows: 0
+    enableShadowMask: 0
+    enableSSR: 0
+    enableSSAO: 0
+    enableSubsurfaceScattering: 0
+    enableTransmission: 0
+    enableAtmosphericScattering: 0
+    enableVolumetrics: 0
+    enableReprojectionForVolumetrics: 0
+    enableLightLayers: 0
+    enableExposureControl: 1
+    diffuseGlobalDimmer: 0
+    specularGlobalDimmer: 0
+    shaderLitMode: 0
+    enableDepthPrepassWithDeferredRendering: 0
+    enableTransparentPrepass: 0
+    enableMotionVectors: 0
+    enableObjectMotionVectors: 0
+    enableDecals: 0
+    enableRoughRefraction: 0
+    enableTransparentPostpass: 0
+    enableDistortion: 0
+    enablePostprocess: 0
+    enableOpaqueObjects: 0
+    enableTransparentObjects: 0
+    enableRealtimePlanarReflection: 0
+    enableMSAA: 0
+    enableAsyncCompute: 0
+    runLightListAsync: 0
+    runSSRAsync: 0
+    runSSAOAsync: 0
+    runContactShadowsAsync: 0
+    runVolumeVoxelizationAsync: 0
+    lightLoopSettings:
+      overrides: 0
+      enableDeferredTileAndCluster: 0
+      enableComputeLightEvaluation: 0
+      enableComputeLightVariants: 0
+      enableComputeMaterialVariants: 0
+      enableFptlForForwardOpaque: 0
+      enableBigTilePrepass: 0
+      isFptlEnabled: 0
+  m_ObsoleteMultiplier: 1
+  m_ObsoleteWeight: 1
+  m_ObsoleteMode: 0
+  m_ObsoleteLightLayers: 1
+  m_ObsoleteCaptureSettings:
+    overrides: 0
+    clearColorMode: 0
+    backgroundColorHDR: {r: 0.023529412, g: 0.07058824, b: 0.1882353, a: 0}
+    clearDepth: 1
+    cullingMask:
+      serializedVersion: 2
+      m_Bits: 4294967295
+    useOcclusionCulling: 1
+    volumeLayerMask:
+      serializedVersion: 2
+      m_Bits: 1
+    volumeAnchorOverride: {fileID: 0}
+    projection: 0
+    nearClipPlane: 0.3
+    farClipPlane: 1000
+    fieldOfView: 90
+    orthographicSize: 5
+    renderingPath: 0
+    shadowDistance: 100
+  m_ReflectionProbeVersion: 9
+  m_ObsoleteInfluenceShape: 0
+  m_ObsoleteInfluenceSphereRadius: 3
+  m_ObsoleteBlendDistancePositive: {x: 1, y: 1, z: 1}
+  m_ObsoleteBlendDistanceNegative: {x: 1, y: 1, z: 1}
+  m_ObsoleteBlendNormalDistancePositive: {x: 0, y: 0, z: 0}
+  m_ObsoleteBlendNormalDistanceNegative: {x: 0, y: 0, z: 0}
+  m_ObsoleteBoxSideFadePositive: {x: 1, y: 1, z: 1}
+  m_ObsoleteBoxSideFadeNegative: {x: 1, y: 1, z: 1}
+--- !u!215 &578870595
+ReflectionProbe:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 578870593}
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Type: 0
+  m_Mode: 2
+  m_RefreshMode: 2
+  m_TimeSlicingMode: 0
+  m_Resolution: 128
+  m_UpdateFrequency: 0
+  m_BoxSize: {x: 168.68, y: 45.14, z: 177.81}
+  m_BoxOffset: {x: 0, y: 0, z: 0}
+  m_NearClip: 0.3
+  m_FarClip: 1000
+  m_ShadowDistance: 100
+  m_ClearFlags: 1
+  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IntensityMultiplier: 1
+  m_BlendDistance: 0
+  m_HDR: 1
+  m_BoxProjection: 0
+  m_RenderDynamicObjects: 0
+  m_UseOcclusionCulling: 1
+  m_Importance: 1
+  m_CustomBakedTexture: {fileID: 0}
+--- !u!4 &578870596
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 578870593}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 44.7, y: 12.8, z: 0}
+  m_LocalScale: {x: 201.86314, y: 2.9445, z: 2.9445}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 17
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &579111656
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14333,6 +14697,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_CastShadows
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4003326292260254018, guid: c7028ed55677cc64b9929e53045906fa,
+        type: 3}
+      propertyPath: m_Intensity
+      value: 7957.747
       objectReference: {fileID: 0}
     - target: {fileID: 4415537414386017910, guid: c7028ed55677cc64b9929e53045906fa,
         type: 3}
@@ -16481,6 +16850,11 @@ PrefabInstance:
       propertyPath: m_CastShadows
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4003326292260254018, guid: c7028ed55677cc64b9929e53045906fa,
+        type: 3}
+      propertyPath: m_Intensity
+      value: 7957.747
+      objectReference: {fileID: 0}
     - target: {fileID: 4415537414386017910, guid: c7028ed55677cc64b9929e53045906fa,
         type: 3}
       propertyPath: m_CastShadows
@@ -17801,6 +18175,11 @@ PrefabInstance:
       propertyPath: m_CastShadows
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4003326292260254018, guid: c7028ed55677cc64b9929e53045906fa,
+        type: 3}
+      propertyPath: m_Intensity
+      value: 7957.747
+      objectReference: {fileID: 0}
     - target: {fileID: 4415537414386017910, guid: c7028ed55677cc64b9929e53045906fa,
         type: 3}
       propertyPath: m_CastShadows
@@ -18145,6 +18524,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_CastShadows
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4003326292260254018, guid: c7028ed55677cc64b9929e53045906fa,
+        type: 3}
+      propertyPath: m_Intensity
+      value: 7957.747
       objectReference: {fileID: 0}
     - target: {fileID: 4415537414386017910, guid: c7028ed55677cc64b9929e53045906fa,
         type: 3}
@@ -22240,6 +22624,11 @@ PrefabInstance:
       propertyPath: m_CastShadows
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4003326292260254018, guid: c7028ed55677cc64b9929e53045906fa,
+        type: 3}
+      propertyPath: m_Intensity
+      value: 7957.747
+      objectReference: {fileID: 0}
     - target: {fileID: 4415537414386017910, guid: c7028ed55677cc64b9929e53045906fa,
         type: 3}
       propertyPath: m_CastShadows
@@ -23351,25 +23740,25 @@ MonoBehaviour:
   animator: {fileID: 948714855}
   DOOR_Open:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: 1795243191
+      Data2: 1156748062
+      Data3: 612991109
+      Data4: -756921867
+    Path: event:/Interactive/DOOR/DOOR_Open
   DOOR_Close:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: 92436671
+      Data2: 1116247191
+      Data3: -1592887893
+      Data4: 154766022
+    Path: event:/Interactive/DOOR/DOOR_Close
   DOOR_Open_Puzzle:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: 253858835
+      Data2: 1198587014
+      Data3: 1699560600
+      Data4: 1774458274
+    Path: event:/Interactive/DOOR/DOOR_Open_Puzzle
   isOpening: 0
   isClosing: 0
 --- !u!82 &948714853
@@ -27151,6 +27540,11 @@ PrefabInstance:
       propertyPath: m_CastShadows
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4003326292260254018, guid: c7028ed55677cc64b9929e53045906fa,
+        type: 3}
+      propertyPath: m_Intensity
+      value: 7957.747
+      objectReference: {fileID: 0}
     - target: {fileID: 4415537414386017910, guid: c7028ed55677cc64b9929e53045906fa,
         type: 3}
       propertyPath: m_CastShadows
@@ -28856,6 +29250,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_CastShadows
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4003326292260254018, guid: c7028ed55677cc64b9929e53045906fa,
+        type: 3}
+      propertyPath: m_Intensity
+      value: 7957.747
       objectReference: {fileID: 0}
     - target: {fileID: 4415537414386017910, guid: c7028ed55677cc64b9929e53045906fa,
         type: 3}
@@ -31087,7 +31486,7 @@ MonoBehaviour:
     type: 3}
   m_PrefabInstance: {fileID: 473961161}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1649511845}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e78a3a2ec35de214eac55e69c3aaf186, type: 3}
@@ -35261,6 +35660,58 @@ MonoBehaviour:
     Path: event:/Interactive/WoodInteract
   isOpening: 0
   isClosing: 0
+--- !u!59 &1432159346
+HingeJoint:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1432159329}
+  m_ConnectedBody: {fileID: 0}
+  m_ConnectedArticulationBody: {fileID: 0}
+  m_Anchor: {x: 0, y: 0.02054411, z: 0}
+  m_Axis: {x: 1, y: 0, z: 0}
+  m_AutoConfigureConnectedAnchor: 1
+  m_ConnectedAnchor: {x: 0, y: 0, z: 0}
+  m_UseSpring: 0
+  m_Spring:
+    spring: 0
+    damper: 0
+    targetPosition: 0
+  m_UseMotor: 0
+  m_Motor:
+    targetVelocity: 0
+    force: 0
+    freeSpin: 0
+  m_UseLimits: 0
+  m_Limits:
+    min: 0
+    max: 0
+    bounciness: 0
+    bounceMinVelocity: 0.2
+    contactDistance: 0
+  m_BreakForce: Infinity
+  m_BreakTorque: Infinity
+  m_EnableCollision: 0
+  m_EnablePreprocessing: 1
+  m_MassScale: 1
+  m_ConnectedMassScale: 1
+--- !u!54 &1432159347
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1432159329}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &1437375720 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -344004081357383697, guid: f0ca1060e80dfaf459d77e1e5cf42694,
@@ -35831,6 +36282,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_CastShadows
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4003326292260254018, guid: c7028ed55677cc64b9929e53045906fa,
+        type: 3}
+      propertyPath: m_Intensity
+      value: 7957.747
       objectReference: {fileID: 0}
     - target: {fileID: 4415537414386017910, guid: c7028ed55677cc64b9929e53045906fa,
         type: 3}
@@ -36558,6 +37014,11 @@ PrefabInstance:
       propertyPath: m_CastShadows
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4003326292260254018, guid: c7028ed55677cc64b9929e53045906fa,
+        type: 3}
+      propertyPath: m_Intensity
+      value: 7957.747
+      objectReference: {fileID: 0}
     - target: {fileID: 4415537414386017910, guid: c7028ed55677cc64b9929e53045906fa,
         type: 3}
       propertyPath: m_CastShadows
@@ -36791,6 +37252,16 @@ PrefabInstance:
         type: 3}
       propertyPath: groundLayer.m_Bits
       value: 128
+      objectReference: {fileID: 0}
+    - target: {fileID: 1034536919964190896, guid: 04d11ca39289f794e9a734c7102f9f2a,
+        type: 3}
+      propertyPath: near clip plane
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1521885577473886501, guid: 04d11ca39289f794e9a734c7102f9f2a,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2350971963195635097, guid: 04d11ca39289f794e9a734c7102f9f2a,
         type: 3}
@@ -38446,6 +38917,12 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 24df23e61452a084e8bfc93a391d2326, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bbb92c5b040b8da4c97a622bbca75f01, type: 3}
+--- !u!4 &1577709765 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1034536918290242145, guid: 04d11ca39289f794e9a734c7102f9f2a,
+    type: 3}
+  m_PrefabInstance: {fileID: 1480192680}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1581621758 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7622576670495149168, guid: bbb92c5b040b8da4c97a622bbca75f01,
@@ -39424,6 +39901,11 @@ PrefabInstance:
       propertyPath: m_CastShadows
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4003326292260254018, guid: c7028ed55677cc64b9929e53045906fa,
+        type: 3}
+      propertyPath: m_Intensity
+      value: 7957.747
+      objectReference: {fileID: 0}
     - target: {fileID: 4415537414386017910, guid: c7028ed55677cc64b9929e53045906fa,
         type: 3}
       propertyPath: m_CastShadows
@@ -40146,6 +40628,11 @@ PrefabInstance:
       propertyPath: m_CastShadows
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4003326292260254018, guid: c7028ed55677cc64b9929e53045906fa,
+        type: 3}
+      propertyPath: m_Intensity
+      value: 7957.747
+      objectReference: {fileID: 0}
     - target: {fileID: 4415537414386017910, guid: c7028ed55677cc64b9929e53045906fa,
         type: 3}
       propertyPath: m_CastShadows
@@ -40404,25 +40891,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 727789007}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1649511845 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4730378312869376351, guid: 6a49d720733432b428b329df9f3ec079,
-    type: 3}
-  m_PrefabInstance: {fileID: 473961161}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1649511849
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1649511845}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 500ea6da8acf8694fbe6598582d281ad, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  damagePerTick: 5
 --- !u!1001 &1650442180
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -45063,6 +45531,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_CastShadows
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4003326292260254018, guid: c7028ed55677cc64b9929e53045906fa,
+        type: 3}
+      propertyPath: m_Intensity
+      value: 7957.747
       objectReference: {fileID: 0}
     - target: {fileID: 4415537414386017910, guid: c7028ed55677cc64b9929e53045906fa,
         type: 3}
@@ -51029,15 +51502,15 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 919132148080338679}
   m_LocalRotation: {x: -0.0125860525, y: 0.00015605417, z: 0.0000019642453, w: 0.9999208}
-  m_LocalPosition: {x: 0, y: 0.01, z: -0.05}
-  m_LocalScale: {x: 1.5392, y: 1.5392, z: 1.5392}
+  m_LocalPosition: {x: 0, y: 1.299, z: -0.04}
+  m_LocalScale: {x: 1.5392, y: 1.5392003, z: 1.5392}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1206956204178920027}
   - {fileID: 2190095840887976613}
   - {fileID: 4749398226864605498}
-  m_Father: {fileID: 76453293}
-  m_RootOrder: 0
+  m_Father: {fileID: 1577709765}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: -1.442, y: 0.018, z: 0}
 --- !u!4 &588131243765177922
 Transform:
