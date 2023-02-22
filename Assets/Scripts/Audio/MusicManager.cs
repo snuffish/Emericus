@@ -52,7 +52,8 @@ public class MusicManager : MonoBehaviour
    public struct Emitters
    {
       public StudioEventEmitter bgm1Music;
-      public StudioEventEmitter bgm2Music;
+      public StudioEventEmitter mainMenuMusic;
+      public StudioEventEmitter safeRoomMusic;
    }
 
    [Header("Puzzle")] 
