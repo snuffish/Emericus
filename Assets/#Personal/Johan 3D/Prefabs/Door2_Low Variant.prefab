@@ -273,25 +273,47 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dropSound:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: 20993059
+      Data2: 1078725924
+      Data3: -1924431227
+      Data4: 106652457
+    Path: event:/Objects/ChestOpen
   pickUpSound:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: 20993059
+      Data2: 1078725924
+      Data3: -1924431227
+      Data4: 106652457
+    Path: event:/Objects/ChestOpen
   collisionSound:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: 20993059
+      Data2: 1078725924
+      Data3: -1924431227
+      Data4: 106652457
+    Path: event:/Objects/ChestOpen
+--- !u!114 &4571271878210696035
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5144002684303153806}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e32c722d376fc8c4eb7e07ce80d82a4c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  stateHasToBeDifferent: 1
+  requireAllForActivation: 1
+  activateAllTargets: 1
+  activateOnAnyChange: 0
+  deactivateAllTargets: 0
+  deactivateOnAnyChange: 0
+  invertAllTargets: 0
+  invertOnChange: 0
+  inputActivators: []
+  targetActivators: []
 --- !u!1 &7933427872281217406 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8007159815193960497, guid: 3ad56ecdf3477b14fa1f3ec37e74888e,

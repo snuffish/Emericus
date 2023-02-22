@@ -27,7 +27,7 @@ public class PlayerCrouchState : PlayerMovementBaseState
             player.ChangeState(player.idleState);
         
         //  Footsteps
-        if (player.currentTime >= player.currentStepInterval) { 
+        if (player.currentTime >= player.currentStepInterval & player.isGrounded) { 
             player.currentTime = 0;
             player.playerAudio.PlayFootstep(player.gameObject);
         }                       
