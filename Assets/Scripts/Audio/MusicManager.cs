@@ -61,7 +61,7 @@ public class MusicManager : MonoBehaviour
 
    [SerializeField] private EventReference puzzleComplete;
 
-   [SerializeField] private string puzzleParamName;
+  /* [SerializeField] private string puzzleParamName;
    [SerializeField] private float puzzleParamValue;
 
    public void PlayPuzzleProgress()
@@ -73,9 +73,9 @@ public class MusicManager : MonoBehaviour
    {
       RuntimeManager.PlayOneShot(puzzleComplete);
    }
+*/
 
-
-    //Styr stinger för när man dör
+  /*  //Styr stinger för när man dör
     [Header("GameOver")] 
     [SerializeField] private EventReference gameOverStinger;
     
@@ -83,7 +83,7 @@ public class MusicManager : MonoBehaviour
     {
        RuntimeManager.PlayOneShot(gameOverStinger);
     }
-    //Koppla till "Game Over" 
+    //Koppla till "Game Over" */
 
   /*
    //Styr Combatmusiken
