@@ -1420,7 +1420,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &3892824793627634237
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5699,12 +5699,7 @@ PrefabInstance:
     - target: {fileID: 2472546370984552137, guid: 6f8d0c1cb68906c4fabb88370f8da774,
         type: 3}
       propertyPath: m_Name
-      value: CrossHairCanvas
-      objectReference: {fileID: 0}
-    - target: {fileID: 2472546370984552148, guid: 6f8d0c1cb68906c4fabb88370f8da774,
-        type: 3}
-      propertyPath: m_AdditionalShaderChannelsFlag
-      value: 25
+      value: PlayerCanvas
       objectReference: {fileID: 0}
     - target: {fileID: 2472546370984552149, guid: 6f8d0c1cb68906c4fabb88370f8da774,
         type: 3}
@@ -5810,31 +5805,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6294379960175240894, guid: 6f8d0c1cb68906c4fabb88370f8da774,
-        type: 3}
-      propertyPath: playerFootsteps.Path
-      value: event:/Player/PlayerFootsteps
-      objectReference: {fileID: 0}
-    - target: {fileID: 6294379960175240894, guid: 6f8d0c1cb68906c4fabb88370f8da774,
-        type: 3}
-      propertyPath: playerFootsteps.Guid.Data1
-      value: -348117017
-      objectReference: {fileID: 0}
-    - target: {fileID: 6294379960175240894, guid: 6f8d0c1cb68906c4fabb88370f8da774,
-        type: 3}
-      propertyPath: playerFootsteps.Guid.Data2
-      value: 1267039707
-      objectReference: {fileID: 0}
-    - target: {fileID: 6294379960175240894, guid: 6f8d0c1cb68906c4fabb88370f8da774,
-        type: 3}
-      propertyPath: playerFootsteps.Guid.Data3
-      value: 507946163
-      objectReference: {fileID: 0}
-    - target: {fileID: 6294379960175240894, guid: 6f8d0c1cb68906c4fabb88370f8da774,
-        type: 3}
-      propertyPath: playerFootsteps.Guid.Data4
-      value: 998130951
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6f8d0c1cb68906c4fabb88370f8da774, type: 3}
