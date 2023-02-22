@@ -227,10 +227,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dee1a28932ecbb548814f52aedcc2c54, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isLocked: 0
+  isDisabled: 0
   breakForce: 35
   playerInteract: {fileID: 0}
   stackNormalThreshold: 0.5
+  lockCooldown: 0.1
+  canBeRotated: 1
+  alwaysLockOnRelease: 0
   keepRestraints: 0
   objectSoundController: {fileID: 4262797466326821179}
   pickedUp: 0
@@ -248,22 +251,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dropSound:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: 601720168
+      Data2: 1088256937
+      Data3: 1041323140
+      Data4: -470560454
+    Path: event:/Interactive/Pickups/TorchDrop
   pickUpSound:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: -630935795
+      Data2: 1312328217
+      Data3: 302355377
+      Data4: -1531994528
+    Path: event:/Interactive/Pickups/TorchPickup
   collisionSound:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: 1715093441
+      Data2: 1108421405
+      Data3: 807314057
+      Data4: 1354906327
+    Path: event:/Interactive/Pickups/TorchCollision
