@@ -11,6 +11,14 @@ public class MusicManager : MonoBehaviour
    //Bankladdare
    private void Awake()
    {
+      if (Instance == null)
+         Instance = this;
+      else
+      {
+         Destroy(gameObject);
+         return;
+      }
+      
       BankLoader();
       if (Instance != null && Instance != this)
       {
@@ -30,7 +38,7 @@ public class MusicManager : MonoBehaviour
 
    private void BankLoader()
    {
-      Debug.Log("Has the bank loaded? " + RuntimeManager.HasBankLoaded(masterBank));
+      //Debug.Log("Has the bank loaded? " + RuntimeManager.HasBankLoaded(masterBank));
       RuntimeManager.LoadBank(masterBank, loadSampleData);
    }
 
@@ -43,7 +51,8 @@ public class MusicManager : MonoBehaviour
    
    public struct Emitters
    {
-      public StudioEventEmitter bgmMusic;
+      public StudioEventEmitter bgm1Music;
+      public StudioEventEmitter bgm2Music;
    }
 
    [Header("Puzzle")] 
@@ -65,7 +74,7 @@ public class MusicManager : MonoBehaviour
    }
 
 
-   /* //Styr stinger för när man dör
+    //Styr stinger för när man dör
     [Header("GameOver")] 
     [SerializeField] private EventReference gameOverStinger;
     
@@ -73,7 +82,7 @@ public class MusicManager : MonoBehaviour
     {
        RuntimeManager.PlayOneShot(gameOverStinger);
     }
-    //Koppla till "Game Over" */
+    //Koppla till "Game Over" 
 
   /*
    //Styr Combatmusiken

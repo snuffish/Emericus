@@ -12,9 +12,9 @@ GameObject:
   - component: {fileID: 6545998979998347814}
   - component: {fileID: 8727362538985374315}
   - component: {fileID: 1421422079143134682}
-  - component: {fileID: 787535189724968090}
-  - component: {fileID: 115371241404400002}
   - component: {fileID: 8803205276549702944}
+  - component: {fileID: 3564683604336352393}
+  - component: {fileID: 3497442333890614262}
   m_Layer: 8
   m_Name: BARRELNEW:pCylinder1
   m_TagString: Untagged
@@ -103,36 +103,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!65 &787535189724968090
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3774855886167207879}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 4.067216, y: 5.042853, z: 4.067217}
-  m_Center: {x: 0, y: 2.5488484, z: -0.00000047683716}
---- !u!114 &115371241404400002
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3774855886167207879}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 28a3298f306238f4e86d936cabb674d5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  breakForce: 35
-  playerInteract: {fileID: 0}
-  stackNormalThreshold: 0.5
-  objectSoundController: {fileID: 8803205276549702944}
-  pickedUp: 0
 --- !u!114 &8803205276549702944
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -147,25 +117,57 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dropSound:
     Guid:
-      Data1: 466992910
-      Data2: 1137767673
-      Data3: -284329854
-      Data4: 1236386453
-    Path: event:/Interactive/WoodBarrelDrop
+      Data1: -125200119
+      Data2: 1223796017
+      Data3: 1158233985
+      Data4: -1149402907
+    Path: event:/Interactive/WoodCrateDrop
   pickUpSound:
     Guid:
-      Data1: -764367262
-      Data2: 1193815489
-      Data3: -2108697728
-      Data4: 2113065669
-    Path: event:/Interactive/WoodBarrelPickUp
+      Data1: 1079488008
+      Data2: 1145867375
+      Data3: 998074268
+      Data4: -1544877985
+    Path: event:/Interactive/WoodCratePickup
   collisionSound:
     Guid:
-      Data1: 466992910
-      Data2: 1137767673
-      Data3: -284329854
-      Data4: 1236386453
-    Path: event:/Interactive/WoodBarrelDrop
+      Data1: -125200119
+      Data2: 1223796017
+      Data3: 1158233985
+      Data4: -1149402907
+    Path: event:/Interactive/WoodCrateDrop
+--- !u!64 &3564683604336352393
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3774855886167207879}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -7934041622872864334, guid: 8ef4a4d6c29fb874c994da3743036579, type: 3}
+--- !u!114 &3497442333890614262
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3774855886167207879}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dee1a28932ecbb548814f52aedcc2c54, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isLocked: 0
+  breakForce: 35
+  playerInteract: {fileID: 0}
+  stackNormalThreshold: 0.5
+  objectSoundController: {fileID: 8803205276549702944}
+  pickedUp: 0
 --- !u!1 &5836144000011026449
 GameObject:
   m_ObjectHideFlags: 0

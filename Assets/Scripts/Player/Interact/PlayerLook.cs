@@ -68,6 +68,11 @@ public class PlayerLook : MonoBehaviour
             {
                 playerInteract.BreakConnection();
             }
+
+        }
+        if (Input.GetButtonUp("Interact") && playerInteract.currentlyPickedUpObject != null)
+        {
+            playerInteract.BreakConnection();
         }
     }
 }

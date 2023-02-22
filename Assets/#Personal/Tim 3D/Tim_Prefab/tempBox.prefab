@@ -12,9 +12,7 @@ GameObject:
   - component: {fileID: 1373806807426719672}
   - component: {fileID: 3815755369968184178}
   - component: {fileID: 3060789603357189065}
-  - component: {fileID: 4014173889991117573}
   - component: {fileID: 5748396982040242044}
-  - component: {fileID: 785015157702589720}
   m_Layer: 8
   m_Name: tempBox
   m_TagString: Untagged
@@ -103,23 +101,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &4014173889991117573
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3455586078672652967}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 28a3298f306238f4e86d936cabb674d5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  breakForce: 32
-  playerInteract: {fileID: 0}
-  stackNormalThreshold: 0.5
-  objectSoundController: {fileID: 785015157702589720}
-  pickedUp: 0
 --- !u!65 &5748396982040242044
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -133,36 +114,3 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.12186557, y: 0.121865556, z: 0.12186557}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &785015157702589720
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3455586078672652967}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e00f5ae617338be4384dddd3ac1d37e9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dropSound:
-    Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
-  pickUpSound:
-    Guid:
-      Data1: 1079488008
-      Data2: 1145867375
-      Data3: 998074268
-      Data4: -1544877985
-    Path: event:/Interactive/WoodCratePickup
-  collisionSound:
-    Guid:
-      Data1: -125200119
-      Data2: 1223796017
-      Data3: 1158233985
-      Data4: -1149402907
-    Path: event:/Interactive/WoodCrateDrop
