@@ -39,14 +39,14 @@ public class AudioZone : MonoBehaviour
             switch (i.enter)
             {
                 case ZoneAction.Play:
-                    audioManager.Play(i.sEmitter);
+                    musicManager.Play(i.sEmitter);
                     Debug.Log("Play sounds");
                     break;
                 case ZoneAction.Stop:
-                    audioManager.Stop(i.sEmitter);
+                    musicManager.Stop(i.sEmitter);
                     break;
                 case ZoneAction.SetParameter:
-                    audioManager.SetParameter(i.sEmitter, i.paramName, i.paramValue, false);
+                    musicManager.SetParameter(i.sEmitter, i.paramName, i.paramValue, false);
                     break;
                 default:
                     Debug.Log("Error! No valid value");

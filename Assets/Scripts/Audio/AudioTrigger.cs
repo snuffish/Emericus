@@ -43,14 +43,14 @@ public class AudioTrigger : MonoBehaviour
                 switch (i.enter)
                 {
                     case TriggerAction.Play:
-                        audioManager.Play(i.sEmitter);
+                        musicManager.Play(i.sEmitter);
                         Debug.Log("Play sounds");
                         break;
                     case TriggerAction.Stop:
-                        audioManager.Stop(i.sEmitter);
+                        musicManager.Stop(i.sEmitter);
                         break;
                     case TriggerAction.SetParameter:
-                        audioManager.SetParameter(i.sEmitter, i.paramName, i.paramValue, false);
+                        musicManager.SetParameter(i.sEmitter, i.paramName, i.paramValue, false);
                         break;
                     default:
                         Debug.Log("Error! No valid value");
