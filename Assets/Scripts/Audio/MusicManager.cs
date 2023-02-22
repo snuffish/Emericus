@@ -56,10 +56,10 @@ public class MusicManager : MonoBehaviour
       public StudioEventEmitter safeRoomMusic;
    }
 
-   [Header("Puzzle")] 
+  /* [Header("Puzzle")] 
    [SerializeField] private EventReference puzzleStinger;
 
-   [SerializeField] private EventReference puzzleComplete;
+   [SerializeField] private EventReference puzzleComplete;*/
 
   /* [SerializeField] private string puzzleParamName;
    [SerializeField] private float puzzleParamValue;
