@@ -624,8 +624,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1052953398074068357, guid: 4e9da457c2e8e3f4699997f82e65a338,
         type: 3}
+      propertyPath: m_Type
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1052953398074068357, guid: 4e9da457c2e8e3f4699997f82e65a338,
+        type: 3}
       propertyPath: m_Intensity
-      value: 6757.3423
+      value: 7957.747
+      objectReference: {fileID: 0}
+    - target: {fileID: 1052953398074068357, guid: 4e9da457c2e8e3f4699997f82e65a338,
+        type: 3}
+      propertyPath: m_UseBoundingSphereOverride
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4807431456624764732, guid: 4e9da457c2e8e3f4699997f82e65a338,
         type: 3}
@@ -635,7 +645,7 @@ PrefabInstance:
     - target: {fileID: 4807431456624764732, guid: 4e9da457c2e8e3f4699997f82e65a338,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.030299874
+      value: -0.119
       objectReference: {fileID: 0}
     - target: {fileID: 4807431456624764732, guid: 4e9da457c2e8e3f4699997f82e65a338,
         type: 3}
@@ -686,6 +696,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Intensity
       value: 1000
+      objectReference: {fileID: 0}
+    - target: {fileID: 6578448570213601293, guid: 4e9da457c2e8e3f4699997f82e65a338,
+        type: 3}
+      propertyPath: m_PointlightHDType
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4e9da457c2e8e3f4699997f82e65a338, type: 3}

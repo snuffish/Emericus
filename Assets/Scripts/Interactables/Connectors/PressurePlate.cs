@@ -24,12 +24,12 @@ public class PressurePlate : Activators
         if (currentMass >= weightThreshold && !isActive)
         {
             //It activates here, insert sounds
-            AudioManager.Instance.PlayOneShot(pressurePlateActivateSound, gameObject);
+            if (!pressurePlateActivateSound.IsNull) AudioManager.Instance.PlayOneShot(pressurePlateActivateSound, gameObject);
             Activate();
         }
         else if (currentMass < weightThreshold && isActive)
         {
-            AudioManager.Instance.PlayOneShot(pressurePlateDeactivateSound, gameObject);
+            if (!pressurePlateDeactivateSound.IsNull) AudioManager.Instance.PlayOneShot(pressurePlateDeactivateSound, gameObject);
             Deactivate();
         }
     }
