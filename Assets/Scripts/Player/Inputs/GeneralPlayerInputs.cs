@@ -11,21 +11,29 @@ public class GeneralPlayerInputs : MonoBehaviour
     void Update()
     {
         if (Input.GetButtonDown("PauseButton")) {
-            //  Unpause the game
-            if (gameIsPaused) {
-                gameIsPaused = false;
-                Cursor.visible = false;
-                pauseMenu.active = false;
-                Time.timeScale = 1;
-            }
             
-            //  Pause the game
+            if (!gameIsPaused) {
+                PauseGame();
+            }
             else {
-                gameIsPaused = true;
-                Cursor.visible = true;
-                pauseMenu.active = true;
-                Time.timeScale = 0;
+                UnpauseGame();
             }
         }
+    }
+
+    public void PauseGame() {
+        gameIsPaused = true;
+        Cursor.visible = true;
+        Cursor.lockState = CursorLockMode.None;
+        pauseMenu.active = true;
+        Time.timeScale = 0;
+    }
+
+    public void UnpauseGame() {
+        gameIsPaused = false;
+        Cursor.visible = false;
+        Cursor.lockState = CursorLockMode.Locked;
+        pauseMenu.active = false;
+        Time.timeScale = 1;
     }
 }
