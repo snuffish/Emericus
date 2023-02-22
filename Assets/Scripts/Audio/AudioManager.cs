@@ -52,8 +52,10 @@ public class AudioManager : MonoBehaviour
 
     public struct Emitters
     {
-        public StudioEventEmitter intro;
         public StudioEventEmitter painting;
+        public StudioEventEmitter statue;
+        public StudioEventEmitter tidBit1;
+        public StudioEventEmitter tidBit2;
     }
 
 
