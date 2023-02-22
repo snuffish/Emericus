@@ -48,7 +48,7 @@ public class Door : Activators
             {
                 StartCoroutine(OpenDoor());
                 //animator.SetBool("IsOpen", true);
-                AudioManager.Instance.PlayOneShot(DOOR_Open_Puzzle, gameObject);
+                if(!DOOR_Open_Puzzle.IsNull) AudioManager.Instance.PlayOneShot(DOOR_Open_Puzzle, gameObject);
             }
         }
         else
