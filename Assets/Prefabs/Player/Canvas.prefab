@@ -59,7 +59,7 @@ Canvas:
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
-  m_AdditionalShaderChannelsFlag: 0
+  m_AdditionalShaderChannelsFlag: 25
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
@@ -118,14 +118,15 @@ MonoBehaviour:
   masterBank: Master.strings
   loadSampleData: 0
   eventEmitters:
-    bgmMusic: {fileID: 0}
+    intro: {fileID: 0}
+    painting: {fileID: 0}
   playerFootsteps:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: -348117017
+      Data2: 1267039707
+      Data3: 507946163
+      Data4: 998130951
+    Path: event:/Player/PlayerFootsteps
 --- !u!1 &2472546371011104013
 GameObject:
   m_ObjectHideFlags: 0
