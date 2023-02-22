@@ -286,7 +286,7 @@ MonoBehaviour:
   BankRefreshCooldown: 5
   ShowBankRefreshWindow: 1
   AutomaticEventLoading: 0
-  BankLoadType: 0
+  BankLoadType: 1
   AutomaticSampleLoading: 0
   EncryptionKey: 
   ImportType: 0
@@ -307,7 +307,10 @@ MonoBehaviour:
   - Master
   Banks:
   - Music
-  BanksToLoad: []
+  BanksToLoad:
+  - Master
+  - Master.strings
+  - Music
   LiveUpdatePort: 9264
   EnableMemoryTracking: 0
   AndroidUseOBB: 0
