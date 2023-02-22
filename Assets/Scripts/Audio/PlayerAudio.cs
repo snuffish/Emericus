@@ -14,27 +14,27 @@ public class PlayerAudio : MonoBehaviour
 
     public void PlayFootstep(GameObject soundLocation)
     {
-        AudioManager.Instance.PlayOneShot(playerFootsteps, soundLocation);
+        if (!playerFootsteps.IsNull) AudioManager.Instance.PlayOneShot(playerFootsteps, soundLocation);
     }
 
     public void PlayHurt(GameObject soundLocation)
     {
-        AudioManager.Instance.PlayOneShot(playerHurt, soundLocation);
+        if (!playerHurt.IsNull) AudioManager.Instance.PlayOneShot(playerHurt, soundLocation);
     }
 
     public void PlayJump(GameObject soundLocation)
     {
-        AudioManager.Instance.PlayOneShot(playerJump, soundLocation);
+        if (!playerJump.IsNull) AudioManager.Instance.PlayOneShot(playerJump, soundLocation);
     }
 
     public void PlayLand(GameObject soundLocation)
     {
-        AudioManager.Instance.PlayOneShot(playerLand, soundLocation);
+        if (!playerLand.IsNull) AudioManager.Instance.PlayOneShot(playerLand, soundLocation);
     }
 
     public void PlayRespawn(GameObject soundLocation)
     {
-        AudioManager.Instance.PlayOneShot(playerRespawn, soundLocation);
+        if (!playerRespawn.IsNull) AudioManager.Instance.PlayOneShot(playerRespawn, soundLocation);
     }
-    
+
 }
