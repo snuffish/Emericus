@@ -407,11 +407,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rb: {fileID: 2796130269172134939}
   orientation: {fileID: 2796130269131383242}
-  moveSpeed: 15
+  playerAudio: {fileID: 0}
+  animator: {fileID: 0}
+  currentMoveSpeed: 0
+  walkSpeed: 0
+  runSpeed: 0
+  crouchSpeed: 0
+  blendModifier: 1
+  deltaMovement: {x: 0, y: 0}
   groundDrag: 7
   airDragMulyiplier: 0.35
-  isGrounded: 1
-  playerHeaight: 4
+  groundCheckRayLength: 0
   jumpableLayers:
     serializedVersion: 2
     m_Bits: 3456
@@ -419,6 +425,11 @@ MonoBehaviour:
   fallForce: 3250
   jumpCooldown: 1.25
   airmultiplier: 0.35
+  currentStepInterval: 0
+  stepIntervalWalk: 0
+  stepIntervalRun: 0
+  stepIntervalCrouch: 0
+  currentTime: 0
 --- !u!114 &2796130269172134937
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -433,16 +444,24 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startAngularDrag: 0.05
   pickUpAngularDrag: 5
+  startDrag: 1
+  pickUpDrag: 8
   pickupParent: {fileID: 4439541501739204245}
   currentlyPickedUpObject: {fileID: 0}
+  useSmoothInterperlation: 1
+  useGravity: 0
+  useImpulseForce: 0
+  useDampning: 1
   minSpeed: 0
   maxSpeed: 600
   scrollSpeed: 5
+  throwForce: 10
   maxDistance: 15
   holdItemDistance: 11
   dropHeldItemDistance: 12
   minScrollDistance: 2
   maxScrollDistance: 6
+  distanceThreshold: 0.2
   rotationSens: {x: 3, y: 3}
 --- !u!114 &1853859878248739100
 MonoBehaviour:
