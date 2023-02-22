@@ -40,7 +40,6 @@ public class AudioZone : MonoBehaviour
             {
                 case ZoneAction.Play:
                     musicManager.Play(i.sEmitter);
-                    Debug.Log("Play sounds");
                     break;
                 case ZoneAction.Stop:
                     musicManager.Stop(i.sEmitter);

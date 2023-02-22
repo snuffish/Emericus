@@ -61,18 +61,18 @@ MonoBehaviour:
     Path: 
   pickUpSound:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: 386495863
+      Data2: 1214940884
+      Data3: -1673625193
+      Data4: -2133371533
+    Path: event:/Interactive/RockDrop
   collisionSound:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: 386495863
+      Data2: 1214940884
+      Data3: -1673625193
+      Data4: -2133371533
+    Path: event:/Interactive/RockDrop
 --- !u!114 &5141816253502818549
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -90,6 +90,7 @@ MonoBehaviour:
   playerInteract: {fileID: 0}
   stackNormalThreshold: 0.5
   lockCooldown: 0.1
+  canBePickedUp: 1
   canBeRotated: 0
   alwaysLockOnRelease: 0
   keepRestraints: 1
@@ -171,25 +172,25 @@ MonoBehaviour:
   animator: {fileID: 0}
   DOOR_Open:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: 1795243191
+      Data2: 1156748062
+      Data3: 612991109
+      Data4: -756921867
+    Path: event:/Interactive/DOOR/DOOR_Open
   DOOR_Close:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: 92436671
+      Data2: 1116247191
+      Data3: -1592887893
+      Data4: 154766022
+    Path: event:/Interactive/DOOR/DOOR_Close
   DOOR_Open_Puzzle:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: 253858835
+      Data2: 1198587014
+      Data3: 1699560600
+      Data4: 1774458274
+    Path: event:/Interactive/DOOR/DOOR_Open_Puzzle
   isOpening: 0
   isClosing: 0
 --- !u!114 &5141816253502818545

@@ -110,7 +110,6 @@ public class MusicManager : MonoBehaviour
       if (emitter.IsActive == false)
       {
          emitter.Play();
-         Debug.Log("Playing!");
       }
       else
       {

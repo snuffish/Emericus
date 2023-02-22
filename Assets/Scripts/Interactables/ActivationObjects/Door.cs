@@ -59,6 +59,7 @@ public class Door : Activators
     }
     IEnumerator OpenDoor()
     {
+        print("Open");
         physicsObject.UnlockObject();
         isOpening = true;
         isClosing = false;
@@ -77,6 +78,8 @@ public class Door : Activators
     }
     IEnumerator CloseDoor()
     {
+        print("Close");
+
         physicsObject.UnlockObject();
         isClosing = true;
         isOpening = false;

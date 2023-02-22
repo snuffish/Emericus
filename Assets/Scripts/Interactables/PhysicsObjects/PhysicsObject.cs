@@ -10,6 +10,7 @@ public class PhysicsObject : Interactable
     [SerializeField] public PlayerInteract playerInteract;
     [SerializeField] float stackNormalThreshold = 0.5f;
     [SerializeField] float lockCooldown = 0.1f;
+    [SerializeField] bool canBePickedUp = true;
     public bool canBeRotated = true;
     public bool alwaysLockOnRelease;
     public bool keepRestraints = false;
@@ -47,7 +48,7 @@ public class PhysicsObject : Interactable
     }
     public override void Interact()
     {
-        if (!pickedUp)
+        if (!pickedUp && canBePickedUp)
         {
             StartCoroutine(PickUp());
         }

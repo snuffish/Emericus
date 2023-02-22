@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 5265517458735757311}
   - component: {fileID: 9132521239238211674}
   - component: {fileID: 6438402437942348944}
+  - component: {fileID: 457064598997769966}
   m_Layer: 0
   m_Name: arch2_Prefab
   m_TagString: Untagged
@@ -83,3 +84,17 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &457064598997769966
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4780905906881670469}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 6329158148709259305, guid: 77cf941738bcd5242865c26175de280c, type: 3}
