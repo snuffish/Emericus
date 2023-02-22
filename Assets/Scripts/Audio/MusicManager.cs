@@ -52,15 +52,16 @@ public class MusicManager : MonoBehaviour
    public struct Emitters
    {
       public StudioEventEmitter bgm1Music;
-      public StudioEventEmitter bgm2Music;
+      public StudioEventEmitter mainMenuMusic;
+      public StudioEventEmitter safeRoomMusic;
    }
 
-   [Header("Puzzle")] 
+  /* [Header("Puzzle")] 
    [SerializeField] private EventReference puzzleStinger;
 
-   [SerializeField] private EventReference puzzleComplete;
+   [SerializeField] private EventReference puzzleComplete;*/
 
-   [SerializeField] private string puzzleParamName;
+  /* [SerializeField] private string puzzleParamName;
    [SerializeField] private float puzzleParamValue;
 
    public void PlayPuzzleProgress()
@@ -72,9 +73,9 @@ public class MusicManager : MonoBehaviour
    {
       RuntimeManager.PlayOneShot(puzzleComplete);
    }
+*/
 
-
-    //Styr stinger för när man dör
+  /*  //Styr stinger för när man dör
     [Header("GameOver")] 
     [SerializeField] private EventReference gameOverStinger;
     
@@ -82,7 +83,7 @@ public class MusicManager : MonoBehaviour
     {
        RuntimeManager.PlayOneShot(gameOverStinger);
     }
-    //Koppla till "Game Over" 
+    //Koppla till "Game Over" */
 
   /*
    //Styr Combatmusiken

@@ -24,6 +24,7 @@ public class AudioTrigger : MonoBehaviour
         public float paramValue;
     }
 
+    [SerializeField] private bool destroyTrigger = false;
     [SerializeField] private GameObject gObject;
 
     public AudioManager audioManager;
@@ -54,6 +55,12 @@ public class AudioTrigger : MonoBehaviour
                     default:
                         Debug.Log("Error! No valid value");
                         break;
+                }
+                
+                if (destroyTrigger == true)
+                {
+                    Destroy(gameObject.GetComponent<BoxCollider>());
+                    Debug.Log("Trigger is no more!");
                 }
             }
         }

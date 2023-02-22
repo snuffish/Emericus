@@ -31,6 +31,7 @@ Transform:
   m_Children:
   - {fileID: 3972687442218899714}
   - {fileID: 1446189526865276813}
+  - {fileID: 917836017949972905}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -49,23 +50,9 @@ MonoBehaviour:
   masterBank: Music
   loadSampleData: 0
   eventEmitters:
-    bgmMusic: {fileID: 0}
-  puzzleStinger:
-    Guid:
-      Data1: 2102749764
-      Data2: 1082856424
-      Data3: -1837708102
-      Data4: -1065082258
-    Path: event:/Music/Stingers/Pussel Prog
-  puzzleComplete:
-    Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
-  puzzleParamName: 
-  puzzleParamValue: 0
+    bgm1Music: {fileID: 5148859855584001716}
+    mainMenuMusic: {fileID: 7526781849591880843}
+    safeRoomMusic: {fileID: 8546298338733742763}
 --- !u!1 &4644520529098189228
 GameObject:
   m_ObjectHideFlags: 0
@@ -77,7 +64,7 @@ GameObject:
   - component: {fileID: 1446189526865276813}
   - component: {fileID: 7526781849591880843}
   m_Layer: 0
-  m_Name: BGM2
+  m_Name: MainMenu
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -113,11 +100,73 @@ MonoBehaviour:
   CollisionTag: 
   EventReference:
     Guid:
-      Data1: -1987854530
-      Data2: 1095341116
-      Data3: -207290992
-      Data4: -308017740
-    Path: event:/Music/BGM/BGM2
+      Data1: -1137635877
+      Data2: 1279739496
+      Data3: 1749389221
+      Data4: -2125952695
+    Path: event:/Music/BGM/Main Menu3
+  Event: 
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
+--- !u!1 &7142856381508567231
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 917836017949972905}
+  - component: {fileID: 8546298338733742763}
+  m_Layer: 0
+  m_Name: SafeRoom
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &917836017949972905
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7142856381508567231}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2320074858103167762}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8546298338733742763
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7142856381508567231}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -2110018337
+      Data2: 1285635732
+      Data3: -1494903168
+      Data4: -849452490
+    Path: event:/Music/BGM/Safe Haven
   Event: 
   PlayEvent: 0
   StopEvent: 0
@@ -139,7 +188,7 @@ GameObject:
   - component: {fileID: 3972687442218899714}
   - component: {fileID: 5148859855584001716}
   m_Layer: 0
-  m_Name: BGM1
+  m_Name: BGM
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -175,11 +224,11 @@ MonoBehaviour:
   CollisionTag: 
   EventReference:
     Guid:
-      Data1: -2001901425
-      Data2: 1170833962
-      Data3: -146464611
-      Data4: 64437602
-    Path: event:/Music/BGM/BGM_Exploring
+      Data1: -1545656802
+      Data2: 1313881787
+      Data3: 361735096
+      Data4: 679443645
+    Path: event:/Music/BGM/BGM_Memories
   Event: 
   PlayEvent: 0
   StopEvent: 0

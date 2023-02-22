@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class SendPuzzleStage : MonoBehaviour
 {
-  [SerializeField] private float puzzleStage;
+ /* [SerializeField] private float puzzleStage;
   public void SendStage()
   {
     GameObject.Find("MusicManager").GetComponent<MusicManager>().PlayPuzzleProgress();
     puzzleStage++;
-  }
+  }*/
 }
