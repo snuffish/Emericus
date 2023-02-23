@@ -1490,27 +1490,27 @@ PrefabInstance:
     - target: {fileID: 6266672802219159357, guid: bbb92c5b040b8da4c97a622bbca75f01,
         type: 3}
       propertyPath: pressurePlateDeactivateSound.Path
-      value: "event:/Interactive/PressurePlate/PressurePad Tillf\xE4llig"
+      value: event:/Interactive/PressurePlate/PressurePadDeactive
       objectReference: {fileID: 0}
     - target: {fileID: 6266672802219159357, guid: bbb92c5b040b8da4c97a622bbca75f01,
         type: 3}
       propertyPath: pressurePlateDeactivateSound.Guid.Data1
-      value: -2126073542
+      value: 1061428564
       objectReference: {fileID: 0}
     - target: {fileID: 6266672802219159357, guid: bbb92c5b040b8da4c97a622bbca75f01,
         type: 3}
       propertyPath: pressurePlateDeactivateSound.Guid.Data2
-      value: 1076271601
+      value: 1184061825
       objectReference: {fileID: 0}
     - target: {fileID: 6266672802219159357, guid: bbb92c5b040b8da4c97a622bbca75f01,
         type: 3}
       propertyPath: pressurePlateDeactivateSound.Guid.Data3
-      value: 737088152
+      value: 1827226280
       objectReference: {fileID: 0}
     - target: {fileID: 6266672802219159357, guid: bbb92c5b040b8da4c97a622bbca75f01,
         type: 3}
       propertyPath: pressurePlateDeactivateSound.Guid.Data4
-      value: -1467891998
+      value: -1679479527
       objectReference: {fileID: 0}
     - target: {fileID: 7098523712155768522, guid: bbb92c5b040b8da4c97a622bbca75f01,
         type: 3}
@@ -4772,6 +4772,56 @@ PrefabInstance:
       propertyPath: weightThreshold
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4239124834230977932, guid: 6a49d720733432b428b329df9f3ec079,
+        type: 3}
+      propertyPath: pressurePlateActivateSound.Path
+      value: event:/Interactive/PressurePlate/PressurePadActive
+      objectReference: {fileID: 0}
+    - target: {fileID: 4239124834230977932, guid: 6a49d720733432b428b329df9f3ec079,
+        type: 3}
+      propertyPath: pressurePlateDeactivateSound.Path
+      value: event:/Interactive/PressurePlate/PressurePadDeactive
+      objectReference: {fileID: 0}
+    - target: {fileID: 4239124834230977932, guid: 6a49d720733432b428b329df9f3ec079,
+        type: 3}
+      propertyPath: pressurePlateActivateSound.Guid.Data1
+      value: -99830723
+      objectReference: {fileID: 0}
+    - target: {fileID: 4239124834230977932, guid: 6a49d720733432b428b329df9f3ec079,
+        type: 3}
+      propertyPath: pressurePlateActivateSound.Guid.Data2
+      value: 1151355774
+      objectReference: {fileID: 0}
+    - target: {fileID: 4239124834230977932, guid: 6a49d720733432b428b329df9f3ec079,
+        type: 3}
+      propertyPath: pressurePlateActivateSound.Guid.Data3
+      value: -1697866061
+      objectReference: {fileID: 0}
+    - target: {fileID: 4239124834230977932, guid: 6a49d720733432b428b329df9f3ec079,
+        type: 3}
+      propertyPath: pressurePlateActivateSound.Guid.Data4
+      value: 1926903988
+      objectReference: {fileID: 0}
+    - target: {fileID: 4239124834230977932, guid: 6a49d720733432b428b329df9f3ec079,
+        type: 3}
+      propertyPath: pressurePlateDeactivateSound.Guid.Data1
+      value: 1061428564
+      objectReference: {fileID: 0}
+    - target: {fileID: 4239124834230977932, guid: 6a49d720733432b428b329df9f3ec079,
+        type: 3}
+      propertyPath: pressurePlateDeactivateSound.Guid.Data2
+      value: 1184061825
+      objectReference: {fileID: 0}
+    - target: {fileID: 4239124834230977932, guid: 6a49d720733432b428b329df9f3ec079,
+        type: 3}
+      propertyPath: pressurePlateDeactivateSound.Guid.Data3
+      value: 1827226280
+      objectReference: {fileID: 0}
+    - target: {fileID: 4239124834230977932, guid: 6a49d720733432b428b329df9f3ec079,
+        type: 3}
+      propertyPath: pressurePlateDeactivateSound.Guid.Data4
+      value: -1679479527
+      objectReference: {fileID: 0}
     - target: {fileID: 4730378312869376351, guid: 6a49d720733432b428b329df9f3ec079,
         type: 3}
       propertyPath: m_Name
@@ -7261,7 +7311,7 @@ Transform:
   - {fileID: 502040888}
   - {fileID: 535563797}
   m_Father: {fileID: 0}
-  m_RootOrder: 25
+  m_RootOrder: 24
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!1001 &245176072
 PrefabInstance:
@@ -7278,7 +7328,7 @@ PrefabInstance:
     - target: {fileID: 1870790134957010098, guid: 8c757b22679c009439b0dc28d0a54d15,
         type: 3}
       propertyPath: m_RootOrder
-      value: 21
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 1870790134957010098, guid: 8c757b22679c009439b0dc28d0a54d15,
         type: 3}
@@ -9223,27 +9273,27 @@ PrefabInstance:
     - target: {fileID: 6266672802219159357, guid: bbb92c5b040b8da4c97a622bbca75f01,
         type: 3}
       propertyPath: pressurePlateActivateSound.Path
-      value: "event:/Interactive/PressurePlate/PressurePad Tillf\xE4llig"
+      value: event:/Interactive/PressurePlate/PressurePadActive
       objectReference: {fileID: 0}
     - target: {fileID: 6266672802219159357, guid: bbb92c5b040b8da4c97a622bbca75f01,
         type: 3}
       propertyPath: pressurePlateActivateSound.Guid.Data1
-      value: -2126073542
+      value: -99830723
       objectReference: {fileID: 0}
     - target: {fileID: 6266672802219159357, guid: bbb92c5b040b8da4c97a622bbca75f01,
         type: 3}
       propertyPath: pressurePlateActivateSound.Guid.Data2
-      value: 1076271601
+      value: 1151355774
       objectReference: {fileID: 0}
     - target: {fileID: 6266672802219159357, guid: bbb92c5b040b8da4c97a622bbca75f01,
         type: 3}
       propertyPath: pressurePlateActivateSound.Guid.Data3
-      value: 737088152
+      value: -1697866061
       objectReference: {fileID: 0}
     - target: {fileID: 6266672802219159357, guid: bbb92c5b040b8da4c97a622bbca75f01,
         type: 3}
       propertyPath: pressurePlateActivateSound.Guid.Data4
-      value: -1467891998
+      value: 1926903988
       objectReference: {fileID: 0}
     - target: {fileID: 7098523712155768522, guid: bbb92c5b040b8da4c97a622bbca75f01,
         type: 3}
@@ -10395,7 +10445,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 20
+  m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
 --- !u!1001 &340900938
 PrefabInstance:
@@ -11667,7 +11717,7 @@ PrefabInstance:
     - target: {fileID: 326104662428407836, guid: df8864fd4276d554499c38caa0d9c6f2,
         type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 326104662428407836, guid: df8864fd4276d554499c38caa0d9c6f2,
         type: 3}
@@ -12704,27 +12754,27 @@ PrefabInstance:
     - target: {fileID: 6266672802219159357, guid: bbb92c5b040b8da4c97a622bbca75f01,
         type: 3}
       propertyPath: pressurePlateDeactivateSound.Path
-      value: "event:/Interactive/PressurePlate/PressurePad Tillf\xE4llig"
+      value: event:/Interactive/PressurePlate/PressurePadDeactive
       objectReference: {fileID: 0}
     - target: {fileID: 6266672802219159357, guid: bbb92c5b040b8da4c97a622bbca75f01,
         type: 3}
       propertyPath: pressurePlateDeactivateSound.Guid.Data1
-      value: -2126073542
+      value: 1061428564
       objectReference: {fileID: 0}
     - target: {fileID: 6266672802219159357, guid: bbb92c5b040b8da4c97a622bbca75f01,
         type: 3}
       propertyPath: pressurePlateDeactivateSound.Guid.Data2
-      value: 1076271601
+      value: 1184061825
       objectReference: {fileID: 0}
     - target: {fileID: 6266672802219159357, guid: bbb92c5b040b8da4c97a622bbca75f01,
         type: 3}
       propertyPath: pressurePlateDeactivateSound.Guid.Data3
-      value: 737088152
+      value: 1827226280
       objectReference: {fileID: 0}
     - target: {fileID: 6266672802219159357, guid: bbb92c5b040b8da4c97a622bbca75f01,
         type: 3}
       propertyPath: pressurePlateDeactivateSound.Guid.Data4
-      value: -1467891998
+      value: -1679479527
       objectReference: {fileID: 0}
     - target: {fileID: 7098523712155768522, guid: bbb92c5b040b8da4c97a622bbca75f01,
         type: 3}
@@ -13188,7 +13238,6 @@ MonoBehaviour:
   m_Script: {fileID: 986417472}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Entries: []
 --- !u!4 &424079002
 Transform:
   m_ObjectHideFlags: 19
@@ -13202,7 +13251,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &429721105
 PrefabInstance:
@@ -14131,27 +14180,27 @@ PrefabInstance:
     - target: {fileID: 6266672802219159357, guid: bbb92c5b040b8da4c97a622bbca75f01,
         type: 3}
       propertyPath: pressurePlateActivateSound.Path
-      value: "event:/Interactive/PressurePlate/PressurePad Tillf\xE4llig"
+      value: event:/Interactive/PressurePlate/PressurePadActive
       objectReference: {fileID: 0}
     - target: {fileID: 6266672802219159357, guid: bbb92c5b040b8da4c97a622bbca75f01,
         type: 3}
       propertyPath: pressurePlateActivateSound.Guid.Data1
-      value: -2126073542
+      value: -99830723
       objectReference: {fileID: 0}
     - target: {fileID: 6266672802219159357, guid: bbb92c5b040b8da4c97a622bbca75f01,
         type: 3}
       propertyPath: pressurePlateActivateSound.Guid.Data2
-      value: 1076271601
+      value: 1151355774
       objectReference: {fileID: 0}
     - target: {fileID: 6266672802219159357, guid: bbb92c5b040b8da4c97a622bbca75f01,
         type: 3}
       propertyPath: pressurePlateActivateSound.Guid.Data3
-      value: 737088152
+      value: -1697866061
       objectReference: {fileID: 0}
     - target: {fileID: 6266672802219159357, guid: bbb92c5b040b8da4c97a622bbca75f01,
         type: 3}
       propertyPath: pressurePlateActivateSound.Guid.Data4
-      value: -1467891998
+      value: 1926903988
       objectReference: {fileID: 0}
     - target: {fileID: 7098523712155768522, guid: bbb92c5b040b8da4c97a622bbca75f01,
         type: 3}
@@ -14256,7 +14305,7 @@ PrefabInstance:
     - target: {fileID: 6730314823674622549, guid: 347dd35c350884c4a9357119479a93b7,
         type: 3}
       propertyPath: m_RootOrder
-      value: 9
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 6730314823674622549, guid: 347dd35c350884c4a9357119479a93b7,
         type: 3}
@@ -14881,6 +14930,56 @@ PrefabInstance:
         type: 3}
       propertyPath: weightThreshold
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4239124834230977932, guid: 6a49d720733432b428b329df9f3ec079,
+        type: 3}
+      propertyPath: pressurePlateActivateSound.Path
+      value: event:/Interactive/PressurePlate/PressurePadActive
+      objectReference: {fileID: 0}
+    - target: {fileID: 4239124834230977932, guid: 6a49d720733432b428b329df9f3ec079,
+        type: 3}
+      propertyPath: pressurePlateDeactivateSound.Path
+      value: event:/Interactive/PressurePlate/PressurePadDeactive
+      objectReference: {fileID: 0}
+    - target: {fileID: 4239124834230977932, guid: 6a49d720733432b428b329df9f3ec079,
+        type: 3}
+      propertyPath: pressurePlateActivateSound.Guid.Data1
+      value: -99830723
+      objectReference: {fileID: 0}
+    - target: {fileID: 4239124834230977932, guid: 6a49d720733432b428b329df9f3ec079,
+        type: 3}
+      propertyPath: pressurePlateActivateSound.Guid.Data2
+      value: 1151355774
+      objectReference: {fileID: 0}
+    - target: {fileID: 4239124834230977932, guid: 6a49d720733432b428b329df9f3ec079,
+        type: 3}
+      propertyPath: pressurePlateActivateSound.Guid.Data3
+      value: -1697866061
+      objectReference: {fileID: 0}
+    - target: {fileID: 4239124834230977932, guid: 6a49d720733432b428b329df9f3ec079,
+        type: 3}
+      propertyPath: pressurePlateActivateSound.Guid.Data4
+      value: 1926903988
+      objectReference: {fileID: 0}
+    - target: {fileID: 4239124834230977932, guid: 6a49d720733432b428b329df9f3ec079,
+        type: 3}
+      propertyPath: pressurePlateDeactivateSound.Guid.Data1
+      value: 1061428564
+      objectReference: {fileID: 0}
+    - target: {fileID: 4239124834230977932, guid: 6a49d720733432b428b329df9f3ec079,
+        type: 3}
+      propertyPath: pressurePlateDeactivateSound.Guid.Data2
+      value: 1184061825
+      objectReference: {fileID: 0}
+    - target: {fileID: 4239124834230977932, guid: 6a49d720733432b428b329df9f3ec079,
+        type: 3}
+      propertyPath: pressurePlateDeactivateSound.Guid.Data3
+      value: 1827226280
+      objectReference: {fileID: 0}
+    - target: {fileID: 4239124834230977932, guid: 6a49d720733432b428b329df9f3ec079,
+        type: 3}
+      propertyPath: pressurePlateDeactivateSound.Guid.Data4
+      value: -1679479527
       objectReference: {fileID: 0}
     - target: {fileID: 4730378312869376351, guid: 6a49d720733432b428b329df9f3ec079,
         type: 3}
@@ -16595,8 +16694,14 @@ Transform:
   - {fileID: 2145859376}
   - {fileID: 1983369698}
   m_Father: {fileID: 0}
-  m_RootOrder: 24
+  m_RootOrder: 23
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &533691767 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5001419644976426462, guid: 04d11ca39289f794e9a734c7102f9f2a,
+    type: 3}
+  m_PrefabInstance: {fileID: 1480192680}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &534009487 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7098523712155768522, guid: bbb92c5b040b8da4c97a622bbca75f01,
@@ -19179,7 +19284,7 @@ PrefabInstance:
         type: 3}
       propertyPath: gObject
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 533691767}
     - target: {fileID: 7714198816936244693, guid: 31f662c1964152e40b1c6c4db1edc515,
         type: 3}
       propertyPath: audioManager
@@ -19214,6 +19319,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: AT BGM Stop
+      objectReference: {fileID: 0}
+    - target: {fileID: 8030072693880248487, guid: 31f662c1964152e40b1c6c4db1edc515,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 31f662c1964152e40b1c6c4db1edc515, type: 3}
@@ -20460,7 +20570,7 @@ Transform:
   - {fileID: 701662748}
   - {fileID: 220937013}
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &661035238
 PrefabInstance:
@@ -21308,27 +21418,27 @@ PrefabInstance:
     - target: {fileID: 6266672802219159357, guid: bbb92c5b040b8da4c97a622bbca75f01,
         type: 3}
       propertyPath: pressurePlateDeactivateSound.Path
-      value: "event:/Interactive/PressurePlate/PressurePad Tillf\xE4llig"
+      value: event:/Interactive/PressurePlate/PressurePadDeactive
       objectReference: {fileID: 0}
     - target: {fileID: 6266672802219159357, guid: bbb92c5b040b8da4c97a622bbca75f01,
         type: 3}
       propertyPath: pressurePlateDeactivateSound.Guid.Data1
-      value: -2126073542
+      value: 1061428564
       objectReference: {fileID: 0}
     - target: {fileID: 6266672802219159357, guid: bbb92c5b040b8da4c97a622bbca75f01,
         type: 3}
       propertyPath: pressurePlateDeactivateSound.Guid.Data2
-      value: 1076271601
+      value: 1184061825
       objectReference: {fileID: 0}
     - target: {fileID: 6266672802219159357, guid: bbb92c5b040b8da4c97a622bbca75f01,
         type: 3}
       propertyPath: pressurePlateDeactivateSound.Guid.Data3
-      value: 737088152
+      value: 1827226280
       objectReference: {fileID: 0}
     - target: {fileID: 6266672802219159357, guid: bbb92c5b040b8da4c97a622bbca75f01,
         type: 3}
       propertyPath: pressurePlateDeactivateSound.Guid.Data4
-      value: -1467891998
+      value: -1679479527
       objectReference: {fileID: 0}
     - target: {fileID: 7098523712155768522, guid: bbb92c5b040b8da4c97a622bbca75f01,
         type: 3}
@@ -21944,7 +22054,7 @@ PrefabInstance:
     - target: {fileID: 5265517458735757311, guid: 56ebd8efe9fe6e94e8e5348323659766,
         type: 3}
       propertyPath: m_RootOrder
-      value: 19
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 5265517458735757311, guid: 56ebd8efe9fe6e94e8e5348323659766,
         type: 3}
@@ -22344,7 +22454,7 @@ PrefabInstance:
         type: 3}
       propertyPath: gObject
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 533691767}
     - target: {fileID: 7714198816936244693, guid: 31f662c1964152e40b1c6c4db1edc515,
         type: 3}
       propertyPath: audioManager
@@ -22784,27 +22894,27 @@ PrefabInstance:
     - target: {fileID: 6266672802219159357, guid: bbb92c5b040b8da4c97a622bbca75f01,
         type: 3}
       propertyPath: pressurePlateActivateSound.Path
-      value: "event:/Interactive/PressurePlate/PressurePad Tillf\xE4llig"
+      value: event:/Interactive/PressurePlate/PressurePadActive
       objectReference: {fileID: 0}
     - target: {fileID: 6266672802219159357, guid: bbb92c5b040b8da4c97a622bbca75f01,
         type: 3}
       propertyPath: pressurePlateActivateSound.Guid.Data1
-      value: -2126073542
+      value: -99830723
       objectReference: {fileID: 0}
     - target: {fileID: 6266672802219159357, guid: bbb92c5b040b8da4c97a622bbca75f01,
         type: 3}
       propertyPath: pressurePlateActivateSound.Guid.Data2
-      value: 1076271601
+      value: 1151355774
       objectReference: {fileID: 0}
     - target: {fileID: 6266672802219159357, guid: bbb92c5b040b8da4c97a622bbca75f01,
         type: 3}
       propertyPath: pressurePlateActivateSound.Guid.Data3
-      value: 737088152
+      value: -1697866061
       objectReference: {fileID: 0}
     - target: {fileID: 6266672802219159357, guid: bbb92c5b040b8da4c97a622bbca75f01,
         type: 3}
       propertyPath: pressurePlateActivateSound.Guid.Data4
-      value: -1467891998
+      value: 1926903988
       objectReference: {fileID: 0}
     - target: {fileID: 7098523712155768522, guid: bbb92c5b040b8da4c97a622bbca75f01,
         type: 3}
@@ -23312,27 +23422,27 @@ PrefabInstance:
     - target: {fileID: 6266672802219159357, guid: bbb92c5b040b8da4c97a622bbca75f01,
         type: 3}
       propertyPath: pressurePlateActivateSound.Path
-      value: "event:/Interactive/PressurePlate/PressurePad Tillf\xE4llig"
+      value: event:/Interactive/PressurePlate/PressurePadActive
       objectReference: {fileID: 0}
     - target: {fileID: 6266672802219159357, guid: bbb92c5b040b8da4c97a622bbca75f01,
         type: 3}
       propertyPath: pressurePlateActivateSound.Guid.Data1
-      value: -2126073542
+      value: -99830723
       objectReference: {fileID: 0}
     - target: {fileID: 6266672802219159357, guid: bbb92c5b040b8da4c97a622bbca75f01,
         type: 3}
       propertyPath: pressurePlateActivateSound.Guid.Data2
-      value: 1076271601
+      value: 1151355774
       objectReference: {fileID: 0}
     - target: {fileID: 6266672802219159357, guid: bbb92c5b040b8da4c97a622bbca75f01,
         type: 3}
       propertyPath: pressurePlateActivateSound.Guid.Data3
-      value: 737088152
+      value: -1697866061
       objectReference: {fileID: 0}
     - target: {fileID: 6266672802219159357, guid: bbb92c5b040b8da4c97a622bbca75f01,
         type: 3}
       propertyPath: pressurePlateActivateSound.Guid.Data4
-      value: -1467891998
+      value: 1926903988
       objectReference: {fileID: 0}
     - target: {fileID: 7098523712155768522, guid: bbb92c5b040b8da4c97a622bbca75f01,
         type: 3}
@@ -24171,7 +24281,7 @@ PrefabInstance:
     - target: {fileID: 1870790134957010098, guid: 8c757b22679c009439b0dc28d0a54d15,
         type: 3}
       propertyPath: m_RootOrder
-      value: 26
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 1870790134957010098, guid: 8c757b22679c009439b0dc28d0a54d15,
         type: 3}
@@ -26943,7 +27053,7 @@ PrefabInstance:
     - target: {fileID: 1870790134957010098, guid: 8c757b22679c009439b0dc28d0a54d15,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1870790134957010098, guid: 8c757b22679c009439b0dc28d0a54d15,
         type: 3}
@@ -27027,27 +27137,27 @@ PrefabInstance:
     - target: {fileID: 6266672802219159357, guid: bbb92c5b040b8da4c97a622bbca75f01,
         type: 3}
       propertyPath: pressurePlateDeactivateSound.Path
-      value: "event:/Interactive/PressurePlate/PressurePad Tillf\xE4llig"
+      value: event:/Interactive/PressurePlate/PressurePadDeactive
       objectReference: {fileID: 0}
     - target: {fileID: 6266672802219159357, guid: bbb92c5b040b8da4c97a622bbca75f01,
         type: 3}
       propertyPath: pressurePlateDeactivateSound.Guid.Data1
-      value: -2126073542
+      value: 1061428564
       objectReference: {fileID: 0}
     - target: {fileID: 6266672802219159357, guid: bbb92c5b040b8da4c97a622bbca75f01,
         type: 3}
       propertyPath: pressurePlateDeactivateSound.Guid.Data2
-      value: 1076271601
+      value: 1184061825
       objectReference: {fileID: 0}
     - target: {fileID: 6266672802219159357, guid: bbb92c5b040b8da4c97a622bbca75f01,
         type: 3}
       propertyPath: pressurePlateDeactivateSound.Guid.Data3
-      value: 737088152
+      value: 1827226280
       objectReference: {fileID: 0}
     - target: {fileID: 6266672802219159357, guid: bbb92c5b040b8da4c97a622bbca75f01,
         type: 3}
       propertyPath: pressurePlateDeactivateSound.Guid.Data4
-      value: -1467891998
+      value: -1679479527
       objectReference: {fileID: 0}
     - target: {fileID: 7098523712155768522, guid: bbb92c5b040b8da4c97a622bbca75f01,
         type: 3}
@@ -27160,7 +27270,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 18
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &843964132
 PrefabInstance:
@@ -28322,7 +28432,7 @@ PrefabInstance:
     - target: {fileID: 1870790134957010098, guid: 8c757b22679c009439b0dc28d0a54d15,
         type: 3}
       propertyPath: m_RootOrder
-      value: 22
+      value: 21
       objectReference: {fileID: 0}
     - target: {fileID: 1870790134957010098, guid: 8c757b22679c009439b0dc28d0a54d15,
         type: 3}
@@ -28713,27 +28823,27 @@ PrefabInstance:
     - target: {fileID: 6266672802219159357, guid: bbb92c5b040b8da4c97a622bbca75f01,
         type: 3}
       propertyPath: pressurePlateDeactivateSound.Path
-      value: "event:/Interactive/PressurePlate/PressurePad Tillf\xE4llig"
+      value: event:/Interactive/PressurePlate/PressurePadDeactive
       objectReference: {fileID: 0}
     - target: {fileID: 6266672802219159357, guid: bbb92c5b040b8da4c97a622bbca75f01,
         type: 3}
       propertyPath: pressurePlateDeactivateSound.Guid.Data1
-      value: -2126073542
+      value: 1061428564
       objectReference: {fileID: 0}
     - target: {fileID: 6266672802219159357, guid: bbb92c5b040b8da4c97a622bbca75f01,
         type: 3}
       propertyPath: pressurePlateDeactivateSound.Guid.Data2
-      value: 1076271601
+      value: 1184061825
       objectReference: {fileID: 0}
     - target: {fileID: 6266672802219159357, guid: bbb92c5b040b8da4c97a622bbca75f01,
         type: 3}
       propertyPath: pressurePlateDeactivateSound.Guid.Data3
-      value: 737088152
+      value: 1827226280
       objectReference: {fileID: 0}
     - target: {fileID: 6266672802219159357, guid: bbb92c5b040b8da4c97a622bbca75f01,
         type: 3}
       propertyPath: pressurePlateDeactivateSound.Guid.Data4
-      value: -1467891998
+      value: -1679479527
       objectReference: {fileID: 0}
     - target: {fileID: 7098523712155768522, guid: bbb92c5b040b8da4c97a622bbca75f01,
         type: 3}
@@ -29612,7 +29722,7 @@ Transform:
   - {fileID: 1770406060}
   - {fileID: 1243988412}
   m_Father: {fileID: 0}
-  m_RootOrder: 16
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &927710070
 PrefabInstance:
@@ -29864,27 +29974,27 @@ PrefabInstance:
     - target: {fileID: 6266672802219159357, guid: bbb92c5b040b8da4c97a622bbca75f01,
         type: 3}
       propertyPath: pressurePlateActivateSound.Path
-      value: "event:/Interactive/PressurePlate/PressurePad Tillf\xE4llig"
+      value: event:/Interactive/PressurePlate/PressurePadActive
       objectReference: {fileID: 0}
     - target: {fileID: 6266672802219159357, guid: bbb92c5b040b8da4c97a622bbca75f01,
         type: 3}
       propertyPath: pressurePlateActivateSound.Guid.Data1
-      value: -2126073542
+      value: -99830723
       objectReference: {fileID: 0}
     - target: {fileID: 6266672802219159357, guid: bbb92c5b040b8da4c97a622bbca75f01,
         type: 3}
       propertyPath: pressurePlateActivateSound.Guid.Data2
-      value: 1076271601
+      value: 1151355774
       objectReference: {fileID: 0}
     - target: {fileID: 6266672802219159357, guid: bbb92c5b040b8da4c97a622bbca75f01,
         type: 3}
       propertyPath: pressurePlateActivateSound.Guid.Data3
-      value: 737088152
+      value: -1697866061
       objectReference: {fileID: 0}
     - target: {fileID: 6266672802219159357, guid: bbb92c5b040b8da4c97a622bbca75f01,
         type: 3}
       propertyPath: pressurePlateActivateSound.Guid.Data4
-      value: -1467891998
+      value: 1926903988
       objectReference: {fileID: 0}
     - target: {fileID: 7098523712155768522, guid: bbb92c5b040b8da4c97a622bbca75f01,
         type: 3}
@@ -30192,27 +30302,27 @@ PrefabInstance:
     - target: {fileID: 6266672802219159357, guid: bbb92c5b040b8da4c97a622bbca75f01,
         type: 3}
       propertyPath: pressurePlateActivateSound.Path
-      value: "event:/Interactive/PressurePlate/PressurePad Tillf\xE4llig"
+      value: event:/Interactive/PressurePlate/PressurePadActive
       objectReference: {fileID: 0}
     - target: {fileID: 6266672802219159357, guid: bbb92c5b040b8da4c97a622bbca75f01,
         type: 3}
       propertyPath: pressurePlateActivateSound.Guid.Data1
-      value: -2126073542
+      value: -99830723
       objectReference: {fileID: 0}
     - target: {fileID: 6266672802219159357, guid: bbb92c5b040b8da4c97a622bbca75f01,
         type: 3}
       propertyPath: pressurePlateActivateSound.Guid.Data2
-      value: 1076271601
+      value: 1151355774
       objectReference: {fileID: 0}
     - target: {fileID: 6266672802219159357, guid: bbb92c5b040b8da4c97a622bbca75f01,
         type: 3}
       propertyPath: pressurePlateActivateSound.Guid.Data3
-      value: 737088152
+      value: -1697866061
       objectReference: {fileID: 0}
     - target: {fileID: 6266672802219159357, guid: bbb92c5b040b8da4c97a622bbca75f01,
         type: 3}
       propertyPath: pressurePlateActivateSound.Guid.Data4
-      value: -1467891998
+      value: 1926903988
       objectReference: {fileID: 0}
     - target: {fileID: 7098523712155768522, guid: bbb92c5b040b8da4c97a622bbca75f01,
         type: 3}
@@ -31039,7 +31149,7 @@ PrefabInstance:
     - target: {fileID: 326104662428407836, guid: df8864fd4276d554499c38caa0d9c6f2,
         type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 326104662428407836, guid: df8864fd4276d554499c38caa0d9c6f2,
         type: 3}
@@ -31231,27 +31341,27 @@ PrefabInstance:
     - target: {fileID: 6266672802219159357, guid: bbb92c5b040b8da4c97a622bbca75f01,
         type: 3}
       propertyPath: pressurePlateActivateSound.Path
-      value: "event:/Interactive/PressurePlate/PressurePad Tillf\xE4llig"
+      value: event:/Interactive/PressurePlate/PressurePadActive
       objectReference: {fileID: 0}
     - target: {fileID: 6266672802219159357, guid: bbb92c5b040b8da4c97a622bbca75f01,
         type: 3}
       propertyPath: pressurePlateActivateSound.Guid.Data1
-      value: -2126073542
+      value: -99830723
       objectReference: {fileID: 0}
     - target: {fileID: 6266672802219159357, guid: bbb92c5b040b8da4c97a622bbca75f01,
         type: 3}
       propertyPath: pressurePlateActivateSound.Guid.Data2
-      value: 1076271601
+      value: 1151355774
       objectReference: {fileID: 0}
     - target: {fileID: 6266672802219159357, guid: bbb92c5b040b8da4c97a622bbca75f01,
         type: 3}
       propertyPath: pressurePlateActivateSound.Guid.Data3
-      value: 737088152
+      value: -1697866061
       objectReference: {fileID: 0}
     - target: {fileID: 6266672802219159357, guid: bbb92c5b040b8da4c97a622bbca75f01,
         type: 3}
       propertyPath: pressurePlateActivateSound.Guid.Data4
-      value: -1467891998
+      value: 1926903988
       objectReference: {fileID: 0}
     - target: {fileID: 7098523712155768522, guid: bbb92c5b040b8da4c97a622bbca75f01,
         type: 3}
@@ -33999,7 +34109,7 @@ PrefabInstance:
     - target: {fileID: 702725619717392397, guid: 23032f3be6a3fb14b976004bc025d6c5,
         type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 702725619717392397, guid: 23032f3be6a3fb14b976004bc025d6c5,
         type: 3}
@@ -34635,27 +34745,27 @@ PrefabInstance:
     - target: {fileID: 6266672802219159357, guid: bbb92c5b040b8da4c97a622bbca75f01,
         type: 3}
       propertyPath: pressurePlateDeactivateSound.Path
-      value: "event:/Interactive/PressurePlate/PressurePad Tillf\xE4llig"
+      value: event:/Interactive/PressurePlate/PressurePadDeactive
       objectReference: {fileID: 0}
     - target: {fileID: 6266672802219159357, guid: bbb92c5b040b8da4c97a622bbca75f01,
         type: 3}
       propertyPath: pressurePlateDeactivateSound.Guid.Data1
-      value: -2126073542
+      value: 1061428564
       objectReference: {fileID: 0}
     - target: {fileID: 6266672802219159357, guid: bbb92c5b040b8da4c97a622bbca75f01,
         type: 3}
       propertyPath: pressurePlateDeactivateSound.Guid.Data2
-      value: 1076271601
+      value: 1184061825
       objectReference: {fileID: 0}
     - target: {fileID: 6266672802219159357, guid: bbb92c5b040b8da4c97a622bbca75f01,
         type: 3}
       propertyPath: pressurePlateDeactivateSound.Guid.Data3
-      value: 737088152
+      value: 1827226280
       objectReference: {fileID: 0}
     - target: {fileID: 6266672802219159357, guid: bbb92c5b040b8da4c97a622bbca75f01,
         type: 3}
       propertyPath: pressurePlateDeactivateSound.Guid.Data4
-      value: -1467891998
+      value: -1679479527
       objectReference: {fileID: 0}
     - target: {fileID: 7098523712155768522, guid: bbb92c5b040b8da4c97a622bbca75f01,
         type: 3}
@@ -35011,7 +35121,7 @@ PrefabInstance:
     - target: {fileID: 326104662428407836, guid: df8864fd4276d554499c38caa0d9c6f2,
         type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 326104662428407836, guid: df8864fd4276d554499c38caa0d9c6f2,
         type: 3}
@@ -38477,27 +38587,27 @@ PrefabInstance:
     - target: {fileID: 6266672802219159357, guid: bbb92c5b040b8da4c97a622bbca75f01,
         type: 3}
       propertyPath: pressurePlateDeactivateSound.Path
-      value: "event:/Interactive/PressurePlate/PressurePad Tillf\xE4llig"
+      value: event:/Interactive/PressurePlate/PressurePadDeactive
       objectReference: {fileID: 0}
     - target: {fileID: 6266672802219159357, guid: bbb92c5b040b8da4c97a622bbca75f01,
         type: 3}
       propertyPath: pressurePlateDeactivateSound.Guid.Data1
-      value: -2126073542
+      value: 1061428564
       objectReference: {fileID: 0}
     - target: {fileID: 6266672802219159357, guid: bbb92c5b040b8da4c97a622bbca75f01,
         type: 3}
       propertyPath: pressurePlateDeactivateSound.Guid.Data2
-      value: 1076271601
+      value: 1184061825
       objectReference: {fileID: 0}
     - target: {fileID: 6266672802219159357, guid: bbb92c5b040b8da4c97a622bbca75f01,
         type: 3}
       propertyPath: pressurePlateDeactivateSound.Guid.Data3
-      value: 737088152
+      value: 1827226280
       objectReference: {fileID: 0}
     - target: {fileID: 6266672802219159357, guid: bbb92c5b040b8da4c97a622bbca75f01,
         type: 3}
       propertyPath: pressurePlateDeactivateSound.Guid.Data4
-      value: -1467891998
+      value: -1679479527
       objectReference: {fileID: 0}
     - target: {fileID: 7098523712155768522, guid: bbb92c5b040b8da4c97a622bbca75f01,
         type: 3}
@@ -39111,27 +39221,27 @@ PrefabInstance:
     - target: {fileID: 6266672802219159357, guid: bbb92c5b040b8da4c97a622bbca75f01,
         type: 3}
       propertyPath: pressurePlateActivateSound.Path
-      value: "event:/Interactive/PressurePlate/PressurePad Tillf\xE4llig"
+      value: event:/Interactive/PressurePlate/PressurePadActive
       objectReference: {fileID: 0}
     - target: {fileID: 6266672802219159357, guid: bbb92c5b040b8da4c97a622bbca75f01,
         type: 3}
       propertyPath: pressurePlateActivateSound.Guid.Data1
-      value: -2126073542
+      value: -99830723
       objectReference: {fileID: 0}
     - target: {fileID: 6266672802219159357, guid: bbb92c5b040b8da4c97a622bbca75f01,
         type: 3}
       propertyPath: pressurePlateActivateSound.Guid.Data2
-      value: 1076271601
+      value: 1151355774
       objectReference: {fileID: 0}
     - target: {fileID: 6266672802219159357, guid: bbb92c5b040b8da4c97a622bbca75f01,
         type: 3}
       propertyPath: pressurePlateActivateSound.Guid.Data3
-      value: 737088152
+      value: -1697866061
       objectReference: {fileID: 0}
     - target: {fileID: 6266672802219159357, guid: bbb92c5b040b8da4c97a622bbca75f01,
         type: 3}
       propertyPath: pressurePlateActivateSound.Guid.Data4
-      value: -1467891998
+      value: 1926903988
       objectReference: {fileID: 0}
     - target: {fileID: 7098523712155768522, guid: bbb92c5b040b8da4c97a622bbca75f01,
         type: 3}
@@ -39230,27 +39340,27 @@ PrefabInstance:
     - target: {fileID: 6266672802219159357, guid: bbb92c5b040b8da4c97a622bbca75f01,
         type: 3}
       propertyPath: pressurePlateDeactivateSound.Path
-      value: "event:/Interactive/PressurePlate/PressurePad Tillf\xE4llig"
+      value: event:/Interactive/PressurePlate/PressurePadDeactive
       objectReference: {fileID: 0}
     - target: {fileID: 6266672802219159357, guid: bbb92c5b040b8da4c97a622bbca75f01,
         type: 3}
       propertyPath: pressurePlateDeactivateSound.Guid.Data1
-      value: -2126073542
+      value: 1061428564
       objectReference: {fileID: 0}
     - target: {fileID: 6266672802219159357, guid: bbb92c5b040b8da4c97a622bbca75f01,
         type: 3}
       propertyPath: pressurePlateDeactivateSound.Guid.Data2
-      value: 1076271601
+      value: 1184061825
       objectReference: {fileID: 0}
     - target: {fileID: 6266672802219159357, guid: bbb92c5b040b8da4c97a622bbca75f01,
         type: 3}
       propertyPath: pressurePlateDeactivateSound.Guid.Data3
-      value: 737088152
+      value: 1827226280
       objectReference: {fileID: 0}
     - target: {fileID: 6266672802219159357, guid: bbb92c5b040b8da4c97a622bbca75f01,
         type: 3}
       propertyPath: pressurePlateDeactivateSound.Guid.Data4
-      value: -1467891998
+      value: -1679479527
       objectReference: {fileID: 0}
     - target: {fileID: 7098523712155768522, guid: bbb92c5b040b8da4c97a622bbca75f01,
         type: 3}
@@ -41239,7 +41349,7 @@ PrefabInstance:
     - target: {fileID: 7700853959766286362, guid: 37eca1b83ce9b2e4489b753e09fcb1a9,
         type: 3}
       propertyPath: m_RootOrder
-      value: 15
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 7700853959766286362, guid: 37eca1b83ce9b2e4489b753e09fcb1a9,
         type: 3}
@@ -43502,75 +43612,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1384574791}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &1388177163
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 2320074858103167762, guid: 90d61b54dc91d7d4bbbf078651f4ce0f,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2320074858103167762, guid: 90d61b54dc91d7d4bbbf078651f4ce0f,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 59.951378
-      objectReference: {fileID: 0}
-    - target: {fileID: 2320074858103167762, guid: 90d61b54dc91d7d4bbbf078651f4ce0f,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -4.524865
-      objectReference: {fileID: 0}
-    - target: {fileID: 2320074858103167762, guid: 90d61b54dc91d7d4bbbf078651f4ce0f,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 71.2331
-      objectReference: {fileID: 0}
-    - target: {fileID: 2320074858103167762, guid: 90d61b54dc91d7d4bbbf078651f4ce0f,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2320074858103167762, guid: 90d61b54dc91d7d4bbbf078651f4ce0f,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2320074858103167762, guid: 90d61b54dc91d7d4bbbf078651f4ce0f,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2320074858103167762, guid: 90d61b54dc91d7d4bbbf078651f4ce0f,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2320074858103167762, guid: 90d61b54dc91d7d4bbbf078651f4ce0f,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2320074858103167762, guid: 90d61b54dc91d7d4bbbf078651f4ce0f,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2320074858103167762, guid: 90d61b54dc91d7d4bbbf078651f4ce0f,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3371525326891439898, guid: 90d61b54dc91d7d4bbbf078651f4ce0f,
-        type: 3}
-      propertyPath: m_Name
-      value: MusicManager
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 90d61b54dc91d7d4bbbf078651f4ce0f, type: 3}
 --- !u!1001 &1388227821
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -43712,7 +43753,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1392711900
 PrefabInstance:
@@ -44017,27 +44058,27 @@ PrefabInstance:
     - target: {fileID: 6266672802219159357, guid: bbb92c5b040b8da4c97a622bbca75f01,
         type: 3}
       propertyPath: pressurePlateActivateSound.Path
-      value: "event:/Interactive/PressurePlate/PressurePad Tillf\xE4llig"
+      value: event:/Interactive/PressurePlate/PressurePadActive
       objectReference: {fileID: 0}
     - target: {fileID: 6266672802219159357, guid: bbb92c5b040b8da4c97a622bbca75f01,
         type: 3}
       propertyPath: pressurePlateActivateSound.Guid.Data1
-      value: -2126073542
+      value: -99830723
       objectReference: {fileID: 0}
     - target: {fileID: 6266672802219159357, guid: bbb92c5b040b8da4c97a622bbca75f01,
         type: 3}
       propertyPath: pressurePlateActivateSound.Guid.Data2
-      value: 1076271601
+      value: 1151355774
       objectReference: {fileID: 0}
     - target: {fileID: 6266672802219159357, guid: bbb92c5b040b8da4c97a622bbca75f01,
         type: 3}
       propertyPath: pressurePlateActivateSound.Guid.Data3
-      value: 737088152
+      value: -1697866061
       objectReference: {fileID: 0}
     - target: {fileID: 6266672802219159357, guid: bbb92c5b040b8da4c97a622bbca75f01,
         type: 3}
       propertyPath: pressurePlateActivateSound.Guid.Data4
-      value: -1467891998
+      value: 1926903988
       objectReference: {fileID: 0}
     - target: {fileID: 7098523712155768522, guid: bbb92c5b040b8da4c97a622bbca75f01,
         type: 3}
@@ -44554,27 +44595,27 @@ PrefabInstance:
     - target: {fileID: 6266672802219159357, guid: bbb92c5b040b8da4c97a622bbca75f01,
         type: 3}
       propertyPath: pressurePlateDeactivateSound.Path
-      value: "event:/Interactive/PressurePlate/PressurePad Tillf\xE4llig"
+      value: event:/Interactive/PressurePlate/PressurePadDeactive
       objectReference: {fileID: 0}
     - target: {fileID: 6266672802219159357, guid: bbb92c5b040b8da4c97a622bbca75f01,
         type: 3}
       propertyPath: pressurePlateDeactivateSound.Guid.Data1
-      value: -2126073542
+      value: 1061428564
       objectReference: {fileID: 0}
     - target: {fileID: 6266672802219159357, guid: bbb92c5b040b8da4c97a622bbca75f01,
         type: 3}
       propertyPath: pressurePlateDeactivateSound.Guid.Data2
-      value: 1076271601
+      value: 1184061825
       objectReference: {fileID: 0}
     - target: {fileID: 6266672802219159357, guid: bbb92c5b040b8da4c97a622bbca75f01,
         type: 3}
       propertyPath: pressurePlateDeactivateSound.Guid.Data3
-      value: 737088152
+      value: 1827226280
       objectReference: {fileID: 0}
     - target: {fileID: 6266672802219159357, guid: bbb92c5b040b8da4c97a622bbca75f01,
         type: 3}
       propertyPath: pressurePlateDeactivateSound.Guid.Data4
-      value: -1467891998
+      value: -1679479527
       objectReference: {fileID: 0}
     - target: {fileID: 7098523712155768522, guid: bbb92c5b040b8da4c97a622bbca75f01,
         type: 3}
@@ -45433,7 +45474,7 @@ PrefabInstance:
     - target: {fileID: 4908767382315196792, guid: 21aaed9e3cce3df4b90f27f6d50db883,
         type: 3}
       propertyPath: m_RootOrder
-      value: 8
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 4908767382315196792, guid: 21aaed9e3cce3df4b90f27f6d50db883,
         type: 3}
@@ -46309,7 +46350,7 @@ PrefabInstance:
     - target: {fileID: 1034536918043049753, guid: 04d11ca39289f794e9a734c7102f9f2a,
         type: 3}
       propertyPath: m_RootOrder
-      value: 11
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1034536918043049753, guid: 04d11ca39289f794e9a734c7102f9f2a,
         type: 3}
@@ -47074,27 +47115,27 @@ PrefabInstance:
     - target: {fileID: 6266672802219159357, guid: bbb92c5b040b8da4c97a622bbca75f01,
         type: 3}
       propertyPath: pressurePlateActivateSound.Path
-      value: "event:/Interactive/PressurePlate/PressurePad Tillf\xE4llig"
+      value: event:/Interactive/PressurePlate/PressurePadActive
       objectReference: {fileID: 0}
     - target: {fileID: 6266672802219159357, guid: bbb92c5b040b8da4c97a622bbca75f01,
         type: 3}
       propertyPath: pressurePlateActivateSound.Guid.Data1
-      value: -2126073542
+      value: -99830723
       objectReference: {fileID: 0}
     - target: {fileID: 6266672802219159357, guid: bbb92c5b040b8da4c97a622bbca75f01,
         type: 3}
       propertyPath: pressurePlateActivateSound.Guid.Data2
-      value: 1076271601
+      value: 1151355774
       objectReference: {fileID: 0}
     - target: {fileID: 6266672802219159357, guid: bbb92c5b040b8da4c97a622bbca75f01,
         type: 3}
       propertyPath: pressurePlateActivateSound.Guid.Data3
-      value: 737088152
+      value: -1697866061
       objectReference: {fileID: 0}
     - target: {fileID: 6266672802219159357, guid: bbb92c5b040b8da4c97a622bbca75f01,
         type: 3}
       propertyPath: pressurePlateActivateSound.Guid.Data4
-      value: -1467891998
+      value: 1926903988
       objectReference: {fileID: 0}
     - target: {fileID: 7098523712155768522, guid: bbb92c5b040b8da4c97a622bbca75f01,
         type: 3}
@@ -50604,7 +50645,7 @@ PrefabInstance:
         type: 3}
       propertyPath: gObject
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 533691767}
     - target: {fileID: 7714198816936244693, guid: 31f662c1964152e40b1c6c4db1edc515,
         type: 3}
       propertyPath: audioManager
@@ -52512,27 +52553,27 @@ PrefabInstance:
     - target: {fileID: 6266672802219159357, guid: bbb92c5b040b8da4c97a622bbca75f01,
         type: 3}
       propertyPath: pressurePlateDeactivateSound.Path
-      value: "event:/Interactive/PressurePlate/PressurePad Tillf\xE4llig"
+      value: event:/Interactive/PressurePlate/PressurePadDeactive
       objectReference: {fileID: 0}
     - target: {fileID: 6266672802219159357, guid: bbb92c5b040b8da4c97a622bbca75f01,
         type: 3}
       propertyPath: pressurePlateDeactivateSound.Guid.Data1
-      value: -2126073542
+      value: 1061428564
       objectReference: {fileID: 0}
     - target: {fileID: 6266672802219159357, guid: bbb92c5b040b8da4c97a622bbca75f01,
         type: 3}
       propertyPath: pressurePlateDeactivateSound.Guid.Data2
-      value: 1076271601
+      value: 1184061825
       objectReference: {fileID: 0}
     - target: {fileID: 6266672802219159357, guid: bbb92c5b040b8da4c97a622bbca75f01,
         type: 3}
       propertyPath: pressurePlateDeactivateSound.Guid.Data3
-      value: 737088152
+      value: 1827226280
       objectReference: {fileID: 0}
     - target: {fileID: 6266672802219159357, guid: bbb92c5b040b8da4c97a622bbca75f01,
         type: 3}
       propertyPath: pressurePlateDeactivateSound.Guid.Data4
-      value: -1467891998
+      value: -1679479527
       objectReference: {fileID: 0}
     - target: {fileID: 7098523712155768522, guid: bbb92c5b040b8da4c97a622bbca75f01,
         type: 3}
@@ -53287,7 +53328,7 @@ PrefabInstance:
         type: 3}
       propertyPath: gObject
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 533691767}
     - target: {fileID: 7714198816936244693, guid: 31f662c1964152e40b1c6c4db1edc515,
         type: 3}
       propertyPath: audioManager
@@ -54526,7 +54567,7 @@ PrefabInstance:
         type: 3}
       propertyPath: gObject
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 533691767}
     - target: {fileID: 7714198816936244693, guid: 31f662c1964152e40b1c6c4db1edc515,
         type: 3}
       propertyPath: audioManager
@@ -54539,7 +54580,17 @@ PrefabInstance:
       objectReference: {fileID: 527128240}
     - target: {fileID: 7714198816936244693, guid: 31f662c1964152e40b1c6c4db1edc515,
         type: 3}
+      propertyPath: audioSettings.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7714198816936244693, guid: 31f662c1964152e40b1c6c4db1edc515,
+        type: 3}
       propertyPath: audioSettings.Array.data[0].enter
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7714198816936244693, guid: 31f662c1964152e40b1c6c4db1edc515,
+        type: 3}
+      propertyPath: audioSettings.Array.data[1].enter
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7714198816936244693, guid: 31f662c1964152e40b1c6c4db1edc515,
@@ -54547,6 +54598,11 @@ PrefabInstance:
       propertyPath: audioSettings.Array.data[0].sEmitter
       value: 
       objectReference: {fileID: 724881734}
+    - target: {fileID: 7714198816936244693, guid: 31f662c1964152e40b1c6c4db1edc515,
+        type: 3}
+      propertyPath: audioSettings.Array.data[1].sEmitter
+      value: 
+      objectReference: {fileID: 527128239}
     - target: {fileID: 8030072693880248487, guid: 31f662c1964152e40b1c6c4db1edc515,
         type: 3}
       propertyPath: m_Name
@@ -54641,7 +54697,7 @@ PrefabInstance:
         type: 3}
       propertyPath: gObject
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 533691767}
     - target: {fileID: 7714198816936244693, guid: 31f662c1964152e40b1c6c4db1edc515,
         type: 3}
       propertyPath: audioManager
@@ -55156,7 +55212,7 @@ PrefabInstance:
     - target: {fileID: 4505939913096251986, guid: 91f50fee9a6a6bb4190c937bfc0b5d95,
         type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4505939913096251986, guid: 91f50fee9a6a6bb4190c937bfc0b5d95,
         type: 3}
@@ -57284,7 +57340,7 @@ PrefabInstance:
     - target: {fileID: 1870790134957010098, guid: 8c757b22679c009439b0dc28d0a54d15,
         type: 3}
       propertyPath: m_RootOrder
-      value: 23
+      value: 22
       objectReference: {fileID: 0}
     - target: {fileID: 1870790134957010098, guid: 8c757b22679c009439b0dc28d0a54d15,
         type: 3}
@@ -59053,7 +59109,7 @@ Transform:
   - {fileID: 1879376826}
   - {fileID: 142566488}
   m_Father: {fileID: 0}
-  m_RootOrder: 27
+  m_RootOrder: 26
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1968563911
 PrefabInstance:
@@ -59644,7 +59700,7 @@ PrefabInstance:
     - target: {fileID: 7700853959766286362, guid: 37eca1b83ce9b2e4489b753e09fcb1a9,
         type: 3}
       propertyPath: m_RootOrder
-      value: 10
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 7700853959766286362, guid: 37eca1b83ce9b2e4489b753e09fcb1a9,
         type: 3}
@@ -65202,7 +65258,7 @@ PrefabInstance:
     - target: {fileID: 4807431456624764732, guid: 4e9da457c2e8e3f4699997f82e65a338,
         type: 3}
       propertyPath: m_RootOrder
-      value: 17
+      value: 16
       objectReference: {fileID: 0}
     - target: {fileID: 4807431456624764732, guid: 4e9da457c2e8e3f4699997f82e65a338,
         type: 3}
@@ -65271,7 +65327,7 @@ Transform:
   - {fileID: 2592919285954484401}
   - {fileID: 2592919285725319984}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: -1.604, z: 0}
 --- !u!1 &2592919284892782023
 GameObject:
