@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 88638146243354568}
   - component: {fileID: 9065700884183035870}
   - component: {fileID: 8165490000371828533}
+  - component: {fileID: 1111351450086614327}
   m_Layer: 0
   m_Name: Chest_Body_low
   m_TagString: Untagged
@@ -83,6 +84,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &1111351450086614327
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3649147643833042733}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -4514221976513364875, guid: 48f4b7f48d6fd2b459b1376de5b53f88, type: 3}
 --- !u!1 &6112831897052178909
 GameObject:
   m_ObjectHideFlags: 0
@@ -124,7 +139,7 @@ Animator:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6112831897052178909}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: 5654a64fcdf5d4f4796c8a9ee80900d1, type: 2}
   m_CullingMode: 0
@@ -181,6 +196,12 @@ GameObject:
   - component: {fileID: 4613131109856779231}
   - component: {fileID: 3884889217065191838}
   - component: {fileID: 5345881612734855066}
+  - component: {fileID: 3635210840123543440}
+  - component: {fileID: 3847032135690155713}
+  - component: {fileID: 5187444377694287179}
+  - component: {fileID: 2555807472568942322}
+  - component: {fileID: 5700923458083516907}
+  - component: {fileID: 5729737365703834045}
   m_Layer: 0
   m_Name: Chest_top_low
   m_TagString: Untagged
@@ -253,6 +274,150 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &3635210840123543440
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7207700278294418139}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e00f5ae617338be4384dddd3ac1d37e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dropSound:
+    Guid:
+      Data1: 386495863
+      Data2: 1214940884
+      Data3: -1673625193
+      Data4: -2133371533
+    Path: event:/Interactive/RockDrop
+  pickUpSound:
+    Guid:
+      Data1: 386495863
+      Data2: 1214940884
+      Data3: -1673625193
+      Data4: -2133371533
+    Path: event:/Interactive/RockDrop
+  collisionSound:
+    Guid:
+      Data1: 386495863
+      Data2: 1214940884
+      Data3: -1673625193
+      Data4: -2133371533
+    Path: event:/Interactive/RockDrop
+--- !u!114 &3847032135690155713
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7207700278294418139}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dee1a28932ecbb548814f52aedcc2c54, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isDisabled: 0
+  breakForce: 35
+  playerInteract: {fileID: 0}
+  stackNormalThreshold: 0.5
+  lockCooldown: 0.1
+  canBePickedUp: 1
+  canBeRotated: 0
+  alwaysLockOnRelease: 0
+  keepRestraints: 0
+  objectSoundController: {fileID: 3635210840123543440}
+  pickedUp: 0
+--- !u!54 &5187444377694287179
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7207700278294418139}
+  serializedVersion: 2
+  m_Mass: 5
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!59 &2555807472568942322
+HingeJoint:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7207700278294418139}
+  m_ConnectedBody: {fileID: 0}
+  m_ConnectedArticulationBody: {fileID: 0}
+  m_Anchor: {x: -0.055, y: -0.02, z: 0}
+  m_Axis: {x: 0, y: 0, z: 90}
+  m_AutoConfigureConnectedAnchor: 1
+  m_ConnectedAnchor: {x: 0, y: 0, z: 0}
+  m_UseSpring: 0
+  m_Spring:
+    spring: 0
+    damper: 0
+    targetPosition: 0
+  m_UseMotor: 0
+  m_Motor:
+    targetVelocity: 0
+    force: 0
+    freeSpin: 0
+  m_UseLimits: 1
+  m_Limits:
+    min: -20
+    max: 175
+    bounciness: 0
+    bounceMinVelocity: 0.2
+    contactDistance: 0
+  m_BreakForce: Infinity
+  m_BreakTorque: Infinity
+  m_EnableCollision: 0
+  m_EnablePreprocessing: 1
+  m_MassScale: 1
+  m_ConnectedMassScale: 1
+--- !u!114 &5700923458083516907
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7207700278294418139}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d18dd617b26be54e9fbe38aa128fd9a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lockAngles:
+  - -20
+  - 175
+  hinge: {fileID: 2555807472568942322}
+  lockThreshold: 2
+  lockBreakThreshold: 6
+  targetIsLocked: 0
+  forceCanBreakLock: 1
+  rigidbodyTarget: {fileID: 5187444377694287179}
+  targetPhysicsObject: {fileID: 3847032135690155713}
+--- !u!64 &5729737365703834045
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7207700278294418139}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 1089162366212787467, guid: 48f4b7f48d6fd2b459b1376de5b53f88, type: 3}
 --- !u!1 &8839432094270180837
 GameObject:
   m_ObjectHideFlags: 0
