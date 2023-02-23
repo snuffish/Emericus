@@ -15170,6 +15170,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9003907968582328373, guid: b84f311cd59dbb446b5be49fb98e97ed,
+        type: 3}
+      propertyPath: m_DynamicOccludee
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b84f311cd59dbb446b5be49fb98e97ed, type: 3}
 --- !u!1001 &484770602
@@ -16391,26 +16396,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 518219342}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &522700695 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3649147643833042733, guid: 37eca1b83ce9b2e4489b753e09fcb1a9,
-    type: 3}
-  m_PrefabInstance: {fileID: 1287124560}
-  m_PrefabAsset: {fileID: 0}
---- !u!64 &522700697
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 522700695}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -4514221976513364875, guid: 48f4b7f48d6fd2b459b1376de5b53f88, type: 3}
 --- !u!1001 &524511188
 PrefabInstance:
   m_ObjectHideFlags: 0
