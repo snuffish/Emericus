@@ -46697,11 +46697,26 @@ PrefabInstance:
       propertyPath: mouseSens.y
       value: 20
       objectReference: {fileID: 0}
+    - target: {fileID: 1783532223413671984, guid: 04d11ca39289f794e9a734c7102f9f2a,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: SetActive
+      objectReference: {fileID: 0}
     - target: {fileID: 3543360725569358519, guid: 04d11ca39289f794e9a734c7102f9f2a,
         type: 3}
       propertyPath: selectedCrosshair
       value: 
       objectReference: {fileID: 468251343}
+    - target: {fileID: 3888307801898125033, guid: 04d11ca39289f794e9a734c7102f9f2a,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1758525906}
+    - target: {fileID: 3888307801898125033, guid: 04d11ca39289f794e9a734c7102f9f2a,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: SetActive
+      objectReference: {fileID: 0}
     - target: {fileID: 5573290634256584935, guid: 04d11ca39289f794e9a734c7102f9f2a,
         type: 3}
       propertyPath: m_RootOrder
@@ -53878,6 +53893,12 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3940320909885708854, guid: 835120d1856f9da4e998243820e9f349,
     type: 3}
   m_PrefabInstance: {fileID: 1757186455}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1758525906 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8585030883917945370, guid: 04d11ca39289f794e9a734c7102f9f2a,
+    type: 3}
+  m_PrefabInstance: {fileID: 1480192680}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1759647062
 PrefabInstance:
