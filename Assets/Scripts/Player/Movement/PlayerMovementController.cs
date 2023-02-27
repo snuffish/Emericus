@@ -1,4 +1,5 @@
 
+using System.Collections.Generic;
 using UnityEngine;
 
 using Vector2 = UnityEngine.Vector2;
@@ -26,9 +27,10 @@ public class PlayerMovementController : MonoBehaviour
 
     [Header("Ground Check")]
     [SerializeField] float groundCheckRayLength;
+    [SerializeField] private float isGroundedCheckRadius;
+    private Ray[] groundRays;
     [SerializeField] LayerMask jumpableLayers;
     [SerializeField] public bool isGrounded { get; private set; }
-    private Ray groundRay;
 
 
     [Header("Jump")]
@@ -56,8 +58,8 @@ public class PlayerMovementController : MonoBehaviour
 
 
     // Start is called before the first frame update
-    void Start()
-    {
+    void Start() {
+        groundRays = new Ray[4];
         currentState = idleState;
         currentState.EnterState(this);
         if (playerAudio == null)
@@ -77,20 +79,31 @@ public class PlayerMovementController : MonoBehaviour
 
 
         //  Airborne Check
-        groundRay = new Ray(transform.position, Vector3.down);
+        groundRays[0] = new Ray(transform.position + Vector3.forward * isGroundedCheckRadius, Vector3.down);
+        groundRays[1] = new Ray(transform.position - Vector3.forward * isGroundedCheckRadius, Vector3.down);
+        groundRays[2] = new Ray(transform.position + Vector3.right * isGroundedCheckRadius, Vector3.down);
+        groundRays[3] = new Ray(transform.position - Vector3.right * isGroundedCheckRadius, Vector3.down);
 
         if (!isGrounded)
         {
-            if (Physics.Raycast(groundRay, groundCheckRayLength, LayerMask.GetMask("Ground")))
-            {
-                playerAudio.PlayLand(gameObject);
+            foreach (Ray groundRay in groundRays) {
+                if (Physics.Raycast(groundRay, groundCheckRayLength, LayerMask.GetMask("Ground")))
+                {
+                    playerAudio.PlayLand(gameObject);
+                }
             }
         }
 
-        Debug.DrawRay(groundRay.origin, groundRay.direction * groundCheckRayLength, Color.cyan);
+        foreach (Ray groundRay in groundRays) {
+            isGrounded = Physics.Raycast(groundRay, groundCheckRayLength, jumpableLayers);
+            if (isGrounded) break;
+        }
+        
+        foreach (Ray groundRay in groundRays) {
+            Debug.DrawRay(groundRay.origin, groundRay.direction * groundCheckRayLength, Color.cyan);
+        }
 
-        isGrounded = Physics.Raycast(groundRay, groundCheckRayLength, jumpableLayers);
-
+        
         //  Change Drag if airborne or not
         if (isGrounded)
             rb.drag = groundDrag;
