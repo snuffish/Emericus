@@ -13480,6 +13480,7 @@ MonoBehaviour:
   m_Script: {fileID: 986417472}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_Entries: []
 --- !u!4 &424079002
 Transform:
   m_ObjectHideFlags: 19
@@ -16920,6 +16921,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: MusicManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 8591402441183388410, guid: 90d61b54dc91d7d4bbbf078651f4ce0f,
+        type: 3}
+      propertyPath: loadSampleData
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8591402441183388410, guid: 90d61b54dc91d7d4bbbf078651f4ce0f,
         type: 3}
@@ -23176,6 +23182,11 @@ PrefabInstance:
         type: 3}
       propertyPath: EventReference.Path
       value: event:/Voicelines/Tidbit 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6223047945975542503, guid: 5796ddb0aaa5a5045b7e73e12868b965,
+        type: 3}
+      propertyPath: loadSampleData
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6223047945975542503, guid: 5796ddb0aaa5a5045b7e73e12868b965,
         type: 3}
