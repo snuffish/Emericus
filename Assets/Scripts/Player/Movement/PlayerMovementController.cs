@@ -151,9 +151,9 @@ public class PlayerMovementController : MonoBehaviour
         }
     }
 
-    public void MovePlayer()
-    {
-
+    public void MovePlayer() {
+        
+        
         //  Calculate direction
         direction = orientation.forward * deltaMovement.y + orientation.right * deltaMovement.x;
 
@@ -164,7 +164,6 @@ public class PlayerMovementController : MonoBehaviour
         //  In air
         else if (!isGrounded)
             rb.AddForce(direction.normalized * Time.deltaTime * currentMoveSpeed * 300f * airmultiplier, ForceMode.Force);
-
     }
 
     void Jump()
@@ -192,11 +191,4 @@ public class PlayerMovementController : MonoBehaviour
         currentState = state;
         currentState.EnterState(this);
     }
-
-
-
-
-
-
-
 }
