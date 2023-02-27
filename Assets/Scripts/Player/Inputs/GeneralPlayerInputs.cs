@@ -6,6 +6,7 @@ public class GeneralPlayerInputs : MonoBehaviour
 {
     [SerializeField] private GameObject pauseMenu;
     private bool gameIsPaused = false;
+    [SerializeField] private GameObject crosshairs;
     
     // Update is called once per frame
     void Update()
@@ -27,6 +28,7 @@ public class GeneralPlayerInputs : MonoBehaviour
         Cursor.lockState = CursorLockMode.None;
         pauseMenu.active = true;
         Time.timeScale = 0;
+        crosshairs.SetActive(false);
     }
 
     public void UnpauseGame() {
@@ -35,5 +37,6 @@ public class GeneralPlayerInputs : MonoBehaviour
         Cursor.lockState = CursorLockMode.Locked;
         pauseMenu.active = false;
         Time.timeScale = 1;
+        crosshairs.SetActive(true);
     }
 }
