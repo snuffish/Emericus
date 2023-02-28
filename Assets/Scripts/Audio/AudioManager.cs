@@ -102,7 +102,7 @@ public class AudioManager : MonoBehaviour
 
     public void SetParameter(StudioEventEmitter emitter, string paramName, float paramValue, bool ignorSeek)
     {
-        emitter.SetParameter(paramName, paramValue, ignorSeek);
+        RuntimeManager.StudioSystem.setParameterByName(paramName, paramValue, ignorSeek);
         Debug.Log("Setting parameter.");
     }
 }
