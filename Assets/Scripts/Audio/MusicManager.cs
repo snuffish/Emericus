@@ -11,13 +11,13 @@ public class MusicManager : MonoBehaviour
    //Bankladdare
    private void Awake()
    {
-      if (Instance == null)
+      /*if (Instance == null)
          Instance = this;
       else
       {
          Destroy(gameObject);
          return;
-      }
+      }*/
       
       BankLoader();
       if (Instance != null && Instance != this)
@@ -30,6 +30,8 @@ public class MusicManager : MonoBehaviour
       }
       DontDestroyOnLoad(gameObject);
    }
+   
+   
 
    [Header("BankRef")] 
    [BankRef] public string masterBank;
@@ -44,6 +46,9 @@ public class MusicManager : MonoBehaviour
 
    
    //Emitters för bakgrundsmusik
+   private StudioEventEmitter sEmitter;
+   private float number = 1;
+   
    [Header("BGM")] 
    public Emitters eventEmitters;
    
@@ -105,6 +110,8 @@ public class MusicManager : MonoBehaviour
   
  
    //Play, Stop, Parameter
+
+   private PARAMETER_ID parameterID;
    public void Play(StudioEventEmitter emitter)
    {
       if (emitter.IsActive == false)
@@ -125,7 +132,7 @@ public class MusicManager : MonoBehaviour
 
    public void SetParameter(StudioEventEmitter emitter, string paramName, float paramValue, bool ignorSeek)
    {
-      emitter.SetParameter(paramName, paramValue, ignorSeek);
+      RuntimeManager.StudioSystem.setParameterByName(paramName, paramValue, ignorSeek);
       Debug.Log("Setting parameter.");
    }
 }
