@@ -62283,6 +62283,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1097715553}
     m_Modifications:
+    - target: {fileID: 4252963483623295195, guid: d8ae8e0419f122f4bbe44122bbce7f6d,
+        type: 3}
+      propertyPath: maxHealth
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4252963483623295195, guid: d8ae8e0419f122f4bbe44122bbce7f6d,
+        type: 3}
+      propertyPath: currentHealth
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4252963483623295195, guid: d8ae8e0419f122f4bbe44122bbce7f6d,
+        type: 3}
+      propertyPath: hurtCooldownTime
+      value: 0.2
+      objectReference: {fileID: 0}
     - target: {fileID: 8219112533251045630, guid: d8ae8e0419f122f4bbe44122bbce7f6d,
         type: 3}
       propertyPath: m_RootOrder
@@ -66635,6 +66650,7 @@ GameObject:
   - component: {fileID: 2592919286764648073}
   - component: {fileID: 2592919286764648074}
   - component: {fileID: 2592919286764648075}
+  - component: {fileID: 2592919286764648120}
   m_Layer: 8
   m_Name: Lever
   m_TagString: Untagged
@@ -66850,14 +66866,32 @@ MonoBehaviour:
   isDisabled: 0
   breakForce: 35
   playerInteract: {fileID: 0}
+  objectHealth: {fileID: 0}
   stackNormalThreshold: 0.5
   lockCooldown: 0.1
+  damageVelocity: 500
   canBePickedUp: 1
+  canTakeDamageFromForce: 0
   canBeRotated: 0
   alwaysLockOnRelease: 0
   keepRestraints: 0
   objectSoundController: {fileID: 2592919286764648118}
   pickedUp: 0
+--- !u!114 &2592919286764648120
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2592919286764648077}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1251556126d84b74984c42c72411e602, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentHealth: 0
+  maxHealth: 0
+  hurtCooldownTime: 0
 --- !u!1001 &2820351028008215423
 PrefabInstance:
   m_ObjectHideFlags: 0

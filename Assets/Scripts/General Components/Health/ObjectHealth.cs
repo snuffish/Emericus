@@ -4,7 +4,9 @@ using UnityEngine;
 
 public class ObjectHealth : Health
 {
-    protected override void Die() {
+    protected override void Die()
+    {
         base.Die();
+        //Destroy(gameObject);
     }
 }
