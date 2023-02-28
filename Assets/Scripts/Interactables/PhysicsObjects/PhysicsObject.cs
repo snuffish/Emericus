@@ -3,14 +3,18 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [RequireComponent(typeof(PhysicsSounds))]
+[RequireComponent(typeof(ObjectHealth))]
 public class PhysicsObject : Interactable
 {
     float waitOnPickup = 0.2f;
     [SerializeField, Tooltip("Amount of Force before an object is dropped")] float breakForce = 35f;
     [SerializeField] public PlayerInteract playerInteract;
+    [SerializeField] ObjectHealth objectHealth;
     [SerializeField] float stackNormalThreshold = 0.5f;
     [SerializeField] float lockCooldown = 0.1f;
+    [SerializeField] float damageVelocity = 30f;
     [SerializeField] bool canBePickedUp = true;
+    [SerializeField] bool canTakeDamageFromForce = false;
     public bool canBeRotated = true;
     public bool alwaysLockOnRelease;
     public bool keepRestraints = false;
@@ -37,6 +41,8 @@ public class PhysicsObject : Interactable
 
     void Start()
     {
+        if (objectHealth == null)
+            objectHealth = GetComponent<ObjectHealth>();
         if (objectSoundController == null)
             objectSoundController = GetComponent<PhysicsSounds>();
         playerInteract = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerInteract>();
@@ -86,7 +92,10 @@ public class PhysicsObject : Interactable
                 }
             }
         }
-
+        if (canTakeDamageFromForce && collision.relativeVelocity.magnitude > damageVelocity)
+        {
+            objectHealth.Hurt(1);
+        }
     }
 
     void OnCollisionStay(Collision collision)
