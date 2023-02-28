@@ -100,6 +100,13 @@ public class AudioManager : MonoBehaviour
         Debug.Log("Shut up!");
     }
 
+    public void playOneShotWithParameter(EventReference eventRef, string paramName, float paramValue, bool ignorSeek, GameObject soundObject)
+    {
+        RuntimeManager.PlayOneShotAttached(eventRef.Guid, soundObject);
+        //RuntimeManager.StudioSystem.setParameterByName(paramName, paramValue, ignorSeek);
+        //.SetParameter(paramName,);
+    }
+    
     public void SetParameter(StudioEventEmitter emitter, string paramName, float paramValue, bool ignorSeek)
     {
         RuntimeManager.StudioSystem.setParameterByName(paramName, paramValue, ignorSeek);
