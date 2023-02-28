@@ -17,7 +17,14 @@ public class PlayerLook : MonoBehaviour
     public GameObject LookObject;
     [SerializeField, Tooltip("Color of Object when selected")] Color defaultColor;
     [SerializeField, Tooltip("Color of Object when selected")] Color selectionColor;
+    
+    [Header("Crosshairs")]
+    [SerializeField, Tooltip("Which layer Locked Objects lie in")] LayerMask lockedLayers;
+    [SerializeField, Tooltip("Which layer Unlocked Objects lie in")] LayerMask unlockedLayers;
+    [SerializeField, Tooltip("Insert Select Crosshair Sprite")] Image normalCrosshair;
     [SerializeField, Tooltip("Insert Select Crosshair Sprite")] Image selectedCrosshair;
+    [SerializeField, Tooltip("Insert Select Crosshair Sprite")] Image lockedCrosshair;
+    [SerializeField, Tooltip("Insert Select Crosshair Sprite")] Image unlockedCrosshair;
 
     void Start()
     {
@@ -29,6 +36,10 @@ public class PlayerLook : MonoBehaviour
     {
         Ray ray = new Ray(Cam.transform.position, Cam.transform.forward);
         Debug.DrawRay(ray.origin, ray.direction * reachDistance, Color.red);
+        RaycastHit hitInfo;
+        
+        
+        
         if (LookObject != null)
         {
             Renderer selectionRenderer = LookObject.GetComponent<Renderer>();
@@ -37,7 +48,7 @@ public class PlayerLook : MonoBehaviour
             LookObject = null;
         }
 
-        RaycastHit hitInfo;
+        
         if (Physics.Raycast(ray, out hitInfo, reachDistance, interactLayers))
         {
             LookObject = hitInfo.collider.gameObject;
@@ -73,6 +84,27 @@ public class PlayerLook : MonoBehaviour
         if (Input.GetButtonUp("Interact") && playerInteract.currentlyPickedUpObject != null)
         {
             playerInteract.BreakConnection();
+        }
+
+        //  Crosshairs
+        if (Physics.Raycast(ray, out hitInfo, reachDistance, lockedLayers)) {
+            normalCrosshair.enabled = false;
+            selectedCrosshair.enabled = false;
+            unlockedCrosshair.enabled = false;
+            lockedCrosshair.enabled = true;
+        }
+        
+        else if (Physics.Raycast(ray, out hitInfo, reachDistance, unlockedLayers)) {
+            normalCrosshair.enabled = false;
+            selectedCrosshair.enabled = false;
+            unlockedCrosshair.enabled = true;
+            lockedCrosshair.enabled = false;
+        }
+
+        else {
+            normalCrosshair.enabled = true;
+            unlockedCrosshair.enabled = false;
+            lockedCrosshair.enabled = false;
         }
     }
 }

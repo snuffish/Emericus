@@ -291,7 +291,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9882bc2e69512ca41a7bc46eb6774bb5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mouseSens: {x: 100, y: 100}
+  mouseSens: {x: 20, y: 20}
   orientation: {fileID: 2796130269131383242}
 --- !u!114 &-4910320913504695981
 MonoBehaviour:
@@ -418,6 +418,7 @@ MonoBehaviour:
   groundDrag: 7
   airDragMulyiplier: 0.35
   groundCheckRayLength: 0
+  isGroundedCheckRadius: 0
   jumpableLayers:
     serializedVersion: 2
     m_Bits: 3456
@@ -483,7 +484,16 @@ MonoBehaviour:
   LookObject: {fileID: 0}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   selectionColor: {r: 0.9923782, g: 0.9198113, b: 1, a: 0}
+  lockedLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  unlockedLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  normalCrosshair: {fileID: 0}
   selectedCrosshair: {fileID: 0}
+  lockedCrosshair: {fileID: 0}
+  unlockedCrosshair: {fileID: 0}
 --- !u!1 &2796130269412132019
 GameObject:
   m_ObjectHideFlags: 0
