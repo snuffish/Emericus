@@ -38,7 +38,7 @@ public class FocusLantern : MonoBehaviour
             spotLight.intensity = minIntesity;
             targetIntesity = minIntesity;
             currentTime = 0;
-            isFocused = true;
+            StartCoroutine(DelayZoom());
         }
         
         else if (Input.GetButtonUp("FocusLantern")) {
@@ -65,12 +65,15 @@ public class FocusLantern : MonoBehaviour
             
             Debug.DrawRay(distanceCheck.origin, distanceCheck.direction * raycastDistance, Color.green);
 
-            distanceToHit -= 1f;
             targetIntesity = distanceToHit * maxIntesity / minIntesity;
             
             spotLight.intensity += (targetIntesity - spotLight.intensity) * Time.deltaTime * transitionSpeed / 2;
             Mathf.Clamp(spotLight.intensity, minIntesity, maxIntesity);
         }
+    }
 
+    IEnumerator DelayZoom() {
+        yield return new WaitForSeconds(0.1f);
+        isFocused = true;
     }
 }
