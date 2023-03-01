@@ -32,7 +32,7 @@ MonoBehaviour:
       Index: 0
       Type: 8
       Channel: baseColor
-    OutputTexture: {fileID: 2800000, guid: 15b5defe94e689c468f04e8a65a5bab1, type: 3}
+    OutputTexture: {fileID: 0}
     sRGB: 1
     IsVirtual: 0
     IsStandardOutput: 1
@@ -48,7 +48,7 @@ MonoBehaviour:
       Index: 1
       Type: 8
       Channel: normal
-    OutputTexture: {fileID: 2800000, guid: 0a79c64201c64914987adea08b106420, type: 3}
+    OutputTexture: {fileID: 0}
     sRGB: 0
     IsVirtual: 0
     IsStandardOutput: 1
@@ -96,7 +96,7 @@ MonoBehaviour:
       Index: 4
       Type: 8
       Channel: height
-    OutputTexture: {fileID: 2800000, guid: afbb2f22ac73eb9459d43c44a11cb9e0, type: 3}
+    OutputTexture: {fileID: 0}
     sRGB: 1
     IsVirtual: 0
     IsStandardOutput: 1
@@ -128,7 +128,7 @@ MonoBehaviour:
       Index: 6
       Type: 8
       Channel: mask
-    OutputTexture: {fileID: 2800000, guid: 2003206848905a0428ad59e76b5b7f63, type: 3}
+    OutputTexture: {fileID: 0}
     sRGB: 0
     IsVirtual: 1
     IsStandardOutput: 1
@@ -142,8 +142,8 @@ MonoBehaviour:
   Thumbnail: 
   HasThumbnail: 0
   CurrentStatePreset: " <sbspreset pkgurl=\"pkg://Carpet\" label=\"\" >\n  <presetinput
-    identifier=\"$outputsize\" uid=\"1887539027\" type=\"8\" value=\"10,10\" />\n 
-    <presetinput identifier=\"$randomseed\" uid=\"670275841\" type=\"4\" value=\"818\"
+    identifier=\"$outputsize\" uid=\"1887539027\" type=\"8\" value=\"11,11\" />\n 
+    <presetinput identifier=\"$randomseed\" uid=\"670275841\" type=\"4\" value=\"9722\"
     />\n </sbspreset>\n"
   IsRuntimeOnly: 0
   GenerateAllOutputs: 0
@@ -152,7 +152,7 @@ MonoBehaviour:
   DefaultPreset: " <sbspreset pkgurl=\"pkg://Carpet\" label=\"\" >\n  <presetinput
     identifier=\"$outputsize\" uid=\"1887539027\" type=\"8\" value=\"10,10\" />\n</sbspreset>\n"
   MaterialShader: HDRP/Lit
-  RenderTextures: 0
+  RenderTextures: 1
   OutputRemaped: 0
   references:
     version: 2
@@ -168,7 +168,7 @@ MonoBehaviour:
           GuiDescription: 
           Type: 5
           WidgetType: 0
-        Data: {x: 10, y: 10}
+        Data: {x: 11, y: 11}
         NumericalDescription:
           DefaultValue: {x: 8, y: 8}
           MinValue: {x: 0, y: 0}
@@ -187,7 +187,7 @@ MonoBehaviour:
           GuiDescription: 
           Type: 4
           WidgetType: 0
-        Data: 818
+        Data: 9722
         NumericalDescription:
           DefaultValue: 0
           MinValue: 0
