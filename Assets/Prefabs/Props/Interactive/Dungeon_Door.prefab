@@ -18,7 +18,8 @@ GameObject:
   - component: {fileID: 5141816253502818546}
   - component: {fileID: 5141816253502818547}
   - component: {fileID: 4516015370545960809}
-  m_Layer: 12
+  - component: {fileID: 6181627146286201548}
+  m_Layer: 14
   m_Name: DoorBody
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -88,9 +89,12 @@ MonoBehaviour:
   isDisabled: 0
   breakForce: 35
   playerInteract: {fileID: 0}
+  objectHealth: {fileID: 0}
   stackNormalThreshold: 0.5
   lockCooldown: 0.1
+  damageVelocity: 30
   canBePickedUp: 1
+  canTakeDamageFromForce: 0
   canBeRotated: 0
   alwaysLockOnRelease: 0
   keepRestraints: 1
@@ -278,6 +282,21 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1525552770667029509}
   m_Mesh: {fileID: 7507034139401401116, guid: 95eb13ae692c057429d307be8b029cba, type: 3}
+--- !u!114 &6181627146286201548
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1525552770667029509}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1251556126d84b74984c42c72411e602, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentHealth: 0
+  maxHealth: 0
+  hurtCooldownTime: 0
 --- !u!1 &7087177930008875606
 GameObject:
   m_ObjectHideFlags: 0
