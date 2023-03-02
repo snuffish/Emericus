@@ -5,6 +5,8 @@ using UnityEngine;
 public class Recievers : MonoBehaviour
 {
     [Header("Settings")]
+    [SerializeField] bool resetStateOnDeactivation = true;
+
     [SerializeField, Tooltip("Disable If you want activation to keep happening, Example: A door trying to stay open as long as the lever is pulled")]
     bool stateHasToBeDifferent = true;
 
@@ -95,6 +97,17 @@ public class Recievers : MonoBehaviour
                         else Debug.Log("Please pick how to interact with target on " + gameObject.name);
                     }
                 }
+                else if(resetStateOnDeactivation)
+                {
+                    if (requirementsWereMet || !stateHasToBeDifferent)
+                    {
+                        requirementsWereMet = false;
+                        if (invertAllTargets) foreach (Activators activator in targetActivators) activator.InvertState();
+                        else if (activateAllTargets) foreach (Activators activator in targetActivators) activator.Deactivate();
+                        else if (deactivateAllTargets) foreach (Activators activator in targetActivators) activator.Activate();
+                        else Debug.Log("Please pick how to interact with target on " + gameObject.name);
+                    }
+                }
             }
             else
             {
@@ -112,8 +125,12 @@ public class Recievers : MonoBehaviour
                 }
                 if (!output)
                 {
-                    if (invertAllTargets) foreach (Activators activator in targetActivators) activator.InvertState();
-                    else foreach (Activators activator in targetActivators) activator.Deactivate();
+                    if (resetStateOnDeactivation)
+                    {
+                        if (invertAllTargets) foreach (Activators activator in targetActivators) activator.InvertState();
+                        else if (activateAllTargets) foreach (Activators activator in targetActivators) activator.Deactivate();
+                        else if (deactivateAllTargets) foreach (Activators activator in targetActivators) activator.Activate();
+                    }
                 }
             }
 
