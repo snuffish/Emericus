@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5837973802204612200}
   - component: {fileID: -3686875313495587350}
-  - component: {fileID: 4625533816002954388}
+  - component: {fileID: 6327880986704145433}
   m_Layer: 0
   m_Name: Audio Trigger
   m_TagString: Untagged
@@ -46,7 +46,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &4625533816002954388
+--- !u!114 &6327880986704145433
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -55,11 +55,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 8030072693880248487}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1f76902dedb95104bbbd1cc40eb5fb63, type: 3}
+  m_Script: {fileID: 11500000, guid: 1449a149338933447b4aae1be0658e71, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  destroyTrigger: 0
-  gObject: {fileID: 0}
-  audioManager: {fileID: 0}
-  musicManager: {fileID: 0}
+  requiredTag: Player
+  destroyAfterUse: 0
   audioSettings: []
