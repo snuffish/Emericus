@@ -15,6 +15,7 @@ public class Observer : Activators
     {
         if (player != null)
         {
+            lookFromPoint.LookAt(player);
             bool hasSeenTarget = false;
             if (Vector3.Distance(player.position, lookFromPoint.position) < viewDistance)
             {
@@ -31,11 +32,6 @@ public class Observer : Activators
             }
             ChangeState(hasSeenTarget);
         }
-        //  Check for player, Raycast toward the camera with viewDistance
-        //  If the player is visible, activate? deactivate?
-        //  If the player isnt visible, the other
-
-        //  Future possibility, several view points. If the camera isnt seen, maybe the feet are?
-
+        else print("Assign player to observer");
     }
 }
