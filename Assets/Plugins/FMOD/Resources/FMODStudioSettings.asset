@@ -306,11 +306,13 @@ MonoBehaviour:
   MasterBanks:
   - Master
   Banks:
+  - Dialogue
   - Music
   BanksToLoad:
   - Master
   - Master.strings
   - Music
+  - Dialogue
   LiveUpdatePort: 9264
   EnableMemoryTracking: 0
   AndroidUseOBB: 0
@@ -423,7 +425,7 @@ MonoBehaviour:
       Value: 0
       HasValue: 0
     Overlay:
-      Value: 1
+      Value: 0
       HasValue: 1
     Logging:
       Value: 0

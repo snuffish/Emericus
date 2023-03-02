@@ -41,6 +41,7 @@ public class NewAManager : MonoBehaviour
 
     private void Awake()
     {
+        BankLoader();
         if (Instance != null && Instance != this)
         {
             Destroy(this);
@@ -50,6 +51,17 @@ public class NewAManager : MonoBehaviour
             Instance = this;
         }
         DontDestroyOnLoad(gameObject);
+    }
+    
+    [Header("BankRef")]
+    [BankRef] public string masterBank;
+
+    public bool loadSampleData;
+
+    private void BankLoader()
+    {
+        //Debug.Log("Has the bank loaded? " + RuntimeManager.HasBankLoaded(masterBank));
+        RuntimeManager.LoadBank(masterBank, loadSampleData);
     }
 
     public void PlayBGM(BackgroundMusicEvents bgmEvent)

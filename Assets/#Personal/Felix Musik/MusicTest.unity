@@ -5500,6 +5500,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e32c722d376fc8c4eb7e07ce80d82a4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  resetStateOnDeactivation: 1
   stateHasToBeDifferent: 1
   requireAllForActivation: 0
   activateAllTargets: 0
@@ -5532,6 +5533,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e32c722d376fc8c4eb7e07ce80d82a4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  resetStateOnDeactivation: 1
   stateHasToBeDifferent: 1
   requireAllForActivation: 0
   activateAllTargets: 1
@@ -7883,6 +7885,57 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 262257347}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &264084030
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 264084031}
+  - component: {fileID: 264084032}
+  m_Layer: 0
+  m_Name: TimelineCallback
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &264084031
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 264084030}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1966921710}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &264084032
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 264084030}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed5377e5c9b10d342a8e2ea56ccde985, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  EventName:
+    Guid:
+      Data1: -1127098846
+      Data2: 1093181697
+      Data3: 1340142982
+      Data4: 1879293402
+    Path: event:/Music/BGM/BGM_Memories 2
 --- !u!1001 &268373440
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -23390,6 +23443,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 724881731}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &724881736 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3362843699701492241, guid: 5796ddb0aaa5a5045b7e73e12868b965,
+    type: 3}
+  m_PrefabInstance: {fileID: 724881731}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &727789007
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -26668,6 +26727,8 @@ MonoBehaviour:
       Data3: 0
       Data4: 0
     Path: 
+  masterBank: Master
+  loadSampleData: 1
 --- !u!1001 &807048925
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -31996,6 +32057,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e32c722d376fc8c4eb7e07ce80d82a4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  resetStateOnDeactivation: 1
   stateHasToBeDifferent: 1
   requireAllForActivation: 1
   activateAllTargets: 1
@@ -36077,6 +36139,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e32c722d376fc8c4eb7e07ce80d82a4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  resetStateOnDeactivation: 1
   stateHasToBeDifferent: 1
   requireAllForActivation: 1
   activateAllTargets: 1
@@ -36413,12 +36476,29 @@ MonoBehaviour:
     type: 3}
   m_PrefabInstance: {fileID: 724881731}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 724881736}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!320 &1114782560
+PlayableDirector:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 724881736}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_PlayableAsset: {fileID: 11400000, guid: 9b202068bd47e2b4da125c8bd51bd227, type: 2}
+  m_InitialState: 1
+  m_WrapMode: 2
+  m_DirectorUpdateMode: 1
+  m_InitialTime: 0
+  m_SceneBindings: []
+  m_ExposedReferences:
+    m_References: []
 --- !u!4 &1117814295 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7098523712155768522, guid: bbb92c5b040b8da4c97a622bbca75f01,
@@ -60591,6 +60671,8 @@ Transform:
   - {fileID: 1879376826}
   - {fileID: 142566488}
   - {fileID: 804548504}
+  - {fileID: 1971009725}
+  - {fileID: 264084031}
   m_Father: {fileID: 0}
   m_RootOrder: 27
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -61148,6 +61230,57 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1970406905}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1971009724
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1971009725}
+  - component: {fileID: 1971009726}
+  m_Layer: 0
+  m_Name: VL
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1971009725
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1971009724}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1966921710}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1971009726
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1971009724}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e920d2d8634827c4daa61fcf07c99f4c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  EventName:
+    Guid:
+      Data1: 1517970434
+      Data2: 1325451269
+      Data3: -1324910940
+      Data4: -1128069472
+    Path: event:/Voicelines/Dialogue
 --- !u!1001 &1977267366
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -67118,10 +67251,16 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   isActive: 0
+  activateOnUpdate: 0
+  motorSpeed: 1
+  motorForce: 15
   activateAngle: 60
   deactivateAngle: -60
   activateThreshold: 3
   hinge: {fileID: 2592919286764648073}
+  physicsObject: {fileID: 0}
+  isActivating: 0
+  isDeactivating: 0
 --- !u!4 &2592919286764648076
 Transform:
   m_ObjectHideFlags: 0
