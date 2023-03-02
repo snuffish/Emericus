@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2320074858103167762}
-  - component: {fileID: 8591402441183388410}
+  - component: {fileID: 5856632514802204729}
   m_Layer: 0
   m_Name: MusicManager
   m_TagString: Untagged
@@ -35,7 +35,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &8591402441183388410
+--- !u!114 &5856632514802204729
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -44,15 +44,35 @@ MonoBehaviour:
   m_GameObject: {fileID: 3371525326891439898}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 092a378d8b59dd74982d5cf60f9a18d3, type: 3}
+  m_Script: {fileID: 11500000, guid: cf65e094c070b5f419b667524211db6c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  masterBank: Music
-  loadSampleData: 0
-  eventEmitters:
-    bgm1Music: {fileID: 5148859855584001716}
-    mainMenuMusic: {fileID: 7526781849591880843}
-    safeRoomMusic: {fileID: 8546298338733742763}
+  bgmReferences:
+  - Guid:
+      Data1: -1127098846
+      Data2: 1093181697
+      Data3: 1340142982
+      Data4: 1879293402
+    Path: event:/Music/BGM/BGM_Memories 2
+  - Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  - Guid:
+      Data1: -2110018337
+      Data2: 1285635732
+      Data3: -1494903168
+      Data4: -849452490
+    Path: event:/Music/BGM/Safe Haven
+  gameOverStinger:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!1 &4644520529098189228
 GameObject:
   m_ObjectHideFlags: 0

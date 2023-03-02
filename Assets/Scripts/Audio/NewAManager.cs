@@ -17,6 +17,7 @@ public enum MusicAction
 public enum BackgroundMusicEvents
 {
     None,
+    Menu,
     BGM1,
     BGM2,
     SafeRoom
@@ -26,8 +27,8 @@ public class NewAManager : MonoBehaviour
     public static NewAManager Instance;
 
     [Header("Background Music")] 
-    [SerializeField] private EventReference[] bgmReferences = new EventReference[3];
-    private EventInstance[] bgmInstances = new EventInstance[3];
+    [SerializeField] private EventReference[] bgmReferences = new EventReference[4];
+    private EventInstance[] bgmInstances = new EventInstance[4];
 
     [Header("GameOver")] 
     [SerializeField] private EventReference gameOverStinger;
@@ -48,7 +49,7 @@ public class NewAManager : MonoBehaviour
     public void PlayBGM(BackgroundMusicEvents bgmEvent)
     {
         int num = Convert.ToInt32(bgmEvent) - 1;                
-        //-1 för att det finns 4 val BGM enumen men bara 3 instancer
+        //-1 för att det finns 4 val i BGM enumen men bara 3 instancer
 
         if (num < 0)
         {
