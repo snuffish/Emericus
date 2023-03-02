@@ -11,6 +11,10 @@ public class VLProgrammer : MonoBehaviour
     private EVENT_CALLBACK dialogueCallback;
 
     public EventReference EventName;
+    
+    public string requiredTag = "Player";
+    public bool destroyAfterUse = true;
+    public string keyName;
 
 #if UNITY_EDITOR
     void Reset()
@@ -110,7 +114,22 @@ public class VLProgrammer : MonoBehaviour
         return FMOD.RESULT.OK;
     }
 
-    void Update()
+    void OnTriggerEnter(Collider other)
+    {
+        if(other.tag != requiredTag)
+            return;
+        
+        PlayDialogue(keyName);
+        
+        if (destroyAfterUse == true)
+            {
+                Destroy(gameObject);
+            }
+    }
+    
+    
+
+   /* void Update()
     {
         if (Input.GetKeyDown(KeyCode.Alpha1))
         {
@@ -121,5 +140,5 @@ public class VLProgrammer : MonoBehaviour
         {
             PlayDialogue("Dia_Painting");
         }
-    }
+    }*/
 }

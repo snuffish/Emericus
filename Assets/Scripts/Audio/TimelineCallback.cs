@@ -18,7 +18,7 @@ class TimelineInfo
     public FMODUnity.EventReference EventName;
 
     FMOD.Studio.EVENT_CALLBACK beatCallback;
-    FMOD.Studio.EventInstance musicInstance;
+    FMOD.Studio.EventInstance dialogueInstance;
 
 #if UNITY_EDITOR
     void Reset()
@@ -35,22 +35,22 @@ class TimelineInfo
         // by the garbage collected while it's being used
         beatCallback = new FMOD.Studio.EVENT_CALLBACK(BeatEventCallback);
 
-        musicInstance = FMODUnity.RuntimeManager.CreateInstance(EventName);
+        dialogueInstance = FMODUnity.RuntimeManager.CreateInstance(EventName);
 
         // Pin the class that will store the data modified during the callback
         timelineHandle = GCHandle.Alloc(timelineInfo);
         // Pass the object through the userdata of the instance
-        musicInstance.setUserData(GCHandle.ToIntPtr(timelineHandle));
+        dialogueInstance.setUserData(GCHandle.ToIntPtr(timelineHandle));
 
-        musicInstance.setCallback(beatCallback, FMOD.Studio.EVENT_CALLBACK_TYPE.TIMELINE_BEAT | FMOD.Studio.EVENT_CALLBACK_TYPE.TIMELINE_MARKER);
-        musicInstance.start();
+        dialogueInstance.setCallback(beatCallback, FMOD.Studio.EVENT_CALLBACK_TYPE.TIMELINE_BEAT | FMOD.Studio.EVENT_CALLBACK_TYPE.TIMELINE_MARKER);
+        dialogueInstance.start();
     }
 
     void OnDestroy()
     {
-        musicInstance.setUserData(IntPtr.Zero);
-        musicInstance.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
-        musicInstance.release();
+        dialogueInstance.setUserData(IntPtr.Zero);
+        dialogueInstance.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
+        dialogueInstance.release();
         timelineHandle.Free();
     }
 
