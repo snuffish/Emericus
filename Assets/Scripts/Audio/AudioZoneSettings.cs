@@ -14,7 +14,7 @@ public class AudioZoneSettings : MonoBehaviour
         public string paramName;
         public float paramValue;
         public bool ignoreSeek;
-        public bool paramIsGlobal;
+        public bool paramGlobal;
     }
 
     [Header("ZoneSettings")] 
@@ -45,7 +45,7 @@ public class AudioZoneSettings : MonoBehaviour
                     aM.StopBGM(a.bgmEvent, a.ignoreFadeOut);
                     break;
                 case MusicAction.SetParameter:
-                    aM.SetParameterBGM(a.bgmEvent, a.paramName, a.paramValue, a.ignoreSeek, a.paramIsGlobal);
+                    aM.SetParameterBGM(a.bgmEvent, a.paramName, a.paramValue, a.ignoreSeek, a.paramGlobal);
                     break;
                 default: Debug.Log("Error. No valid action.");
                     break;

@@ -18,7 +18,7 @@ public class AudioTriggerSettings : MonoBehaviour
         public string paramName;
         public float paramValue;
         public bool ignoreSeek;
-        public bool paramIsGlobal;
+        public bool paramGlobal;
     }
 
     [Header("TriggerSettings")] 
@@ -50,7 +50,8 @@ public class AudioTriggerSettings : MonoBehaviour
                     aM.StopBGM(a.bgmEvent, a.ignoreFadeOut);
                     break;
                 case MusicAction.SetParameter:
-                    aM.SetParameterBGM(a.bgmEvent, a.paramName, a.paramValue, a.ignoreSeek, a.paramIsGlobal);
+                    aM.SetParameterBGM(a.bgmEvent, a.paramName, a.paramValue, a.ignoreSeek, a.paramGlobal);
+                    Debug.Log("Setting parameter");
                     break;
                 default: Debug.Log("Error. No valid action.");
                     break;
