@@ -123,7 +123,7 @@ public class VLManager : MonoBehaviour
         return FMOD.RESULT.OK;
     }
     
-    //VLPRogrammer
+    //VLProgrammer
         public void PlayDialogue(VoiceEvent vEvent, string key)
     {
         var dialogueInstance = RuntimeManager.CreateInstance(EventName);
