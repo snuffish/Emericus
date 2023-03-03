@@ -5,6 +5,7 @@ using UnityEngine;
 using System.Runtime.InteropServices;
 using FMOD.Studio;
 using FMODUnity;
+using TMPro;
 
 public enum VoiceAction
 {
@@ -19,6 +20,13 @@ public enum VoiceEvent
 
 public class VLManager : MonoBehaviour
 {
+    [SerializeField] private List<string> voiceLineMarkers;
+    [SerializeField] private List<string> voiceLines;
+    private static Dictionary<string, string> voiceLineDictionary;
+    [SerializeField] private TMP_Text subtitleField;
+    static private string subtitleText;
+
+
    //VLProgrammer
     private EVENT_CALLBACK dialogueCallback;
 
@@ -27,9 +35,9 @@ public class VLManager : MonoBehaviour
     public string requiredTag = "Player";
     //public bool destroyAfterUse = true;
     //public string keyName;
-    private static int subtitleCount = 0;
-    
+
     //TimelineCallback
+    
     class TimelineInfo
     {
         public int CurrentMusicBar = 0;
@@ -71,6 +79,15 @@ public class VLManager : MonoBehaviour
 
         dialogueInstance.setCallback(beatCallback, FMOD.Studio.EVENT_CALLBACK_TYPE.TIMELINE_BEAT | FMOD.Studio.EVENT_CALLBACK_TYPE.TIMELINE_MARKER);
         //dialogueInstance.start();
+        
+        voiceLineDictionary = new Dictionary<string, string>();
+        for (int i = 0; i < voiceLineMarkers.Count; i++) {
+            voiceLineDictionary.Add(voiceLineMarkers[i], voiceLines[i]);
+        }
+    }
+
+    void Update() {
+        subtitleField.text = subtitleText;
     }
     
     //TimelineCallback
@@ -117,8 +134,7 @@ public class VLManager : MonoBehaviour
                     {
                         var parameter = (FMOD.Studio.TIMELINE_MARKER_PROPERTIES)Marshal.PtrToStructure(parameterPtr, typeof(FMOD.Studio.TIMELINE_MARKER_PROPERTIES));
                         timelineInfo.LastMarker = parameter.name;
-                        Debug.Log($"start voiceline {subtitleCount}");
-                        subtitleCount++;
+                        subtitleText = voiceLineDictionary[(string) timelineInfo.LastMarker];
                     }
                     break;
             }
