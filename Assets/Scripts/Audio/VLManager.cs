@@ -10,7 +10,8 @@ using TMPro;
 public enum VoiceAction
 {
     None,
-    PlayDialogue
+    PlayDialogue,
+    SetParameter
 }
 
 public enum VoiceEvent
@@ -27,12 +28,16 @@ public class VLManager : MonoBehaviour
     static private string subtitleText;
 
 
+    [Header("Dialogue")] 
+    [SerializeField] private EventReference[] bgmReferences = new EventReference[1];
+    private EventInstance[] bgmInstances = new EventInstance[1];
+    
    //VLProgrammer
     private EVENT_CALLBACK dialogueCallback;
 
     public EventReference EventName;
     
-    public string requiredTag = "Player";
+    //public string requiredTag = "Player";
     //public bool destroyAfterUse = true;
     //public string keyName;
 
@@ -141,6 +146,25 @@ public class VLManager : MonoBehaviour
         }
         return FMOD.RESULT.OK;
     }
+
+    public void SetParameterVL(VoiceEvent vEvent, string paramName, float paramValue, bool ignoreSeek, bool globalParam)
+    {
+        if (globalParam)
+        {
+            RuntimeManager.StudioSystem.setParameterByName(paramName, paramValue, ignoreSeek);
+            return;
+        }
+        
+        int num = Convert.ToInt32(vEvent) - 1;
+
+        if (num < 0)
+        {
+            Debug.Log("INVALID EVENT CHOSEN!");
+            return;
+        }
+
+        bgmInstances[num].setParameterByName(paramName, paramValue, ignoreSeek);
+    }
     
     //VLProgrammer
         public void PlayDialogue(VoiceEvent vEvent, string key)
@@ -154,6 +178,7 @@ public class VLManager : MonoBehaviour
         dialogueInstance.start();
         dialogueInstance.release();
     }
+        
 
     [AOT.MonoPInvokeCallback(typeof(EVENT_CALLBACK))]
     static FMOD.RESULT DialogueEventCallback(EVENT_CALLBACK_TYPE type, IntPtr instancePtr, IntPtr parameterPtr)
