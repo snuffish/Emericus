@@ -121,6 +121,7 @@ public class Recievers : MonoBehaviour
                         else if (activateAllTargets) foreach (Activators activator in targetActivators) activator.Activate();
                         else if (deactivateAllTargets) foreach (Activators activator in targetActivators) activator.Deactivate();
                         else Debug.Log("Please pick how to interact with target on " + gameObject.name);
+                        break;
                     }
                 }
                 if (!output)
@@ -130,6 +131,7 @@ public class Recievers : MonoBehaviour
                         if (invertAllTargets) foreach (Activators activator in targetActivators) activator.InvertState();
                         else if (activateAllTargets) foreach (Activators activator in targetActivators) activator.Deactivate();
                         else if (deactivateAllTargets) foreach (Activators activator in targetActivators) activator.Activate();
+                        
                     }
                 }
             }

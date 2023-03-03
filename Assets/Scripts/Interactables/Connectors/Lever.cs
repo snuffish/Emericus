@@ -57,10 +57,12 @@ public class Lever : Activators
             {
                 if (Mathf.Abs(hinge.angle - deactivateAngle) < activateThreshold)
                 {
+                    if (isDeactivating) isDeactivating = false;
                     Deactivate();
                 }
                 if (Mathf.Abs(hinge.angle - activateAngle) < activateThreshold)
                 {
+                    if (isActivating) isActivating = false;
                     Activate();
                 }
             }
@@ -70,6 +72,7 @@ public class Lever : Activators
                 {
                     if (Mathf.Abs(hinge.angle - deactivateAngle) < activateThreshold)
                     {
+                        if (isDeactivating) isDeactivating = false;
                         Deactivate();
                     }
                 }
@@ -77,6 +80,7 @@ public class Lever : Activators
                 {
                     if (Mathf.Abs(hinge.angle - activateAngle) < activateThreshold)
                     {
+                        if (isActivating) isActivating = false;
                         Activate();
                     }
                 }
