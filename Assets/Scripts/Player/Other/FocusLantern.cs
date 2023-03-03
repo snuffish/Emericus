@@ -73,7 +73,7 @@ public class FocusLantern : MonoBehaviour
     }
 
     IEnumerator DelayZoom() {
-        yield return new WaitForSeconds(0.1f);
+        yield return new WaitForSeconds(0.01f);
         isFocused = true;
     }
 }
