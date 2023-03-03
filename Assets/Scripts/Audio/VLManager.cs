@@ -27,6 +27,7 @@ public class VLManager : MonoBehaviour
     public string requiredTag = "Player";
     //public bool destroyAfterUse = true;
     //public string keyName;
+    private static int subtitleCount = 0;
     
     //TimelineCallback
     class TimelineInfo
@@ -116,6 +117,8 @@ public class VLManager : MonoBehaviour
                     {
                         var parameter = (FMOD.Studio.TIMELINE_MARKER_PROPERTIES)Marshal.PtrToStructure(parameterPtr, typeof(FMOD.Studio.TIMELINE_MARKER_PROPERTIES));
                         timelineInfo.LastMarker = parameter.name;
+                        Debug.Log($"start voiceline {subtitleCount}");
+                        subtitleCount++;
                     }
                     break;
             }
