@@ -29,8 +29,8 @@ public class VLManager : MonoBehaviour
 
 
     [Header("Dialogue")] 
-    [SerializeField] private EventReference[] bgmReferences = new EventReference[1];
-    private EventInstance[] bgmInstances = new EventInstance[1];
+    /*[SerializeField] private EventReference[] vLReferences = new EventReference[1];
+    private EventInstance[] bgmInstances = new EventInstance[1];*/
     
    //VLProgrammer
     private EVENT_CALLBACK dialogueCallback;
@@ -163,7 +163,7 @@ public class VLManager : MonoBehaviour
             return;
         }
 
-        bgmInstances[num].setParameterByName(paramName, paramValue, ignoreSeek);
+        //bgmInstances[num].setParameterByName(paramName, paramValue, ignoreSeek);
     }
     
     //VLProgrammer

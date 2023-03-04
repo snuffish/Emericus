@@ -11,6 +11,9 @@ public class AudioZoneSettings : MonoBehaviour
         public MusicAction action;
         public BackgroundMusicEvents bgmEvent;
         public bool ignoreFadeOut;
+        public VoiceAction vAction;
+        public VoiceEvent vEvent;
+        public string keyName;
         public string paramName;
         public float paramValue;
         public bool ignoreSeek;
@@ -21,10 +24,12 @@ public class AudioZoneSettings : MonoBehaviour
     [NonReorderable] public AudioSettings[] audioSettings;
 
     private NewAManager aM;
+    private VLManager vM;
 
     void Start()
     {
         aM = GameObject.Find("NewAManager").GetComponent<NewAManager>();
+        vM = GameObject.Find("VLManager").GetComponent<VLManager>();
         RunSettings();
     }
 
@@ -48,6 +53,14 @@ public class AudioZoneSettings : MonoBehaviour
                     aM.SetParameterBGM(a.bgmEvent, a.paramName, a.paramValue, a.ignoreSeek, a.paramGlobal);
                     break;
                 default: Debug.Log("Error. No valid action.");
+                    break;
+            }
+
+            switch (a.vAction)
+            {
+                case VoiceAction.PlayDialogue:
+                    vM.PlayDialogue(a.vEvent, a.keyName);
+                    vM.dialogueInstance.start();
                     break;
             }
         }

@@ -12872,6 +12872,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1971009725}
+  - {fileID: 1252385064}
   m_Father: {fileID: 1966921710}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -41751,6 +41752,12 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 0}
+--- !u!4 &1252385064 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 200772846910621634, guid: f3d667b9f69e39348b580b36b3e7e5fe,
+    type: 3}
+  m_PrefabInstance: {fileID: 1980509893}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1252963068
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -59415,13 +59422,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioSettings:
-  - action: 0
+  - action: 1
     bgmEvent: 2
     ignoreFadeOut: 0
-    paramName: 
+    vAction: 1
+    vEvent: 0
+    keyName: Dia_01_Intro1
+    paramName: VoiceLines
     paramValue: 0
     ignoreSeek: 0
-    paramGlobal: 0
+    paramGlobal: 1
 --- !u!1001 &1883805467
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -61387,6 +61397,140 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 2109810061}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1980509893
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 405090912}
+    m_Modifications:
+    - target: {fileID: 200772846910621631, guid: f3d667b9f69e39348b580b36b3e7e5fe,
+        type: 3}
+      propertyPath: voiceSettings.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 200772846910621631, guid: f3d667b9f69e39348b580b36b3e7e5fe,
+        type: 3}
+      propertyPath: voiceSettings.Array.data[0].keyName
+      value: Dia_03_Exposition
+      objectReference: {fileID: 0}
+    - target: {fileID: 200772846910621631, guid: f3d667b9f69e39348b580b36b3e7e5fe,
+        type: 3}
+      propertyPath: voiceSettings.Array.data[0].vAction
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 200772846910621631, guid: f3d667b9f69e39348b580b36b3e7e5fe,
+        type: 3}
+      propertyPath: voiceSettings.Array.data[1].keyName
+      value: Dia_03_Exposition
+      objectReference: {fileID: 0}
+    - target: {fileID: 200772846910621631, guid: f3d667b9f69e39348b580b36b3e7e5fe,
+        type: 3}
+      propertyPath: voiceSettings.Array.data[1].vAction
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 200772846910621631, guid: f3d667b9f69e39348b580b36b3e7e5fe,
+        type: 3}
+      propertyPath: voiceSettings.Array.data[0].paramName
+      value: VoiceLines
+      objectReference: {fileID: 0}
+    - target: {fileID: 200772846910621631, guid: f3d667b9f69e39348b580b36b3e7e5fe,
+        type: 3}
+      propertyPath: voiceSettings.Array.data[1].paramName
+      value: VoiceLines
+      objectReference: {fileID: 0}
+    - target: {fileID: 200772846910621631, guid: f3d667b9f69e39348b580b36b3e7e5fe,
+        type: 3}
+      propertyPath: voiceSettings.Array.data[0].paramValue
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 200772846910621631, guid: f3d667b9f69e39348b580b36b3e7e5fe,
+        type: 3}
+      propertyPath: voiceSettings.Array.data[1].paramValue
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 200772846910621631, guid: f3d667b9f69e39348b580b36b3e7e5fe,
+        type: 3}
+      propertyPath: voiceSettings.Array.data[0].paramGlobal
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 200772846910621631, guid: f3d667b9f69e39348b580b36b3e7e5fe,
+        type: 3}
+      propertyPath: voiceSettings.Array.data[1].paramGlobal
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 200772846910621634, guid: f3d667b9f69e39348b580b36b3e7e5fe,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 200772846910621634, guid: f3d667b9f69e39348b580b36b3e7e5fe,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.1676912
+      objectReference: {fileID: 0}
+    - target: {fileID: 200772846910621634, guid: f3d667b9f69e39348b580b36b3e7e5fe,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 4.4198
+      objectReference: {fileID: 0}
+    - target: {fileID: 200772846910621634, guid: f3d667b9f69e39348b580b36b3e7e5fe,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 40.24
+      objectReference: {fileID: 0}
+    - target: {fileID: 200772846910621634, guid: f3d667b9f69e39348b580b36b3e7e5fe,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 122.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 200772846910621634, guid: f3d667b9f69e39348b580b36b3e7e5fe,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 37.13
+      objectReference: {fileID: 0}
+    - target: {fileID: 200772846910621634, guid: f3d667b9f69e39348b580b36b3e7e5fe,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.70710784
+      objectReference: {fileID: 0}
+    - target: {fileID: 200772846910621634, guid: f3d667b9f69e39348b580b36b3e7e5fe,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 200772846910621634, guid: f3d667b9f69e39348b580b36b3e7e5fe,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.70710576
+      objectReference: {fileID: 0}
+    - target: {fileID: 200772846910621634, guid: f3d667b9f69e39348b580b36b3e7e5fe,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 200772846910621634, guid: f3d667b9f69e39348b580b36b3e7e5fe,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 200772846910621634, guid: f3d667b9f69e39348b580b36b3e7e5fe,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 200772846910621634, guid: f3d667b9f69e39348b580b36b3e7e5fe,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 200772846910621635, guid: f3d667b9f69e39348b580b36b3e7e5fe,
+        type: 3}
+      propertyPath: m_Name
+      value: Exposition
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: f3d667b9f69e39348b580b36b3e7e5fe, type: 3}
 --- !u!1001 &1983369697
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -66866,6 +67010,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 405090912}
     m_Modifications:
+    - target: {fileID: 200772846910621631, guid: f3d667b9f69e39348b580b36b3e7e5fe,
+        type: 3}
+      propertyPath: voiceSettings.Array.data[0].keyName
+      value: Dia_01_Intro1
+      objectReference: {fileID: 0}
+    - target: {fileID: 200772846910621631, guid: f3d667b9f69e39348b580b36b3e7e5fe,
+        type: 3}
+      propertyPath: voiceSettings.Array.data[0].paramName
+      value: VoiceLines
+      objectReference: {fileID: 0}
+    - target: {fileID: 200772846910621631, guid: f3d667b9f69e39348b580b36b3e7e5fe,
+        type: 3}
+      propertyPath: voiceSettings.Array.data[0].paramValue
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 200772846910621634, guid: f3d667b9f69e39348b580b36b3e7e5fe,
         type: 3}
       propertyPath: m_RootOrder
@@ -66935,6 +67094,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Tidbit1
+      objectReference: {fileID: 0}
+    - target: {fileID: 200772846910621635, guid: f3d667b9f69e39348b580b36b3e7e5fe,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f3d667b9f69e39348b580b36b3e7e5fe, type: 3}
@@ -67787,27 +67951,27 @@ PrefabInstance:
     - target: {fileID: 3282148356403672295, guid: 0985c065836821b4bae81eb5db0f69c2,
         type: 3}
       propertyPath: voiceLines.Array.size
-      value: 3
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 3282148356403672295, guid: 0985c065836821b4bae81eb5db0f69c2,
         type: 3}
       propertyPath: voiceLines.Array.data[0]
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 3282148356403672295, guid: 0985c065836821b4bae81eb5db0f69c2,
-        type: 3}
-      propertyPath: voiceLines.Array.data[1]
       value: Well hello there
       objectReference: {fileID: 0}
     - target: {fileID: 3282148356403672295, guid: 0985c065836821b4bae81eb5db0f69c2,
         type: 3}
-      propertyPath: voiceLines.Array.data[2]
+      propertyPath: voiceLines.Array.data[1]
       value: Wazzah!
       objectReference: {fileID: 0}
     - target: {fileID: 3282148356403672295, guid: 0985c065836821b4bae81eb5db0f69c2,
         type: 3}
-      propertyPath: voiceLines.Array.data[3]
+      propertyPath: voiceLines.Array.data[2]
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 3282148356403672295, guid: 0985c065836821b4bae81eb5db0f69c2,
+        type: 3}
+      propertyPath: voiceLines.Array.data[3]
+      value: Good morning!
       objectReference: {fileID: 0}
     - target: {fileID: 3282148356403672295, guid: 0985c065836821b4bae81eb5db0f69c2,
         type: 3}
@@ -67847,32 +68011,32 @@ PrefabInstance:
     - target: {fileID: 3282148356403672295, guid: 0985c065836821b4bae81eb5db0f69c2,
         type: 3}
       propertyPath: voiceLineMarkers.Array.size
-      value: 3
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 3282148356403672295, guid: 0985c065836821b4bae81eb5db0f69c2,
         type: 3}
       propertyPath: voiceLineMarkers.Array.data[0]
-      value: EndOfLine
-      objectReference: {fileID: 0}
-    - target: {fileID: 3282148356403672295, guid: 0985c065836821b4bae81eb5db0f69c2,
-        type: 3}
-      propertyPath: voiceLineMarkers.Array.data[1]
       value: TidBit_0
       objectReference: {fileID: 0}
     - target: {fileID: 3282148356403672295, guid: 0985c065836821b4bae81eb5db0f69c2,
         type: 3}
-      propertyPath: voiceLineMarkers.Array.data[2]
+      propertyPath: voiceLineMarkers.Array.data[1]
       value: TidBit_1
       objectReference: {fileID: 0}
     - target: {fileID: 3282148356403672295, guid: 0985c065836821b4bae81eb5db0f69c2,
         type: 3}
+      propertyPath: voiceLineMarkers.Array.data[2]
+      value: EndOfLine_0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3282148356403672295, guid: 0985c065836821b4bae81eb5db0f69c2,
+        type: 3}
       propertyPath: voiceLineMarkers.Array.data[3]
-      value: d
+      value: Exposition_0
       objectReference: {fileID: 0}
     - target: {fileID: 3282148356403672295, guid: 0985c065836821b4bae81eb5db0f69c2,
         type: 3}
       propertyPath: voiceLineMarkers.Array.data[4]
-      value: f
+      value: EndOfLine_1
       objectReference: {fileID: 0}
     - target: {fileID: 3282148356403672295, guid: 0985c065836821b4bae81eb5db0f69c2,
         type: 3}

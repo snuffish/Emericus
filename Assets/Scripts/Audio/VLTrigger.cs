@@ -42,7 +42,7 @@ public class VLTrigger : MonoBehaviour
             {
                case VoiceAction.PlayDialogue:
                    vM.PlayDialogue(v.vEvent, v.keyName);
-                   vM.dialogueInstance.start();
+                   //vM.dialogueInstance.start();
                    break;
                case VoiceAction.SetParameter:
                    vM.SetParameterVL(v.vEvent, v.paramName, v.paramValue, v.ignoreSeek, v.paramGlobal);
