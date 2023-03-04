@@ -35,6 +35,14 @@ public class VLManager : MonoBehaviour
    //VLProgrammer
     private EVENT_CALLBACK dialogueCallback;
 
+    //EmitterTest
+    /*public VLEmitter vEmitter;
+        
+    public struct VLEmitter
+    {
+        public StudioEventEmitter dialogue1;
+    }*/
+
     public EventReference EventName;
     
     //public string requiredTag = "Player";
@@ -50,7 +58,7 @@ public class VLManager : MonoBehaviour
     }
 
     TimelineInfo timelineInfo;
-    GCHandle timelineHandle;
+    public GCHandle timelineHandle;
 
     EVENT_CALLBACK beatCallback;
     public EventInstance dialogueInstance;
@@ -96,14 +104,15 @@ public class VLManager : MonoBehaviour
     }
     
     //TimelineCallback
-       void OnDestroy()
+    /*
+    void OnDestroy()
     {
         dialogueInstance.setUserData(IntPtr.Zero);
         dialogueInstance.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
         dialogueInstance.release();
         timelineHandle.Free();
     }
-
+*/
     void OnGUI()
     {
         GUILayout.Box(String.Format("Current Bar = {0}, Last Marker = {1}", timelineInfo.CurrentMusicBar, (string)timelineInfo.LastMarker));

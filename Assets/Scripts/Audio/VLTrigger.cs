@@ -1,7 +1,11 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System.Runtime.InteropServices;
+using FMOD.Studio;
 using FMODUnity;
+using TMPro;
 
 public class VLTrigger : MonoBehaviour
 {
@@ -14,6 +18,8 @@ public class VLTrigger : MonoBehaviour
     {
         public VoiceAction vAction;
         public VoiceEvent vEvent;
+        //EmitterTest
+        //public StudioEventEmitter vEmitter;
         public string keyName;
         public string paramName;
         public float paramValue;
@@ -23,7 +29,7 @@ public class VLTrigger : MonoBehaviour
 
     [Header("TriggerSettings")] 
     [NonReorderable] public VoiceSettings[] voiceSettings;
-    
+
     private VLManager vM;
 
     void Start()
@@ -42,7 +48,7 @@ public class VLTrigger : MonoBehaviour
             {
                case VoiceAction.PlayDialogue:
                    vM.PlayDialogue(v.vEvent, v.keyName);
-                   //vM.dialogueInstance.start();
+                   vM.dialogueInstance.start();
                    break;
                case VoiceAction.SetParameter:
                    vM.SetParameterVL(v.vEvent, v.paramName, v.paramValue, v.ignoreSeek, v.paramGlobal);
@@ -59,5 +65,12 @@ public class VLTrigger : MonoBehaviour
         }
     }
     
+   /* void OnDestroy()
+    {
+        vM.dialogueInstance.setUserData(IntPtr.Zero);
+        vM.dialogueInstance.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
+        vM.dialogueInstance.release();
+        vM.timelineHandle.Free();
+    }*/
 
 }
