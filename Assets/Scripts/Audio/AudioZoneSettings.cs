@@ -56,13 +56,13 @@ public class AudioZoneSettings : MonoBehaviour
                     break;
             }
 
-            /*switch (a.vAction)
+            switch (a.vAction)
             {
                 case VoiceAction.PlayDialogue:
                     vM.PlayDialogue(a.vEvent, a.keyName);
                     vM.dialogueInstance.start();
                     break;
-            }*/
+            }
         }
         
     }

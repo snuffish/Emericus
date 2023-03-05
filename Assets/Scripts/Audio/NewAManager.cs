@@ -20,7 +20,8 @@ public enum BackgroundMusicEvents
     Menu,
     BGM1,
     BGM2,
-    SafeRoom
+    SafeRoom,
+    Dialogue
 }
 
 public enum DialogoueEvents
@@ -33,8 +34,8 @@ public class NewAManager : MonoBehaviour
     public static NewAManager Instance;
 
     [Header("Background Music")] 
-    [SerializeField] private EventReference[] bgmReferences = new EventReference[4];
-    private EventInstance[] bgmInstances = new EventInstance[4];
+    [SerializeField] private EventReference[] bgmReferences = new EventReference[5];
+    private EventInstance[] bgmInstances = new EventInstance[5];
 
     [Header("GameOver")] 
     [SerializeField] private EventReference gameOverStinger;
