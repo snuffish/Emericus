@@ -21,10 +21,10 @@ public class VLTrigger : MonoBehaviour
         //EmitterTest
         //public StudioEventEmitter vEmitter;
         public string keyName;
-        /*public string paramName;
+        public string paramName;
         public float paramValue;
         public bool ignoreSeek;
-        public bool paramGlobal;*/
+        public bool paramGlobal;
     }
 
     [Header("TriggerSettings")] 
@@ -50,9 +50,9 @@ public class VLTrigger : MonoBehaviour
                    vM.PlayDialogue(v.vEvent, v.keyName);
                    vM.dialogueInstance.start();
                    break;
-               /*case VoiceAction.SetParameter:
+               case VoiceAction.SetParameter:
                    vM.SetParameterVL(v.vEvent, v.paramName, v.paramValue, v.ignoreSeek, v.paramGlobal);
-                   break;*/
+                   break;
                default:Debug.Log("Error! No valid action.");
                    break;
             }
