@@ -24,7 +24,12 @@ public class FocusLantern : MonoBehaviour
     [SerializeField] private Camera Cam;
 
     void Start() {
-        spotLight.spotAngle = maxAngle;
+        targetAngle = maxAngle;
+        startAngle = spotLight.spotAngle;
+        spotLight.intensity = minIntesity - 10;
+        targetIntesity = minIntesity - 10;
+        currentTime = 0;
+        isFocused = false;
     }
     
     // Update is called once per frame
@@ -73,7 +78,7 @@ public class FocusLantern : MonoBehaviour
     }
 
     IEnumerator DelayZoom() {
-        yield return new WaitForSeconds(0.01f);
+        yield return new WaitForSeconds(0.005f);
         isFocused = true;
     }
 }
