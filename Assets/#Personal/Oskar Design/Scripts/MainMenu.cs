@@ -14,7 +14,7 @@ public class MainMenu : MonoBehaviour
     
     public void PlayGame()
     {
-        SceneManager.LoadScene(1); //load whatever scene you want to go to. Either Name or Index
+        UnityEngine.SceneManagement.SceneManager.LoadScene(1); //load whatever scene you want to go to. Either Name or Index
         //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1); //or next scene in list
         FMODUnity.RuntimeManager.StudioSystem.setParameterByName(paramRef, paramValue, ignoreSeek);
     }
