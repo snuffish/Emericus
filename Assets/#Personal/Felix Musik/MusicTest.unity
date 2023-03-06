@@ -39,7 +39,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
+  m_IndirectSpecularColor: {r: 0.1417908, g: 0.104044855, b: 0.066817224, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -61395,10 +61395,6 @@ MonoBehaviour:
   - vAction: 1
     vEvent: 0
     keyName: Dia_01_Intro1
-    paramName: 
-    paramValue: 0
-    ignoreSeek: 0
-    paramGlobal: 0
 --- !u!1001 &1977267366
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -68159,7 +68155,7 @@ PrefabInstance:
     - target: {fileID: 3282148356403672295, guid: 0985c065836821b4bae81eb5db0f69c2,
         type: 3}
       propertyPath: voiceLineMarkers.Array.data[0]
-      value: Intro_0
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 3282148356403672295, guid: 0985c065836821b4bae81eb5db0f69c2,
         type: 3}
