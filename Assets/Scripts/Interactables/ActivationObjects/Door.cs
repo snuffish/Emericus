@@ -5,21 +5,30 @@ using FMODUnity;
 
 [RequireComponent(typeof(HingeJoint))]
 [RequireComponent(typeof(PhysicsLocker))]
+[RequireComponent(typeof(Rigidbody))]
+[RequireComponent(typeof(StudioEventEmitter))]
+[RequireComponent(typeof(StudioEventEmitter))]
 public class Door : Activators
 {
     [Header("Settings")]
     [SerializeField] float motorSpeed = 1f;
     [SerializeField] float motorForce = 15f;
+    [SerializeField] float creakMinVelocity = 1f;
 
 
     [Header("Components")]
     [SerializeField] HingeJoint hinge;
     [SerializeField] PhysicsObject physicsObject;
     [SerializeField] Animator animator;
+    [SerializeField] Rigidbody rigidbody;
     [SerializeField] EventReference DOOR_Open;
     [SerializeField] EventReference DOOR_Close;
     [SerializeField] EventReference DOOR_Open_Puzzle;
+    [SerializeField] EventReference DoorCreak;
+    [SerializeField] StudioEventEmitter creakEmitter;
+    [SerializeField] StudioEventEmitter closeEmitter;
 
+    bool hasClosed = false;
     [Header("Debug")]
     [SerializeField] bool isOpening;
     [SerializeField] bool isClosing;
@@ -28,10 +37,39 @@ public class Door : Activators
     {
         if (hinge == null) hinge = GetComponent<HingeJoint>();
         if (physicsObject == null) physicsObject = GetComponent<PhysicsObject>();
+        if (rigidbody == null) rigidbody = GetComponent<Rigidbody>();
+        if (creakEmitter == null) creakEmitter = GetComponent<StudioEventEmitter>();
+        //if (closeEmitter == null) closeEmitter = GetComponent<StudioEventEmitter>();
         isOpening = false;
         isClosing = false;
     }
+    void Update()
+    {
+        if (rigidbody.velocity.magnitude > creakMinVelocity)
+        {
+            if (!creakEmitter.IsPlaying())
+            {
+                closeEmitter.Stop();
+                hasClosed = false;
+                creakEmitter.EventReference = DoorCreak;
+                creakEmitter.Play();
+            }
+        }
+        else if (physicsObject.IsLocked && hasClosed == false)
+        {
+            creakEmitter.Stop();
+            closeEmitter.Stop();
+            hasClosed = true;
+            closeEmitter.EventReference = DOOR_Close;
+            closeEmitter.Play();
 
+        }
+        else
+        {
+            creakEmitter.Stop();
+        }
+
+    }
     public override void Interact()
     {
         if (!isDisabled)
@@ -48,7 +86,7 @@ public class Door : Activators
             {
                 StartCoroutine(OpenDoor());
                 //animator.SetBool("IsOpen", true);
-                if(!DOOR_Open_Puzzle.IsNull) AudioManager.Instance.PlayOneShot(DOOR_Open_Puzzle, gameObject);
+                if (!DOOR_Open_Puzzle.IsNull) AudioManager.Instance.PlayOneShot(DOOR_Open_Puzzle, gameObject);
             }
         }
         else
