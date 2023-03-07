@@ -11,7 +11,7 @@ public enum VoiceAction
 {
     None,
     PlayDialogue,
-    //SetParameter
+    SetParameter
 }
 
 public enum VoiceEvent
@@ -158,7 +158,7 @@ public class VLManager : MonoBehaviour
         return FMOD.RESULT.OK;
     }
 
-    /*public void SetParameterVL(VoiceEvent vEvent, string paramName, float paramValue, bool ignoreSeek, bool globalParam)
+    public void SetParameterVL(VoiceEvent vEvent, string paramName, float paramValue, bool ignoreSeek, bool globalParam)
     {
         if (globalParam)
         {
@@ -175,7 +175,7 @@ public class VLManager : MonoBehaviour
         }
 
         //bgmInstances[num].setParameterByName(paramName, paramValue, ignoreSeek);
-    }*/
+    }
     
     //VLProgrammer
         public void PlayDialogue(VoiceEvent vEvent, string key)
