@@ -30,12 +30,5 @@ public class MainMenu : MonoBehaviour
         Application.Quit();
     }
 
-    public GameObject BackButton;
-    void start()
-    {
-        BackButton.SetActive(false);
-
-    }
-
 
 }
