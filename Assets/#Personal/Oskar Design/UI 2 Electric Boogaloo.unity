@@ -39,7 +39,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.1417908, g: 0.104044855, b: 0.066817224, a: 1}
+  m_IndirectSpecularColor: {r: 0.14179224, g: 0.104044616, b: 0.066816986, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -11400,6 +11400,11 @@ PrefabInstance:
         type: 3}
       propertyPath: audioSettings.Array.data[0].paramName
       value: MusicProg
+      objectReference: {fileID: 0}
+    - target: {fileID: 4648841835067181279, guid: 9e209d725f861764e811c8ddb947c009,
+        type: 3}
+      propertyPath: audioSettings.Array.data[0].bgmEvent
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8778593177235041897, guid: 9e209d725f861764e811c8ddb947c009,
         type: 3}
@@ -24125,6 +24130,36 @@ PrefabInstance:
       propertyPath: m_Name
       value: MusicManager
       objectReference: {fileID: 0}
+    - target: {fileID: 4669040576193244303, guid: 90d61b54dc91d7d4bbbf078651f4ce0f,
+        type: 3}
+      propertyPath: masterBank
+      value: Master
+      objectReference: {fileID: 0}
+    - target: {fileID: 4669040576193244303, guid: 90d61b54dc91d7d4bbbf078651f4ce0f,
+        type: 3}
+      propertyPath: bgmReferences.Array.data[0].Path
+      value: event:/Music/BGM/Main Menu4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4669040576193244303, guid: 90d61b54dc91d7d4bbbf078651f4ce0f,
+        type: 3}
+      propertyPath: bgmReferences.Array.data[0].Guid.Data1
+      value: -51585672
+      objectReference: {fileID: 0}
+    - target: {fileID: 4669040576193244303, guid: 90d61b54dc91d7d4bbbf078651f4ce0f,
+        type: 3}
+      propertyPath: bgmReferences.Array.data[0].Guid.Data2
+      value: 1094494818
+      objectReference: {fileID: 0}
+    - target: {fileID: 4669040576193244303, guid: 90d61b54dc91d7d4bbbf078651f4ce0f,
+        type: 3}
+      propertyPath: bgmReferences.Array.data[0].Guid.Data3
+      value: 679408317
+      objectReference: {fileID: 0}
+    - target: {fileID: 4669040576193244303, guid: 90d61b54dc91d7d4bbbf078651f4ce0f,
+        type: 3}
+      propertyPath: bgmReferences.Array.data[0].Guid.Data4
+      value: 139808779
+      objectReference: {fileID: 0}
     - target: {fileID: 7526781849591880843, guid: 90d61b54dc91d7d4bbbf078651f4ce0f,
         type: 3}
       propertyPath: EventReference.Path
@@ -24303,6 +24338,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1760672896}
   - component: {fileID: 1760672897}
+  - component: {fileID: 1760672898}
   m_Layer: 5
   m_Name: Audio Slider
   m_TagString: Untagged
@@ -24379,10 +24415,10 @@ MonoBehaviour:
   m_FillRect: {fileID: 166486355}
   m_HandleRect: {fileID: 2068328249}
   m_Direction: 0
-  m_MinValue: -80
-  m_MaxValue: 20
+  m_MinValue: 0
+  m_MaxValue: 1
   m_WholeNumbers: 0
-  m_Value: -30
+  m_Value: 0.811
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
@@ -24398,6 +24434,20 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &1760672898
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1760672895}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee18b5aa7fadad34cb53b4ee7696ba05, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  vcaName: 0
+  m_Slider: {fileID: 1760672897}
 --- !u!1 &1760712595
 GameObject:
   m_ObjectHideFlags: 0
