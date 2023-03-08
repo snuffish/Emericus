@@ -28,7 +28,7 @@ public class AudioZoneSettings : MonoBehaviour
 
     void Start()
     {
-        aM = GameObject.Find("NewAManager").GetComponent<NewAManager>();
+        aM = GameObject.Find("MusicManager").GetComponent<NewAManager>();
         //vM = GameObject.Find("VLManager").GetComponent<VLManager>();
         RunSettings();
     }

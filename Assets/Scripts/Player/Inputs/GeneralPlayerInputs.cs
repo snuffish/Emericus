@@ -7,17 +7,17 @@ public class GeneralPlayerInputs : MonoBehaviour
     [SerializeField] private GameObject pauseMenu;
     private bool gameIsPaused = false;
     [SerializeField] private GameObject crosshairs;
+    [SerializeField] private GameObject subtitles;
     
     // Update is called once per frame
     void Update()
     {
         if (Input.GetButtonDown("PauseButton")) {
-            
-            if (!gameIsPaused) {
-                PauseGame();
-            }
-            else {
-                UnpauseGame();
+            if (pauseMenu != null) {
+                if (!gameIsPaused) 
+                    PauseGame();
+                else 
+                    UnpauseGame();
             }
         }
     }
@@ -29,6 +29,7 @@ public class GeneralPlayerInputs : MonoBehaviour
         pauseMenu.active = true;
         Time.timeScale = 0;
         crosshairs.SetActive(false);
+        subtitles.SetActive(false);
     }
 
     public void UnpauseGame() {
@@ -38,5 +39,6 @@ public class GeneralPlayerInputs : MonoBehaviour
         pauseMenu.active = false;
         Time.timeScale = 1;
         crosshairs.SetActive(true);
+        subtitles.SetActive(true);
     }
 }
