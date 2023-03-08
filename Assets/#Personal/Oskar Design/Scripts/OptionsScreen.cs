@@ -118,7 +118,7 @@ public class OptionsScreen : MonoBehaviour
 
     public void SetMasterVol()
     {
-        mastLabel.text = Mathf.RoundToInt(volumeSlider.value + 80).ToString();
+        mastLabel.text = Mathf.RoundToInt(volumeSlider.value + 100).ToString();
     }
 
 
