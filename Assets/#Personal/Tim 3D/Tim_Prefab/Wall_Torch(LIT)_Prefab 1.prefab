@@ -446,8 +446,8 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 0.9150943, g: 0.4425183, b: 0.16834284, a: 1}
-  m_Intensity: 124.74821
-  m_Range: 23.98
+  m_Intensity: 238.7324
+  m_Range: 100
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
@@ -508,7 +508,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7a68c43fe1f2a47cfa234b5eeaa98012, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Intensity: 1567.6322
+  m_Intensity: 3000
   m_EnableSpotReflector: 1
   m_LuxAtDistance: 1
   m_InnerSpotPercent: 0
@@ -782,6 +782,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: PS_Parent
+      objectReference: {fileID: 0}
+    - target: {fileID: 8983120874926417331, guid: 928af516e50e3844fb01e9460feacbb6,
+        type: 3}
+      propertyPath: prewarm
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8983120874926417331, guid: 928af516e50e3844fb01e9460feacbb6,
         type: 3}
