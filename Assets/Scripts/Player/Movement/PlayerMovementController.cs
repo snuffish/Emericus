@@ -89,7 +89,7 @@ public class PlayerMovementController : MonoBehaviour
             foreach (Ray groundRay in groundRays) {
                 if (Physics.Raycast(groundRay, groundCheckRayLength, LayerMask.GetMask("Ground")))
                 {
-                    playerAudio.PlayLand(this.gameObject);
+                    playerAudio.PlayLand(rb.gameObject);
                 }
             }
         }
