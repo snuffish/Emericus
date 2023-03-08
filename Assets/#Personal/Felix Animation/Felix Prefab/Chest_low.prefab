@@ -202,6 +202,7 @@ GameObject:
   - component: {fileID: 2555807472568942322}
   - component: {fileID: 5700923458083516907}
   - component: {fileID: 5729737365703834045}
+  - component: {fileID: 4995356739405893020}
   m_Layer: 0
   m_Name: Chest_top_low
   m_TagString: Untagged
@@ -322,9 +323,12 @@ MonoBehaviour:
   isDisabled: 0
   breakForce: 35
   playerInteract: {fileID: 0}
+  objectHealth: {fileID: 0}
   stackNormalThreshold: 0.5
   lockCooldown: 0.1
+  damageVelocity: 30
   canBePickedUp: 1
+  canTakeDamageFromForce: 0
   canBeRotated: 0
   alwaysLockOnRelease: 0
   keepRestraints: 0
@@ -358,7 +362,7 @@ HingeJoint:
   m_Anchor: {x: -0.055, y: -0.02, z: 0}
   m_Axis: {x: 0, y: 0, z: 90}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0, y: 0, z: 0}
+  m_ConnectedAnchor: {x: -1.2796656, y: 2.3903174, z: 2.8487566}
   m_UseSpring: 0
   m_Spring:
     spring: 0
@@ -418,6 +422,21 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 1089162366212787467, guid: 48f4b7f48d6fd2b459b1376de5b53f88, type: 3}
+--- !u!114 &4995356739405893020
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7207700278294418139}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1251556126d84b74984c42c72411e602, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentHealth: 0
+  maxHealth: 0
+  hurtCooldownTime: 0
 --- !u!1 &8839432094270180837
 GameObject:
   m_ObjectHideFlags: 0
