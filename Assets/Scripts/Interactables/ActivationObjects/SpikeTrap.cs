@@ -11,14 +11,14 @@ public class SpikeTrap : Activators
     [SerializeField] private float spikeShootLenght;
     [SerializeField] private BoxCollider collider;
     private float spikeStartHeight;
-    [SerializeField] EventReference UIClickEventReference;
+    [SerializeField] EventReference SpikeTrapEventRef;
 
     void Start() {
         spikeRB.isKinematic = true;
         spikeStartHeight = spikeRB.transform.position.y;
         
         // Get the FMOD event instance
-        RuntimeManager.CreateInstance(UIClickEventReference);
+        RuntimeManager.CreateInstance(SpikeTrapEventRef);
     }
     public override void ChangeState(bool toState)
     {
@@ -36,7 +36,7 @@ public class SpikeTrap : Activators
 
         collider.enabled = true;
         // Play the FMOD event on hover
-        RuntimeManager.PlayOneShot(UIClickEventReference);
+        RuntimeManager.PlayOneShot(SpikeTrapEventRef);
         
         //  Code For Opening the spiketrap
         while (spikeRB.transform.localPosition.y < spikeStartHeight + spikeShootLenght) {
