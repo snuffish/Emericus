@@ -283,3 +283,125 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 8163291383725220750}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &5921020755536936089 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2549713875122298647, guid: 8617bba45f1fec648b8d64f3ae83386b,
+    type: 3}
+  m_PrefabInstance: {fileID: 8163291383725220750}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &35913193121167259
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5921020755536936089}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  Event: 
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: -1
+  OverrideMaxDistance: -1
+--- !u!114 &8073914878814869944
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5921020755536936089}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  Event: 
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: -1
+  OverrideMaxDistance: -1
+--- !u!114 &2970501501331568432
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5921020755536936089}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cdbff440df30e9e4693558b91fa222ad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isDisabled: 0
+  OnChangeState:
+    m_PersistentCalls:
+      m_Calls: []
+  isActive: 0
+  motorSpeed: 50
+  motorForce: 100
+  creakMinVelocity: 1
+  hinge: {fileID: 0}
+  physicsObject: {fileID: 0}
+  animator: {fileID: 0}
+  rigidbody: {fileID: 0}
+  DOOR_Open:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  DOOR_Close:
+    Guid:
+      Data1: 345908133
+      Data2: 1325929581
+      Data3: -1667629936
+      Data4: 2006240549
+    Path: event:/Interactive/DOOR/DOOR OPEN CLOSE ALTERNATIV/DoorClose
+  DOOR_Open_Puzzle:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  DoorCreak:
+    Guid:
+      Data1: -779977397
+      Data2: 1101032667
+      Data3: -339468406
+      Data4: 1189039994
+    Path: event:/Interactive/DOOR/DOORCreak
+  creakEmitter: {fileID: 35913193121167259}
+  closeEmitter: {fileID: 8073914878814869944}
+  isOpening: 0
+  isClosing: 0

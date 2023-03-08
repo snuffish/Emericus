@@ -36,7 +36,7 @@ public class Lever : Activators
     public override void ChangeState(bool toState)
     {
         base.ChangeState(toState);
-        if (isActive)
+        if (IsActive)
         {
             if (!isActivating)
             {
@@ -68,7 +68,7 @@ public class Lever : Activators
             }
             else
             {
-                if (isActive)
+                if (IsActive)
                 {
                     if (Mathf.Abs(hinge.angle - deactivateAngle) < activateThreshold)
                     {
@@ -76,7 +76,7 @@ public class Lever : Activators
                         Deactivate();
                     }
                 }
-                if (!isActive)
+                if (!IsActive)
                 {
                     if (Mathf.Abs(hinge.angle - activateAngle) < activateThreshold)
                     {

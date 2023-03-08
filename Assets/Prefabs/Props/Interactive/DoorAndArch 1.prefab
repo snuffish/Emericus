@@ -143,6 +143,66 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 12
       objectReference: {fileID: 0}
+    - target: {fileID: 5141816253502818544, guid: 86e72e6a5f7012347ab8ee6b00932b7d,
+        type: 3}
+      propertyPath: closeEmitter
+      value: 
+      objectReference: {fileID: 5334048511312932361}
+    - target: {fileID: 5141816253502818544, guid: 86e72e6a5f7012347ab8ee6b00932b7d,
+        type: 3}
+      propertyPath: creakEmitter
+      value: 
+      objectReference: {fileID: 2001907982932800504}
+    - target: {fileID: 5141816253502818544, guid: 86e72e6a5f7012347ab8ee6b00932b7d,
+        type: 3}
+      propertyPath: DoorCreak.Path
+      value: event:/Interactive/DOOR/DOORCreak
+      objectReference: {fileID: 0}
+    - target: {fileID: 5141816253502818544, guid: 86e72e6a5f7012347ab8ee6b00932b7d,
+        type: 3}
+      propertyPath: DOOR_Close.Path
+      value: event:/Interactive/DOOR/DOOR OPEN CLOSE ALTERNATIV/DoorClose
+      objectReference: {fileID: 0}
+    - target: {fileID: 5141816253502818544, guid: 86e72e6a5f7012347ab8ee6b00932b7d,
+        type: 3}
+      propertyPath: DoorCreak.Guid.Data1
+      value: -779977397
+      objectReference: {fileID: 0}
+    - target: {fileID: 5141816253502818544, guid: 86e72e6a5f7012347ab8ee6b00932b7d,
+        type: 3}
+      propertyPath: DoorCreak.Guid.Data2
+      value: 1101032667
+      objectReference: {fileID: 0}
+    - target: {fileID: 5141816253502818544, guid: 86e72e6a5f7012347ab8ee6b00932b7d,
+        type: 3}
+      propertyPath: DoorCreak.Guid.Data3
+      value: -339468406
+      objectReference: {fileID: 0}
+    - target: {fileID: 5141816253502818544, guid: 86e72e6a5f7012347ab8ee6b00932b7d,
+        type: 3}
+      propertyPath: DoorCreak.Guid.Data4
+      value: 1189039994
+      objectReference: {fileID: 0}
+    - target: {fileID: 5141816253502818544, guid: 86e72e6a5f7012347ab8ee6b00932b7d,
+        type: 3}
+      propertyPath: DOOR_Close.Guid.Data1
+      value: 345908133
+      objectReference: {fileID: 0}
+    - target: {fileID: 5141816253502818544, guid: 86e72e6a5f7012347ab8ee6b00932b7d,
+        type: 3}
+      propertyPath: DOOR_Close.Guid.Data2
+      value: 1325929581
+      objectReference: {fileID: 0}
+    - target: {fileID: 5141816253502818544, guid: 86e72e6a5f7012347ab8ee6b00932b7d,
+        type: 3}
+      propertyPath: DOOR_Close.Guid.Data3
+      value: -1667629936
+      objectReference: {fileID: 0}
+    - target: {fileID: 5141816253502818544, guid: 86e72e6a5f7012347ab8ee6b00932b7d,
+        type: 3}
+      propertyPath: DOOR_Close.Guid.Data4
+      value: 2006240549
+      objectReference: {fileID: 0}
     - target: {fileID: 5141816253502818545, guid: 86e72e6a5f7012347ab8ee6b00932b7d,
         type: 3}
       propertyPath: lockAngles.Array.size
@@ -240,6 +300,72 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 86e72e6a5f7012347ab8ee6b00932b7d, type: 3}
+--- !u!1 &377792706719783321 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1525552770667029509, guid: 86e72e6a5f7012347ab8ee6b00932b7d,
+    type: 3}
+  m_PrefabInstance: {fileID: 1159090171107130780}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2001907982932800504
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 377792706719783321}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  Event: 
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: -1
+  OverrideMaxDistance: -1
+--- !u!114 &5334048511312932361
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 377792706719783321}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  Event: 
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: -1
+  OverrideMaxDistance: -1
 --- !u!4 &7339226358408984960 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8489216176073344028, guid: 86e72e6a5f7012347ab8ee6b00932b7d,

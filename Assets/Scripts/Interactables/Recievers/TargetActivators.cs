@@ -4,12 +4,12 @@ using UnityEngine;
 
 public class TargetActivators : Interactable
 {
-    [SerializeField] float activationForce = 30f;
-    [SerializeField] bool invertOnPress = true;
-    [SerializeField] bool deactivateOnPress = false;
-    [SerializeField] bool activateOnPress = false;
+    [SerializeField] protected float activationForce = 30f;
+    [SerializeField] protected bool invertOnPress = true;
+    [SerializeField] protected bool deactivateOnPress = false;
+    [SerializeField] protected bool activateOnPress = false;
 
-    [SerializeField] List<Activators> targets = new List<Activators>();
+    [SerializeField] protected List<Activators> targets = new List<Activators>();
 
     public override void Interact()
     {
@@ -22,7 +22,7 @@ public class TargetActivators : Interactable
         }
     }
 
-    void OnCollisionEnter(Collision collision)
+    public virtual void OnCollisionEnter(Collision collision)
     {
         if (collision.relativeVelocity.magnitude > activationForce) Interact();
     }

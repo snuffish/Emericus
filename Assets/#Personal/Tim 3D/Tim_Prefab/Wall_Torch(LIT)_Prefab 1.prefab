@@ -618,8 +618,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1052953398074068357, guid: 4e9da457c2e8e3f4699997f82e65a338,
         type: 3}
+      propertyPath: m_Range
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 1052953398074068357, guid: 4e9da457c2e8e3f4699997f82e65a338,
+        type: 3}
       propertyPath: m_Intensity
-      value: 6757.3423
+      value: 7957.747
+      objectReference: {fileID: 0}
+    - target: {fileID: 1052953398074068357, guid: 4e9da457c2e8e3f4699997f82e65a338,
+        type: 3}
+      propertyPath: m_AreaSize.y
+      value: 0.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 1052953398074068357, guid: 4e9da457c2e8e3f4699997f82e65a338,
+        type: 3}
+      propertyPath: m_BoundingSphereOverride.w
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 4807431456624764732, guid: 4e9da457c2e8e3f4699997f82e65a338,
         type: 3}
@@ -660,6 +675,31 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Intensity
       value: 1000
+      objectReference: {fileID: 0}
+    - target: {fileID: 6578448570213601293, guid: 4e9da457c2e8e3f4699997f82e65a338,
+        type: 3}
+      propertyPath: m_AffectDiffuse
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6578448570213601293, guid: 4e9da457c2e8e3f4699997f82e65a338,
+        type: 3}
+      propertyPath: m_AffectSpecular
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6578448570213601293, guid: 4e9da457c2e8e3f4699997f82e65a338,
+        type: 3}
+      propertyPath: m_ApplyRangeAttenuation
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6578448570213601293, guid: 4e9da457c2e8e3f4699997f82e65a338,
+        type: 3}
+      propertyPath: m_DisplayAreaLightEmissiveMesh
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6578448570213601293, guid: 4e9da457c2e8e3f4699997f82e65a338,
+        type: 3}
+      propertyPath: m_AreaLightEmissiveMeshShadowCastingMode
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4e9da457c2e8e3f4699997f82e65a338, type: 3}
