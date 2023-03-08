@@ -5,8 +5,10 @@ using UnityEngine;
 public class CameraPlayer : MonoBehaviour
 {
 
-    [SerializeField] Vector2 mouseSens;
+    [SerializeField] float originSens;
+    [SerializeField] float currentSens;
     [SerializeField] Transform orientation;
+    [SerializeField] private PlayerData playerData;
     Vector2 rotation;
 
 
@@ -20,14 +22,16 @@ public class CameraPlayer : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
-    {
+    void Update() {
+        
+        currentSens = originSens * playerData.mouseSensitivity;
+        
         if (!Input.GetButton("Rotate"))
         {
             //  Get the mouse input
             Vector2 mouseInput;
-            mouseInput.x = Input.GetAxisRaw("Mouse X") * Time.deltaTime * mouseSens.x;
-            mouseInput.y = Input.GetAxisRaw("Mouse Y") * Time.deltaTime * mouseSens.y;
+            mouseInput.x = Input.GetAxisRaw("Mouse X") * Time.deltaTime * currentSens;
+            mouseInput.y = Input.GetAxisRaw("Mouse Y") * Time.deltaTime * currentSens;
 
             rotation.y += mouseInput.x;
             rotation.x += mouseInput.y;
@@ -37,7 +41,5 @@ public class CameraPlayer : MonoBehaviour
             transform.rotation = Quaternion.Euler(rotation.x, rotation.y, 0);
             orientation.rotation = Quaternion.Euler(0, rotation.y, 0);
         }
-
-        
     }
 }

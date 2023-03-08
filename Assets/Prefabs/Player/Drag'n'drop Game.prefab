@@ -450,6 +450,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7848311125105079906, guid: c603d09f6b2eca14aac88c3d78b4fda0,
+        type: 3}
+      propertyPath: m_Value
+      value: 0.55
+      objectReference: {fileID: 0}
     - target: {fileID: 8801748564925490991, guid: c603d09f6b2eca14aac88c3d78b4fda0,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
@@ -756,6 +761,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1089273623835128668}
     m_Modifications:
+    - target: {fileID: 7492625813712972070, guid: e08c7dcd8727aba429f2cab47dc921cc,
+        type: 3}
+      propertyPath: originSens
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 7492625813712972070, guid: e08c7dcd8727aba429f2cab47dc921cc,
+        type: 3}
+      propertyPath: playerData
+      value: 
+      objectReference: {fileID: 11400000, guid: 5398cc1eb9aa4c94289ce508763178b8,
+        type: 2}
+    - target: {fileID: 7492625813712972070, guid: e08c7dcd8727aba429f2cab47dc921cc,
+        type: 3}
+      propertyPath: currentSens
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 7492625813712972070, guid: e08c7dcd8727aba429f2cab47dc921cc,
         type: 3}
       propertyPath: orientation
