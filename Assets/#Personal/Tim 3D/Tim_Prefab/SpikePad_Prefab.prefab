@@ -112,7 +112,7 @@ MonoBehaviour:
   inputActivators:
   - {fileID: 0}
   targetActivators:
-  - {fileID: 0}
+  - {fileID: 8657293011287218126}
 --- !u!65 &2603740547640238763
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -145,10 +145,11 @@ MonoBehaviour:
   isActive: 0
   isInUse: 0
   spikeRB: {fileID: 8934457339902025236}
-  spikeSpeed: 25
+  spikeSpeed: 50
   spikeResetTime: 1
-  spikeShootLenght: 0.5
+  spikeShootLenght: 0.1
   collider: {fileID: 2603740547640238763}
+  ejectAndDestroy: 0
   SpikeTrapEventRef:
     Guid:
       Data1: -241747591
