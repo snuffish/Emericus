@@ -13,9 +13,9 @@ GameObject:
   - component: {fileID: 2866984610108184860}
   - component: {fileID: 4239131510820644711}
   - component: {fileID: 2603740547640238763}
-  - component: {fileID: 154737526951471548}
-  - component: {fileID: 7073108185355882688}
-  - component: {fileID: 3663733904373169208}
+  - component: {fileID: 8657293011287218126}
+  - component: {fileID: 3348444071973642632}
+  - component: {fileID: 8934457339902025236}
   m_Layer: 0
   m_Name: Spike_low
   m_TagString: Untagged
@@ -31,8 +31,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 536418531243882266}
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.00173424, y: -0.04, z: -0.0016}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -0.00173424, y: -0.0663, z: -0.0016}
+  m_LocalScale: {x: 1, y: 1.4887, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1745437619112679771}
@@ -112,7 +112,7 @@ MonoBehaviour:
   inputActivators:
   - {fileID: 0}
   targetActivators:
-  - {fileID: 0}
+  - {fileID: 8657293011287218126}
 --- !u!65 &2603740547640238763
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -126,20 +126,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.091924936, y: 0.084695406, z: 0.09463052}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &154737526951471548
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 536418531243882266}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 500ea6da8acf8694fbe6598582d281ad, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  damagePerTick: 100
---- !u!114 &7073108185355882688
+--- !u!114 &8657293011287218126
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -157,19 +144,33 @@ MonoBehaviour:
       m_Calls: []
   isActive: 0
   isInUse: 0
-  spikeRB: {fileID: 3663733904373169208}
-  spikeSpeed: 1.25
-  spikeResetTime: 1.06
-  spikeShootLenght: 1.49
+  spikeRB: {fileID: 8934457339902025236}
+  spikeSpeed: 50
+  spikeResetTime: 1
+  spikeShootLenght: 0.1
   collider: {fileID: 2603740547640238763}
-  UIClickEventReference:
+  ejectAndDestroy: 0
+  SpikeTrapEventRef:
     Guid:
       Data1: -241747591
       Data2: 1286912400
       Data3: -704182615
       Data4: 1068495114
     Path: event:/Interactive/Traps/SpikeTrap
---- !u!54 &3663733904373169208
+--- !u!114 &3348444071973642632
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 536418531243882266}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 500ea6da8acf8694fbe6598582d281ad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damagePerTick: 150
+--- !u!54 &8934457339902025236
 Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
