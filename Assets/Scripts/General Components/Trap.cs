@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class Trap : MonoBehaviour
@@ -12,17 +13,22 @@ public class Trap : MonoBehaviour
         if(shouldItHurt)
             hurtObject.Hurt(damagePerTick);
     }
-    
-    void OnCollisionEnter(Collision col) {
+
+    void OnTriggerEnter(Collider col) {
         if (col.gameObject.GetComponent<Health>() != null) {
             hurtObject = col.gameObject.GetComponent<Health>();
             shouldItHurt = true;
         }
     }
 
-    void OnCollisionExit(Collision col) {
-        if (hurtObject != null) {
-            shouldItHurt = false;
+    void OnTriggerExit(Collider col) {
+
+        if (col.gameObject.GetComponent<Health>() != null) {
+            if (hurtObject != null) {
+                shouldItHurt = false;
+            }
         }
+
+        
     }
 }
