@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using FMODUnity;
 public class SpikeTrap : Activators
 {
     public bool isInUse = false;
@@ -11,10 +11,14 @@ public class SpikeTrap : Activators
     [SerializeField] private float spikeShootLenght;
     [SerializeField] private BoxCollider collider;
     private float spikeStartHeight;
+    [SerializeField] EventReference UIClickEventReference;
 
     void Start() {
         spikeRB.isKinematic = true;
         spikeStartHeight = spikeRB.transform.position.y;
+        
+        // Get the FMOD event instance
+        RuntimeManager.CreateInstance(UIClickEventReference);
     }
     public override void ChangeState(bool toState)
     {
@@ -31,6 +35,8 @@ public class SpikeTrap : Activators
     IEnumerator EjectSpikes() {
 
         collider.enabled = true;
+        // Play the FMOD event on hover
+        RuntimeManager.PlayOneShot(UIClickEventReference);
         
         //  Code For Opening the spiketrap
         while (spikeRB.transform.localPosition.y < spikeStartHeight + spikeShootLenght) {
