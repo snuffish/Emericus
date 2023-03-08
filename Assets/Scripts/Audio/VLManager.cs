@@ -6,6 +6,7 @@ using System.Runtime.InteropServices;
 using FMOD.Studio;
 using FMODUnity;
 using TMPro;
+using UnityEngine.Rendering;
 
 public enum VoiceAction
 {
@@ -102,9 +103,9 @@ public class VLManager : MonoBehaviour
     }
 
     void Update() {
-        if(playerData.subtitlesIsOn)
+        if (playerData.subtitlesIsOn)
             subtitleField.text = subtitleText;
-        else 
+        else
             subtitleField.text = "";
         
     }
