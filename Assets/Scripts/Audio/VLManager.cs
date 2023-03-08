@@ -26,6 +26,7 @@ public class VLManager : MonoBehaviour
     private static Dictionary<string, string> voiceLineDictionary;
     [SerializeField] private TMP_Text subtitleField;
     static private string subtitleText;
+    [SerializeField] private PlayerData playerData;
 
 
     [Header("Dialogue")] 
@@ -101,7 +102,11 @@ public class VLManager : MonoBehaviour
     }
 
     void Update() {
-        subtitleField.text = subtitleText;
+        if(playerData.subtitlesIsOn)
+            subtitleField.text = subtitleText;
+        else 
+            subtitleField.text = "";
+        
     }
     
     //TimelineCallback

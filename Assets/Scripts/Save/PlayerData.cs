@@ -8,4 +8,5 @@ public class PlayerData : ScriptableObject
     [Range(0, 100)] public int playerHealth;
     [Range(0, 1)] public float mouseSensitivity;
     [Range(-80, 20)] public float audioLevel;
+    public bool subtitlesIsOn;
 }
