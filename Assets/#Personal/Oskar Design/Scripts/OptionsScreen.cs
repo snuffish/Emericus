@@ -21,6 +21,7 @@ public class OptionsScreen : MonoBehaviour
     public TMP_Text mastLabel;
     public Slider volumeSlider;
     public Slider sensSlider;
+    public Toggle subtitlesBool;
 
 
     // Start is called before the first frame update
@@ -131,6 +132,7 @@ public class OptionsScreen : MonoBehaviour
         Screen.SetResolution(resolutions[selectedResolution].horizontal, resolutions[selectedResolution].vertical, fullscreenTog.isOn);
         playerData.audioLevel = volumeSlider.value;
         playerData.mouseSensitivity = sensSlider.value;
+        playerData.subtitlesIsOn = subtitlesBool.isOn;
     }
 
 
