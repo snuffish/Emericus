@@ -56,6 +56,7 @@ public class AudioManager : MonoBehaviour
         public StudioEventEmitter statue;
         public StudioEventEmitter tidBit1;
         public StudioEventEmitter tidBit2;
+        public StudioEventEmitter uiClick;
     }
 
 
