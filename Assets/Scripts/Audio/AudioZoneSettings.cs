@@ -6,7 +6,7 @@ using UnityEngine.Experimental.Rendering;
 public class AudioZoneSettings : MonoBehaviour
 {
     [System.Serializable]
-    public struct AudioSettings
+    public struct ZoneSettings
     {
         public MusicAction action;
         public BackgroundMusicEvents bgmEvent;
@@ -21,14 +21,14 @@ public class AudioZoneSettings : MonoBehaviour
     }
 
     [Header("ZoneSettings")] 
-    [NonReorderable] public AudioSettings[] audioSettings;
+    [NonReorderable] public ZoneSettings[] aZoneSettings;
 
     private NewAManager aM;
     //private VLManager vM;
 
     void Start()
     {
-        aM = GameObject.Find("MusicManager").GetComponent<NewAManager>();
+        aM = GameObject.FindGameObjectWithTag("MusicManager").GetComponent<NewAManager>();
         //vM = GameObject.Find("VLManager").GetComponent<VLManager>();
         RunSettings();
     }
@@ -36,7 +36,7 @@ public class AudioZoneSettings : MonoBehaviour
     private void RunSettings()
     {
 
-        foreach (AudioSettings a in audioSettings)
+        foreach (ZoneSettings a in aZoneSettings)
         {
             switch (a.action)
             {

@@ -28,7 +28,7 @@ public class AudioTriggerSettings : MonoBehaviour
 
     void Start()
     {
-        aM = GameObject.Find("MusicManager").GetComponent<NewAManager>();
+        aM = GameObject.FindGameObjectWithTag("MusicManager").GetComponent<NewAManager>();
     }
 
     private void OnTriggerEnter(Collider other)
@@ -45,9 +45,11 @@ public class AudioTriggerSettings : MonoBehaviour
                     break;
                 case MusicAction.Play:
                     aM.PlayBGM(a.bgmEvent);
+                    Debug.Log("Playing music");
                     break;
                 case MusicAction.Stop:
                     aM.StopBGM(a.bgmEvent, a.ignoreFadeOut);
+                    Debug.Log("Stopping music");
                     break;
                 case MusicAction.SetParameter:
                     aM.SetParameterBGM(a.bgmEvent, a.paramName, a.paramValue, a.ignoreSeek, a.paramGlobal);

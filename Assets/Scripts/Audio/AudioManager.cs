@@ -12,15 +12,15 @@ public class AudioManager : MonoBehaviour
     //Bankladdare
     private void Awake()
     {
-        if (Instance == null)
+       /* if (Instance == null)
             Instance = this;
         else
         {
             Destroy(gameObject);
             return;
-        }
+        }*/
         
-        BankLoader();
+        //BankLoader();
         if (Instance != null && Instance != this)
         {
             Destroy(this);
@@ -32,7 +32,7 @@ public class AudioManager : MonoBehaviour
         DontDestroyOnLoad(gameObject);
     }
 
-    [Header("BankRef")]
+    /*[Header("BankRef")]
     [BankRef] public string masterBank;
 
     public bool loadSampleData;
@@ -41,7 +41,7 @@ public class AudioManager : MonoBehaviour
     {
         //Debug.Log("Has the bank loaded? " + RuntimeManager.HasBankLoaded(masterBank));
         RuntimeManager.LoadBank(masterBank, loadSampleData);
-    }
+    }*/
 
 
     //Emitters för bakgrundsmusik

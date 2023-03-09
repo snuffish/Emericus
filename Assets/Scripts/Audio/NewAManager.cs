@@ -21,14 +21,9 @@ public enum BackgroundMusicEvents
     BGM1,
     BGM2,
     SafeRoom,
-    Dialogue
+    Ambience
 }
 
-public enum DialogoueEvents
-{
-    None,
-    
-}
 public class NewAManager : MonoBehaviour
 {
     public static NewAManager Instance;
@@ -42,7 +37,7 @@ public class NewAManager : MonoBehaviour
 
     private void Awake()
     {
-        BankLoader();
+        //BankLoader();
         if (Instance != null && Instance != this)
         {
             Destroy(this);
@@ -54,7 +49,7 @@ public class NewAManager : MonoBehaviour
         DontDestroyOnLoad(gameObject);
     }
     
-    [Header("BankRef")]
+    /*[Header("BankRef")]
     [BankRef] public string masterBank;
 
     public bool loadSampleData;
@@ -63,7 +58,7 @@ public class NewAManager : MonoBehaviour
     {
         //Debug.Log("Has the bank loaded? " + RuntimeManager.HasBankLoaded(masterBank));
         RuntimeManager.LoadBank(masterBank, loadSampleData);
-    }
+    }*/
 
     public void PlayBGM(BackgroundMusicEvents bgmEvent)
     {
