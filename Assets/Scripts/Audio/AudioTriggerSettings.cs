@@ -28,7 +28,7 @@ public class AudioTriggerSettings : MonoBehaviour
 
     void Start()
     {
-        aM = GameObject.Find("NewAManager").GetComponent<NewAManager>();
+        aM = GameObject.Find("MusicManager").GetComponent<NewAManager>();
     }
 
     private void OnTriggerEnter(Collider other)
