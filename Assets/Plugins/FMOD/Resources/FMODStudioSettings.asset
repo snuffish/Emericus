@@ -327,8 +327,8 @@ MonoBehaviour:
   - 52eb9df5db46521439908db3a29a1bbb
   - fd7c55dab0fce234b8c25f6ffca523c1
   - c88d16e5272a4e241b0ef0ac2e53b73d
-  - 2c5177b11d81d824dbb064f9ac8527da
   - 0f8eb3f400726694eb47beb1a9f94ce8
+  - 2c5177b11d81d824dbb064f9ac8527da
 --- !u!114 &-1636393980073713398
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -432,10 +432,10 @@ MonoBehaviour:
   RealChannelSettings: []
   Plugins: []
   MasterBanks:
-  - Master
+  - Desktop/Master
   Banks:
-  - Dialogue
-  - Music
+  - Desktop/Dialogue
+  - Desktop/Music
   BanksToLoad: []
   LiveUpdatePort: 9264
   EnableMemoryTracking: 0
@@ -450,17 +450,17 @@ MonoBehaviour:
   HideSetupWizard: 1
   LastEventReferenceScanVersion: 131588
   Platforms:
-  - {fileID: 7092565511990197223}
-  - {fileID: -1737744112962192809}
-  - {fileID: 2750454495727381692}
-  - {fileID: -3723805813387500956}
-  - {fileID: 4438997357526536780}
-  - {fileID: 1335824807659969943}
-  - {fileID: -4694039053873724932}
-  - {fileID: -7469593471394935203}
-  - {fileID: 2518265446543910725}
   - {fileID: -8018786931571378145}
+  - {fileID: -7469593471394935203}
+  - {fileID: -4694039053873724932}
+  - {fileID: -3723805813387500956}
+  - {fileID: -1737744112962192809}
   - {fileID: -1636393980073713398}
+  - {fileID: 1335824807659969943}
+  - {fileID: 2518265446543910725}
+  - {fileID: 2750454495727381692}
+  - {fileID: 4438997357526536780}
+  - {fileID: 7092565511990197223}
   MigratedPlatforms: 0b00000008000000060000000500000009000000150000000a0000000c000000120000000200000001000000
 --- !u!114 &1335824807659969943
 MonoBehaviour:
