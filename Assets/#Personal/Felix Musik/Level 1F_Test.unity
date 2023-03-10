@@ -18109,7 +18109,6 @@ MonoBehaviour:
   m_Script: {fileID: 986417472}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Entries: []
 --- !u!4 &424079002
 Transform:
   m_ObjectHideFlags: 19
@@ -19553,7 +19552,12 @@ PrefabInstance:
       propertyPath: canBePickedUp
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6291120749031798124, guid: df8864fd4276d554499c38caa0d9c6f2, type: 3}
+    - {fileID: 6291120749031798125, guid: df8864fd4276d554499c38caa0d9c6f2, type: 3}
+    - {fileID: 6291120749031798121, guid: df8864fd4276d554499c38caa0d9c6f2, type: 3}
+    - {fileID: 6291120749031798120, guid: df8864fd4276d554499c38caa0d9c6f2, type: 3}
+    - {fileID: 6291120749031798123, guid: df8864fd4276d554499c38caa0d9c6f2, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: df8864fd4276d554499c38caa0d9c6f2, type: 3}
 --- !u!4 &452796098 stripped
 Transform:
@@ -73355,7 +73359,7 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 450802888}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1745713462
+--- !u!114 &1745713481
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -73364,80 +73368,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 1745713460}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e32c722d376fc8c4eb7e07ce80d82a4c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  resetStateOnDeactivation: 1
-  stateHasToBeDifferent: 1
-  requireAllForActivation: 0
-  activateAllTargets: 1
-  activateOnAnyChange: 1
-  deactivateAllTargets: 0
-  deactivateOnAnyChange: 0
-  invertAllTargets: 0
-  invertOnChange: 0
-  inputActivators:
-  - {fileID: 2592919286764648075}
-  targetActivators:
-  - {fileID: 1745713469}
---- !u!114 &1745713463
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1745713460}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e32c722d376fc8c4eb7e07ce80d82a4c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  resetStateOnDeactivation: 1
-  stateHasToBeDifferent: 1
-  requireAllForActivation: 0
-  activateAllTargets: 0
-  activateOnAnyChange: 0
-  deactivateAllTargets: 1
-  deactivateOnAnyChange: 0
-  invertAllTargets: 0
-  invertOnChange: 0
-  inputActivators:
-  - {fileID: 783063269}
-  - {fileID: 1688592559}
-  - {fileID: 1703374092}
-  - {fileID: 1117814296}
-  - {fileID: 2005452449}
-  - {fileID: 1411960114}
-  - {fileID: 1109973676}
-  - {fileID: 1576429698}
-  - {fileID: 2059749142}
-  targetActivators:
-  - {fileID: 1745713469}
---- !u!114 &1745713469 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 6291120749031798124, guid: df8864fd4276d554499c38caa0d9c6f2,
-    type: 3}
-  m_PrefabInstance: {fileID: 450802888}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1745713460}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cdbff440df30e9e4693558b91fa222ad, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1745713470
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1745713460}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fb1798c02e6b0254aa82eac4f24e5b8f, type: 3}
+  m_Script: {fileID: 11500000, guid: 85fbec723a38e4245b5cbf6f289881fb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   isDisabled: 0
+  paramRef: SFStop
+  paramValue: 1
+  ignoreSeek: 0
+  sceneToLoadInt: 2
 --- !u!1001 &1754166130
 PrefabInstance:
   m_ObjectHideFlags: 0
