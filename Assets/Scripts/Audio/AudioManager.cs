@@ -45,7 +45,7 @@ public class AudioManager : MonoBehaviour
 
 
     //Emitters för bakgrundsmusik
-    /*[Header("Voicelines")]
+    [Header("Voicelines")]
     public Emitters eventEmitters;
 
     [System.Serializable]
@@ -58,7 +58,7 @@ public class AudioManager : MonoBehaviour
         public StudioEventEmitter tidBit2;
         public StudioEventEmitter uiClick;
     }
-*/
+
 
     public void PlayFootstep()
     {
