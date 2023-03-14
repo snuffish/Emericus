@@ -3,9 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 public class PlayerHealth : Health
 {
+    
+    [SerializeField] private SceneManager _sceneManager;
+    [SerializeField] private float transistionTime;
     protected override void Die() {
         Debug.Log("Dead");
-        UnityEngine.SceneManagement.SceneManager.LoadScene(UnityEngine.SceneManagement.SceneManager.GetActiveScene().name);
+        StartCoroutine(_sceneManager.LoadLevel(UnityEngine.SceneManagement.SceneManager.GetActiveScene().handle, transistionTime));
         // GameObject.Find("MusicManager").GetComponent<MusicManager>().PlayGameOver();
     }
 }

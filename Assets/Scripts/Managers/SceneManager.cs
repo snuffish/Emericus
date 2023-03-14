@@ -4,15 +4,19 @@ using UnityEngine;
 
 public class SceneManager : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    [SerializeField] private Animator _animator;
 
-    // Update is called once per frame
-    void Update()
-    {
+    public IEnumerator LoadLevel(int levelIndex, float loadTime) {
+        
+        //  Start the transition
+        _animator.SetTrigger("Start");
+        
+        //  Wait a little
+        yield return new WaitForSeconds(loadTime);
+        
+        //  Change Scene
+        UnityEngine.SceneManagement.SceneManager.LoadScene(levelIndex);
         
     }
+    
 }

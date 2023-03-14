@@ -10,11 +10,13 @@ public class LoadAScene : Interactable
 
     public float paramValue;
     public bool ignoreSeek = false;
-    
+    [SerializeField] private SceneManager _sceneManager;
+    [SerializeField] private float transistionTime;
     [SerializeField] private int sceneToLoadInt;
 
     public override void Interact() {
+        
         FMODUnity.RuntimeManager.StudioSystem.setParameterByName(paramRef, paramValue, ignoreSeek);
-        UnityEngine.SceneManagement.SceneManager.LoadScene(sceneToLoadInt);
+        StartCoroutine(_sceneManager.LoadLevel(sceneToLoadInt, transistionTime));
     }
 }
