@@ -22,6 +22,8 @@ public class MixerSliderLink : MonoBehaviour
     private VCA vca;
 
     private string vcaMaster = "vca:/Master";
+    /*private string vcaSFX = "vca:/SFX";
+    private string vcaMusic = "vca:/Music";*/
 
     void Awake()
     {
