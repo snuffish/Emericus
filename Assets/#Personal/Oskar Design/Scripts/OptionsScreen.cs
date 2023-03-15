@@ -19,6 +19,7 @@ public class OptionsScreen : MonoBehaviour
 
 
     public TMP_Text mastLabel;
+    public TMP_Text sensLabel;
     public Slider volumeSlider;
     public Slider sensSlider;
     public Toggle subtitlesBool;
@@ -119,6 +120,11 @@ public class OptionsScreen : MonoBehaviour
     public void SetMasterVol()
     {
         mastLabel.text = Mathf.RoundToInt(volumeSlider.value * 100).ToString();
+    }
+    
+    public void SetSensValue()
+    {
+        sensLabel.text = Mathf.RoundToInt(sensSlider.value * 100).ToString();
     }
 
 
