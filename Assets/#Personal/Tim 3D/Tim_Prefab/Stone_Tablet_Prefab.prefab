@@ -11,6 +11,11 @@ GameObject:
   - component: {fileID: 8838065405433937342}
   - component: {fileID: 5550904502917394971}
   - component: {fileID: 7704587444000196305}
+  - component: {fileID: 3320606976358934998}
+  - component: {fileID: 3205541257873636206}
+  - component: {fileID: 7666600297599011004}
+  - component: {fileID: 8837824219878873396}
+  - component: {fileID: 4301735856930489822}
   m_Layer: 0
   m_Name: Stone_Tablet_Prefab
   m_TagString: Untagged
@@ -83,3 +88,106 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &3320606976358934998
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8209161644735899396}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e00f5ae617338be4384dddd3ac1d37e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dropSound:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  pickUpSound:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  collisionSound:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+--- !u!114 &3205541257873636206
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8209161644735899396}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1251556126d84b74984c42c72411e602, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentHealth: 0
+  maxHealth: 0
+  hurtCooldownTime: 0
+--- !u!114 &7666600297599011004
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8209161644735899396}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dee1a28932ecbb548814f52aedcc2c54, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isDisabled: 0
+  breakForce: 35
+  playerInteract: {fileID: 0}
+  objectHealth: {fileID: 0}
+  stackNormalThreshold: 0.5
+  lockCooldown: 0.1
+  damageVelocity: 30
+  canBePickedUp: 1
+  canTakeDamageFromForce: 0
+  canBeRotated: 1
+  alwaysLockOnRelease: 0
+  keepRestraints: 0
+  objectSoundController: {fileID: 0}
+  pickedUp: 0
+--- !u!54 &8837824219878873396
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8209161644735899396}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!65 &4301735856930489822
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8209161644735899396}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.0031877412, y: 0.0041067754, z: 0.000545499}
+  m_Center: {x: -0.000033080112, y: 0.000010727788, z: -0.0000056397867}
