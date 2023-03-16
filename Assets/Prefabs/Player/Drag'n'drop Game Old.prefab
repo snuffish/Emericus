@@ -1032,6 +1032,66 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1089273623835128668}
     m_Modifications:
+    - target: {fileID: 595709203980261730, guid: e08c7dcd8727aba429f2cab47dc921cc,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1133879728394829600, guid: e08c7dcd8727aba429f2cab47dc921cc,
+        type: 3}
+      propertyPath: m_Range
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 1133879728394829600, guid: e08c7dcd8727aba429f2cab47dc921cc,
+        type: 3}
+      propertyPath: m_Intensity
+      value: 405.1744
+      objectReference: {fileID: 0}
+    - target: {fileID: 1133879728394829600, guid: e08c7dcd8727aba429f2cab47dc921cc,
+        type: 3}
+      propertyPath: m_SpotAngle
+      value: 154
+      objectReference: {fileID: 0}
+    - target: {fileID: 1133879728394829600, guid: e08c7dcd8727aba429f2cab47dc921cc,
+        type: 3}
+      propertyPath: m_ColorTemperature
+      value: 1900
+      objectReference: {fileID: 0}
+    - target: {fileID: 1730138640247722657, guid: e08c7dcd8727aba429f2cab47dc921cc,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2112451191673385384, guid: e08c7dcd8727aba429f2cab47dc921cc,
+        type: 3}
+      propertyPath: m_Range
+      value: 15.63
+      objectReference: {fileID: 0}
+    - target: {fileID: 2112451191673385384, guid: e08c7dcd8727aba429f2cab47dc921cc,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2112451191673385384, guid: e08c7dcd8727aba429f2cab47dc921cc,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2112451191673385384, guid: e08c7dcd8727aba429f2cab47dc921cc,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2112451191673385384, guid: e08c7dcd8727aba429f2cab47dc921cc,
+        type: 3}
+      propertyPath: m_Intensity
+      value: 9.305093
+      objectReference: {fileID: 0}
+    - target: {fileID: 2112451191673385384, guid: e08c7dcd8727aba429f2cab47dc921cc,
+        type: 3}
+      propertyPath: m_ColorTemperature
+      value: 2110
+      objectReference: {fileID: 0}
     - target: {fileID: 7492625813712972070, guid: e08c7dcd8727aba429f2cab47dc921cc,
         type: 3}
       propertyPath: originSens
@@ -1117,6 +1177,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: CameraHolder
+      objectReference: {fileID: 0}
+    - target: {fileID: 8451070464881930598, guid: e08c7dcd8727aba429f2cab47dc921cc,
+        type: 3}
+      propertyPath: m_Mass
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e08c7dcd8727aba429f2cab47dc921cc, type: 3}
