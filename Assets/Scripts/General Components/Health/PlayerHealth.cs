@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 public class PlayerHealth : Health
 {
+    [System.Serializable]
     public struct VoiceSettings
     {
         public VoiceAction vAction;
