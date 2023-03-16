@@ -13259,7 +13259,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh36562
+  m_Name: pb_Mesh209550
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -22278,6 +22278,31 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: MusicManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 4669040576193244303, guid: 90d61b54dc91d7d4bbbf078651f4ce0f,
+        type: 3}
+      propertyPath: bgmReferences.Array.data[4].Path
+      value: event:/Ambience/Inside/WindTest
+      objectReference: {fileID: 0}
+    - target: {fileID: 4669040576193244303, guid: 90d61b54dc91d7d4bbbf078651f4ce0f,
+        type: 3}
+      propertyPath: bgmReferences.Array.data[4].Guid.Data1
+      value: 1085277916
+      objectReference: {fileID: 0}
+    - target: {fileID: 4669040576193244303, guid: 90d61b54dc91d7d4bbbf078651f4ce0f,
+        type: 3}
+      propertyPath: bgmReferences.Array.data[4].Guid.Data2
+      value: 1137634983
+      objectReference: {fileID: 0}
+    - target: {fileID: 4669040576193244303, guid: 90d61b54dc91d7d4bbbf078651f4ce0f,
+        type: 3}
+      propertyPath: bgmReferences.Array.data[4].Guid.Data3
+      value: 603626664
+      objectReference: {fileID: 0}
+    - target: {fileID: 4669040576193244303, guid: 90d61b54dc91d7d4bbbf078651f4ce0f,
+        type: 3}
+      propertyPath: bgmReferences.Array.data[4].Guid.Data4
+      value: 521471034
       objectReference: {fileID: 0}
     - target: {fileID: 8591402441183388410, guid: 90d61b54dc91d7d4bbbf078651f4ce0f,
         type: 3}
@@ -70156,7 +70181,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh32730
+  m_Name: pb_Mesh205724
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -71467,7 +71492,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh34894
+  m_Name: pb_Mesh207878
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -73271,7 +73296,7 @@ PrefabInstance:
     - target: {fileID: 6327880986704145433, guid: 31f662c1964152e40b1c6c4db1edc515,
         type: 3}
       propertyPath: audioSettings.Array.size
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6327880986704145433, guid: 31f662c1964152e40b1c6c4db1edc515,
         type: 3}
@@ -73280,8 +73305,28 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6327880986704145433, guid: 31f662c1964152e40b1c6c4db1edc515,
         type: 3}
+      propertyPath: audioSettings.Array.data[1].action
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6327880986704145433, guid: 31f662c1964152e40b1c6c4db1edc515,
+        type: 3}
       propertyPath: audioSettings.Array.data[0].bgmEvent
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6327880986704145433, guid: 31f662c1964152e40b1c6c4db1edc515,
+        type: 3}
+      propertyPath: audioSettings.Array.data[1].bgmEvent
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6327880986704145433, guid: 31f662c1964152e40b1c6c4db1edc515,
+        type: 3}
+      propertyPath: audioSettings.Array.data[1].paramName
+      value: Wind
+      objectReference: {fileID: 0}
+    - target: {fileID: 6327880986704145433, guid: 31f662c1964152e40b1c6c4db1edc515,
+        type: 3}
+      propertyPath: audioSettings.Array.data[1].paramValue
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7714198816936244693, guid: 31f662c1964152e40b1c6c4db1edc515,
         type: 3}
@@ -75195,7 +75240,7 @@ PrefabInstance:
     - target: {fileID: 6327880986704145433, guid: 31f662c1964152e40b1c6c4db1edc515,
         type: 3}
       propertyPath: audioSettings.Array.size
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6327880986704145433, guid: 31f662c1964152e40b1c6c4db1edc515,
         type: 3}
@@ -75204,8 +75249,28 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6327880986704145433, guid: 31f662c1964152e40b1c6c4db1edc515,
         type: 3}
+      propertyPath: audioSettings.Array.data[1].action
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6327880986704145433, guid: 31f662c1964152e40b1c6c4db1edc515,
+        type: 3}
       propertyPath: audioSettings.Array.data[0].bgmEvent
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6327880986704145433, guid: 31f662c1964152e40b1c6c4db1edc515,
+        type: 3}
+      propertyPath: audioSettings.Array.data[1].bgmEvent
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6327880986704145433, guid: 31f662c1964152e40b1c6c4db1edc515,
+        type: 3}
+      propertyPath: audioSettings.Array.data[1].paramName
+      value: Wind
+      objectReference: {fileID: 0}
+    - target: {fileID: 6327880986704145433, guid: 31f662c1964152e40b1c6c4db1edc515,
+        type: 3}
+      propertyPath: audioSettings.Array.data[1].paramValue
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7714198816936244693, guid: 31f662c1964152e40b1c6c4db1edc515,
         type: 3}
@@ -79268,7 +79333,7 @@ PrefabInstance:
     - target: {fileID: 4648841835067181279, guid: 9e209d725f861764e811c8ddb947c009,
         type: 3}
       propertyPath: aZoneSettings.Array.size
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4648841835067181279, guid: 9e209d725f861764e811c8ddb947c009,
         type: 3}
@@ -79277,8 +79342,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4648841835067181279, guid: 9e209d725f861764e811c8ddb947c009,
         type: 3}
+      propertyPath: aZoneSettings.Array.data[1].action
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4648841835067181279, guid: 9e209d725f861764e811c8ddb947c009,
+        type: 3}
       propertyPath: aZoneSettings.Array.data[0].bgmEvent
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4648841835067181279, guid: 9e209d725f861764e811c8ddb947c009,
+        type: 3}
+      propertyPath: aZoneSettings.Array.data[1].bgmEvent
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 8778593177235041897, guid: 9e209d725f861764e811c8ddb947c009,
         type: 3}
