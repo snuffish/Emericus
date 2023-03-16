@@ -9751,12 +9751,12 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 202061540}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e32c722d376fc8c4eb7e07ce80d82a4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  resetStateOnDeactivation: 1
+  resetStateOnDeactivation: 0
   stateHasToBeDifferent: 1
   requireAllForActivation: 0
   activateAllTargets: 0
@@ -9793,7 +9793,7 @@ MonoBehaviour:
   stateHasToBeDifferent: 1
   requireAllForActivation: 0
   activateAllTargets: 1
-  activateOnAnyChange: 1
+  activateOnAnyChange: 0
   deactivateAllTargets: 0
   deactivateOnAnyChange: 0
   invertAllTargets: 0
@@ -71786,6 +71786,18 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 934885012}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1410004286 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6266672802219159357, guid: bbb92c5b040b8da4c97a622bbca75f01,
+    type: 3}
+  m_PrefabInstance: {fileID: 934885012}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e78a3a2ec35de214eac55e69c3aaf186, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1411506866
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -106192,7 +106204,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 110
+  m_Constraints: 0
   m_CollisionDetection: 0
 --- !u!59 &2592919286764648073
 HingeJoint:
@@ -106242,10 +106254,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d18dd617b26be54e9fbe38aa128fd9a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lockAngles:
-  - 0
-  - -60
-  - 60
+  lockAngles: []
   hinge: {fileID: 2592919286764648073}
   lockThreshold: 2
   lockBreakThreshold: 6
@@ -106271,8 +106280,8 @@ MonoBehaviour:
       m_Calls: []
   isActive: 0
   activateOnUpdate: 0
-  motorSpeed: 1
-  motorForce: 15
+  motorSpeed: 30
+  motorForce: 100
   activateAngle: 60
   deactivateAngle: -60
   activateThreshold: 3
@@ -106315,6 +106324,7 @@ GameObject:
   - component: {fileID: 2592919286764648074}
   - component: {fileID: 2592919286764648075}
   - component: {fileID: 2592919286764648120}
+  - component: {fileID: 2592919286764648121}
   m_Layer: 8
   m_Name: Lever
   m_TagString: Untagged
@@ -106460,6 +106470,40 @@ MonoBehaviour:
   currentHealth: 0
   maxHealth: 0
   hurtCooldownTime: 0
+--- !u!114 &2592919286764648121
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2592919286764648077}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e32c722d376fc8c4eb7e07ce80d82a4c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  resetStateOnDeactivation: 0
+  stateHasToBeDifferent: 1
+  requireAllForActivation: 0
+  activateAllTargets: 0
+  activateOnAnyChange: 0
+  deactivateAllTargets: 1
+  deactivateOnAnyChange: 1
+  invertAllTargets: 0
+  invertOnChange: 0
+  inputActivators:
+  - {fileID: 783063269}
+  - {fileID: 1688592559}
+  - {fileID: 1703374092}
+  - {fileID: 1410004286}
+  - {fileID: 1117814296}
+  - {fileID: 2005452449}
+  - {fileID: 1411960114}
+  - {fileID: 1109973676}
+  - {fileID: 1576429698}
+  - {fileID: 2059749142}
+  targetActivators:
+  - {fileID: 2592919286764648075}
 --- !u!1001 &2820351028008215423
 PrefabInstance:
   m_ObjectHideFlags: 0
