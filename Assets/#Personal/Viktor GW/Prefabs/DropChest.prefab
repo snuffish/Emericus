@@ -532,16 +532,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cdbff440df30e9e4693558b91fa222ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isDisabled: 0
+  isDisabled: 1
   OnChangeState:
     m_PersistentCalls:
       m_Calls: []
   isActive: 0
   motorSpeed: 1
   motorForce: 15
+  creakMinVelocity: 1
   hinge: {fileID: 0}
   physicsObject: {fileID: 0}
   animator: {fileID: 929585906749368413}
+  rigidbody: {fileID: 0}
   DOOR_Open:
     Guid:
       Data1: 0
@@ -563,6 +565,15 @@ MonoBehaviour:
       Data3: 0
       Data4: 0
     Path: 
+  DoorCreak:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  creakEmitter: {fileID: 0}
+  closeEmitter: {fileID: 0}
   isOpening: 0
   isClosing: 0
 --- !u!1 &7680828960059868847
