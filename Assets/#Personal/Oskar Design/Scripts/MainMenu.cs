@@ -8,7 +8,6 @@ public class MainMenu : MonoBehaviour
 {
     [FMODUnity.ParamRef] 
     public string paramRef;
-
     public float paramValue;
     public bool ignoreSeek = false;
     [SerializeField] private GeneralPlayerInputs pauseManager;
