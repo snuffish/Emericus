@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 public class PlayerHealth : Health
 {
-    [System.Serializable]
+    /*[System.Serializable]
     public struct VoiceSettings
     {
         public VoiceAction vAction;
@@ -18,13 +18,13 @@ public class PlayerHealth : Health
     }
     
     [NonReorderable] public VoiceSettings[] voiceSettings;
-    private VLManager vM;
+    private VLManager vM;*/
     
     [SerializeField] private SceneManager _sceneManager;
     [SerializeField] private float transistionTime;
     void Start()
     {
-        vM = GameObject.Find("VLManager").GetComponent<VLManager>();
+        //vM = GameObject.Find("VLManager").GetComponent<VLManager>();
     }
     
     protected override void Die() {
@@ -33,7 +33,7 @@ public class PlayerHealth : Health
         
         GameObject.Find("MusicManager").GetComponent<NewAManager>().PlayGameOver();
         
-        foreach (VoiceSettings v in voiceSettings)
+        /*foreach (VoiceSettings v in voiceSettings)
         {
             switch (v.vAction)
             {
@@ -47,6 +47,6 @@ public class PlayerHealth : Health
                 default:Debug.Log("Error! No valid action.");
                     break;
             }
-        }
+        }*/
     }
 }
