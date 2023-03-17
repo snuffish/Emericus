@@ -8,7 +8,6 @@ public class MainMenu : MonoBehaviour
 {
     [FMODUnity.ParamRef] 
     public string paramRef;
-
     public float paramValue;
     public bool ignoreSeek = false;
     [SerializeField] private GeneralPlayerInputs pauseManager;
@@ -22,6 +21,7 @@ public class MainMenu : MonoBehaviour
     }
 
     public void BackToMainMenu() {
+        RuntimeManager.StudioSystem.setParameterByName(paramRef, paramValue, ignoreSeek);
         UnityEngine.SceneManagement.SceneManager.LoadScene(0);
     }
 
