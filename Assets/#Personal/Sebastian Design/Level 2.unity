@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
+  m_IndirectSpecularColor: {r: 0.1417908, g: 0.104044855, b: 0.066817224, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -62252,6 +62252,16 @@ PrefabInstance:
       propertyPath: m_hasFontAssetChanged
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 740643345386649065, guid: 9d8837755ff1baf4f8bd3be7820650ed,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 669841408}
+    - target: {fileID: 740643345386649065, guid: 9d8837755ff1baf4f8bd3be7820650ed,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: OnClickSound
+      objectReference: {fileID: 0}
     - target: {fileID: 1032736404579883214, guid: 9d8837755ff1baf4f8bd3be7820650ed,
         type: 3}
       propertyPath: m_hasFontAssetChanged
@@ -62288,6 +62298,16 @@ PrefabInstance:
       propertyPath: m_hasFontAssetChanged
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2079927034651667539, guid: 9d8837755ff1baf4f8bd3be7820650ed,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 669841408}
+    - target: {fileID: 2079927034651667539, guid: 9d8837755ff1baf4f8bd3be7820650ed,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: OnClickSound
+      objectReference: {fileID: 0}
     - target: {fileID: 2502652082214429103, guid: 9d8837755ff1baf4f8bd3be7820650ed,
         type: 3}
       propertyPath: m_hasFontAssetChanged
@@ -62323,6 +62343,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_hasFontAssetChanged
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2578927619753518102, guid: 9d8837755ff1baf4f8bd3be7820650ed,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 669841408}
+    - target: {fileID: 2578927619753518102, guid: 9d8837755ff1baf4f8bd3be7820650ed,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: OnClickSound
       objectReference: {fileID: 0}
     - target: {fileID: 2764885358711671677, guid: 9d8837755ff1baf4f8bd3be7820650ed,
         type: 3}
@@ -62377,6 +62407,16 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 669841408}
     - target: {fileID: 4128359232732392622, guid: 9d8837755ff1baf4f8bd3be7820650ed,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: OnClickSound
+      objectReference: {fileID: 0}
+    - target: {fileID: 4217630960108952761, guid: 9d8837755ff1baf4f8bd3be7820650ed,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 669841408}
+    - target: {fileID: 4217630960108952761, guid: 9d8837755ff1baf4f8bd3be7820650ed,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
       value: OnClickSound
@@ -62534,6 +62574,16 @@ PrefabInstance:
       propertyPath: m_hasFontAssetChanged
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6324095151221830020, guid: 9d8837755ff1baf4f8bd3be7820650ed,
+        type: 3}
+      propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 669841408}
+    - target: {fileID: 6324095151221830020, guid: 9d8837755ff1baf4f8bd3be7820650ed,
+        type: 3}
+      propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnClickSound
+      objectReference: {fileID: 0}
     - target: {fileID: 6441298176336526418, guid: 9d8837755ff1baf4f8bd3be7820650ed,
         type: 3}
       propertyPath: m_RootOrder
@@ -62555,6 +62605,16 @@ PrefabInstance:
       propertyPath: m_hasFontAssetChanged
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7607700686834526680, guid: 9d8837755ff1baf4f8bd3be7820650ed,
+        type: 3}
+      propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 669841408}
+    - target: {fileID: 7607700686834526680, guid: 9d8837755ff1baf4f8bd3be7820650ed,
+        type: 3}
+      propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnClickSound
+      objectReference: {fileID: 0}
     - target: {fileID: 7649723589245919656, guid: 9d8837755ff1baf4f8bd3be7820650ed,
         type: 3}
       propertyPath: m_Enabled
@@ -62570,6 +62630,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_hasFontAssetChanged
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7773945008853255875, guid: 9d8837755ff1baf4f8bd3be7820650ed,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 669841408}
+    - target: {fileID: 7773945008853255875, guid: 9d8837755ff1baf4f8bd3be7820650ed,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: OnClickSound
       objectReference: {fileID: 0}
     - target: {fileID: 7800779177004778792, guid: 9d8837755ff1baf4f8bd3be7820650ed,
         type: 3}
@@ -62601,6 +62671,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Intensity
       value: 405.1744
+      objectReference: {fileID: 0}
+    - target: {fileID: 8050842078704726115, guid: 9d8837755ff1baf4f8bd3be7820650ed,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 669841408}
+    - target: {fileID: 8050842078704726115, guid: 9d8837755ff1baf4f8bd3be7820650ed,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: OnClickSound
       objectReference: {fileID: 0}
     - target: {fileID: 8105372034708675220, guid: 9d8837755ff1baf4f8bd3be7820650ed,
         type: 3}
@@ -62697,6 +62777,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_hasFontAssetChanged
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8836085276367302658, guid: 9d8837755ff1baf4f8bd3be7820650ed,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 669841408}
+    - target: {fileID: 8836085276367302658, guid: 9d8837755ff1baf4f8bd3be7820650ed,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: OnClickSound
       objectReference: {fileID: 0}
     - target: {fileID: 8863753427429599982, guid: 9d8837755ff1baf4f8bd3be7820650ed,
         type: 3}
