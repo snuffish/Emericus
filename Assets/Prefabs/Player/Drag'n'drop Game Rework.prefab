@@ -1716,6 +1716,19 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 6710531160949373329, guid: 995a458dce650c846985efcdf9a7c669, type: 3}
+--- !u!114 &3791494388059947936
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3201936168916473947}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a6d1aeb690ea3e14e91979396881e471, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 2072905055841538989}
 --- !u!1 &3761544691876109839 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6223576360435672773, guid: e08c7dcd8727aba429f2cab47dc921cc,
@@ -1736,12 +1749,6 @@ CapsuleCollider:
   m_Height: 0.025
   m_Direction: 0
   m_Center: {x: -0.006, y: 0, z: 0}
---- !u!108 &7913243272770488298 stripped
-Light:
-  m_CorrespondingSourceObject: {fileID: 1133879728394829600, guid: e08c7dcd8727aba429f2cab47dc921cc,
-    type: 3}
-  m_PrefabInstance: {fileID: 7092366006898751690}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &8039176728676889965
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1803,7 +1810,7 @@ PrefabInstance:
         type: 3}
       propertyPath: spotLight
       value: 
-      objectReference: {fileID: 7913243272770488298}
+      objectReference: {fileID: 0}
     - target: {fileID: 5682144589719704232, guid: 9af554575e5e555408c5cc08d4a3c7d0,
         type: 3}
       propertyPath: m_Material
@@ -1893,6 +1900,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7640047328298853276, guid: 9af554575e5e555408c5cc08d4a3c7d0,
+        type: 3}
+      propertyPath: m_Interpolate
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7640047328298853276, guid: 9af554575e5e555408c5cc08d4a3c7d0,
+        type: 3}
+      propertyPath: m_CollisionDetection
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7640047328298853278, guid: 9af554575e5e555408c5cc08d4a3c7d0,
         type: 3}
