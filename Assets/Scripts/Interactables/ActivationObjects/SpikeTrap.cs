@@ -37,13 +37,13 @@ public class SpikeTrap : Activators
 
         collider.enabled = true;
         // Play the FMOD event on hover
-        RuntimeManager.PlayOneShot(SpikeTrapEventRef);
         
         //  Code For Opening the spiketrap
         while (transform.localPosition.y < spikeStartHeight + spikeShootLenght) {
             spikeRB.MovePosition(transform.position + transform.up * spikeSpeed * Time.deltaTime);
             yield return null;
         }
+        RuntimeManager.PlayOneShot(SpikeTrapEventRef);
         
         if (!ejectAndDestroy) {
             //  Delay before closing

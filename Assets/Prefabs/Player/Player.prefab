@@ -115,6 +115,7 @@ MonoBehaviour:
   currentHealth: 1
   maxHealth: 1
   hurtCooldownTime: 1
+  voiceSettings: []
   _sceneManager: {fileID: 0}
   transistionTime: 2
 --- !u!1 &2603542165927864361
@@ -508,6 +509,7 @@ MonoBehaviour:
   startDrag: 1
   pickUpDrag: 8
   pickupParent: {fileID: 8167089099506772242}
+  handAnimator: {fileID: 0}
   currentlyPickedUpObject: {fileID: 0}
   useSmoothInterperlation: 1
   useGravity: 0
@@ -561,7 +563,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7640047328298853248}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fc8a0efc57c54714f896e04200b00e9c, type: 3}
   m_Name: 

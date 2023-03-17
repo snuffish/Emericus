@@ -28,7 +28,5 @@ public class Trap : MonoBehaviour
                 shouldItHurt = false;
             }
         }
-
-        
     }
 }
