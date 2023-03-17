@@ -8,7 +8,7 @@ public class Health : MonoBehaviour
     [SerializeField] int currentHealth;
     [SerializeField] int maxHealth;
     [SerializeField] float hurtCooldownTime;
-    private bool canTakeDamage;
+    private bool canTakeDamage = true;
 
 
 
@@ -22,14 +22,12 @@ public class Health : MonoBehaviour
     {
         if (canTakeDamage)
         {
-            canTakeDamage = false;
             StartCoroutine(DamageCooldown());
+            Debug.Log($"Took {HP} damage, {currentHealth} to go!");
 
             currentHealth -= HP;
             if (currentHealth <= 0)
                 Die();
-
-            Debug.Log($"Took {HP} damage, {currentHealth} to go!");
         }
 
     }

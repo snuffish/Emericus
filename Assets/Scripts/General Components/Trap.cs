@@ -18,6 +18,7 @@ public class Trap : MonoBehaviour
         if (col.gameObject.GetComponent<Health>() != null) {
             hurtObject = col.gameObject.GetComponent<Health>();
             shouldItHurt = true;
+            Debug.Log("Spikes träffar");
         }
     }
 
