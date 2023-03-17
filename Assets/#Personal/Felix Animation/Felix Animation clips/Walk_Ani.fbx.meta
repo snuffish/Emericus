@@ -1,11 +1,11 @@
 fileFormatVersion: 2
-guid: e0c81a8e57fd77840a9ae40134e8a273
+guid: afab0cb7f6084114b8867c0e7925c2b8
 ModelImporter:
   serializedVersion: 21202
   internalIDToNameTable:
   - first:
-      74: -446562517193837778
-    second: Player_Hold_Ani
+      74: -5432759950657531575
+    second: Walk_Ani
   externalObjects: {}
   materials:
     materialImportMode: 2
@@ -27,7 +27,7 @@ ModelImporter:
     animationDoRetargetingWarnings: 0
     importAnimatedCustomProperties: 0
     importConstraints: 0
-    animationCompression: 3
+    animationCompression: 0
     animationRotationError: 0.5
     animationPositionError: 0.5
     animationScaleError: 0.5
@@ -36,19 +36,19 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: Player_Hold_Ani
-      takeName: Player_Hold_Ani
+      name: Walk_Ani
+      takeName: Walk_Ani
       internalID: 0
-      firstFrame: 235
-      lastFrame: 252
+      firstFrame: 139
+      lastFrame: 182
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
       cycleOffset: 0
       loop: 0
       hasAdditiveReferencePose: 0
-      loopTime: 0
-      loopBlend: 0
+      loopTime: 1
+      loopBlend: 1
       loopBlendOrientation: 0
       loopBlendPositionY: 0
       loopBlendPositionXZ: 0
@@ -63,7 +63,7 @@ ModelImporter:
       transformMask: []
       maskType: 3
       maskSource: {instanceID: 0}
-      additiveReferencePoseFrame: 235
+      additiveReferencePoseFrame: 139
     isReadable: 0
   meshes:
     lODScreenPercentages: []
