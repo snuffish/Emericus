@@ -24,7 +24,7 @@ public class PlayerHealth : Health
     [SerializeField] private float transistionTime;
     void Start()
     {
-        //vM = GameObject.Find("VLManager").GetComponent<VLManager>();
+        vM = GameObject.Find("VLManager").GetComponent<VLManager>();
     }
     
     protected override void Die() {
