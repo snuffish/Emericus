@@ -11,6 +11,10 @@ GameObject:
   - component: {fileID: 5819910470869686394}
   - component: {fileID: 7452228308458837983}
   - component: {fileID: 4652030812460180245}
+  - component: {fileID: 535559413747414857}
+  - component: {fileID: 5296636859185812374}
+  - component: {fileID: 5952934955903064680}
+  - component: {fileID: 8113953651519761016}
   m_Layer: 0
   m_Name: Stool_prefab
   m_TagString: Untagged
@@ -83,3 +87,93 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &535559413747414857
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6597677867091608256}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e00f5ae617338be4384dddd3ac1d37e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dropSound:
+    Guid:
+      Data1: 466992910
+      Data2: 1137767673
+      Data3: -284329854
+      Data4: 1236386453
+    Path: event:/Interactive/WoodBarrelDrop
+  pickUpSound:
+    Guid:
+      Data1: -764367262
+      Data2: 1193815489
+      Data3: -2108697728
+      Data4: 2113065669
+    Path: event:/Interactive/WoodBarrelPickUp
+  collisionSound:
+    Guid:
+      Data1: -1474136864
+      Data2: 1209124264
+      Data3: 495325103
+      Data4: 1412456430
+    Path: event:/Interactive/WoodItemsPlace
+--- !u!114 &5296636859185812374
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6597677867091608256}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1251556126d84b74984c42c72411e602, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentHealth: 0
+  maxHealth: 0
+  hurtCooldownTime: 0
+--- !u!114 &5952934955903064680
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6597677867091608256}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dee1a28932ecbb548814f52aedcc2c54, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isDisabled: 0
+  breakForce: 35
+  playerInteract: {fileID: 0}
+  objectHealth: {fileID: 0}
+  stackNormalThreshold: 0.5
+  lockCooldown: 0.1
+  damageVelocity: 500
+  canBePickedUp: 1
+  canTakeDamageFromForce: 0
+  canBeRotated: 1
+  alwaysLockOnRelease: 0
+  keepRestraints: 0
+  objectSoundController: {fileID: 0}
+  pickedUp: 0
+--- !u!54 &8113953651519761016
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6597677867091608256}
+  serializedVersion: 2
+  m_Mass: 2
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
