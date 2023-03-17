@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.14179224, g: 0.104044616, b: 0.066816986, a: 1}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -11908,6 +11908,31 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: MusicManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 4669040576193244303, guid: 90d61b54dc91d7d4bbbf078651f4ce0f,
+        type: 3}
+      propertyPath: gameOverStinger.Path
+      value: event:/Music/BGM/GameOver
+      objectReference: {fileID: 0}
+    - target: {fileID: 4669040576193244303, guid: 90d61b54dc91d7d4bbbf078651f4ce0f,
+        type: 3}
+      propertyPath: gameOverStinger.Guid.Data1
+      value: 1005056840
+      objectReference: {fileID: 0}
+    - target: {fileID: 4669040576193244303, guid: 90d61b54dc91d7d4bbbf078651f4ce0f,
+        type: 3}
+      propertyPath: gameOverStinger.Guid.Data2
+      value: 1195527808
+      objectReference: {fileID: 0}
+    - target: {fileID: 4669040576193244303, guid: 90d61b54dc91d7d4bbbf078651f4ce0f,
+        type: 3}
+      propertyPath: gameOverStinger.Guid.Data3
+      value: -333857623
+      objectReference: {fileID: 0}
+    - target: {fileID: 4669040576193244303, guid: 90d61b54dc91d7d4bbbf078651f4ce0f,
+        type: 3}
+      propertyPath: gameOverStinger.Guid.Data4
+      value: 323012765
       objectReference: {fileID: 0}
     - target: {fileID: 4669040576193244303, guid: 90d61b54dc91d7d4bbbf078651f4ce0f,
         type: 3}
@@ -46813,7 +46838,7 @@ PrefabInstance:
     - target: {fileID: 326104662428407836, guid: df8864fd4276d554499c38caa0d9c6f2,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.1
+      value: -0.14
       objectReference: {fileID: 0}
     - target: {fileID: 326104662428407836, guid: df8864fd4276d554499c38caa0d9c6f2,
         type: 3}
@@ -62170,6 +62195,31 @@ PrefabInstance:
         type: 3}
       propertyPath: m_hasFontAssetChanged
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5636808763138674679, guid: 9d8837755ff1baf4f8bd3be7820650ed,
+        type: 3}
+      propertyPath: voiceSettings.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5636808763138674679, guid: 9d8837755ff1baf4f8bd3be7820650ed,
+        type: 3}
+      propertyPath: voiceSettings.Array.data[0].keyName
+      value: Monologue
+      objectReference: {fileID: 0}
+    - target: {fileID: 5636808763138674679, guid: 9d8837755ff1baf4f8bd3be7820650ed,
+        type: 3}
+      propertyPath: voiceSettings.Array.data[0].vAction
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5636808763138674679, guid: 9d8837755ff1baf4f8bd3be7820650ed,
+        type: 3}
+      propertyPath: voiceSettings.Array.data[0].paramName
+      value: VoiceLines
+      objectReference: {fileID: 0}
+    - target: {fileID: 5636808763138674679, guid: 9d8837755ff1baf4f8bd3be7820650ed,
+        type: 3}
+      propertyPath: voiceSettings.Array.data[0].paramValue
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 5875264412915075115, guid: 9d8837755ff1baf4f8bd3be7820650ed,
         type: 3}

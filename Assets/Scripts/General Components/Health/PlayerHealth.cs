@@ -31,7 +31,7 @@ public class PlayerHealth : Health
         Debug.Log("Dead");
         StartCoroutine(_sceneManager.LoadLevel(UnityEngine.SceneManagement.SceneManager.GetActiveScene().buildIndex, transistionTime));
         
-        // GameObject.Find("MusicManager").GetComponent<MusicManager>().PlayGameOver();
+        GameObject.Find("MusicManager").GetComponent<NewAManager>().PlayGameOver();
         
         foreach (VoiceSettings v in voiceSettings)
         {
