@@ -1336,6 +1336,11 @@ PrefabInstance:
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 9064633443567022316}
+    - target: {fileID: 8577053969794890777, guid: c603d09f6b2eca14aac88c3d78b4fda0,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 8801748564925490991, guid: c603d09f6b2eca14aac88c3d78b4fda0,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
@@ -1565,8 +1570,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fullscreenTog: {fileID: 6324095151221830020}
-  resolutions: []
-  qualities: []
+  resolutions:
+  - horizontal: 2560
+    vertical: 1440
+  - horizontal: 1920
+    vertical: 1080
+  - horizontal: 1280
+    vertical: 720
+  qualities:
+  - qualityText: Default
+  - qualityText: Standard
+  - qualityText: Normal
+  - qualityText: Stop Trying
+  - qualityText: Unchanged
   playerData: {fileID: 11400000, guid: 5398cc1eb9aa4c94289ce508763178b8, type: 2}
   resolutionLabel: {fileID: 7625897940759913773}
   qualityLabel: {fileID: 119481390503682184}
