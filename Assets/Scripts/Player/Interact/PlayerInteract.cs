@@ -9,7 +9,7 @@ public class PlayerInteract : MonoBehaviour
 {
 
 
-    private PlayerLook playerLook;
+    PlayerLook playerLook;
 
     [Header("Drag")]
     [SerializeField] float startAngularDrag = 0.05f;
@@ -19,6 +19,7 @@ public class PlayerInteract : MonoBehaviour
 
     [Header("Pick up")]
     [SerializeField, Tooltip("Transform that pickup objects try to be close to")] Transform pickupParent = null;
+    [SerializeField] Animator handAnimator;
     public GameObject currentlyPickedUpObject;
     Rigidbody pickupRB;
     PhysicsObject physicsObject;
@@ -133,6 +134,7 @@ public class PlayerInteract : MonoBehaviour
 
     void ThrowObject()
     {
+        handAnimator.SetBool("Throw", true);
         pickupRB.AddForce(Camera.main.transform.forward * throwForce);
         BreakConnection();
     }
@@ -156,6 +158,8 @@ public class PlayerInteract : MonoBehaviour
         physicsObject.playerInteract = this;
         StartCoroutine(physicsObject.PickUp());
         rotation = pickupRB.rotation.eulerAngles;
+        handAnimator.SetBool("isHold", true);
+        handAnimator.SetBool("Throw", false);
     }
     public void BreakConnection()
     {
@@ -178,6 +182,7 @@ public class PlayerInteract : MonoBehaviour
             currentlyPickedUpObject = null;
             physicsObject.pickedUp = false;
             currentDist = 0;
+            handAnimator.SetBool("isHold", false);
         }
     }
 
