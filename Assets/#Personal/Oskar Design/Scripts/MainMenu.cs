@@ -21,7 +21,6 @@ public class MainMenu : MonoBehaviour
     }
 
     public void BackToMainMenu() {
-        RuntimeManager.StudioSystem.setParameterByName(paramRef, paramValue, ignoreSeek);
         UnityEngine.SceneManagement.SceneManager.LoadScene(0);
     }
 
