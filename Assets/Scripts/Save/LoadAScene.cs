@@ -10,6 +10,7 @@ public class LoadAScene : Interactable
 
     public float paramValue;
     public bool ignoreSeek = false;
+    
     [SerializeField] private SceneManager _sceneManager;
     [SerializeField] private float transistionTime;
     [SerializeField] private int sceneToLoadInt;
