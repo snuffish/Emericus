@@ -1688,6 +1688,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 346930530388994589}
     m_Modifications:
+    - target: {fileID: 595709203980261730, guid: e08c7dcd8727aba429f2cab47dc921cc,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1133879728394829600, guid: e08c7dcd8727aba429f2cab47dc921cc,
         type: 3}
       propertyPath: m_Intensity
@@ -1697,6 +1702,26 @@ PrefabInstance:
         type: 3}
       propertyPath: m_SpotAngle
       value: 154
+      objectReference: {fileID: 0}
+    - target: {fileID: 1169725527693070116, guid: e08c7dcd8727aba429f2cab47dc921cc,
+        type: 3}
+      propertyPath: m_ConnectedBody
+      value: 
+      objectReference: {fileID: 1371298787277269297}
+    - target: {fileID: 1169725527693070116, guid: e08c7dcd8727aba429f2cab47dc921cc,
+        type: 3}
+      propertyPath: m_ConnectedAnchor.x
+      value: -0.0069457246
+      objectReference: {fileID: 0}
+    - target: {fileID: 1169725527693070116, guid: e08c7dcd8727aba429f2cab47dc921cc,
+        type: 3}
+      propertyPath: m_ConnectedAnchor.y
+      value: -0.0015789228
+      objectReference: {fileID: 0}
+    - target: {fileID: 1169725527693070116, guid: e08c7dcd8727aba429f2cab47dc921cc,
+        type: 3}
+      propertyPath: m_ConnectedAnchor.z
+      value: 0.00041961775
       objectReference: {fileID: 0}
     - target: {fileID: 1730138640247722657, guid: e08c7dcd8727aba429f2cab47dc921cc,
         type: 3}
@@ -1708,6 +1733,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Enabled
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2838186861506126379, guid: e08c7dcd8727aba429f2cab47dc921cc,
+        type: 3}
+      propertyPath: m_Mass
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3739118626726047969, guid: e08c7dcd8727aba429f2cab47dc921cc,
         type: 3}
@@ -1840,6 +1870,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: CameraHolder
       objectReference: {fileID: 0}
+    - target: {fileID: 8451070464881930598, guid: e08c7dcd8727aba429f2cab47dc921cc,
+        type: 3}
+      propertyPath: m_AngularDrag
+      value: 0.4
+      objectReference: {fileID: 0}
     - target: {fileID: 8626169654732219946, guid: e08c7dcd8727aba429f2cab47dc921cc,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -1905,7 +1940,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -0.756
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 4136363612249367892, guid: e08c7dcd8727aba429f2cab47dc921cc, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: e08c7dcd8727aba429f2cab47dc921cc, type: 3}
 --- !u!4 &402511641342914812 stripped
 Transform:
@@ -1931,6 +1967,22 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 7092366006898751690}
   m_PrefabAsset: {fileID: 0}
+--- !u!54 &1371298787277269297
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3146545389727351300}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!65 &850454567450362014
 BoxCollider:
   m_ObjectHideFlags: 0

@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.1414458, g: 0.10378198, b: 0.06664945, a: 1}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -9929,18 +9929,6 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: cdbff440df30e9e4693558b91fa222ad, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &202061551 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 2001907982932800504, guid: df8864fd4276d554499c38caa0d9c6f2,
-    type: 3}
-  m_PrefabInstance: {fileID: 385117048}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 202061540}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1001 &202919080
@@ -25738,7 +25726,8 @@ PrefabInstance:
       propertyPath: m_LocalPosition.x
       value: -15.03
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: 27a500df80f7d6a44bb23bb975d7da20, type: 3}
 --- !u!1001 &474488861
 PrefabInstance:
@@ -43892,8 +43881,8 @@ ParticleSystem:
     startSizeY:
       serializedVersion: 2
       minMaxState: 3
-      scalar: 50
-      minScalar: 30
+      scalar: 30
+      minScalar: 90
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -78101,11 +78090,11 @@ MonoBehaviour:
     Path: event:/Interactive/DOOR/DOOR_Open
   DOOR_Close:
     Guid:
-      Data1: 92436671
-      Data2: 1116247191
-      Data3: -1592887893
-      Data4: 154766022
-    Path: event:/Interactive/DOOR/DOOR_Close
+      Data1: 345908133
+      Data2: 1325929581
+      Data3: -1667629936
+      Data4: 2006240549
+    Path: event:/Interactive/DOOR/DOOR OPEN CLOSE ALTERNATIV/DoorClose
   DOOR_Open_Puzzle:
     Guid:
       Data1: -1698730938
@@ -78120,10 +78109,70 @@ MonoBehaviour:
       Data3: -339468406
       Data4: 1189039994
     Path: event:/Interactive/DOOR/DOORCreak
-  creakEmitter: {fileID: 202061551}
-  closeEmitter: {fileID: 202061551}
+  creakEmitter: {fileID: 1432159345}
+  closeEmitter: {fileID: 1432159344}
   isOpening: 0
   isClosing: 0
+--- !u!114 &1432159344
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1432159329}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 345908133
+      Data2: 1325929581
+      Data3: -1667629936
+      Data4: 2006240549
+    Path: event:/Interactive/DOOR/DOOR OPEN CLOSE ALTERNATIV/DoorClose
+  Event: 
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
+--- !u!114 &1432159345
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1432159329}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -779977397
+      Data2: 1101032667
+      Data3: -339468406
+      Data4: 1189039994
+    Path: event:/Interactive/DOOR/DOORCreak
+  Event: 
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &1437375720 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -344004081357383697, guid: f0ca1060e80dfaf459d77e1e5cf42694,
@@ -101564,6 +101613,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 7
       objectReference: {fileID: 0}
+    - target: {fileID: 5700923458083516907, guid: 37eca1b83ce9b2e4489b753e09fcb1a9,
+        type: 3}
+      propertyPath: lockAngles.Array.data[0]
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6112831897052178909, guid: 37eca1b83ce9b2e4489b753e09fcb1a9,
         type: 3}
       propertyPath: m_Layer
@@ -110574,8 +110628,8 @@ HingeJoint:
     freeSpin: 0
   m_UseLimits: 1
   m_Limits:
-    min: -60
-    max: 60
+    min: -45
+    max: 45
     bounciness: 0
     bounceMinVelocity: 0.2
     contactDistance: 0
@@ -110625,8 +110679,8 @@ MonoBehaviour:
   activateOnUpdate: 0
   motorSpeed: 100
   motorForce: 100
-  activateAngle: 60
-  deactivateAngle: -60
+  activateAngle: 45
+  deactivateAngle: -45
   activateThreshold: 3
   hinge: {fileID: 2592919286764648073}
   physicsObject: {fileID: 2592919286764648119}
