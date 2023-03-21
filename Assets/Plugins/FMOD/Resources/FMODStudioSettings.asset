@@ -432,18 +432,18 @@ MonoBehaviour:
   RealChannelSettings: []
   Plugins: []
   MasterBanks:
-  - Master
+  - Desktop/Master
   Banks:
   - Ambience
-  - Dialogue
-  - Music
+  - Desktop/Dialogue
+  - Desktop/Music
   - SFX
   BanksToLoad:
+  - Ambience
   - Dialogue
   - Master
   - Master.strings
   - Music
-  - Ambience
   - SFX
   LiveUpdatePort: 9264
   EnableMemoryTracking: 0
