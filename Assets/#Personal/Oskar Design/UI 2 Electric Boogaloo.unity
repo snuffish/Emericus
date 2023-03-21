@@ -39,7 +39,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.1417908, g: 0.104044855, b: 0.066817224, a: 1}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2206,6 +2206,7 @@ GameObject:
   - component: {fileID: 238529998}
   - component: {fileID: 238529997}
   - component: {fileID: 238529996}
+  - component: {fileID: 238529999}
   m_Layer: 5
   m_Name: ExitButton
   m_TagString: Untagged
@@ -2314,6 +2315,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 238529999}
+        m_TargetAssemblyTypeName: AudioEventTrigger, Assembly-CSharp
+        m_MethodName: RunSettings
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!114 &238529997
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2352,6 +2365,26 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 238529994}
   m_CullTransparentMesh: 1
+--- !u!114 &238529999
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 238529994}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e32d3771896070c49b70c029924a5e39, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioSettings:
+  - action: 3
+    bgmEvent: 1
+    ignoreFadeOut: 0
+    paramName: MenuProg
+    paramValue: 0
+    ignoreSeek: 0
+    paramGlobal: 0
 --- !u!1 &243315090
 GameObject:
   m_ObjectHideFlags: 0
@@ -4061,6 +4094,7 @@ MonoBehaviour:
   m_Script: {fileID: 986417472}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_Entries: []
 --- !u!4 &424079002
 Transform:
   m_ObjectHideFlags: 19
@@ -7307,6 +7341,7 @@ GameObject:
   - component: {fileID: 868276488}
   - component: {fileID: 868276487}
   - component: {fileID: 868276486}
+  - component: {fileID: 868276489}
   m_Layer: 5
   m_Name: ExitButton
   m_TagString: Untagged
@@ -7415,6 +7450,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 868276489}
+        m_TargetAssemblyTypeName: AudioEventTrigger, Assembly-CSharp
+        m_MethodName: RunSettings
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!114 &868276487
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7453,6 +7500,26 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 868276484}
   m_CullTransparentMesh: 1
+--- !u!114 &868276489
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 868276484}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e32d3771896070c49b70c029924a5e39, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioSettings:
+  - action: 3
+    bgmEvent: 1
+    ignoreFadeOut: 0
+    paramName: MenuProg
+    paramValue: 0
+    ignoreSeek: 0
+    paramGlobal: 0
 --- !u!1001 &871381839
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16911,6 +16978,7 @@ GameObject:
   - component: {fileID: 1738572440}
   - component: {fileID: 1738572439}
   - component: {fileID: 1738572438}
+  - component: {fileID: 1738572441}
   m_Layer: 5
   m_Name: SettingsButton
   m_TagString: Untagged
@@ -17019,6 +17087,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 1738572441}
+        m_TargetAssemblyTypeName: AudioEventTrigger, Assembly-CSharp
+        m_MethodName: RunSettings
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!114 &1738572439
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17057,6 +17137,26 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1738572436}
   m_CullTransparentMesh: 1
+--- !u!114 &1738572441
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1738572436}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e32d3771896070c49b70c029924a5e39, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioSettings:
+  - action: 3
+    bgmEvent: 1
+    ignoreFadeOut: 0
+    paramName: MenuProg
+    paramValue: 1
+    ignoreSeek: 0
+    paramGlobal: 0
 --- !u!1 &1749356782
 GameObject:
   m_ObjectHideFlags: 0
@@ -21814,6 +21914,7 @@ GameObject:
   - component: {fileID: 2094539262}
   - component: {fileID: 2094539261}
   - component: {fileID: 2094539260}
+  - component: {fileID: 2094539263}
   m_Layer: 5
   m_Name: ControlsButton
   m_TagString: Untagged
@@ -21922,6 +22023,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 2094539263}
+        m_TargetAssemblyTypeName: AudioEventTrigger, Assembly-CSharp
+        m_MethodName: RunSettings
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!114 &2094539261
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21960,6 +22073,26 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2094539258}
   m_CullTransparentMesh: 1
+--- !u!114 &2094539263
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2094539258}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e32d3771896070c49b70c029924a5e39, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioSettings:
+  - action: 3
+    bgmEvent: 1
+    ignoreFadeOut: 0
+    paramName: MenuProg
+    paramValue: 1
+    ignoreSeek: 0
+    paramGlobal: 0
 --- !u!1001 &2109653257
 PrefabInstance:
   m_ObjectHideFlags: 0

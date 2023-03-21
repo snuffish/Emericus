@@ -16,7 +16,7 @@ public class AudioEventTrigger : MonoBehaviour
     [System.Serializable]
     public class AudioSettings
     {
-        [HideInInspector]
+        //[HideInInspector]
         public MusicAction action;
         public BackgroundMusicEvents bgmEvent;
         /*public string tag = "";
@@ -32,6 +32,11 @@ public class AudioEventTrigger : MonoBehaviour
     [NonReorderable] public AudioSettings[] audioSettings;
     
     private NewAManager aM;
+    
+    void Start()
+    {
+        aM = GameObject.FindGameObjectWithTag("MusicManager").GetComponent<NewAManager>();
+    }
 
     public void RunSettings()
     {
