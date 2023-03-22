@@ -25641,6 +25641,121 @@ PrefabInstance:
       propertyPath: m_LocalPosition.x
       value: -5.15
       objectReference: {fileID: 0}
+    - target: {fileID: 3902920103654053548, guid: 27a500df80f7d6a44bb23bb975d7da20,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3902920103654053548, guid: 27a500df80f7d6a44bb23bb975d7da20,
+        type: 3}
+      propertyPath: closeEmitter
+      value: 
+      objectReference: {fileID: 514302375}
+    - target: {fileID: 3902920103654053548, guid: 27a500df80f7d6a44bb23bb975d7da20,
+        type: 3}
+      propertyPath: creakEmitter
+      value: 
+      objectReference: {fileID: 514302376}
+    - target: {fileID: 3902920103654053548, guid: 27a500df80f7d6a44bb23bb975d7da20,
+        type: 3}
+      propertyPath: DOOR_Open.Path
+      value: event:/Objects/ChestOpen
+      objectReference: {fileID: 0}
+    - target: {fileID: 3902920103654053548, guid: 27a500df80f7d6a44bb23bb975d7da20,
+        type: 3}
+      propertyPath: DoorCreak.Path
+      value: event:/Interactive/DOOR/DOORCreak
+      objectReference: {fileID: 0}
+    - target: {fileID: 3902920103654053548, guid: 27a500df80f7d6a44bb23bb975d7da20,
+        type: 3}
+      propertyPath: DOOR_Close.Path
+      value: event:/Objects/ChestClosed
+      objectReference: {fileID: 0}
+    - target: {fileID: 3902920103654053548, guid: 27a500df80f7d6a44bb23bb975d7da20,
+        type: 3}
+      propertyPath: DOOR_Open.Guid.Data1
+      value: 20993059
+      objectReference: {fileID: 0}
+    - target: {fileID: 3902920103654053548, guid: 27a500df80f7d6a44bb23bb975d7da20,
+        type: 3}
+      propertyPath: DOOR_Open.Guid.Data2
+      value: 1078725924
+      objectReference: {fileID: 0}
+    - target: {fileID: 3902920103654053548, guid: 27a500df80f7d6a44bb23bb975d7da20,
+        type: 3}
+      propertyPath: DOOR_Open.Guid.Data3
+      value: -1924431227
+      objectReference: {fileID: 0}
+    - target: {fileID: 3902920103654053548, guid: 27a500df80f7d6a44bb23bb975d7da20,
+        type: 3}
+      propertyPath: DOOR_Open.Guid.Data4
+      value: 106652457
+      objectReference: {fileID: 0}
+    - target: {fileID: 3902920103654053548, guid: 27a500df80f7d6a44bb23bb975d7da20,
+        type: 3}
+      propertyPath: DoorCreak.Guid.Data1
+      value: -779977397
+      objectReference: {fileID: 0}
+    - target: {fileID: 3902920103654053548, guid: 27a500df80f7d6a44bb23bb975d7da20,
+        type: 3}
+      propertyPath: DoorCreak.Guid.Data2
+      value: 1101032667
+      objectReference: {fileID: 0}
+    - target: {fileID: 3902920103654053548, guid: 27a500df80f7d6a44bb23bb975d7da20,
+        type: 3}
+      propertyPath: DoorCreak.Guid.Data3
+      value: -339468406
+      objectReference: {fileID: 0}
+    - target: {fileID: 3902920103654053548, guid: 27a500df80f7d6a44bb23bb975d7da20,
+        type: 3}
+      propertyPath: DoorCreak.Guid.Data4
+      value: 1189039994
+      objectReference: {fileID: 0}
+    - target: {fileID: 3902920103654053548, guid: 27a500df80f7d6a44bb23bb975d7da20,
+        type: 3}
+      propertyPath: DOOR_Close.Guid.Data1
+      value: 1881192071
+      objectReference: {fileID: 0}
+    - target: {fileID: 3902920103654053548, guid: 27a500df80f7d6a44bb23bb975d7da20,
+        type: 3}
+      propertyPath: DOOR_Close.Guid.Data2
+      value: 1327016704
+      objectReference: {fileID: 0}
+    - target: {fileID: 3902920103654053548, guid: 27a500df80f7d6a44bb23bb975d7da20,
+        type: 3}
+      propertyPath: DOOR_Close.Guid.Data3
+      value: 685917831
+      objectReference: {fileID: 0}
+    - target: {fileID: 3902920103654053548, guid: 27a500df80f7d6a44bb23bb975d7da20,
+        type: 3}
+      propertyPath: DOOR_Close.Guid.Data4
+      value: -1190053054
+      objectReference: {fileID: 0}
+    - target: {fileID: 3902920103654053548, guid: 27a500df80f7d6a44bb23bb975d7da20,
+        type: 3}
+      propertyPath: DOOR_Open_Puzzle.Path
+      value: event:/Interactive/DOOR/SILENCE EVENT
+      objectReference: {fileID: 0}
+    - target: {fileID: 3902920103654053548, guid: 27a500df80f7d6a44bb23bb975d7da20,
+        type: 3}
+      propertyPath: DOOR_Open_Puzzle.Guid.Data1
+      value: -1698730938
+      objectReference: {fileID: 0}
+    - target: {fileID: 3902920103654053548, guid: 27a500df80f7d6a44bb23bb975d7da20,
+        type: 3}
+      propertyPath: DOOR_Open_Puzzle.Guid.Data2
+      value: 1242584031
+      objectReference: {fileID: 0}
+    - target: {fileID: 3902920103654053548, guid: 27a500df80f7d6a44bb23bb975d7da20,
+        type: 3}
+      propertyPath: DOOR_Open_Puzzle.Guid.Data3
+      value: 1823237788
+      objectReference: {fileID: 0}
+    - target: {fileID: 3902920103654053548, guid: 27a500df80f7d6a44bb23bb975d7da20,
+        type: 3}
+      propertyPath: DOOR_Open_Puzzle.Guid.Data4
+      value: 139476805
+      objectReference: {fileID: 0}
     - target: {fileID: 4051024702142062164, guid: 27a500df80f7d6a44bb23bb975d7da20,
         type: 3}
       propertyPath: m_LocalScale.z
@@ -27128,6 +27243,72 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 511013312}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &514302363 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5921969699993253055, guid: 27a500df80f7d6a44bb23bb975d7da20,
+    type: 3}
+  m_PrefabInstance: {fileID: 474294991}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &514302375
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 514302363}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 345908133
+      Data2: 1325929581
+      Data3: -1667629936
+      Data4: 2006240549
+    Path: event:/Interactive/DOOR/DOOR OPEN CLOSE ALTERNATIV/DoorClose
+  Event: 
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
+--- !u!114 &514302376
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 514302363}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -779977397
+      Data2: 1101032667
+      Data3: -339468406
+      Data4: 1189039994
+    Path: event:/Interactive/DOOR/DOORCreak
+  Event: 
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1001 &514795044
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -78113,11 +78294,11 @@ MonoBehaviour:
   closeEmitter: {fileID: 1432159344}
   isOpening: 0
   isClosing: 0
---- !u!114 &1432159344
+--- !u!114 &1432159344 stripped
 MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 1212287195577950217, guid: 37eca1b83ce9b2e4489b753e09fcb1a9,
+    type: 3}
+  m_PrefabInstance: {fileID: 1977267366}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1432159329}
   m_Enabled: 1
@@ -78125,29 +78306,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CollisionTag: 
-  EventReference:
-    Guid:
-      Data1: 345908133
-      Data2: 1325929581
-      Data3: -1667629936
-      Data4: 2006240549
-    Path: event:/Interactive/DOOR/DOOR OPEN CLOSE ALTERNATIV/DoorClose
-  Event: 
-  PlayEvent: 0
-  StopEvent: 0
-  AllowFadeout: 1
-  TriggerOnce: 0
-  Preload: 0
-  Params: []
-  OverrideAttenuation: 0
-  OverrideMinDistance: 1
-  OverrideMaxDistance: 20
---- !u!114 &1432159345
+--- !u!114 &1432159345 stripped
 MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 6173201490121504333, guid: 37eca1b83ce9b2e4489b753e09fcb1a9,
+    type: 3}
+  m_PrefabInstance: {fileID: 1977267366}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1432159329}
   m_Enabled: 1
@@ -78155,24 +78318,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CollisionTag: 
-  EventReference:
-    Guid:
-      Data1: -779977397
-      Data2: 1101032667
-      Data3: -339468406
-      Data4: 1189039994
-    Path: event:/Interactive/DOOR/DOORCreak
-  Event: 
-  PlayEvent: 0
-  StopEvent: 0
-  AllowFadeout: 1
-  TriggerOnce: 0
-  Preload: 0
-  Params: []
-  OverrideAttenuation: 0
-  OverrideMinDistance: 1
-  OverrideMaxDistance: 20
 --- !u!1 &1437375720 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -344004081357383697, guid: f0ca1060e80dfaf459d77e1e5cf42694,
