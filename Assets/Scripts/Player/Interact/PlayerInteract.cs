@@ -136,7 +136,6 @@ public class PlayerInteract : MonoBehaviour
     {
         handAnimator.SetBool("Throw", true);
         Invoke(nameof(ThrowAfterDelay), 0.3f);
-        BreakConnection();
     }
     void CheckForConnection()
     {
@@ -188,6 +187,7 @@ public class PlayerInteract : MonoBehaviour
 
     public void ThrowAfterDelay() {
         pickupRB.AddForce(Camera.main.transform.forward * throwForce);
+        BreakConnection();
     }
 
 }
