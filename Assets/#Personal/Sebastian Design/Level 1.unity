@@ -9868,24 +9868,25 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 202061540}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e32c722d376fc8c4eb7e07ce80d82a4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   resetStateOnDeactivation: 0
-  stateHasToBeDifferent: 1
+  stateHasToBeDifferent: 0
   requireAllForActivation: 0
   activateAllTargets: 0
   activateOnAnyChange: 0
   deactivateAllTargets: 1
-  deactivateOnAnyChange: 0
+  deactivateOnAnyChange: 1
   invertAllTargets: 0
   invertOnChange: 0
   inputActivators:
   - {fileID: 783063269}
   - {fileID: 1688592559}
   - {fileID: 1703374092}
+  - {fileID: 1410004286}
   - {fileID: 1117814296}
   - {fileID: 2005452449}
   - {fileID: 1411960114}
