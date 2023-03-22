@@ -13,7 +13,7 @@ public enum VoiceAction
 {
     None,
     PlayDialogue,
-    StopDialogue,
+    //StopDialogue,
     SetParameter
 }
 
