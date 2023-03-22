@@ -19925,6 +19925,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 2086010713}
+        m_TargetAssemblyTypeName: SpeedrunTimerController, Assembly-CSharp
+        m_MethodName: ResetTime
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1949207331
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21891,6 +21903,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 14a374b6ee18be84f979bd62cc719601, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &2086010713 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6949092105881417669, guid: 9d8837755ff1baf4f8bd3be7820650ed,
+    type: 3}
+  m_PrefabInstance: {fileID: 2086010709}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96af83a86aa301e40ae023ee1a818cdc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &2094539258
