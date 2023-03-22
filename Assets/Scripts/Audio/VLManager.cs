@@ -7,11 +7,13 @@ using FMOD.Studio;
 using FMODUnity;
 using TMPro;
 using UnityEngine.Rendering;
+using STOP_MODE = FMOD.Studio.STOP_MODE;
 
 public enum VoiceAction
 {
     None,
     PlayDialogue,
+    StopDialogue,
     SetParameter
 }
 
@@ -195,6 +197,18 @@ public class VLManager : MonoBehaviour
         dialogueInstance.start();
         dialogueInstance.release();
     }
+        
+        /*public void StopDialogue(VoiceEvent vEvent, string key)
+        {
+            var dialogueInstance = RuntimeManager.CreateInstance(EventName);
+
+            GCHandle stringHandle = GCHandle.Alloc(key);
+            dialogueInstance.setUserData(GCHandle.ToIntPtr(stringHandle));
+
+            dialogueInstance.setCallback(dialogueCallback);
+            dialogueInstance.stop(STOP_MODE.IMMEDIATE);
+            dialogueInstance.release();
+        }*/
         
 
     [AOT.MonoPInvokeCallback(typeof(EVENT_CALLBACK))]
