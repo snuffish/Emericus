@@ -18,7 +18,10 @@ public class SceneManager : MonoBehaviour
         
         //  Change Scene
         UnityEngine.SceneManagement.SceneManager.LoadScene(levelIndex);
-        
+    }
+
+    public void RestartGameAfterCredits() {
+        StartCoroutine(LoadLevel(0, 2.5f));
     }
     
 }
