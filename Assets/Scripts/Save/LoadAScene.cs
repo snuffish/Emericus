@@ -13,6 +13,8 @@ public class LoadAScene : Interactable
     
     public BackgroundMusicEvents bgmEvent;
     public bool ignoreFadeOut;
+   /* public VoiceEvent vEvent;
+    public string key;*/
     
     [SerializeField] private SceneManager _sceneManager;
     [SerializeField] private float transistionTime;
@@ -20,6 +22,7 @@ public class LoadAScene : Interactable
 
     public override void Interact() {
         GameObject.FindGameObjectWithTag("MusicManager").GetComponent<NewAManager>().StopBGM(bgmEvent, ignoreFadeOut);
+        //GameObject.FindGameObjectWithTag("VLManager").GetComponent<VLManager>().StopDialogue(vEvent, key);
         
         //FMODUnity.RuntimeManager.StudioSystem.setParameterByName(paramRef, paramValue, ignoreSeek);
         StartCoroutine(_sceneManager.LoadLevel(sceneToLoadInt, transistionTime));

@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.1417908, g: 0.104044855, b: 0.066817224, a: 1}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -22934,6 +22934,7 @@ MonoBehaviour:
   m_Script: {fileID: 986417472}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_Entries: []
 --- !u!4 &424079002
 Transform:
   m_ObjectHideFlags: 19
@@ -82507,6 +82508,11 @@ PrefabInstance:
     - target: {fileID: 3282148356403672281, guid: 0985c065836821b4bae81eb5db0f69c2,
         type: 3}
       propertyPath: m_Name
+      value: VLManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 3282148356403672281, guid: 0985c065836821b4bae81eb5db0f69c2,
+        type: 3}
+      propertyPath: m_TagString
       value: VLManager
       objectReference: {fileID: 0}
     - target: {fileID: 3282148356403672295, guid: 0985c065836821b4bae81eb5db0f69c2,
