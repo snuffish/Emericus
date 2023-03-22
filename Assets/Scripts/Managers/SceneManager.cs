@@ -16,8 +16,12 @@ public class SceneManager : MonoBehaviour
         //  Wait a little
         yield return new WaitForSeconds(loadTime);
         
+        //  Save Speedruntime
+        GetComponent<SpeedrunTimerController>().SaveTime();
+
         //  Change Scene
         UnityEngine.SceneManagement.SceneManager.LoadScene(levelIndex);
+        
     }
 
     public void RestartGameAfterCredits() {

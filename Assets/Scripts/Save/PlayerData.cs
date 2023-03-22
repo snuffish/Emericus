@@ -9,4 +9,5 @@ public class PlayerData : ScriptableObject
     [Range(0, 1)] public float mouseSensitivity;
     [Range(0,1)] public float audioLevel;
     public bool subtitlesIsOn;
+    public float speedrunTimer;
 }
