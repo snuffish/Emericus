@@ -38,20 +38,15 @@ public class SpeedrunTimerController : MonoBehaviour
     }
 
     private string convertFromFloatToTimeString(float rawTime) {
-        float tempTimer = rawTime;
+        float timeLeft = rawTime;
         float minutes = 0, seconds = 0, milliseconds;
-        while (tempTimer >= 60) {
+        while (timeLeft >= 60) {
             minutes++;
-            tempTimer -= 60;
+            timeLeft -= 60;
         }
 
-        while (tempTimer >= 1) {
-            seconds++;
-            tempTimer--;
-        }
+        
 
-        milliseconds = tempTimer;
-
-        return $"{minutes}:{seconds}:{milliseconds*10000}";
+        return $"{minutes}.{timeLeft:0.###}";
     }
 }
