@@ -22,7 +22,8 @@ public enum BackgroundMusicEvents
     Lvl2,
     SafeRoom,
     Ambience,
-    EndScene
+    StripClub,
+    EndCredits
 }
 
 public class NewAManager : MonoBehaviour
@@ -30,8 +31,8 @@ public class NewAManager : MonoBehaviour
     public static NewAManager Instance;
 
     [Header("Background Music")] 
-    [SerializeField] private EventReference[] bgmReferences = new EventReference[6];
-    private EventInstance[] bgmInstances = new EventInstance[6];
+    [SerializeField] private EventReference[] bgmReferences = new EventReference[7];
+    private EventInstance[] bgmInstances = new EventInstance[7];
 
     [Header("GameOver")] 
     [SerializeField] private EventReference gameOverStinger;
@@ -64,7 +65,7 @@ public class NewAManager : MonoBehaviour
     public void PlayBGM(BackgroundMusicEvents bgmEvent)
     {
         int num = Convert.ToInt32(bgmEvent) - 1;                
-        //-1 för att det finns 6 val i BGM enumen men bara 5 instancer
+        //-1 för att det finns 7 val i BGM enumen men bara 6 instancer
 
         if (num < 0)
         {
