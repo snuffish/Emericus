@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 6899779591754180033}
   - component: {fileID: 7784585650806730238}
   - component: {fileID: 4128582072593924771}
+  - component: {fileID: 2983815673456549897}
   m_Layer: 8
   m_Name: Button
   m_TagString: Untagged
@@ -99,10 +100,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isDisabled: 0
   activationForce: 30
-  invertOnPress: 1
+  invertOnPress: 0
   deactivateOnPress: 0
-  activateOnPress: 0
+  activateOnPress: 1
   targets: []
+  buttonSound:
+    Guid:
+      Data1: -231133787
+      Data2: 1133350908
+      Data3: 1732082050
+      Data4: -1093578127
+    Path: event:/Interactive/Buttons/Button
 --- !u!64 &4128582072593924771
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -117,6 +125,19 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -5447036705194824928, guid: 305b3b109d5395340b37c10162a153a1, type: 3}
+--- !u!135 &2983815673456549897
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3528374397045463727}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.17
+  m_Center: {x: 0.000000007450582, y: -0.000000007450582, z: 0}
 --- !u!1 &6263492923537761468
 GameObject:
   m_ObjectHideFlags: 0
