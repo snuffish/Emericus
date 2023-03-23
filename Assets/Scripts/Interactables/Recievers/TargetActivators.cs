@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using FMODUnity;
 
 public class TargetActivators : Interactable
 {
@@ -10,6 +11,7 @@ public class TargetActivators : Interactable
     [SerializeField] protected bool activateOnPress = false;
 
     [SerializeField] protected List<Activators> targets = new List<Activators>();
+    [SerializeField] EventReference buttonSound;
 
     public override void Interact()
     {
@@ -20,6 +22,7 @@ public class TargetActivators : Interactable
             else if (activateOnPress) target.Activate();
             else print("Please select a way for targetActivator to interact");
         }
+        AudioManager.Instance.PlayOneShot(buttonSound, gameObject);
     }
 
     public virtual void OnCollisionEnter(Collision collision)
