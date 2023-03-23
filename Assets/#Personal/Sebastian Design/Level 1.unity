@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.1414458, g: 0.10378198, b: 0.06664945, a: 1}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -35140,6 +35140,41 @@ PrefabInstance:
     - target: {fileID: 3077083761361269904, guid: 62fc257e459c04a4da25683aa0730a77,
         type: 3}
       propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3077083761361269999, guid: 62fc257e459c04a4da25683aa0730a77,
+        type: 3}
+      propertyPath: voiceSettings.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3077083761361269999, guid: 62fc257e459c04a4da25683aa0730a77,
+        type: 3}
+      propertyPath: voiceSettings.Array.data[0].vAction
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3077083761361269999, guid: 62fc257e459c04a4da25683aa0730a77,
+        type: 3}
+      propertyPath: voiceSettings.Array.data[1].keyName
+      value: Monologue
+      objectReference: {fileID: 0}
+    - target: {fileID: 3077083761361269999, guid: 62fc257e459c04a4da25683aa0730a77,
+        type: 3}
+      propertyPath: voiceSettings.Array.data[1].vAction
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3077083761361269999, guid: 62fc257e459c04a4da25683aa0730a77,
+        type: 3}
+      propertyPath: voiceSettings.Array.data[1].paramName
+      value: VoiceLines
+      objectReference: {fileID: 0}
+    - target: {fileID: 3077083761361269999, guid: 62fc257e459c04a4da25683aa0730a77,
+        type: 3}
+      propertyPath: voiceSettings.Array.data[1].paramValue
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3077083761361269999, guid: 62fc257e459c04a4da25683aa0730a77,
+        type: 3}
+      propertyPath: voiceSettings.Array.data[1].paramGlobal
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4473648133842723304, guid: 62fc257e459c04a4da25683aa0730a77,
@@ -98258,12 +98293,22 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4648841835067181279, guid: 9e209d725f861764e811c8ddb947c009,
         type: 3}
+      propertyPath: aZoneSettings.Array.data[2].action
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4648841835067181279, guid: 9e209d725f861764e811c8ddb947c009,
+        type: 3}
       propertyPath: aZoneSettings.Array.data[0].bgmEvent
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4648841835067181279, guid: 9e209d725f861764e811c8ddb947c009,
         type: 3}
       propertyPath: aZoneSettings.Array.data[1].bgmEvent
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4648841835067181279, guid: 9e209d725f861764e811c8ddb947c009,
+        type: 3}
+      propertyPath: aZoneSettings.Array.data[2].bgmEvent
       value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 8778593177235041897, guid: 9e209d725f861764e811c8ddb947c009,
