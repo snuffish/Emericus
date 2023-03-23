@@ -22934,6 +22934,7 @@ MonoBehaviour:
   m_Script: {fileID: 986417472}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_Entries: []
 --- !u!4 &424079002
 Transform:
   m_ObjectHideFlags: 19
@@ -28525,31 +28526,6 @@ PrefabInstance:
         type: 3}
       propertyPath: gameOverStinger.Guid.Data4
       value: 323012765
-      objectReference: {fileID: 0}
-    - target: {fileID: 4669040576193244303, guid: 90d61b54dc91d7d4bbbf078651f4ce0f,
-        type: 3}
-      propertyPath: bgmReferences.Array.data[4].Path
-      value: event:/Ambience/Inside/WindTest
-      objectReference: {fileID: 0}
-    - target: {fileID: 4669040576193244303, guid: 90d61b54dc91d7d4bbbf078651f4ce0f,
-        type: 3}
-      propertyPath: bgmReferences.Array.data[4].Guid.Data1
-      value: 1085277916
-      objectReference: {fileID: 0}
-    - target: {fileID: 4669040576193244303, guid: 90d61b54dc91d7d4bbbf078651f4ce0f,
-        type: 3}
-      propertyPath: bgmReferences.Array.data[4].Guid.Data2
-      value: 1137634983
-      objectReference: {fileID: 0}
-    - target: {fileID: 4669040576193244303, guid: 90d61b54dc91d7d4bbbf078651f4ce0f,
-        type: 3}
-      propertyPath: bgmReferences.Array.data[4].Guid.Data3
-      value: 603626664
-      objectReference: {fileID: 0}
-    - target: {fileID: 4669040576193244303, guid: 90d61b54dc91d7d4bbbf078651f4ce0f,
-        type: 3}
-      propertyPath: bgmReferences.Array.data[4].Guid.Data4
-      value: 521471034
       objectReference: {fileID: 0}
     - target: {fileID: 8591402441183388410, guid: 90d61b54dc91d7d4bbbf078651f4ce0f,
         type: 3}
@@ -71842,6 +71818,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1966921710}
     m_Modifications:
+    - target: {fileID: 1137999277633384781, guid: 17c5d89430dd5cb449403d86f0a28952,
+        type: 3}
+      propertyPath: m_Name
+      value: AT SR + Birds Stop
+      objectReference: {fileID: 0}
     - target: {fileID: 1535183501225809756, guid: 17c5d89430dd5cb449403d86f0a28952,
         type: 3}
       propertyPath: audioSettings.Array.size
@@ -71906,6 +71887,21 @@ PrefabInstance:
         type: 3}
       propertyPath: audioSettings.Array.data[0].paramName
       value: Wind
+      objectReference: {fileID: 0}
+    - target: {fileID: 3993381129418966515, guid: 17c5d89430dd5cb449403d86f0a28952,
+        type: 3}
+      propertyPath: audioSettings.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3993381129418966515, guid: 17c5d89430dd5cb449403d86f0a28952,
+        type: 3}
+      propertyPath: audioSettings.Array.data[1].action
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3993381129418966515, guid: 17c5d89430dd5cb449403d86f0a28952,
+        type: 3}
+      propertyPath: audioSettings.Array.data[1].bgmEvent
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 4800616724065270931, guid: 17c5d89430dd5cb449403d86f0a28952,
         type: 3}

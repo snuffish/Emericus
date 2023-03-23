@@ -24,7 +24,8 @@ public enum BackgroundMusicEvents
     Ambience,
     StripClub,
     EndCredits,
-    GameOver
+    GameOver,
+    Birds
 }
 
 public class NewAManager : MonoBehaviour
@@ -32,8 +33,8 @@ public class NewAManager : MonoBehaviour
     public static NewAManager Instance;
 
     [Header("Background Music")] 
-    [SerializeField] private EventReference[] bgmReferences = new EventReference[8];
-    private EventInstance[] bgmInstances = new EventInstance[8];
+    [SerializeField] private EventReference[] bgmReferences = new EventReference[9];
+    private EventInstance[] bgmInstances = new EventInstance[9];
 
     [Header("GameOver")] 
     [SerializeField] private EventReference gameOverStinger;
