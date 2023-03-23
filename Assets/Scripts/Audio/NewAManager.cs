@@ -23,7 +23,8 @@ public enum BackgroundMusicEvents
     SafeRoom,
     Ambience,
     StripClub,
-    EndCredits
+    EndCredits,
+    GameOver
 }
 
 public class NewAManager : MonoBehaviour
@@ -31,8 +32,8 @@ public class NewAManager : MonoBehaviour
     public static NewAManager Instance;
 
     [Header("Background Music")] 
-    [SerializeField] private EventReference[] bgmReferences = new EventReference[7];
-    private EventInstance[] bgmInstances = new EventInstance[7];
+    [SerializeField] private EventReference[] bgmReferences = new EventReference[8];
+    private EventInstance[] bgmInstances = new EventInstance[8];
 
     [Header("GameOver")] 
     [SerializeField] private EventReference gameOverStinger;
