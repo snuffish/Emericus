@@ -44,6 +44,6 @@ public class SpeedrunTimerController : MonoBehaviour
             minutes++;
             timeLeft -= 60;
         }
-        return $"{minutes}:{timeLeft:0:###}";
+        return $"{minutes}:{timeLeft:0.###}";
     }
 }
