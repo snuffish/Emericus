@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.14179224, g: 0.104044616, b: 0.066816986, a: 1}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -20609,6 +20609,81 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalPosition.z
       value: 56.606
+      objectReference: {fileID: 0}
+    - target: {fileID: 6291120749031798120, guid: df8864fd4276d554499c38caa0d9c6f2,
+        type: 3}
+      propertyPath: dropSound.Path
+      value: event:/Interactive/DOOR/SILENCE EVENT
+      objectReference: {fileID: 0}
+    - target: {fileID: 6291120749031798120, guid: df8864fd4276d554499c38caa0d9c6f2,
+        type: 3}
+      propertyPath: pickUpSound.Path
+      value: event:/Interactive/DOOR/SILENCE EVENT
+      objectReference: {fileID: 0}
+    - target: {fileID: 6291120749031798120, guid: df8864fd4276d554499c38caa0d9c6f2,
+        type: 3}
+      propertyPath: collisionSound.Path
+      value: event:/Interactive/DOOR/SILENCE EVENT
+      objectReference: {fileID: 0}
+    - target: {fileID: 6291120749031798120, guid: df8864fd4276d554499c38caa0d9c6f2,
+        type: 3}
+      propertyPath: dropSound.Guid.Data1
+      value: -1698730938
+      objectReference: {fileID: 0}
+    - target: {fileID: 6291120749031798120, guid: df8864fd4276d554499c38caa0d9c6f2,
+        type: 3}
+      propertyPath: dropSound.Guid.Data2
+      value: 1242584031
+      objectReference: {fileID: 0}
+    - target: {fileID: 6291120749031798120, guid: df8864fd4276d554499c38caa0d9c6f2,
+        type: 3}
+      propertyPath: dropSound.Guid.Data3
+      value: 1823237788
+      objectReference: {fileID: 0}
+    - target: {fileID: 6291120749031798120, guid: df8864fd4276d554499c38caa0d9c6f2,
+        type: 3}
+      propertyPath: dropSound.Guid.Data4
+      value: 139476805
+      objectReference: {fileID: 0}
+    - target: {fileID: 6291120749031798120, guid: df8864fd4276d554499c38caa0d9c6f2,
+        type: 3}
+      propertyPath: pickUpSound.Guid.Data1
+      value: -1698730938
+      objectReference: {fileID: 0}
+    - target: {fileID: 6291120749031798120, guid: df8864fd4276d554499c38caa0d9c6f2,
+        type: 3}
+      propertyPath: pickUpSound.Guid.Data2
+      value: 1242584031
+      objectReference: {fileID: 0}
+    - target: {fileID: 6291120749031798120, guid: df8864fd4276d554499c38caa0d9c6f2,
+        type: 3}
+      propertyPath: pickUpSound.Guid.Data3
+      value: 1823237788
+      objectReference: {fileID: 0}
+    - target: {fileID: 6291120749031798120, guid: df8864fd4276d554499c38caa0d9c6f2,
+        type: 3}
+      propertyPath: pickUpSound.Guid.Data4
+      value: 139476805
+      objectReference: {fileID: 0}
+    - target: {fileID: 6291120749031798120, guid: df8864fd4276d554499c38caa0d9c6f2,
+        type: 3}
+      propertyPath: collisionSound.Guid.Data1
+      value: -1698730938
+      objectReference: {fileID: 0}
+    - target: {fileID: 6291120749031798120, guid: df8864fd4276d554499c38caa0d9c6f2,
+        type: 3}
+      propertyPath: collisionSound.Guid.Data2
+      value: 1242584031
+      objectReference: {fileID: 0}
+    - target: {fileID: 6291120749031798120, guid: df8864fd4276d554499c38caa0d9c6f2,
+        type: 3}
+      propertyPath: collisionSound.Guid.Data3
+      value: 1823237788
+      objectReference: {fileID: 0}
+    - target: {fileID: 6291120749031798120, guid: df8864fd4276d554499c38caa0d9c6f2,
+        type: 3}
+      propertyPath: collisionSound.Guid.Data4
+      value: 139476805
       objectReference: {fileID: 0}
     - target: {fileID: 6291120749031798121, guid: df8864fd4276d554499c38caa0d9c6f2,
         type: 3}
@@ -55995,6 +56070,81 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: DoorAndArch 1 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6291120749031798120, guid: df8864fd4276d554499c38caa0d9c6f2,
+        type: 3}
+      propertyPath: dropSound.Path
+      value: event:/Interactive/DOOR/SILENCE EVENT
+      objectReference: {fileID: 0}
+    - target: {fileID: 6291120749031798120, guid: df8864fd4276d554499c38caa0d9c6f2,
+        type: 3}
+      propertyPath: pickUpSound.Path
+      value: event:/Interactive/DOOR/SILENCE EVENT
+      objectReference: {fileID: 0}
+    - target: {fileID: 6291120749031798120, guid: df8864fd4276d554499c38caa0d9c6f2,
+        type: 3}
+      propertyPath: collisionSound.Path
+      value: event:/Interactive/DOOR/SILENCE EVENT
+      objectReference: {fileID: 0}
+    - target: {fileID: 6291120749031798120, guid: df8864fd4276d554499c38caa0d9c6f2,
+        type: 3}
+      propertyPath: dropSound.Guid.Data1
+      value: -1698730938
+      objectReference: {fileID: 0}
+    - target: {fileID: 6291120749031798120, guid: df8864fd4276d554499c38caa0d9c6f2,
+        type: 3}
+      propertyPath: dropSound.Guid.Data2
+      value: 1242584031
+      objectReference: {fileID: 0}
+    - target: {fileID: 6291120749031798120, guid: df8864fd4276d554499c38caa0d9c6f2,
+        type: 3}
+      propertyPath: dropSound.Guid.Data3
+      value: 1823237788
+      objectReference: {fileID: 0}
+    - target: {fileID: 6291120749031798120, guid: df8864fd4276d554499c38caa0d9c6f2,
+        type: 3}
+      propertyPath: dropSound.Guid.Data4
+      value: 139476805
+      objectReference: {fileID: 0}
+    - target: {fileID: 6291120749031798120, guid: df8864fd4276d554499c38caa0d9c6f2,
+        type: 3}
+      propertyPath: pickUpSound.Guid.Data1
+      value: -1698730938
+      objectReference: {fileID: 0}
+    - target: {fileID: 6291120749031798120, guid: df8864fd4276d554499c38caa0d9c6f2,
+        type: 3}
+      propertyPath: pickUpSound.Guid.Data2
+      value: 1242584031
+      objectReference: {fileID: 0}
+    - target: {fileID: 6291120749031798120, guid: df8864fd4276d554499c38caa0d9c6f2,
+        type: 3}
+      propertyPath: pickUpSound.Guid.Data3
+      value: 1823237788
+      objectReference: {fileID: 0}
+    - target: {fileID: 6291120749031798120, guid: df8864fd4276d554499c38caa0d9c6f2,
+        type: 3}
+      propertyPath: pickUpSound.Guid.Data4
+      value: 139476805
+      objectReference: {fileID: 0}
+    - target: {fileID: 6291120749031798120, guid: df8864fd4276d554499c38caa0d9c6f2,
+        type: 3}
+      propertyPath: collisionSound.Guid.Data1
+      value: -1698730938
+      objectReference: {fileID: 0}
+    - target: {fileID: 6291120749031798120, guid: df8864fd4276d554499c38caa0d9c6f2,
+        type: 3}
+      propertyPath: collisionSound.Guid.Data2
+      value: 1242584031
+      objectReference: {fileID: 0}
+    - target: {fileID: 6291120749031798120, guid: df8864fd4276d554499c38caa0d9c6f2,
+        type: 3}
+      propertyPath: collisionSound.Guid.Data3
+      value: 1823237788
+      objectReference: {fileID: 0}
+    - target: {fileID: 6291120749031798120, guid: df8864fd4276d554499c38caa0d9c6f2,
+        type: 3}
+      propertyPath: collisionSound.Guid.Data4
+      value: 139476805
       objectReference: {fileID: 0}
     - target: {fileID: 6291120749031798121, guid: df8864fd4276d554499c38caa0d9c6f2,
         type: 3}
@@ -111560,7 +111710,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   resetStateOnDeactivation: 0
-  stateHasToBeDifferent: 1
+  stateHasToBeDifferent: 0
   requireAllForActivation: 0
   activateAllTargets: 0
   activateOnAnyChange: 0
