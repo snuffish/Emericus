@@ -66,7 +66,7 @@ public class PlayerMovementController : MonoBehaviour
             playerAudio = GetComponent<PlayerAudio>();
         rb = GetComponent<Rigidbody>();
         rb.freezeRotation = true;
-        ResetJump();
+        // ResetJump();
     }
 
     // Update is called once per frame
@@ -118,15 +118,15 @@ public class PlayerMovementController : MonoBehaviour
 
 
         //  Check if player wannt to jump and if its possible
-        if (Input.GetButtonDown("Jump") && canJump && isGrounded)
-        {
-            canJump = false;
+        // if (Input.GetButtonDown("Jump") && canJump && isGrounded)
+        // {
+            // canJump = false;
 
-            Jump();
+            // Jump();
 
             //  Resets the jump after a specific time, adjustable via the inspector
-            Invoke(nameof(ResetJump), jumpCooldown);
-        }
+            // Invoke(nameof(ResetJump), jumpCooldown);
+        // }
 
     }
 
